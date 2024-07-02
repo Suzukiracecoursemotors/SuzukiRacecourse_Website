@@ -1,0 +1,78 @@
+import React from "react";
+import Assets from "@/data/Assets";
+import Constants from "@/data/Constants";
+import Image from "next/image";
+import { Link } from "@/navigation";
+import { Locale } from "@/i18n";
+import { getTranslations } from "next-intl/server";
+
+type AddressProps = {
+  locale: Locale;
+};
+
+async function Address({ locale }: AddressProps) {
+  const t = await getTranslations({ locale, namespace: "page" });
+  return (
+    <section className="py-15 py-xl-20">
+      <div className="container mt-5 mt-lg-10">
+        <div className="row align-items-center justify-content-between">
+          <div className="col-lg-6 mb-4 mb-lg-0">
+            <h1>{t("home.addresses.title")}</h1>
+            <p>{t("home.addresses.description")}</p>
+            <hr className="my-4 fw-25 ml-0" />
+            <ul className="list-group list-group-minimal">
+              <li className="list-group-item d-flex align-items-top">
+                <span className="w-25 text-muted">
+                  {" "}
+                  {t("home.addresses.address")}
+                </span>
+                <Link
+                  href={Constants.GOOGLE_MAP}
+                  className="text-dark underline"
+                  target="_blank"
+                >
+                  {t("home.addresses.address_area")}
+                </Link>
+              </li>
+              <li className="list-group-item d-flex align-items-top">
+                <span className="w-25 text-muted">
+                  {" "}
+                  {t("home.addresses.phone")}
+                </span>
+                <Link
+                  href={"tel:" + Constants.PHONE}
+                  className="text-dark underline"
+                >
+                  {" "}
+                  {Constants.PHONE}
+                </Link>
+              </li>
+              <li className="list-group-item d-flex align-items-top">
+                <span className="w-25 text-muted">
+                  {" "}
+                  {t("home.addresses.work_time")}
+                </span>
+                {t("home.addresses.working_days")}{" "}
+                {t("home.addresses.working_hours")}
+              </li>
+            </ul>
+          </div>
+          <div className="col-lg-5">
+            <div className="media equal-1-1">
+              <Link href={Constants.GOOGLE_MAP} target="_blank">
+                <Image
+                  fill
+                  src={Assets.Map}
+                  alt="map"
+                  className="card-img-top"
+                />
+              </Link>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+export default Address;

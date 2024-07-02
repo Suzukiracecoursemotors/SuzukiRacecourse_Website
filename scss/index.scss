@@ -1,0 +1,23 @@
+@import "variables";
+
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/variables-dark";
+@import "bootstrap/scss/maps";
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/utilities";
+
+@import "utilities";
+
+@import "bootstrap/scss/bootstrap";
+
+@import "bootstrap/scss/utilities/api";
+
+// components
+@import "components/_index";
+
+@import 'bootstrap-icons/font/bootstrap-icons';
+
+
+@import "user";
+

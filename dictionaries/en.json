@@ -1,0 +1,307 @@
+{
+  "header": {
+    "nav": {
+      "massages": "Home",
+      "pricing": "Sales ",
+      "about_me": "Aftersales",
+      "gallery": "Gallery",
+      "language": "Language"
+    },
+    "reserve_appointment": "Reserve Appointment",
+    "language": {
+      "bg": "Bulgarian",
+      "en": "English"
+    }
+  },
+  "page": {
+    "home": {
+      "title": "Voder Studio by Yulia Ruseva",
+      "description": "Lymphatic Drainage and Osteopathy Massages in a cozy massage studio in the center of Sofia.",
+      "banner_title": "SUZUKI Racecourse  ",
+      "about_me": {
+        "title": "Hello, I'm Yulia,",
+        "description": "Welcome to Voder Studio - a place dedicated to healing and well-being. I am Yulia, the heart and hands of Voder Studio. My journey began a decade ago, fueled by the desire to offer more than temporary pain relief. Having personally experienced the power of manual lymphatic drainage and osteopathy techniques and myofascial massages, I was inspired to create a space for relieving pain, swelling, and toxins in the body. I believe in individualized care and holistic body care. I look forward to seeing you if you are looking for a cozy, peaceful, and clean place focused on your well-being.",
+        "learn_more": "Learn More About Me"
+      },
+      "price": {
+        "description": "Prices for all massages in the studio",
+        "duration_price_60": "60 mins - 80 BGN",
+        "duration_price_90": "90 mins - 120 BGN",
+        "duration_price_120": "120 mins - 160 BGN",
+        "cta": "Reserve Appointment"
+      },
+      "addresses": {
+        "title": "In the Center of Sofia",
+        "description": "The studio is located a minute away from the entrance of the Sofia City Court, with the metro stations 'Serdika' and 'National Palace of Culture' nearby. For booking an appointment, please call the provided number.",
+        "address": "Address",
+        "address_area": "Sofia, Tsar Asen I Str., No.11",
+        "phone": "Phone",
+        "work_time": "Working Hours",
+        "working_days": "Monday to Saturday",
+        "working_hours": "8:00 - 20:00"
+      },
+      "cosmetics_products": {
+        "title": "Therapy with Essential Oils",
+        "description": "Massage oils from the brand, blended with essential oils, are used for the massages. The massage oils are fully absorbed by the skin and do not leave a greasy feeling after the massage. The skin feels soft and hydrated.",
+        "feature1": "100% Natural Vegan Oils",
+        "feature2": "No Dyes",
+        "feature3": "No Chemicals",
+        "feature4": "For Sensitive Skin"
+      },
+      "gallery": {
+        "title": "Photos"
+      }
+    },
+    "gallery": {
+      "title": "Photos from the Studio",
+      "all": "All",
+      "interior": "Interior",
+      "massages": "Massages",
+      "cosmetics": "Cosmetics"
+    },
+    "massages": {
+      "seo_title": "Lymphatic Drainage, Osteopathy, and Myofascial Massage in Sofia Center from 80 BGN/hour",
+      "seo_description": "Voder is a specialized massage studio focused on lymphatic drainage, osteopathy, and myofascial massage. We offer individual procedures to detoxify your body, relieve pain, and improve mobility and relaxation.",
+      "hero_title": "Massages in Sofia Center",
+      "types_title": "Massage Offerings",
+      "reviews_count": "from {reviews_count} reviews",
+      "types": {
+        "lymphatic_drainage": {
+          "title": "Lymphatic Drainage",
+          "description": "Lymphatic drainage massage uses gentle, rhythmic movements to stimulate the flow of lymph, aiding in detoxification and improving immune function. It is effective in reducing swelling and promoting relaxation."
+        },
+        "osteopathy": {
+          "title": "Osteopathy",
+          "description": "Osteopathy massage uses manual techniques to address musculoskeletal issues, promoting overall health and well-being. It is beneficial for pain relief and improving mobility."
+        },
+        "myofascial": {
+          "title": "Myofascial Massage",
+          "description": "Myofascial massage targets the connective tissue to alleviate pain, improve mobility, and contribute to a sense of relaxation. It is beneficial for people with chronic pain, injuries, athletes, and supports overall body condition."
+        }
+      }
+    },
+    "about": {
+      "title": "About Us",
+      "description": "This is the 'About Us' page",
+      "therapist": "Massage Therapist",
+      "therapist_name": "Yulia Ruseva",
+      "therapist_intro": "Yulia Ruseva is a renowned massage therapist with over a decade of experience in the art of massage therapy. Her journey began after graduating from one of the leading health and wellness schools in the country, mastering various massage techniques. Yulia believes in the healing power of touch and strives to provide personalized care for her clients, ensuring they receive the utmost comfort and therapeutic benefits from each session.",
+      "techniques": {
+        "title": "Specialized Techniques",
+        "question1": "Lymphatic Drainage",
+        "answer1": "Yulia is an expert in Swedish massage, a technique that relaxes the entire body through gentle rubbing and massaging of the muscles.",
+        "question2": "Osteopathy",
+        "answer2": "For clients seeking relief from chronic pain or muscle tension, Yulia applies deep tissue massage techniques targeting deeper layers of muscles and connections."
+      },
+      "customer_review": {
+        "review_title": "Our Clients Love Us",
+        "title": "A Few Words from Our 1400+ Clients.",
+        "total_rating": "out of 5",
+        "rating": "5",
+        "author": "Michael Dow",
+        "description": "“Lorem, ipsum dolor sit, amet consectetur adipisicing elit. Modi ullam in distinctio placeat, repellendus similique quod illo alias enim, asperiores veritatis, repudiandae.”"
+      }
+    },
+    "pricing": {
+      "title": "Massage Prices",
+      "description": "Prices vary depending on the massage duration",
+
+      "card1": {
+        "price": "80 BGN",
+        "duration": "Duration 60 minutes",
+        "description": "Full body massage or massage on preferred area."
+      },
+
+      "card2": {
+        "price": "120 BGN",
+        "duration": "Duration 90 minutes",
+        "description": "Full body massage or massage on preferred area."
+      },
+
+      "card3": {
+        "price": "160 BGN",
+        "duration": "Duration 120 minutes",
+        "description": "Full body massage or massage on preferred area."
+      },
+
+      "gift_card": {
+        "title": "Massage Gift Voucher",
+        "description": "Give a loved one a healthy escape. They will enjoy a relaxing lymphatic drainage, osteopathy, or myofascial massage tailored to their needs by me, Yulia.",
+        "cta": "Buy"
+      },
+      "faq": {
+        "title": "Frequently Asked Questions",
+        "question1": "Can I pay by card?",
+        "answer1": "The studio is equipped with a POS terminal, so you can pay by card or in cash.",
+        "question2": "How long is the gift card valid for?",
+        "answer2": "One year from the date of purchase. After that, the gift card is no longer valid.",
+        "question3": "Do you have a Loyalty Bonus for regular clients?",
+        "answer3": "Loyalty bonus program for consecutive weekly visits."
+      }
+    },
+    "lymphatic_drainage": {
+      "seo_title": "Lymphatic drainage massage in the center of Sofia from €40/hour",
+      "seo_description": "",
+      "title": "Lymphatic drainage massage",
+      "description": {
+        "p1": "Lymphatic drainage massage is a gentle yet effective therapy that unlocks health benefits beyond simple relaxation. By meticulously stimulating your body's lymphatic system, this therapeutic technique removes toxins, decreases swelling, and enhances your immune function, offering a powerful defense against illness.",
+        "p2": "It fosters deep relaxation, helping to alleviate stress and promote a sense of well-being. Imagine feeling lighter, more vibrant, and energized, with visibly reduced inflammation and a sense of balance restored to your body.",
+        "p3": "By choosing lymphatic drainage massage, you're not just indulging in tranquility but taking a decisive step towards optimal health and vitality. Embrace this transformative experience and discover a rejuvenated, healthier version of yourself."
+      },
+      "price_description": "Lymphatic drainage massage prices",
+      "benefits": {
+        "title": "Benefits of lymphatic drainage massage",
+        "about": "One of the primary benefits of lymphatic drainage is its ability to eliminate toxins from the body. The lymphatic system is a critical part of the body's detoxification process, and enhancing its function can lead to improved health and vitality. A study in the Journal of Physiological Anthropology suggests that manual lymphatic drainage effectively reduces oxidative stress, which is linked to the removal of toxins.",
+        "p1": "Boosts metabolism",
+        "p2": "Aids in toxin elimination",
+        "p3": "Reduces swelling",
+        "p4": "Improves circulation",
+        "p5": "Stimulates the immune system",
+        "p6": "Price is for legs or full body"
+      },
+      "contraindications": {
+        "title": "Contraindications of lymphatic massage",
+        "about": "In some cases, the application of lymphatic drainage is not recommended, for example:",
+        "p1": "Acute infections",
+        "p2": "Thrombophlebitis",
+        "p3": "Malignant diseases",
+        "p4": "Cardiovascular diseases",
+        "p5": "Pregnancy",
+        "p6": "Presence of a pacemaker"
+      },
+      "massage_parts": {
+        "title": "Manual lymphatic drainage zones",
+        "head": {
+          "title": "Lymphatic drainage on the head",
+          "description": "Gentle, circular motions are used on the neck to stimulate lymph flow toward the lymph nodes located around the neck and collarbone area. This technique is crucial for reducing swelling and detoxifying the body by facilitating the removal of waste from the head, neck, and face, including reducing puffiness around the eyes and jawline."
+        },
+        "neck": {
+          "title": "Lymphatic drainage on the neck",
+          "description": "Gentle, circular motions are used on the neck to stimulate lymph flow toward the lymph nodes located around the neck and collarbone area. This technique is crucial for reducing swelling and detoxifying the body by facilitating the removal of waste from the head, neck, and face, including reducing puffiness around the eyes and jawline."
+        },
+        "armpits": {
+          "title": "Lymphatic drainage on the armpits",
+          "description": "Massaging from the upper arm towards the armpit, where major lymph nodes are located, encourages the drainage of lymph fluid from the upper limbs and chest area. This area's drainage is vital for immune function and reducing arm swelling."
+        },
+        "hands": {
+          "title": "Lymphatic drainage on the hands",
+          "description": "Massage starts from the fingers with light, sweeping motions towards the wrist and up to the armpits, which aids in decreasing hand and wrist swelling. This technique is especially beneficial for individuals with arthritis or using their hands extensively."
+        },
+        "breast": {
+          "title": "Lymphatic drainage on the breasts",
+          "description": "Soft, circular motions moving from the breasts toward the armpits support lymph flow and reduce swelling and tenderness in the breast tissue. This can be particularly beneficial post-surgery or during menstruation and aid overall breast health."
+        },
+        "back": {
+          "title": "Lymphatic drainage of the back",
+          "description": "Gentle strokes moving from the lower back up towards the lymph nodes located at the neck and armpits help remove waste and toxins from the back and torso."
+        },
+        "abdominal": {
+          "title": "Lymphatic drainage on the abdomen",
+          "description": "Circular, clockwise massage around the abdomen, focusing on moving toward the lymph nodes around the groin area, stimulates digestion, reduces bloating, and enhances detoxification. This technique is essential for stimulating lymph flow in the abdominal region."
+        },
+        "legs": {
+          "title": "Lymphatic drainage on the legs",
+          "description": "The massage begins at the feet and moves up the legs in gentle, sweeping motions toward the lymph nodes in the groin, reducing leg swelling and fatigue. This benefits those who stand for long periods and recover from sports injuries, promoting better leg health."
+        },
+        "feet": {
+          "title": "Lymphatic drainage on the feet",
+          "description": "Gentle strokes starting with the toes and moving towards the ankle and up the leg encourage the removal of toxins and reduce swelling in the feet. This relieves conditions like plantar fasciitis and aids in relaxation."
+        }
+      },
+
+      "faq": {
+        "title": "Frequently Asked Questions",
+        "q1": "What are the main benefits of lymphatic drainage massage?",
+        "a1": "Lymphatic drainage massage boosts the immune system, enhances detoxification, reduces swelling, and promotes relaxation. It is particularly effective for maintaining overall well-being and supporting the body's natural healing processes.",
+        "q2": "How often should I get a lymphatic drainage massage?",
+        "a2": "The optimal frequency can vary; usually once a month for wellness and up to three times a week for specific conditions. Feel free to call the studio regarding the recommended visit frequency or ask after the session.",
+        "q3": "Can lymphatic drainage massage help with weight loss?",
+        "a3": "While not a weight loss solution, it supports detoxification and body metabolism, complementing diet and exercise efforts by helping reduce water retention and bloating.",
+        "q4": "Is lymphatic drainage massage safe for everyone?",
+        "a4": "It is safe for most, but people with certain conditions like acute infections, heart problems, or thrombosis should avoid it.",
+        "q5": "What happens during a lymphatic drainage massage?",
+        "a5": "The session involves gentle, rhythmic strokes focused on directing lymph towards nodes and drainage points. It's a soothing experience aimed at stimulating lymphatic flow and improving relaxation.",
+        "q6": "Can this massage reduce cellulite?",
+        "a6": "Lymphatic drainage can improve the appearance of cellulite by promoting the removal of excess fluids and toxins, leading to smoother and firmer skin over time.",
+        "q7": "How does lymphatic drainage differ from regular massage?",
+        "a7": "Unlike regular massage, which targets muscle tension, lymphatic drainage focuses on stimulating the lymphatic system to improve fluid movement and detoxification.",
+        "q8": "Are there any side effects of lymphatic drainage massage?",
+        "a8": "Minor side effects like fatigue or mild flu-like symptoms may occur as the body processes mobilized toxins. These can be alleviated by staying hydrated after the massage.",
+        "q9": "Does lymphatic drainage help with detoxification?",
+        "a9": "Absolutely, it plays a crucial role in detoxifying the body by helping accelerate the removal of toxins and waste products through the lymphatic system.",
+        "q10": "For which medical conditions is lymphatic drainage massage beneficial?",
+        "a10": "It is beneficial for lymphedema, fibromyalgia, post-operative recovery, and anyone experiencing fatigue or swelling, offering symptomatic relief and improved well-being.",
+        "q11": "What is lymph?",
+        "a11": "Lymph is a fluid circulating in the lymphatic system, carrying white blood cells and other components of the immune system essential for fighting infections and diseases.",
+        "q12": "What is a lymph node?",
+        "a12": "Lymph nodes are small glands that filter lymph, capturing bacteria, viruses, and other foreign substances, which are then destroyed by specialized white blood cells.",
+        "q13": "What is the lymphatic system?",
+        "a13": "The lymphatic system is a crucial part of the body's immune and circulatory systems, comprising a network of lymph nodes, vessels, and channels that transport lymph – a fluid containing white blood cells and waste products – throughout the body. This system aids in filtering and eliminating toxins, dead cells, and other waste materials while simultaneously combating infections and diseases by transporting immune cells.",
+        "q14": "Do you use equipment for lymphatic drainage?",
+        "a14": "Yes, we use pressotherapy boots.",
+        "q15": "Can I do lymphatic drainage at home?",
+        "a15": "While there are self-massage techniques and exercises aimed at promoting lymphatic flow that you can try at home, they may not be as effective as professional treatments. Seeking sessions with a trained therapist ensures correct technique application and maximizes benefits and results.",
+        "q16": "Is there such a thing as lymphatic drainage tea?",
+        "a16": "Some herbal teas containing herbs like dandelion, nettle, and ginger, known for their detoxifying properties, can support lymphatic system function.",
+        "q17": "What should I wear during lymphatic drainage?",
+        "a17": "Clients are advised to wear underwear during the session to provide full access to lymphatic areas for effective lymphatic circulation stimulation. Whether the massage targets a specific area or involves full-body work, remaining in underwear is crucial. To ensure privacy and comfort, non-target areas are draped respectfully with a towel during the session.",
+        "q18": "Will I see immediate results after the session?",
+        "a18": "Immediate effects may include reduced swelling and a feeling of lightness. Sequential sessions are recommended for more significant, long-term benefits.",
+        "q19": "Can lymphatic drainage help with acne or skin conditions?",
+        "a19": "By improving toxin elimination and enhancing circulation, lymphatic drainage can contribute to clearer, healthier skin and reduced inflammation.",
+        "q20": "What's the best way to prepare for a lymphatic drainage massage?",
+        "a20": "Maintaining hydration and avoiding heavy meals before the session can enhance the massage's effectiveness and your comfort during the treatment.",
+        "q21": "What should I do after a lymphatic drainage massage?",
+        "a21": "It's important to assist your body in eliminating toxins, so after each massage, we provide 0.5 liters of water. Drinking plenty of water helps with hydration and facilitates the lymphatic process. Engaging in light activities, like walking, can also encourage circulation without straining. You may feel more tired than usual after the massage as your body processes detoxification. Avoiding heavy foods, alcohol, and caffeine for a few hours after the massage can further optimize the benefits of the treatment."
+      }
+    },
+
+    "osteopathy": {
+      "seo_title": "Osteopathy in the Center of Sofia from 80 BGN/hour",
+      "seo_description": "",
+      "title": "Osteopathy",
+      "description": {
+        "p1": "xxxx",
+        "p2": "xxxx",
+        "p3": "xxxx"
+      },
+      "price_description": "Prices for Osteopathy",
+      "benefits": {
+        "title": "Benefits of Osteopathy Massage",
+        "about": "xxxxxxx",
+        "package": ["xxxxxx", "xxxxxx", "xxxxxx"]
+      },
+      "contraindications": {
+        "title": "Contraindications of Osteopathy Massage",
+        "about": "In some cases, the application of osteopathy is not recommended, for example:",
+        "package": ["xxxxxx", "xxxxxx", "xxxxxx"]
+      }
+    },
+    "myofascial": {
+      "seo_title": "Myofascial Massage in the Center of Sofia from 80 BGN/hour",
+      "seo_description": "",
+      "title": "Myofascial Massage",
+      "description": {
+        "p1": "xxxx",
+        "p2": "xxxx",
+        "p3": "xxxx"
+      },
+      "price_description": "Prices for Myofascial Massage",
+      "benefits": {
+        "title": "Benefits of Myofascial Massage",
+        "about": "xxxxxxx",
+        "package": ["xxxxxx", "xxxxxx", "xxxxxx"]
+      },
+      "contraindications": {
+        "title": "Contraindications of Myofascial Massage",
+        "about": "In some cases, the application of myofascial massage is not recommended, for example:",
+        "package": ["xxxxxx", "xxxxxx", "xxxxxx"]
+      }
+    }
+  },
+  "footer": {
+    "title": "Voder Studio",
+    "address": "City of Sofia, Tsar Asen I Street, №11",
+    "intro": "Powered by"
+  }
+}
