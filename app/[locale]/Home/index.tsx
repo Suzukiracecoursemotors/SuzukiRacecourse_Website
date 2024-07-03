@@ -6,16 +6,11 @@ import HomeAddress from "../Home/address";
 
 
 export default async function HomePage() {
-  const t = await getTranslations({  namespace: "page" });
+  const t = await getTranslations();
   return (
     <>
       <HomeHero  />
-      {/* <HomeMassageList { />
-      <AboutMe { />
-      <HomePageGallery isGrey={false} title={t("home.gallery.title")} />
-      <HomeMassageProducts { /> */}
       <HomeAddress />
-      {/* <Pricing { /> */}
     </>
   );
 }

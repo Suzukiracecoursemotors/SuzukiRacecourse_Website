@@ -6,10 +6,9 @@ import { Locale } from "@/i18n";
 import Designhome from "../../[locale]/public/PurchaseOfferuptoRs.50,000forWagonR_1_011802.png";
 import Image from "next/image";
 
-type BannerProps = { locale: Locale };
 
-export default async function HomeHero({ locale }: BannerProps) {
-  const t = await getTranslations({ locale });
+export default async function HomeHero() {
+  const t = await getTranslations();
 
   return (
     <section className="bg-black inverted overflow-hidden">
