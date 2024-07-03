@@ -1,4 +1,3 @@
-import Assets from "@/data/Assets";
 import { Locale } from "@/i18n";
 import { getTranslations } from "next-intl/server";
 import Image from "next/image";

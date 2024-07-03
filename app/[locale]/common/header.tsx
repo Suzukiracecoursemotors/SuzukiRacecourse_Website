@@ -7,19 +7,13 @@ import { Link } from "@/navigation";
 import { useTranslations } from "next-intl";
 import HeaderLocaleSwitcher from "./locale-switcher";
 import { usePathname } from "next/navigation";
-import { lightNavPaths } from "@/lib/utils";
 
 type HeaderProps = {
   children: React.ReactNode;
 };
 
 function Header({ children}: HeaderProps) {
-  const t = useTranslations("header");
-  const pathname = usePathname();
-  const theme = lightNavPaths.some((path) => pathname.includes(path))
-    ? "light"
-    : "dark";
-
+  const t = useTranslations("header"); 
   const [showMobileMenu, setShowMobileMenu] = useState(false);
   const toggleMenu = () => {
     setShowMobileMenu(!showMobileMenu);
@@ -28,13 +22,13 @@ function Header({ children}: HeaderProps) {
   return (
     <nav
       id="mainNav"
-      className={`navbar  navbar-expand-lg bg-white navbar-sticky navbar-${theme}`}
+      className={`navbar  navbar-expand-lg bg-white navbar-sticky `}
     >
       <div className="container d-centre">
         <Link href="/" className="navbar-brand" >
           <Image
-            src={theme === "dark" ? Logo : Logo}
-            alt="Voder Studio Logo"
+            src={ Logo}
+            alt="racecourselogo"
             width={35}
             height={35}
           />

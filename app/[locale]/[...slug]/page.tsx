@@ -1,4 +1,3 @@
-import Assets from "@/data/Assets";
 import { Metadata } from "next";
 import Image from "next/image";
 
@@ -15,7 +14,7 @@ export default function NotFound() {
             <div className="col-lg-6 order-lg-2">
               <Image
                 className="img-fluid"
-                src={Assets.NotFoundImg}
+                src={""}
                 layout="responsive"
                 width={100}
                 height={100}

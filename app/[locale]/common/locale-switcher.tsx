@@ -5,6 +5,7 @@ import { useState } from "react";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { usePathname, useRouter } from "@/navigation";
+import US from "../public/Flag_of_United_States-128x67.png";
 
 export default function HeaderLocaleSwitcher() {
   const t = useTranslations("header");
@@ -41,7 +42,7 @@ export default function HeaderLocaleSwitcher() {
               {locale === "bg" ? (
                 <Image
                   className="fa-fw me-2"
-                  src={""}
+                  src={US}
                   height="30"
                   width="30"
                   alt="Bulgarian language flag"
@@ -49,7 +50,7 @@ export default function HeaderLocaleSwitcher() {
               ) : (
                 <Image
                   className="fa-fw me-2"
-                  src={""}
+                  src={US}
                   height="30"
                   width="30"
                   alt="English language flag"

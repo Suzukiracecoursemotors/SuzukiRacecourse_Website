@@ -1,31 +1,37 @@
-import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import "@/scss/index.scss";
-import { Locale } from "@/i18n";
 import Header from "@/app/[locale]/common/header";
 import Providers from "@/app/[locale]/providers";
 import NavLinks from "@/app/[locale]/common/nav-links";
 import Footer from "@/app/[locale]/common/footer";
-import TrackingManager from "@/app/[locale]/common/tracking-manager";
 
 const inter = Inter({ subsets: ["latin"] });
+import type { Metadata, Viewport } from "next";
+import TrackingManager from "./common/tracking-manager";
 
-export const metadata: Metadata = {
-  metadataBase: new URL("https://www.suzukiracecoursemotor.com"),
-  title: "SUZUKI Racecourse Motors",
-
+const faviconUrls: any = {
   icons: [
     {
       rel: "icon",
       type: "image/x-icon",
-      url: "",
+      url: "/[locale]/public/logoneww.png",
       sizes: "32x32",
     },
-    { rel: "icon", type: "image/svg+xml", url: "" },
-    { rel: "apple-touch-icon", url: "", sizes: "180x180" },
+    {
+      rel: "icon",
+      type: "image/svg+xml",
+      url: "/[locale]/public/logoneww.png",
+    },
+    {
+      rel: "apple-touch-icon",
+      url: "/[locale]/public/logoneww.png",
+      sizes: "180x180",
+    },
   ],
 };
-
+export const metadata: Metadata = {
+  icons: [faviconUrls.icon, faviconUrls.svgIcon, faviconUrls.appleTouchIcon],
+};
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
@@ -40,15 +46,15 @@ export default async function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html  suppressHydrationWarning>
+    <html suppressHydrationWarning>
       <body className={inter.className}>
         <Providers>
           <TrackingManager />
-          <Header >
-            <NavLinks  />
+          <Header>
+            <NavLinks />
           </Header>
-          <main >{children}</main>
-          <Footer  />
+          <main>{children} </main>
+          <Footer />
         </Providers>
       </body>
     </html>
