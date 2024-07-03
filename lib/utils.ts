@@ -1,6 +1,6 @@
 // import Assets from "@/data/Assets";
 
-// export const lightNavPaths = ["/pricing", "/gallery"];
+export const lightNavPaths = ["/pricing", "/gallery"];
 
 // export const massagesImgs = [
 //     /* to-be-removed

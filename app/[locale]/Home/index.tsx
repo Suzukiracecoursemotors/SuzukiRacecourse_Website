@@ -1,12 +1,12 @@
-import HomeHero from "../Home/home-hero";
 import HomeAddress from "../Home/address";
+import Banner from "./banner";
 
 
 
 export default async function HomePage() {
   return (
     <>
-      <HomeHero  />
+      <Banner  />
       <HomeAddress />
     </>
   );
