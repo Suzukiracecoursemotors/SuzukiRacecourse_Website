@@ -7,7 +7,7 @@ async function Footer() {
   const t = await getTranslations({ namespace: "footer" });
 
   return (
-    <footer className="py-6 py-xl-4  bg-black">
+    <footer className="py-6 py-xl-4 bg-black">
       <div className="container">
         <div className="row g-2 g-lg-6 mb-8">
           <div className="col-lg-6">
