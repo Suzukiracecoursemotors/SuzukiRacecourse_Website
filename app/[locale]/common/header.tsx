@@ -6,7 +6,6 @@ import Image from "next/image";
 import { Link } from "@/navigation";
 import { useTranslations } from "next-intl";
 import HeaderLocaleSwitcher from "./locale-switcher";
-import { usePathname } from "next/navigation";
 
 type HeaderProps = {
   children: React.ReactNode;
@@ -24,7 +23,7 @@ function Header({ children}: HeaderProps) {
       id="mainNav"
       className={`navbar  navbar-expand-lg bg-white navbar-sticky `}
     >
-      <div className="container d-centre">
+      <div className="container display-flex">
         <Link href="/" className="navbar-brand" >
           <Image
             src={ Logo}
@@ -34,9 +33,9 @@ function Header({ children}: HeaderProps) {
           />
         </Link>
         {/* Secondary */}
-        <ul className={`navbar-nav navbar-nav-secondary order-lg-3`}>
+        <ul className={`navbar-nav navbar-nav-secondary  order-lg-3`}>
           <li className="nav-item d-lg-none">
-            <a className="nav-link nav-icon" onClick={toggleMenu}>
+            <a className="nav-link text-dark nav-icon" onClick={toggleMenu}>
               <span className="bi bi-list"></span>
             </a>
           </li>
