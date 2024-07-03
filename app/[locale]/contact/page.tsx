@@ -3,16 +3,14 @@ import { getTranslations } from "next-intl/server";
 // import Image from "next/image";
 import Address from "../Home/address";
 
-type AboutMeProps = {
-  locale: Locale;
-};
 
-async function Contact({ locale }: AboutMeProps) {
-  const t = await getTranslations({ locale, namespace: "page" });
+
+async function Contact() {
+  const t = await getTranslations({ namespace: "page" });
 
   return (
       <>
-<Address locale={undefined}/>
+<Address/>
     </>
 
   );

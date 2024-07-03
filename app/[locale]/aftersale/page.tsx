@@ -4,12 +4,10 @@ import { getTranslations } from "next-intl/server";
 import NotFound from "../[...slug]/page";
 import Address from "../Home/address";
 
-type AboutMeProps = {
-  locale: Locale;
-};
 
-async function Aftersale({ locale }: AboutMeProps) {
-  const t = await getTranslations({ locale, namespace: "page" });
+
+async function Aftersale() {
+  const t = await getTranslations({  namespace: "page" });
 
   return (
     // <>
@@ -215,7 +213,7 @@ async function Aftersale({ locale }: AboutMeProps) {
     //     </div>
     //   </section>
     // </>
-    <Address locale={undefined}/>
+    <Address />
 
   );
 }

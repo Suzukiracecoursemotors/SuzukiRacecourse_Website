@@ -6,12 +6,10 @@ import { Link } from "@/navigation";
 import { Locale } from "@/i18n";
 import { getTranslations } from "next-intl/server";
 
-type AddressProps = {
-  locale: Locale;
-};
 
-async function Address({ locale }: AddressProps) {
-  const t = await getTranslations({ locale, namespace: "page" });
+
+async function Address() {
+  const t = await getTranslations({  namespace: "page" });
   return (
     <section className="py-15 py-xl-20 bg-white">
       <div className="container mt-5 mt-lg-10">
