@@ -1,8 +1,6 @@
 import { Link } from "@/navigation";
 import Constants from "@/data/Constants";
-import Assets from "@/data/Assets";
 import { getTranslations } from "next-intl/server";
-import { Locale } from "@/i18n";
 import Designhome from "../../[locale]/public/PurchaseOfferuptoRs.50,000forWagonR_1_011802.png";
 import Image from "next/image";
 
