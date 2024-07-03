@@ -4,7 +4,7 @@ import Constants from "@/data/Constants";
 import Image from "next/image";
 
 
-export default async function HomeHero() {
+export default async function Banner() {
 
   return (
     <section className="overflow-hidden bg-black inverted">

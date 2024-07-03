@@ -76,7 +76,7 @@ const Header = ({ children }: HeaderProps) => {
         <Link href="/" className="navbar-brand">
           <Image
             src={theme === "dark" ? logo : logo}
-            alt="OnlineQuranInstitute"
+            alt="racecoursemotor"
             width={50}
             height={50}
           />
@@ -129,7 +129,7 @@ const Header = ({ children }: HeaderProps) => {
         <Link href="/" className="navbar-brand">
           <Image
             src={theme === "dark" ? logo : logo}
-            alt="OnlineQuranInstitute"
+            alt="racecoursemotor"
             width={50}
             height={50}
           />
