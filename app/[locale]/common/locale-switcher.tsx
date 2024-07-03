@@ -6,6 +6,7 @@ import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { usePathname, useRouter } from "@/navigation";
 import US from "../public/Flag_of_United_States-128x67.png";
+import PK from "../public/Flag_of_Pakistan_Flat_Square-128x128.png";
 
 export default function HeaderLocaleSwitcher() {
   const t = useTranslations("header");
@@ -50,7 +51,7 @@ export default function HeaderLocaleSwitcher() {
               ) : (
                 <Image
                   className="fa-fw me-2"
-                  src={US}
+                  src={PK}
                   height="30"
                   width="30"
                   alt="English language flag"
