@@ -1,12 +1,12 @@
 "use client";
 import Image from "next/image";
 import { useMemo, useState } from "react";
-import {
-  allImgs,
-  cosmeticsImgs,
-  interriorImgs,
-  massagesImgs,
-} from "@/lib/utils";
+// import {
+//   allImgs,
+//   cosmeticsImgs,
+//   interriorImgs,
+//   massagesImgs,
+// } from "@/lib/utils";
 import { useTranslations } from "next-intl";
 import Picture from "../../[locale]/public/PurchaseOfferuptoRs.50,000forWagonR_1_011802.png";
 
@@ -26,20 +26,20 @@ function Gallery({ isGrey, title }: GalleryProps) {
     setSelected(type);
   };
 
-  const selectetImages = useMemo(() => {
-    switch (selected) {
-      case "all":
-        return allImgs;
-      case "cosmetics":
-        return cosmeticsImgs;
-      case "interior":
-        return interriorImgs;
-      case "massages":
-        return massagesImgs;
-      default:
-        return [];
-    }
-  }, [selected]);
+  // const selectetImages = useMemo(() => {
+  //   switch (selected) {
+  //     case "all":
+  //       return allImgs;
+  //     case "cosmetics":
+  //       return cosmeticsImgs;
+  //     case "interior":
+  //       return interriorImgs;
+  //     case "massages":
+  //       return massagesImgs;
+  //     default:
+  //       return [];
+  //   }
+  // }, [selected]);
 
   return (
     <section className={"py-15 py-xl-20" + (isGrey ? " bg-light" : "")}>
@@ -67,8 +67,8 @@ function Gallery({ isGrey, title }: GalleryProps) {
         </div>
 
         <div className={`row mb-10 g-3 g-xl-5`} data-isotope="">
-          {selectetImages.map((image, index) => (
-            <div key={image} className={`col-md-6 col-lg-4`}>
+          {/* {selectetImages.map((image, index) => ( */}
+            <div  className={`col-md-6 col-lg-4`}>
               <div className="media media-image gallery-img-container overlay">
                 <Image
                   src={Picture}
@@ -76,11 +76,12 @@ function Gallery({ isGrey, title }: GalleryProps) {
                   height={600}
                   layout="responsive"
                   style={{ objectFit: "cover" }}
-                  alt={`${index}`}
+                  alt={""}
+                  // alt={`${index}`}
                 />
               </div>
             </div>
-          ))}
+          {/* ))} */}
         </div>
       </div>
     </section>
