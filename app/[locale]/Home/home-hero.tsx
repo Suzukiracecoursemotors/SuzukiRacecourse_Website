@@ -14,11 +14,10 @@ export default async function HomeHero() {
       <div className="row align-items-center justify-content-center justify-content-lg-end my-auto">
         <div className="col-md-8 col-lg-5 text-center text-lg-start">
           <span className="badge bg-opaque-yellow text-yellow rounded-pill">
-            {t("Pakistan")}{" "}
-          </span>
+Pakistan          </span>
           <h1 className="display-3 fw-bold lh-sm my-2 my-xl-2">
             {" "}
-SUZUKI RaceCourse Motor          </h1>
+SUZUKI RaceCourse Motor</h1>
           <br />
           <Link
             href={"tel:" + Constants.PHONE}
