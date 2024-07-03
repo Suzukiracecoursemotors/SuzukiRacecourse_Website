@@ -51,7 +51,7 @@ export default async function RootLayout({
           <Header params={{ locale: params.locale }}>
             <NavLinks locale={params.locale} />
           </Header>
-          <main>{children}</main>
+          <main >{children}</main>
           <Footer  />
         </Providers>
       </body>

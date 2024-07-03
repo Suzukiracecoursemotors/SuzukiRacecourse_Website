@@ -8,10 +8,13 @@ type NavLinksProps = {
 };
 
 enum NavLinksLocale {
-  Massages = "massages",
-  Pricing = "pricing",
-  AboutMe = "about_me",
+  Home = "Home",
+  Sale = "Sale",
+  Aftersale = "Aftersale",
   Gallery = "gallery",
+  Blog= "Blog",
+  Contact= "Contact"
+
 }
 
 type NavLink = {
@@ -21,20 +24,28 @@ type NavLink = {
 
 const linksConfig: NavLink[] = [
   {
-    locale: NavLinksLocale.Massages,
-    path: "/massages",
+    locale: NavLinksLocale.Home,
+    path: "/",
   },
   {
-    locale: NavLinksLocale.Pricing,
-    path: "/pricing",
+    locale: NavLinksLocale.Sale,
+    path: "/sales",
   },
   {
-    locale: NavLinksLocale.AboutMe,
-    path: "/about-me",
+    locale: NavLinksLocale.Aftersale,
+    path: "/aftersale",
   },
   {
     locale: NavLinksLocale.Gallery,
     path: "/gallery",
+  },
+  {
+    locale: NavLinksLocale.Blog,
+    path: "/blog",
+  },
+  {
+    locale: NavLinksLocale.Contact,
+    path: "/contact",
   },
 ];
 
@@ -43,8 +54,8 @@ export default async function NavLinks({ locale }: NavLinksProps) {
 
   return linksConfig.map((link: NavLink) => {
     return (
-      <li key={link.path} className="nav-item">
-        <Link className="nav-link" href={link.path} locale={locale}>
+      <li key={link.path} className="nav-item ">
+        <Link className="nav-link text-dark" href={link.path} locale={locale}>
           {t(`nav.${link.locale}`)}
         </Link>
       </li>

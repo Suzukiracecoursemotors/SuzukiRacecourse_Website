@@ -1,5 +1,5 @@
 "use client";
-import Logo from "../../[locale]/public/suzuki-logo-5311518DD9-seeklogo.com.png";
+import Logo from "../../[locale]/public/logo.png";
 import { Locale } from "@/i18n";
 import Constants from "@/data/Constants";
 import React, { useState } from "react";
@@ -30,15 +30,15 @@ function Header({ children, params: { locale } }: HeaderProps) {
   return (
     <nav
       id="mainNav"
-      className={`navbar  navbar-expand-lg navbar-sticky navbar-${theme}`}
+      className={`navbar  navbar-expand-lg bg-white navbar-sticky navbar-${theme}`}
     >
-      <div className="container">
+      <div className="container d-centre">
         <Link href="/" className="navbar-brand" locale={locale}>
           <Image
             src={theme === "dark" ? Logo : Logo}
             alt="Voder Studio Logo"
-            width={45}
-            height={45}
+            width={35}
+            height={35}
           />
         </Link>
         {/* Secondary */}
@@ -49,14 +49,13 @@ function Header({ children, params: { locale } }: HeaderProps) {
             </a>
           </li>
 
-          <div className="nav-item d-none d-lg-block">
+            <div className="nav-item d-none d-lg-block">
             <Link
               href={`tel:${Constants.PHONE}`}
-              className={`btn btn-outline-${
-                theme === "light" ? "dark" : "white"
-              } rounded-pill ms-2`}
+              className="btn btn-with-icon btn-yellow rounded-pill mx-auto "
+
             >
-              <i className="bi me-1 bi-telephone-fill"></i>
+              <i className="bi bi-telephone-fill me-1"></i>
               {t("reserve_appointment")}
             </Link>
           </div>
@@ -68,7 +67,7 @@ function Header({ children, params: { locale } }: HeaderProps) {
           id="navbar"
           data-bs-parent="#mainNav"
         >
-          <ul className="navbar-nav ">
+          <ul className="navbar-nav text-dark ">
             {children}
             <HeaderLocaleSwitcher />
           </ul>

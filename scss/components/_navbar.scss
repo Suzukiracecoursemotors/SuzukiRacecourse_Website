@@ -3,12 +3,17 @@
 //
 
 .navbar {
-  padding: rem(32) 0;
+  padding: rem(8) 0;
 }
-
+.color {
+  color: white !important;
+  &:hover {
+    color: white !important;
+  }
+}
 .navbar-sticky {
   transform: translateY(0%);
-  transition: all 0.4s ease-in-out;
+  transition: all 0.1s ease-in-out;
   position: fixed;
   top: 0;
   right: 0;
@@ -40,7 +45,9 @@
     }
   }
 }
-
+.b {
+  background-color: #222222 !important ;
+}
 // dark
 .navbar-dark {
   .navbar-nav {
@@ -116,7 +123,23 @@
     }
   }
 }
-
+.d-centre {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  margin-top: 0 !important;
+}
+.dd {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  flex-direction: column;
+}
+.display-flex {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
 .account-collapse {
   flex-basis: 100%;
   flex-grow: 1;
@@ -155,7 +178,13 @@
     }
   }
 }
-
+.hovera {
+  &:hover,
+  &[aria-expanded="true"] {
+    background: $border-color;
+    border-color: transparent;
+  }
+}
 .navbar-active {
   overflow: hidden;
 
@@ -171,4 +200,19 @@
       opacity: 1;
     }
   }
+}
+@media (max-width: 768px) {
+  .nav.text-white {
+    display: block;
+  }
+}
+
+.justify-center {
+  justify-content: center;
+}
+.liststyle-none {
+  list-style: none !important;
+}
+.cursor {
+  cursor: pointer;
 }

@@ -1,14 +1,14 @@
-import Assets from "@/data/Assets";
 import { Locale } from "@/i18n";
 import { getTranslations } from "next-intl/server";
-import Image from "next/image";
+// import Image from "next/image";
 import NotFound from "../[...slug]/page";
+import Address from "../Home/address";
 
 type AboutMeProps = {
   locale: Locale;
 };
 
-async function AboutMePage({ locale }: AboutMeProps) {
+async function Aftersale({ locale }: AboutMeProps) {
   const t = await getTranslations({ locale, namespace: "page" });
 
   return (
@@ -215,9 +215,9 @@ async function AboutMePage({ locale }: AboutMeProps) {
     //     </div>
     //   </section>
     // </>
-    <NotFound/>
+    <Address locale={undefined}/>
 
   );
 }
 
-export default AboutMePage;
+export default Aftersale;

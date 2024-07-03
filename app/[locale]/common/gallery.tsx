@@ -8,6 +8,7 @@ import {
   massagesImgs,
 } from "@/lib/utils";
 import { useTranslations } from "next-intl";
+import Picture from "../../[locale]/public/PurchaseOfferuptoRs.50,000forWagonR_1_011802.png";
 
 interface GalleryProps {
   isGrey: boolean;
@@ -70,7 +71,7 @@ function Gallery({ isGrey, title }: GalleryProps) {
             <div key={image} className={`col-md-6 col-lg-4`}>
               <div className="media media-image gallery-img-container overlay">
                 <Image
-                  src={image}
+                  src={Picture}
                   width={600}
                   height={600}
                   layout="responsive"

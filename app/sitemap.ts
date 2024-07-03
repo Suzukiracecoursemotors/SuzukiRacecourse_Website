@@ -5,14 +5,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   let base: MetadataRoute.Sitemap = [];
   let paths = [
     "",
-    "/about-me",
-    "/gallery",
-    "/messages",
-    "/massages/lymphatic-drainage",
-    "/massages/osteopathy",
-    "/massages/myofascial",
-    "/pricing",
-    "/massage-voucher",
+    
   ];
 
   /*
@@ -36,6 +29,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
 }
 
 function domainPath(path: string): string {
-  return "https://www.voderstudio.com/" + path;
+  return "https://www.Suzukiracecoursemotor.com/" + path;
   //return process.env.DOMAIN + path;
 }

@@ -13,16 +13,18 @@ type AddressProps = {
 async function Address({ locale }: AddressProps) {
   const t = await getTranslations({ locale, namespace: "page" });
   return (
-    <section className="py-15 py-xl-20">
+    <section className="py-15 py-xl-20 bg-white">
       <div className="container mt-5 mt-lg-10">
         <div className="row align-items-center justify-content-between">
           <div className="col-lg-6 mb-4 mb-lg-0">
-            <h1>{t("home.addresses.title")}</h1>
-            <p>{t("home.addresses.description")}</p>
+            <h1                   className="text-dark "
+            >{t("home.addresses.title")}</h1>
+            <p                   className="text-dark "
+            >{t("home.addresses.description")}</p>
             <hr className="my-4 fw-25 ml-0" />
             <ul className="list-group list-group-minimal">
               <li className="list-group-item d-flex align-items-top">
-                <span className="w-25 text-muted">
+                <span className="w-25 text-dark">
                   {" "}
                   {t("home.addresses.address")}
                 </span>
@@ -35,7 +37,7 @@ async function Address({ locale }: AddressProps) {
                 </Link>
               </li>
               <li className="list-group-item d-flex align-items-top">
-                <span className="w-25 text-muted">
+                <span className="w-25 text-dark">
                   {" "}
                   {t("home.addresses.phone")}
                 </span>
@@ -47,8 +49,8 @@ async function Address({ locale }: AddressProps) {
                   {Constants.PHONE}
                 </Link>
               </li>
-              <li className="list-group-item d-flex align-items-top">
-                <span className="w-25 text-muted">
+              <li className="list-group-item d-flex align-items-top text-dark">
+                <span className="w-25 text-dark">
                   {" "}
                   {t("home.addresses.work_time")}
                 </span>
