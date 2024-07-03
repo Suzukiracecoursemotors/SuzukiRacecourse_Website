@@ -1,12 +1,10 @@
 import Designhome from "../../[locale]/public/banner2.jpg";
 import { Link } from "@/navigation";
 import Constants from "@/data/Constants";
-import { getTranslations } from "next-intl/server";
 import Image from "next/image";
 
 
 export default async function HomeHero() {
-  const t = await getTranslations();
 
   return (
     <section className="overflow-hidden bg-black inverted">
