@@ -1,5 +1,4 @@
 import React from "react";
-import Assets from "@/data/Assets";
 import Constants from "@/data/Constants";
 import Image from "next/image";
 import { Link } from "@/navigation";
@@ -62,7 +61,7 @@ async function Address() {
               <Link href={Constants.GOOGLE_MAP} target="_blank">
                 <Image
                   fill
-                  src={Assets.Map}
+                  src={""}
                   alt="map"
                   className="card-img-top"
                 />

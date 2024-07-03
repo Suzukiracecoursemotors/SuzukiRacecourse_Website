@@ -1,6 +1,5 @@
 "use client";
 import Logo from "../../[locale]/public/logo.png";
-import { Locale } from "@/i18n";
 import Constants from "@/data/Constants";
 import React, { useState } from "react";
 import Image from "next/image";
@@ -11,11 +10,10 @@ import { usePathname } from "next/navigation";
 import { lightNavPaths } from "@/lib/utils";
 
 type HeaderProps = {
-  params: { locale: Locale };
   children: React.ReactNode;
 };
 
-function Header({ children, params: { locale } }: HeaderProps) {
+function Header({ children}: HeaderProps) {
   const t = useTranslations("header");
   const pathname = usePathname();
   const theme = lightNavPaths.some((path) => pathname.includes(path))
@@ -33,7 +31,7 @@ function Header({ children, params: { locale } }: HeaderProps) {
       className={`navbar  navbar-expand-lg bg-white navbar-sticky navbar-${theme}`}
     >
       <div className="container d-centre">
-        <Link href="/" className="navbar-brand" locale={locale}>
+        <Link href="/" className="navbar-brand" >
           <Image
             src={theme === "dark" ? Logo : Logo}
             alt="Voder Studio Logo"

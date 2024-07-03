@@ -2,7 +2,6 @@
 
 import { locales } from "@/i18n";
 import { useState } from "react";
-import Assets from "@/data/Assets";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { usePathname, useRouter } from "@/navigation";
@@ -35,14 +34,14 @@ export default function HeaderLocaleSwitcher() {
           <li key={locale}>
             <a
               onClick={() => {
-                router.replace(pathName, { locale });
+                router.replace(pathName, {  });
               }}
               className="dropdown-item  me-4 pointer"
             >
               {locale === "bg" ? (
                 <Image
                   className="fa-fw me-2"
-                  src={Assets.BGFlag}
+                  src={""}
                   height="30"
                   width="30"
                   alt="Bulgarian language flag"
@@ -50,7 +49,7 @@ export default function HeaderLocaleSwitcher() {
               ) : (
                 <Image
                   className="fa-fw me-2"
-                  src={Assets.flagUK}
+                  src={""}
                   height="30"
                   width="30"
                   alt="English language flag"
