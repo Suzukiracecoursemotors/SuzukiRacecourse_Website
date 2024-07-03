@@ -93,7 +93,7 @@ const Header = ({ children }: HeaderProps) => {
             <Link
               href={`tel:${Constants.PHONE}`}
               className={`btn btn-outline-${
-                theme === "light" ? "dark" : "white"
+                theme === "light" ? "dark" : "dark"
               } rounded-pill ms-2`}
             >
               <i className="bi bi-telephone-fill me-1"></i>
@@ -124,7 +124,7 @@ const Header = ({ children }: HeaderProps) => {
       className={`navbar navbar-sticky`}
     >
 
-      <div className="container bg-black">
+      <div className="container">
 
         <Link href="/" className="navbar-brand">
           <Image

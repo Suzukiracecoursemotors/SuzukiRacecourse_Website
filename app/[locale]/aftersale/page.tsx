@@ -2,7 +2,7 @@ import { Locale } from "@/i18n";
 import { getTranslations } from "next-intl/server";
 // import Image from "next/image";
 import NotFound from "../[...slug]/page";
-import Address from "../Home/address";
+import Address from "../common/address";
 
 
 

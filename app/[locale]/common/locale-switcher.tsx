@@ -20,7 +20,7 @@ export default function HeaderLocaleSwitcher() {
   const router = useRouter();
 
   return (
-    <li className="dropdown nav-item">
+    <li className=" nav-item">
       <a className="nav-link small text-dark pb-2" onClick={toggleFlag}>
         <i className="bi bi-globe fa-fw me-1"></i>
         {t("nav.language")}

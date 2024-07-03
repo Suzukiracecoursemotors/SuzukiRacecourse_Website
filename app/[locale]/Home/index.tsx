@@ -1,4 +1,4 @@
-import HomeAddress from "../Home/address";
+import HomeAddress from "../common/address";
 import Designhome from "../../[locale]/public/banner2.jpg";
 import { Link } from "@/navigation";
 import Constants from "@/data/Constants";
