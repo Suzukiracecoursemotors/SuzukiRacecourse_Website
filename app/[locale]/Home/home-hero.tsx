@@ -1,7 +1,7 @@
+import Designhome from "../../[locale]/public/banner2.jpg";
 import { Link } from "@/navigation";
 import Constants from "@/data/Constants";
 import { getTranslations } from "next-intl/server";
-import Designhome from "../../[locale]/public/PurchaseOfferuptoRs.50,000forWagonR_1_011802.png";
 import Image from "next/image";
 
 
@@ -9,33 +9,40 @@ export default async function HomeHero() {
   const t = await getTranslations();
 
   return (
-    <section className="bg-black inverted overflow-hidden">
-      <div className="d-flex flex-column py-15 container min-vh-75 level-3">
-        <div className="row justify-content-center mt-auto">
-          <div className="col-lg-11 col-xl-10">
-            <h1 className="display-1">{t("page.home.banner_title")}</h1>
-
-            <Link
-              href={"tel:" + Constants.PHONE}
-              className="btn btn-with-icon btn-yellow rounded-pill"
-            >
-              <i className="bi bi-telephone-fill"></i>
-              {t("header.reserve_appointment")}
-            </Link>
-          </div>
+    <section className="overflow-hidden bg-black inverted">
+    <div className="d-flex flex-column container py-20 min-vh-100 level-1">
+      <div className="row align-items-center justify-content-center justify-content-lg-end my-auto">
+        <div className="col-md-8 col-lg-5 text-center text-lg-start">
+          <span className="badge bg-opaque-yellow text-yellow rounded-pill">
+            {t("Pakistan")}{" "}
+          </span>
+          <h1 className="display-3 fw-bold lh-sm my-2 my-xl-2">
+            {" "}
+SUZUKI RaceCourse Motor          </h1>
+          <br />
+          <Link
+            href={"tel:" + Constants.PHONE}
+            className="btn btn-with-icon btn-yellow rounded-pill ms-2"
+          >
+            <i className="bi bi-telephone-fill ms-1"></i> Book You'r Car Now
+          </Link>
         </div>
       </div>
-      
-      <Image
-          className="background background-gradient-horizontal"
-          data-top-top="transform: translateY(0%);"
-          data-top-bottom="transform: translateY(10%);"
-          src={Designhome}
-          layout="responsive"
-          alt="background image"
-        />
-
-      
-    </section>
+    </div>
+    <div className="container-fluid back back-background">
+      <div className="row h-100">
+        <div className="col-lg-6 h-100">
+          <Image
+            className="back-background h-100"
+            src={Designhome}
+            alt={""}
+            layout="cover"
+            width={700}
+            height={700}
+          />
+        </div>
+      </div>
+    </div>
+  </section>
   );
 }
