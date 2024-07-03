@@ -1,5 +1,5 @@
 import type { Locale } from "@/i18n";
-import HomePage from "./home";
+import HomePage from "../[locale]/Home";
 
 type HomeProps = {
   params: { locale: Locale };
