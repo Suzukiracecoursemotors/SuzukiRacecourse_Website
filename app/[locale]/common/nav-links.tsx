@@ -1,20 +1,14 @@
-import { Locale } from "@/i18n";
 import { getTranslations } from "next-intl/server";
 import React from "react";
 import { Link } from "@/navigation";
-
-type NavLinksProps = {
-  locale: Locale;
-};
 
 enum NavLinksLocale {
   Home = "Home",
   Sale = "Sale",
   Aftersale = "Aftersale",
   Gallery = "gallery",
-  Blog= "Blog",
-  Contact= "Contact"
-
+  Blog = "Blog",
+  Contact = "Contact"
 }
 
 type NavLink = {
@@ -50,17 +44,17 @@ const linksConfig: NavLink[] = [
 ];
 
 export default async function NavLinks() {
-  const t = await getTranslations({  namespace: "header" });
+  const t = await getTranslations({ namespace: "header" });
 
-  return linksConfig.map((link: NavLink) => {
-    return (
-      <ul className="nav text-dark ">
-      <li key={link.path} className="nav-item">
-        <Link className="nav-link" href={link.path} >
-          {t(`nav.${link.locale}`)}
-        </Link>
-      </li>
-      </ul>
-    );
-  });
+  return (
+    <ul className="nav text-dark">
+      {linksConfig.map((link: NavLink) => (
+        <li key={link.path} className="nav-item">
+          <Link className="nav-link" href={link.path}>
+            {t(`nav.${link.locale}`)}
+          </Link>
+        </li>
+      ))}
+    </ul>
+  );
 }
