@@ -51,7 +51,7 @@ export default async function NavLinks() {
 
   return linksConfig.map((link: NavLink) => {
     return (
-      <ul key={link.path} className="nav-item text-dark">
+      <ul key={link.path} className="nav text-dark">
         <Link className="nav-link" href={link.path} >
           {t(`nav.${link.locale}`)}
         </Link>
