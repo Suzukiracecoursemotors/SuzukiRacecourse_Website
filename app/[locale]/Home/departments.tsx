@@ -4,6 +4,7 @@ import { Link } from "@/navigation";
 import Image from "next/image";
 import Img from "../../[locale]/public/PurchaseOfferuptoRs.50,000forWagonR_1_011802.png";
 import SalesImg from "../../[locale]/public/sale.jpeg";
+import AfterSalesImg from "../../[locale]/public/aftersale1.jpeg";
 import { getTranslations } from "next-intl/server";
 
 async function DepartmentsList() {
@@ -16,9 +17,7 @@ async function DepartmentsList() {
       <div className="container mt-5 mt-xl-10">
         <div className="row mb-10 g-3 g-xl-5 align-items-end">
           <div className="col-md-8">
-            <h2 className="display-1 fw-bold text-black">
-              {t("maintitle")}
-            </h2>
+            <h2 className="display-1 fw-bold text-black">{t("maintitle")}</h2>
           </div>
           {/* <div className="col-md-4 text-lg-end">
             <div className="d-inline-flex align-items-center mb-0">
@@ -56,9 +55,7 @@ async function DepartmentsList() {
                       <h3 className="card-title mt-2 fs-4 lh-2 pe-xl-10 text-black">
                         {t("titledep")}
                       </h3>
-                      <small className="d-block">
-                        {t("description")}
-                      </small>
+                      <small className="d-block">{t("description")}</small>
                       <p className="underline action text-red fs-lg mt-5">
                         {t("learnmore")} <i className="bi bi-arrow-right"></i>
                       </p>
@@ -80,7 +77,7 @@ async function DepartmentsList() {
                       layout="responsive"
                       width={100}
                       height={80}
-                      src={SalesImg}
+                      src={AfterSalesImg}
                       alt=""
                     />
                   </div>
@@ -89,9 +86,7 @@ async function DepartmentsList() {
                       <h3 className="card-title mt-2 fs-4 lh-2 pe-xl-10 text-black">
                         {t("titledep1")}
                       </h3>
-                      <small className="d-block">
-                        {t("description1")}
-                      </small>
+                      <small className="d-block">{t("description1")}</small>
                       <p className="underline action text-red fs-lg mt-5">
                         {t("learnmore")} <i className="bi bi-arrow-right"></i>
                       </p>
@@ -102,7 +97,6 @@ async function DepartmentsList() {
             </div>
           </Link>
         </div>
-        
       </div>
     </section>
   );
