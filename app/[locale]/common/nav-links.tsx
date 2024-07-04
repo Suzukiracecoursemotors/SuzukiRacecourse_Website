@@ -49,15 +49,18 @@ const linksConfig: NavLink[] = [
 export default async function NavLinks() {
   const t = await getTranslations({  namespace: "header" });
 
-  return linksConfig.map((link: NavLink) => {
-    return (
-      <ul className="nav text-dark ">
-      <li key={link.path} className="nav-item">
-        <Link className="nav-link" href={link.path} >
-          {t(`nav.${link.locale}`)}
-        </Link>
-      </li>
-      </ul>
-    );
-  });
+ 
+  return (
+    <ul className="nav text-dark">
+      {linksConfig.map((link: NavLink) => (
+        <li key={link.path} className="nav-item">
+          <Link className="nav-link" href={link.path}>
+            {t(`nav.${link.locale}`)}
+          </Link>
+        </li>
+      ))}
+    </ul>
+  );
 }
+
+
