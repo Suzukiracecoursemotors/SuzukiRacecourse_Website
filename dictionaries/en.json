@@ -17,12 +17,16 @@
   },
   "page": {
     "home": {
-     
       "banner_title": "SUZUKI Racecourse  ",
-    
-      "gallery": {
-        "title": "Photos"
+      "departments": {
+        "maintitle": "Departments",
+        "titledep": "Sales Departments",
+        "description": "PhotosPhotosPhotosPhotosPhotosPhotosPhotosPhotosPhotosPhotosPhotosPhotosPhotosPhotosPhotosPhotosPhotosPhotosPhotosPhotosPhotosPhotos",
+        "titledep1": "After Sales Departments",
+        "description1": "PhotosPhotosPhotosPhotosPhotosPhotosPhotosPhotosPhotosPhotosPhotosPhotosPhotosPhotosPhotosPhotosPhotosPhotosPhotosPhotosPhotosPhotos",
+        "learnmore": "Learn More"
       }
+
     },
     "gallery": {
       "title": "Photos from the Studio",

@@ -1,7 +1,7 @@
 {
   "header": {
     "nav": {
-      "Home": "+++++",
+      "Home": "Home",
       "Sale": "Sale",
       "Aftersale": "Aftersale",
       "gallery": "Gallery",
@@ -17,11 +17,12 @@
   },
   "page": {
     "home": {
-     
       "banner_title": "SUZUKI Racecourse  ",
-    
-      "gallery": {
-        "title": "Photos"
+      "departments": {
+        "maintitle": "Photos",
+        "titledep": "Photos",
+        "description": "Photos",
+        "learnmore": "Photos"
       }
     },
     "gallery": {

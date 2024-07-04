@@ -3,6 +3,7 @@ import Designhome from "../../[locale]/public/banner2.jpg";
 import { Link } from "@/navigation";
 import Constants from "@/data/Constants";
 import Image from "next/image";
+import DepartmentsList from "./departments";
 
 
 
@@ -14,7 +15,7 @@ export default async function HomePage() {
       <div className="row align-items-center justify-content-center justify-content-lg-end my-auto">
         <div className="col-md-8 col-lg-5 text-center text-lg-start">
           <span className="badge bg-opaque-yellow text-yellow rounded-pill">
-Pakistan          
+DealerShip          
 </span>
           <h1 className="display-3 fw-bold lh-sm my-2 my-xl-2">
             {" "}
@@ -44,6 +45,8 @@ SUZUKI RaceCourse Motor</h1>
       </div>
     </div>
   </section>
+
+  <DepartmentsList/>
     </>
   );
 }
