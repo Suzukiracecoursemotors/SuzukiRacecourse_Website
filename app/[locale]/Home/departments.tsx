@@ -56,7 +56,7 @@ async function DepartmentsList() {
                         {t("titledep")}
                       </h3>
                       <small className="d-block">{t("description")}</small>
-                      <p className="underline action text-red fs-lg mt-5">
+                      <p className="underline action text-red fs-lg mt-1">
                         {t("learnmore")} <i className="bi bi-arrow-right"></i>
                       </p>
                     </div>
@@ -87,7 +87,7 @@ async function DepartmentsList() {
                         {t("titledep1")}
                       </h3>
                       <small className="d-block">{t("description1")}</small>
-                      <p className="underline action text-red fs-lg mt-5">
+                      <p className="underline action text-red fs-lg mt-1">
                         {t("learnmore")} <i className="bi bi-arrow-right"></i>
                       </p>
                     </div>

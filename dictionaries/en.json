@@ -17,13 +17,13 @@
   },
   "page": {
     "home": {
-      "banner_title": "SUZUKI Racecourse  ",
+      "banner_title": "SUZUKI Racecourse ",
       "departments": {
         "maintitle": "Departments",
         "titledep": "Sales Departments",
-        "description": "PhotosPhotosPhotosPhotosPhotosPhotosPhotosPhotosPhotosPhotosPhotosPhotosPhotosPhotosPhotosPhotosPhotosPhotosPhotosPhotosPhotosPhotos",
+        "description": "Welcome to Suzuki Racecourse Motor Sales Team, your trusted source for high-quality Suzuki vehicles and exceptional customer service. Our dealership offers a wide range of new and pre-owned Suzuki cars, SUVs, and trucks, ensuring you find the perfect vehicle to meet your needs. Our knowledgeable sales team is dedicated to providing a seamless car buying experience, with transparent pricing and flexible financing options. Whether you're looking for the latest models or certified pre-owned vehicles, we have something for everyone. At Suzuki Racecourse Motor Sales, we prioritize customer satisfaction and aftersales support. Our state-of-the-art service center, staffed by certified technicians, offers comprehensive maintenance and repair services to keep your Suzuki running smoothly. We also provide genuine Suzuki parts and accessories to enhance your driving experience. Visit us today to explore our inventory and experience the exceptional service that sets Suzuki Racecourse Motor Sales Team apart.",
         "titledep1": "After Sales Departments",
-        "description1": "PhotosPhotosPhotosPhotosPhotosPhotosPhotosPhotosPhotosPhotosPhotosPhotosPhotosPhotosPhotosPhotosPhotosPhotosPhotosPhotosPhotosPhotos",
+        "description1": "At Suzuki Racecourse Motor Sales, our Aftersale Team is dedicated to providing exceptional service and support for all your Suzuki vehicle needs. Our certified technicians are experts in Suzuki maintenance and repairs, ensuring your vehicle stays in peak condition. We offer a comprehensive range of services, from routine oil changes and tire rotations to complex diagnostics and repairs. Using only genuine Suzuki parts and accessories, we guarantee quality and reliability in every service we provide.Customer satisfaction is our top priority, and our Aftersale Team is committed to delivering a hassle-free and efficient service experience. Whether you're scheduling regular maintenance or addressing unexpected issues, our team is here to help. Trust Suzuki Racecourse Motor Sales Aftersale Team to keep your Suzuki performing at its best, providing you with peace of mind and confidence on the road.",
         "learnmore": "Learn More"
       },
       "Aims": {
@@ -33,9 +33,9 @@
         "description2": "Strive for individual excellence through continuous improvement",
         "learnmore": "Learn More",
         "titlem": "Our Vision",
-        "descriptionm": "Develop products of superior value by focusing on the customer",
-        "descriptionm1": "Establish a refreshing and innovative company through teamwork",
-        "descriptionm2": "Strive for individual excellence through continuous improvement"
+        "descriptionm": "Provide personalized service, transparent transactions, and exceptional support for complete satisfaction.",
+        "descriptionm1": "Embrace the latest technologies and practices for superior sales and service.",
+        "descriptionm2": "Promote sustainability and support local initiatives, fostering responsibility and care."
       }
     },
     "gallery": {
