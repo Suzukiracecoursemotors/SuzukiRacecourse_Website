@@ -1,12 +1,13 @@
 "use client";
 
-import { locales } from "@/i18n";
 import { useState } from "react";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { usePathname, useRouter } from "@/navigation";
 import PK from "../public/Flag_of_Pakistan_Flat_Square-128x128.png";
 import US from "../public/Flag_of_United_States-128x67.png";
+
+const locales: ("en" | "ur")[] = ["en", "ur"];
 
 export default function HeaderLocaleSwitcher() {
   const t = useTranslations("header");
@@ -38,7 +39,7 @@ export default function HeaderLocaleSwitcher() {
               onClick={() => {
                 router.replace(pathName, { locale });
               }}
-              className="dropdown-item  me-4 pointer"
+              className="dropdown-item me-4 pointer"
             >
               {locale === "ur" ? (
                 <Image
@@ -46,7 +47,7 @@ export default function HeaderLocaleSwitcher() {
                   src={PK}
                   height="30"
                   width="30"
-                  alt="Bulgarian language flag"
+                  alt="Urdu language flag"
                 />
               ) : (
                 <Image
