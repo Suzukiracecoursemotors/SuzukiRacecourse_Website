@@ -1,5 +1,5 @@
 import HomeAddress from "../common/address";
-import Designhome from "../../[locale]/public/banner4.jpeg";
+import Designhome from "../../[locale]/public/banner2.jpg";
 import { Link } from "@/navigation";
 import Constants from "@/data/Constants";
 import Image from "next/image";
@@ -38,7 +38,7 @@ export default async function HomePage() {
                 src={Designhome}
                 alt={""}
                 layout="contain"
-                width={700}
+                width={750}
                 height={600}
               />
             </div>
