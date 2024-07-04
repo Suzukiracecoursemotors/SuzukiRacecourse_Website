@@ -110,7 +110,7 @@ const Header = ({ children }: HeaderProps) => {
           onClick={closeMenu}
         >
           {children}
-          <div className="locale-switcher ">
+          <div className="locale-switcher">
             <HeaderLocaleSwitcher />
           </div>
         </div>
@@ -161,7 +161,7 @@ const Header = ({ children }: HeaderProps) => {
          
         {/* Primary */}
         <div
-          className={`collapse navbar-collapse bg-white
+          className={`collapse navbar-collapse bg-white 
            ${showMobileMenu && "show "}`}
           id="navbar"
           data-bs-parent="#mainNav"

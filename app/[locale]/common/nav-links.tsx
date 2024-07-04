@@ -47,7 +47,7 @@ export default async function NavLinks() {
   const t = await getTranslations({ namespace: "header" });
 
   return (
-    <ul className="nav text-dark">
+    <ul className="nav d-block text-dark">
       {linksConfig.map((link: NavLink) => (
         <li key={link.path} className="nav-item">
           <Link className="nav-link" href={link.path}>
