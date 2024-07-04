@@ -84,8 +84,8 @@ const Header = ({ children }: HeaderProps) => {
         {/* Secondary */}
         <ul className={`navbar-nav navbar-nav-secondary  order-lg-3 `}>
           <li className="nav-item d-lg-none">
-            <button className="nav-link color nav-icon" onClick={toggleMenu}>
-              <span className="bi color bi-list"></span>
+            <button className="nav-link  nav-icon" onClick={toggleMenu}>
+              <span className="bi text-dark bi-list"></span>
             </button>
           </li>
 
@@ -161,7 +161,7 @@ const Header = ({ children }: HeaderProps) => {
          
         {/* Primary */}
         <div
-          className={`collapse navbar-collapse bg-black
+          className={`collapse navbar-collapse bg-white
            ${showMobileMenu && "show "}`}
           id="navbar"
           data-bs-parent="#mainNav"
