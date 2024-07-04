@@ -39,10 +39,10 @@ async function DepartmentsList() {
           <Link href="/sales">
             <div className="col-md-12">
               <div className="card card-arrow card-hover-border bg-white">
-                <div className="row g-3">
+                <div className="row g-0">
                   <div className="col-xl-6">
                     <Image
-                      className="media equal-10-8"
+                      className="media equal-16-10"
                       layout="responsive"
                       width={100}
                       height={80}
@@ -73,7 +73,7 @@ async function DepartmentsList() {
                 <div className="row g-3">
                   <div className="col-xl-6">
                     <Image
-                      className="media equal-10-8"
+                      className="media equal-16-10"
                       layout="responsive"
                       width={100}
                       height={80}
