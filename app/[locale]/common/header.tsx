@@ -109,7 +109,7 @@ const Header = ({ children }: HeaderProps) => {
           onClick={closeMenu}
         >
           {children}
-          <div className="locale-switcher">
+          <div className="locale-switcher nav ">
             <HeaderLocaleSwitcher />
           </div>
         </div>

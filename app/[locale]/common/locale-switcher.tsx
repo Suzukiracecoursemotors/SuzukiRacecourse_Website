@@ -5,8 +5,8 @@ import { useState } from "react";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { usePathname, useRouter } from "@/navigation";
-import US from "../public/Flag_of_United_States-128x67.png";
 import PK from "../public/Flag_of_Pakistan_Flat_Square-128x128.png";
+import US from "../public/Flag_of_United_States-128x67.png";
 
 export default function HeaderLocaleSwitcher() {
   const t = useTranslations("header");
@@ -20,8 +20,8 @@ export default function HeaderLocaleSwitcher() {
   const router = useRouter();
 
   return (
-    <li className=" nav-item nav mt">
-      <a className="nav-link small text-dark pb-2" onClick={toggleFlag}>
+    <li className="dropdown nav-item text-dark mt-1">
+      <a className="nav-link small pb-2" onClick={toggleFlag}>
         <i className="bi bi-globe fa-fw me-1"></i>
         {t("nav.language")}
       </a>
@@ -36,14 +36,14 @@ export default function HeaderLocaleSwitcher() {
           <li key={locale}>
             <a
               onClick={() => {
-                router.replace(pathName, {  });
+                router.replace(pathName, { locale });
               }}
               className="dropdown-item  me-4 pointer"
             >
-              {locale === "bg" ? (
+              {locale === "ur" ? (
                 <Image
                   className="fa-fw me-2"
-                  src={US}
+                  src={PK}
                   height="30"
                   width="30"
                   alt="Bulgarian language flag"
@@ -51,13 +51,13 @@ export default function HeaderLocaleSwitcher() {
               ) : (
                 <Image
                   className="fa-fw me-2"
-                  src={PK}
+                  src={US}
                   height="30"
                   width="30"
                   alt="English language flag"
                 />
               )}
-              {locale === "bg" ? "Български" : "English"}
+              {locale === "ur" ? "اردو" : "English"}
             </a>
           </li>
         ))}

@@ -11,13 +11,15 @@
     },
     "reserve_appointment": "Reserve Appointment",
     "language": {
-      "bg": "Bulgarian",
+      "bg": "Urdu",
       "en": "English"
     }
   },
   "page": {
     "home": {
-      "banner_title": "SUZUKI Racecourse ",
+      "banner_title": "SUZUKI Racecourse Motors",
+      "banner_span": "DealerShip",
+      "banner_btn_text": "Book Your Car Now",
       "departments": {
         "maintitle": "Departments",
         "titledep": "Sales Departments",
