@@ -32,7 +32,7 @@ async function Footer() {
             <ul className="list-inline ">
               <li className="list-inline-item">
                 <a
-                  href="https://www.facebook.com/OnlineQuranInstitute01/"
+                  href=""
                   className="text-reset underline hover color text-primary-hover"
                 >
                   {t("facebook")}
@@ -40,15 +40,15 @@ async function Footer() {
               </li>
               <li className="list-inline-item ms-1">
                 <a
-                  href="https://join.skype.com/invite/m162rgScMvSk"
+                  href=""
                   className="text-reset underline hover color text-primary-hover"
                 >
-                  {t("skype")}
+                  {t("Instagram")}
                 </a>
               </li>
               <li className="list-inline-item ms-1">
                 <a
-                  href="https://chat.whatsapp.com/FSboXU7xa4lJbsQ9fmYYkT"
+                  href=""
                   className="text-reset underline hover color text-primary-hover"
                 >
                   {t("watsapp")}
@@ -58,7 +58,7 @@ async function Footer() {
           </div>
 
           <div className="col-lg-6 order-lg-1 ">
-            <p className="small color">{t("copyright")}</p>
+            <p className="small color">{t("Awais")}</p>
           </div>
         </div>
       </div>
