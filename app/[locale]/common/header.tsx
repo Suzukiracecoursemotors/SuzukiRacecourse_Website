@@ -3,7 +3,7 @@ import React, { useEffect, useState, useMemo, useCallback } from "react";
 import { Link } from "@/navigation";
 import Constants from "@/data/Constants";
 import Image from "next/image";
-import logo from "../../[locale]/public/logo.png";
+import logo from "../../[locale]/public/3275466.png";
 import { usePathname } from "next/navigation";
 import { useTranslations } from "next-intl";
 import HeaderLocaleSwitcher from "./locale-switcher";
@@ -30,20 +30,20 @@ const Header = ({ children }: HeaderProps) => {
 
   // Memoize the handleScroll function using useCallback
   const handleScroll = useCallback(() => {
-  //   const currentScrollPos = window.pageYOffset;
-  //   setHeader(currentScrollPos > prevScrollPos || prevScrollPos === 0 || prevScrollPos < 0 );
+    //   const currentScrollPos = window.pageYOffset;
+    //   setHeader(currentScrollPos > prevScrollPos || prevScrollPos === 0 || prevScrollPos < 0 );
 
-  //   setPrevScrollPos(currentScrollPos);
-  // }, [prevScrollPos]); // Only recreate handleScroll if prevScrollPos changes
-  const currentScrollPos = window.pageYOffset;
-  setHeader(currentScrollPos >= prevScrollPos  || prevScrollPos < -1);
-  setPrevScrollPos(currentScrollPos);
-}, [prevScrollPos]);
+    //   setPrevScrollPos(currentScrollPos);
+    // }, [prevScrollPos]); // Only recreate handleScroll if prevScrollPos changes
+    const currentScrollPos = window.pageYOffset;
+    setHeader(currentScrollPos >= prevScrollPos || prevScrollPos < -1);
+    setPrevScrollPos(currentScrollPos);
+  }, [prevScrollPos]);
 
   const closeMenu = (event: React.MouseEvent<HTMLDivElement>) => {
     const target = event.target as HTMLElement;
     if (target.closest(".locale-switcher")) {
-      return; 
+      return;
     }
     setShowMobileMenu(false);
     document.body.style.overflow = "auto";
@@ -61,8 +61,7 @@ const Header = ({ children }: HeaderProps) => {
     ? "light"
     : "dark";
 
-  return (
-    !header ? 
+  return !header ? (
     <nav
       id="mainNav"
       className={`navbar bg-white
@@ -77,8 +76,8 @@ const Header = ({ children }: HeaderProps) => {
           <Image
             src={theme === "dark" ? logo : logo}
             alt="racecoursemotor"
-            width={50}
-            height={50}
+            width={40}
+            height={40}
           />
         </Link>
         {/* Secondary */}
@@ -116,68 +115,63 @@ const Header = ({ children }: HeaderProps) => {
         </div>
       </div>
     </nav>
-     :  
-     <>
-      {prevScrollPos === 0 ? 
-     <nav
-      id="mainNav"
-      className={`navbar navbar-sticky`}
-    >
-
-      <div className="container">
-
-        <Link href="/" className="navbar-brand">
-          <Image
-            src={theme === "dark" ? logo : logo}
-            alt="racecoursemotor"
-            width={50}
-            height={50}
-          />
-        </Link>
-        
-        
-       
-
-        {/* Secondary */}
-        <ul className={`navbar-nav navbar-nav-secondary  order-lg-3 `}>
-          <li className="nav-item d-lg-none">
-            <button className="nav-link color nav-icon" onClick={toggleMenu}>
-              <span className="bi  bi-list"></span>
-            </button>
-          </li>
-
-          <div className="nav-item d-none d-lg-block">
-            <Link
-              href={`tel:${Constants.PHONE}`}
-              className={`btn btn-outline-${
-                theme === "light" ? "dark" : "white"
-              } rounded-pill ms-2`}
-            >
-              <i className="bi bi-telephone-fill me-1"></i>
-              {t("reserve_appointment")}
+  ) : (
+    <>
+      {prevScrollPos === 0 ? (
+        <nav id="mainNav" className={`navbar navbar-sticky`}>
+          <div className="container">
+            <Link href="/" className="navbar-brand">
+              <Image
+                src={theme === "dark" ? logo : logo}
+                alt="racecoursemotor"
+                width={50}
+                height={50}
+              />
             </Link>
-          </div>
-        </ul>
-         
-        {/* Primary */}
-        <div
-          className={`collapse navbar-collapse bg-white 
-           ${showMobileMenu && "show "}`}
-          id="navbar"
-          data-bs-parent="#mainNav"
-          onClick={closeMenu}
-        >
-          {children}
-          <div className="locale-switcher ">
-            <HeaderLocaleSwitcher />
-          </div>
-        </div>
-      </div>
-    </nav>
-    : ""
-  }
-    </>
 
+            {/* Secondary */}
+            <ul className={`navbar-nav navbar-nav-secondary  order-lg-3 `}>
+              <li className="nav-item d-lg-none">
+                <button
+                  className="nav-link color nav-icon"
+                  onClick={toggleMenu}
+                >
+                  <span className="bi  bi-list"></span>
+                </button>
+              </li>
+
+              <div className="nav-item d-none d-lg-block">
+                <Link
+                  href={`tel:${Constants.PHONE}`}
+                  className={`btn btn-outline-${
+                    theme === "light" ? "dark" : "white"
+                  } rounded-pill ms-2`}
+                >
+                  <i className="bi bi-telephone-fill me-1"></i>
+                  {t("reserve_appointment")}
+                </Link>
+              </div>
+            </ul>
+
+            {/* Primary */}
+            <div
+              className={`collapse navbar-collapse bg-white 
+           ${showMobileMenu && "show "}`}
+              id="navbar"
+              data-bs-parent="#mainNav"
+              onClick={closeMenu}
+            >
+              {children}
+              <div className="locale-switcher ">
+                <HeaderLocaleSwitcher />
+              </div>
+            </div>
+          </div>
+        </nav>
+      ) : (
+        ""
+      )}
+    </>
   );
 };
 
