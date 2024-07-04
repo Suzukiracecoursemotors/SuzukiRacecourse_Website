@@ -70,7 +70,7 @@ async function DepartmentsList() {
           </Link>
         </div>
         <div className="row mb-5 g-3 g-xl-5">
-          <Link href="/aftersale">
+          <Link href="/aftersale  ">
             <div className="col-md-12">
               <div className="card card-arrow card-hover-border bg-white">
                 <div className="row g-3">

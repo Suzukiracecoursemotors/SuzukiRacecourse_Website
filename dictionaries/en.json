@@ -25,8 +25,18 @@
         "titledep1": "After Sales Departments",
         "description1": "PhotosPhotosPhotosPhotosPhotosPhotosPhotosPhotosPhotosPhotosPhotosPhotosPhotosPhotosPhotosPhotosPhotosPhotosPhotosPhotosPhotosPhotos",
         "learnmore": "Learn More"
+      },
+      "Aims": {
+        "title": "Our Mission",
+        "description": "Develop products of superior value by focusing on the customer",
+        "description1": "Establish a refreshing and innovative company through teamwork",
+        "description2": "Strive for individual excellence through continuous improvement",
+        "learnmore": "Learn More",
+        "titlem": "Our Vision",
+        "descriptionm": "Develop products of superior value by focusing on the customer",
+        "descriptionm1": "Establish a refreshing and innovative company through teamwork",
+        "descriptionm2": "Strive for individual excellence through continuous improvement"
       }
-
     },
     "gallery": {
       "title": "Photos from the Studio",
@@ -37,22 +47,16 @@
     },
     "sale": {
       "title": "sale"
-     
     },
     "aftersale": {
       "title": "sale"
-     
     },
     "contact": {
       "title": "sale"
-     
     },
     "blog": {
       "title": "sale"
-     
     }
-  
-  
   },
   "footer": {
     "title": "Voder Studio",

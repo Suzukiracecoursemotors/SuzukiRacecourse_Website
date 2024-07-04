@@ -4,6 +4,7 @@ import { Link } from "@/navigation";
 import Constants from "@/data/Constants";
 import Image from "next/image";
 import DepartmentsList from "./departments";
+import AimsandMissions from "./about_aim";
 
 
 
@@ -47,6 +48,7 @@ SUZUKI RaceCourse Motor</h1>
   </section>
 
   <DepartmentsList/>
+  <AimsandMissions/>
     </>
   );
 }
