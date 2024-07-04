@@ -3,11 +3,10 @@ import { getTranslations } from "next-intl/server";
 // import Image from "next/image";
 import NotFound from "../[...slug]/page";
 import Address from "../common/address";
-
-
+import Carosil from "../common/carosil";
 
 async function Aftersale() {
-  const t = await getTranslations({  namespace: "page" });
+  const t = await getTranslations({ namespace: "page" });
 
   return (
     // <>
@@ -213,8 +212,15 @@ async function Aftersale() {
     //     </div>
     //   </section>
     // </>
-    <Address />
+    <>
+      <div className="container">
+        <h1>Aftersale</h1>
+      </div>
 
+      <div className="container col-lg-2 col-xl-2 bg-white ">
+        <Carosil />
+      </div>
+    </>
   );
 }
 
