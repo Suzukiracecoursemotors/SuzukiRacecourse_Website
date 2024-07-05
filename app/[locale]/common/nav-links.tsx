@@ -1,7 +1,6 @@
 import { getTranslations } from "next-intl/server";
 import React from "react";
 import { Link } from "@/navigation";
-import Dropdown from "../common/dropdown"; // Import the Dropdown component
 
 enum NavLinksLocale {
   Home = "Home",
@@ -81,30 +80,49 @@ export default async function NavLinks() {
   const t = await getTranslations({ namespace: "header" });
 
   return (
-    <div>
-      <ul className="navbar-nav">
-        {linksConfig.map((link: NavLink) => {
-          if (link.children) {
-            return (
-              <Dropdown
-                key={link.path}
-                locale={link.locale}
-                path={link.path}
-                children={link.children}
-                t={t}
-              />
-            );
-          }
-
+    <ul className="navbar-nav">
+      {linksConfig.map((link: NavLink) => {
+        if (
+          link.children &&
+          (link.locale === NavLinksLocale.Sale ||
+            link.locale === NavLinksLocale.Aftersale)
+        ) {
           return (
-            <li key={link.path} className="nav-item">
-              <Link href={link.path} className="nav-link text-dark">
+            <li key={link.locale} className="nav-item dropdown">
+              <a
+                className="nav-link dropdown-toggle text-dark"
+                href="#"
+                id={`dropdown-${link.locale}`}
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
                 {t(`nav.${link.locale}`)}
-              </Link>
+              </a>
+              <ul
+                className="dropdown-menu dropdown-animation dropdown-menu-end min-w-auto bg-light"
+                aria-labelledby={`dropdown-${link.locale}`}
+              >
+                {link.children.map((child) => (
+                  <li key={child.path}>
+                    <Link href={child.path} className="dropdown-item text-dark">
+                      {t(`nav.${child.locale}`)}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
             </li>
           );
-        })}
-      </ul>
-    </div>
+        }
+
+        return (
+          <li key={link.path} className="nav-item">
+            <Link href={link.path} className="nav-link text-dark">
+              {t(`nav.${link.locale}`)}
+            </Link>
+          </li>
+        );
+      })}
+    </ul>
   );
 }
