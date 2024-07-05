@@ -89,9 +89,18 @@ export default async function NavLinks() {
               key={link.path}
               locale={link.locale}
               path={link.path}
-              children={link.children}
               t={t}
-            />
+            >
+              {link.children.map((child) => (
+                <Link
+                  key={child.path}
+                  href={child.path}
+                  className="dropdown-item"
+                >
+                  {t(`nav.${child.locale}`)}
+                </Link>
+              ))}
+            </Dropdown>
           );
         }
 

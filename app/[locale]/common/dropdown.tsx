@@ -1,13 +1,10 @@
+// Dropdown.tsx
 import React from "react";
-import { Link } from "@/navigation";
 
 type DropdownProps = {
   locale: string;
   path: string;
-  children: {
-    locale: string;
-    path: string;
-  }[];
+  children: React.ReactNode;
   t: (key: string) => string;
 };
 
@@ -15,27 +12,19 @@ const Dropdown: React.FC<DropdownProps> = ({ locale, path, children, t }) => {
   return (
     <li className="nav-item dropdown">
       <a
-        className="nav-link dropdown-toggle text-dark"
-        href="#"
-        id={`dropdown-${locale}`}
+        className="nav-link dropdown-toggle"
+        href={path}
+        id={`${locale}-dropdown`}
         role="button"
-        data-bs-toggle="dropdown"
+        data-toggle="dropdown"
+        aria-haspopup="true"
         aria-expanded="false"
       >
         {t(`nav.${locale}`)}
       </a>
-      <ul
-        className="dropdown-menu dropdown-animation dropdown-menu-end min-w-auto bg-light"
-        aria-labelledby={`dropdown-${locale}`}
-      >
-        {children.map((child) => (
-          <li key={child.path}>
-            <Link href={child.path} className="dropdown-item text-dark">
-              {t(`nav.${child.locale}`)}
-            </Link>
-          </li>
-        ))}
-      </ul>
+      <div className="dropdown-menu" aria-labelledby={`${locale}-dropdown`}>
+        {children}
+      </div>
     </li>
   );
 };
