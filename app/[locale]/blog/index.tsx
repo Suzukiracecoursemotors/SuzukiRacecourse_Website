@@ -43,7 +43,7 @@ async function Blogs() {
             {blogData.map((blog, index) => (
               <div key={index} className="col-md-3 col-lg-4">
                 <article className="card hover-arrow">
-                  <Link href="/blogs/blog-post">
+                  <Link href="/blog/blog-post">
                     <Image
                       className="card-img-top"
                       src={blog.src}
@@ -54,7 +54,7 @@ async function Blogs() {
                     />
                   </Link>
                   <div className="card-body p-0 pe-lg-5 mt-2">
-                    <Link href="/blogs/blog-post">
+                    <Link href="/blog/blog-post">
                       <h5>{t(`page.blog_heading.${blog.title}`)}</h5>
                     </Link>
                     <time className="eyebrow text-muted">
@@ -84,7 +84,7 @@ async function Blogs() {
           <div className="row align-items-start justify-content-between">
             <div className="col-lg-5">
               <article className="card">
-                <Link href="/blogs/blog-post" className="card-title">
+                <Link href="/blog/blog-post" className="card-title">
                   <h3>{t("page.blogs.mainpost")}</h3>
                 </Link>
                 <time className="eyebrow text-muted mb-1">
@@ -97,7 +97,7 @@ async function Blogs() {
                 {highlightData.map((highlight, index) => (
                   <div key={index} className="col-md-6">
                     <article className="card">
-                      <Link href="/blogs/blog-post">
+                      <Link href="/blog/blog-post">
                         <h6>
                           {t(`page.additional_highlights.${highlight.title}`)}
                         </h6>

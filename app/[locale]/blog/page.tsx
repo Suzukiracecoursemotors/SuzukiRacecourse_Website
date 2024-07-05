@@ -10,7 +10,6 @@ async function Blog() {
   return (
     <>
       <Blogs />
-      <Gallery isGrey={false} title={""} />
     </>
   );
 }

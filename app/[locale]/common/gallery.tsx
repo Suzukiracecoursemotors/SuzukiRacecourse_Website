@@ -8,13 +8,13 @@ import { useMemo, useState } from "react";
 //   massagesImgs,
 // } from "@/lib/utils";
 import { useTranslations } from "next-intl";
-
+import Galaryimg from "../public/PurchaseOfferuptoRs.50,000forWagonR_1_011802.png";
 interface GalleryProps {
   isGrey: boolean;
   title: string;
 }
-type GalleryType = "all" | "interior" | "massages" | "cosmetics";
-const types: GalleryType[] = ["all", "interior", "massages", "cosmetics"];
+type GalleryType = "Gallery";
+const types: GalleryType[] = ["Gallery"];
 
 function Gallery({ isGrey, title }: GalleryProps) {
   const t = useTranslations("page");
@@ -24,21 +24,6 @@ function Gallery({ isGrey, title }: GalleryProps) {
   const handleChange = (type: string) => {
     setSelected(type);
   };
-
-  // const selectetImages = useMemo(() => {
-  //   switch (selected) {
-  //     case "all":
-  //       return allImgs;
-  //     case "cosmetics":
-  //       return cosmeticsImgs;
-  //     case "interior":
-  //       return interriorImgs;
-  //     case "massages":
-  //       return massagesImgs;
-  //     default:
-  //       return [];
-  //   }
-  // }, [selected]);
 
   return (
     <section className={"py-15 py-xl-20" + (isGrey ? " bg-light" : "")}>
@@ -67,18 +52,138 @@ function Gallery({ isGrey, title }: GalleryProps) {
 
         <div className={`row mb-10 g-3 g-xl-5`} data-isotope="">
           {/* {selectetImages.map((image, index) => ( */}
-            <div key={""} className={`col-md-6 col-lg-4`}>
-              <div className="media media-image gallery-img-container overlay">
-                <Image
-                  src={""}
-                  width={600}
-                  height={600}
-                  layout="responsive"
-                  style={{ objectFit: "cover" }}
-                  alt={""}
-                />
-              </div>
+          <div key={""} className={`col-md-6 col-lg-4`}>
+            <div className="media media-image gallery-img-container overlay">
+              <Image
+                src={Galaryimg}
+                width={600}
+                height={600}
+                layout="responsive"
+                style={{ objectFit: "cover" }}
+                alt={""}
+              />
             </div>
+          </div>
+          <div key={""} className={`col-md-6 col-lg-4`}>
+            <div className="media media-image gallery-img-container overlay">
+              <Image
+                src={Galaryimg}
+                width={600}
+                height={600}
+                layout="responsive"
+                style={{ objectFit: "cover" }}
+                alt={""}
+              />
+            </div>
+          </div>
+          <div key={""} className={`col-md-6 col-lg-4`}>
+            <div className="media media-image gallery-img-container overlay">
+              <Image
+                src={Galaryimg}
+                width={600}
+                height={600}
+                layout="responsive"
+                style={{ objectFit: "cover" }}
+                alt={""}
+              />
+            </div>
+          </div>
+          <div key={""} className={`col-md-6 col-lg-4`}>
+            <div className="media media-image gallery-img-container overlay">
+              <Image
+                src={Galaryimg}
+                width={600}
+                height={600}
+                layout="responsive"
+                style={{ objectFit: "cover" }}
+                alt={""}
+              />
+            </div>
+          </div>
+          <div key={""} className={`col-md-6 col-lg-4`}>
+            <div className="media media-image gallery-img-container overlay">
+              <Image
+                src={Galaryimg}
+                width={600}
+                height={600}
+                layout="responsive"
+                style={{ objectFit: "cover" }}
+                alt={""}
+              />
+            </div>
+          </div>
+          <div key={""} className={`col-md-6 col-lg-4`}>
+            <div className="media media-image gallery-img-container overlay">
+              <Image
+                src={Galaryimg}
+                width={600}
+                height={600}
+                layout="responsive"
+                style={{ objectFit: "cover" }}
+                alt={""}
+              />
+            </div>
+          </div>
+          <div key={""} className={`col-md-6 col-lg-4`}>
+            <div className="media media-image gallery-img-container overlay">
+              <Image
+                src={Galaryimg}
+                width={600}
+                height={600}
+                layout="responsive"
+                style={{ objectFit: "cover" }}
+                alt={""}
+              />
+            </div>
+          </div>
+          <div key={""} className={`col-md-6 col-lg-4`}>
+            <div className="media media-image gallery-img-container overlay">
+              <Image
+                src={Galaryimg}
+                width={600}
+                height={600}
+                layout="responsive"
+                style={{ objectFit: "cover" }}
+                alt={""}
+              />
+            </div>
+          </div>
+          <div key={""} className={`col-md-6 col-lg-4`}>
+            <div className="media media-image gallery-img-container overlay">
+              <Image
+                src={Galaryimg}
+                width={600}
+                height={600}
+                layout="responsive"
+                style={{ objectFit: "cover" }}
+                alt={""}
+              />
+            </div>
+          </div>
+          <div key={""} className={`col-md-6 col-lg-4`}>
+            <div className="media media-image gallery-img-container overlay">
+              <Image
+                src={Galaryimg}
+                width={600}
+                height={600}
+                layout="responsive"
+                style={{ objectFit: "cover" }}
+                alt={""}
+              />
+            </div>
+          </div>
+          <div key={""} className={`col-md-6 col-lg-4`}>
+            <div className="media media-image gallery-img-container overlay">
+              <Image
+                src={Galaryimg}
+                width={600}
+                height={600}
+                layout="responsive"
+                style={{ objectFit: "cover" }}
+                alt={""}
+              />
+            </div>
+          </div>
           {/* ))} */}
         </div>
       </div>

@@ -1,17 +1,16 @@
-import React from "react";
-import Image from "next/image";
-import image1 from "../../public/PurchaseOfferuptoRs.50,000forWagonR_1_011802.png";
+import { Locale } from "@/i18n";
 import { getTranslations } from "next-intl/server";
-import Carosil from "../../common/carosil";
+import Image from "next/image";
+import React from "react";
+import bannersales from "../public/bannersales.jpg";
+import Carosil from "../common/carosil";
 
-const banner_post = {
-  img: image1,
+type PricingPageProps = {
+  params: { locale: Locale };
 };
 
-export default async function Post1() {
-  const t = await getTranslations({
-    namespace: "page.blogs",
-  });
+export default async function Sale({ params: { locale } }: PricingPageProps) {
+  const t = await getTranslations({ locale, namespace: "page" });
 
   return (
     <article>
@@ -27,10 +26,8 @@ export default async function Post1() {
           </div>
         </div>
         <Image
-          className="background background-gradient-horizontal"
-          data-top-top="transform: translateY(0%);"
-          data-top-bottom="transform: translateY(10%);"
-          src={banner_post.img}
+          className="background "
+          src={bannersales}
           layout="responsive"
           alt="background image"
         />
