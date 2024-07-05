@@ -66,15 +66,18 @@ const Header = ({ children }: HeaderProps) => {
         <Link href="/" className="navbar-brand">
           <Image
             src={theme === "dark" ? logo : logo}
-            alt="racecoursemotor"
-            width={40}
-            height={40}
+            alt="racecoursemotors"
+            width={50}
+            height={50}
           />
         </Link>
         {/* Secondary */}
-        <ul className={`navbar-nav navbar-nav-secondary text-dark order-lg-3 `}>
+        <ul className={`navbar-nav navbar-nav-secondary  order-lg-3 `}>
           <li className="nav-item d-lg-none">
-            <button className="nav-link  nav-icon" onClick={toggleMenu}>
+            <button
+              className="nav-link text-dark nav-icon"
+              onClick={toggleMenu}
+            >
               <span className="bi text-dark bi-list"></span>
             </button>
           </li>
@@ -83,7 +86,7 @@ const Header = ({ children }: HeaderProps) => {
             <Link
               href={`tel:${Constants.PHONE}`}
               className={`btn btn-outline-${
-                theme === "light" ? "dark" : "dark"
+                theme === "light" ? "dark" : "white"
               } rounded-pill ms-2`}
             >
               <i className="bi bi-telephone-fill me-1"></i>
@@ -94,15 +97,13 @@ const Header = ({ children }: HeaderProps) => {
 
         {/* Primary */}
         <div
-          className={`collapse navbar-collapse text-dark bg-white  ${
-            showMobileMenu && "show "
-          }`}
+          className={`collapse navbar-collapse  ${showMobileMenu && "show "}`}
           id="navbar"
           data-bs-parent="#mainNav"
           onClick={closeMenu}
         >
           {children}
-          <div className="locale-switcher nav ">
+          <div className="locale-switcher ">
             <HeaderLocaleSwitcher />
           </div>
         </div>
@@ -111,12 +112,12 @@ const Header = ({ children }: HeaderProps) => {
   ) : (
     <>
       {prevScrollPos === 0 ? (
-        <nav id="mainNav" className={`navbar navbar-sticky bg-white`}>
-          <div className="container bg-white text-black">
+        <nav id="mainNav" className={`navbar navbar-sticky`}>
+          <div className="container bg-white">
             <Link href="/" className="navbar-brand">
               <Image
                 src={theme === "dark" ? logo : logo}
-                alt="racecoursemotor"
+                alt="OnlineQuranInstitute"
                 width={50}
                 height={50}
               />
@@ -132,11 +133,23 @@ const Header = ({ children }: HeaderProps) => {
                   <span className="bi  bi-list"></span>
                 </button>
               </li>
+
+              <div className="nav-item d-none d-lg-block">
+                <Link
+                  href={`tel:${Constants.PHONE}`}
+                  className={`btn btn-outline-${
+                    theme === "light" ? "dark" : "white"
+                  } rounded-pill ms-2`}
+                >
+                  <i className="bi bi-telephone-fill me-1"></i>
+                  {t("reserve_appointment")}
+                </Link>
+              </div>
             </ul>
 
             {/* Primary */}
             <div
-              className={`collapse navbar-collapse bg-white 
+              className={`collapse navbar-collapse bg-white
            ${showMobileMenu && "show "}`}
               id="navbar"
               data-bs-parent="#mainNav"
