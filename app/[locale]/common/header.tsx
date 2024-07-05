@@ -39,10 +39,9 @@ const Header = ({ children }: HeaderProps) => {
     setHeader(currentScrollPos >= prevScrollPos || prevScrollPos < -1);
     setPrevScrollPos(currentScrollPos);
   }, [prevScrollPos]);
-
   const closeMenu = (event: React.MouseEvent<HTMLDivElement>) => {
     const target = event.target as HTMLElement;
-    if (target.closest(".locale-switcher")) {
+    if (target.closest(".locale-switcher") || target.closest(".dropdown")) {
       return;
     }
     setShowMobileMenu(false);

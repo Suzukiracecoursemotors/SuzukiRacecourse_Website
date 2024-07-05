@@ -4,10 +4,16 @@
       "Home": "Home",
       "Sale": "Sales",
       "Aftersale": "Aftersales",
-      "gallery": "Gallery",
+      "Gallery": "Gallery",
       "Blog": "Blog",
       "Contact": "Contact",
-      "language": "Language"
+      "language": "Language",
+      "sales": "Sales",
+      "CUC": "CUC",
+      "Finance": "Finance",
+      "AfterSale": "After Sales",
+      "Support": "Support ",
+      "Parts": "Parts"
     },
     "reserve_appointment": "Reserve Appointment",
     "language": {
