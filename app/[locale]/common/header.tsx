@@ -121,12 +121,10 @@ const Header = ({ children }: HeaderProps) => {
             </Link>
 
             {/* Secondary */}
-            <ul
-              className={`navbar-nav navbar-nav-secondary bg-white order-lg-3 `}
-            >
+            <ul className={`navbar-nav navbar-nav-secondary  order-lg-3 `}>
               <li className="nav-item d-lg-none">
                 <button
-                  className="nav-link color nav-icon"
+                  className="nav-link text-dark nav-icon"
                   onClick={toggleMenu}
                 >
                   <span className="bi  bi-list"></span>
