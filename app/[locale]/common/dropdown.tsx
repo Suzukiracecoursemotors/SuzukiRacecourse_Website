@@ -1,17 +1,36 @@
 import React from "react";
 import { Link } from "@/navigation";
+import { useTranslations } from "next-intl";
 
-type DropdownProps = {
-  locale: string;
+// Define DropdownLocale to match NavLinksLocale
+type DropdownLocale = "Sale" | "AfterSale";
+enum NavLinksLocale {
+  Home = "Home",
+  Sale = "Sale",
+  CUC = "CUC",
+  Aftersale = "Aftersale",
+  Gallery = "Gallery",
+  Blog = "Blog",
+  Finance = "Finance",
+  Parts = "Parts",
+  Support = "Support",
+  Contact = "Contact",
+}
+
+type NavLink = {
+  locale: NavLinksLocale;
   path: string;
-  children: {
-    locale: string;
-    path: string;
-  }[];
-  t: (key: string) => string;
+  children?: NavLink[];
 };
 
-const Dropdown: React.FC<DropdownProps> = ({ locale, path, children, t }) => {
+interface DropdownProps {
+  locale: DropdownLocale; // Use DropdownLocale type
+  path: string;
+  children?: NavLink[];
+  t: any; // Adjust as per your translation type
+}
+
+const Dropdown: React.FC<DropdownProps> = ({ locale, children, t }) => {
   return (
     <li className="nav-item dropdown">
       <a
@@ -22,13 +41,14 @@ const Dropdown: React.FC<DropdownProps> = ({ locale, path, children, t }) => {
         data-bs-toggle="dropdown"
         aria-expanded="false"
       >
-        {t(`nav.${locale}`)}
+        {t(`nav.${locale}`)}{" "}
+        {/* Assuming your translation function works correctly */}
       </a>
       <ul
         className="dropdown-menu dropdown-animation dropdown-menu-end min-w-auto bg-light"
         aria-labelledby={`dropdown-${locale}`}
       >
-        {children.map((child) => (
+        {children?.map((child) => (
           <li key={child.path}>
             <Link href={child.path} className="dropdown-item text-dark">
               {t(`nav.${child.locale}`)}
