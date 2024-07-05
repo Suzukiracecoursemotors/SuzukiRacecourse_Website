@@ -109,7 +109,7 @@ const Header = ({ children }: HeaderProps) => {
   ) : (
     <>
       {prevScrollPos === 0 ? (
-        <nav id="mainNav" className={`navbar navbar-sticky`}>
+        <nav id="mainNav" className={`navbar navbar-sticky bg-white`}>
           <div className="container">
             <Link href="/" className="navbar-brand">
               <Image
@@ -121,7 +121,9 @@ const Header = ({ children }: HeaderProps) => {
             </Link>
 
             {/* Secondary */}
-            <ul className={`navbar-nav navbar-nav-secondary  order-lg-3 `}>
+            <ul
+              className={`navbar-nav navbar-nav-secondary bg-white order-lg-3 `}
+            >
               <li className="nav-item d-lg-none">
                 <button
                   className="nav-link color nav-icon"
@@ -130,18 +132,6 @@ const Header = ({ children }: HeaderProps) => {
                   <span className="bi  bi-list"></span>
                 </button>
               </li>
-
-              <div className="nav-item d-none d-lg-block">
-                <Link
-                  href={`tel:${Constants.PHONE}`}
-                  className={`btn btn-outline-${
-                    theme === "light" ? "dark" : "white"
-                  } rounded-pill ms-2`}
-                >
-                  <i className="bi bi-telephone-fill me-1"></i>
-                  {t("reserve_appointment")}
-                </Link>
-              </div>
             </ul>
 
             {/* Primary */}
