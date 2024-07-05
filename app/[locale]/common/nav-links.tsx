@@ -81,11 +81,11 @@ export default async function NavLinks() {
   const t = await getTranslations({ namespace: "header" });
 
   return (
-    <ul className="navbar-nav">
-      {linksConfig.map((link: NavLink) => {
-        if (link.children) {
-          return (
-            <div>
+    <div>
+      <ul className="navbar-nav">
+        {linksConfig.map((link: NavLink) => {
+          if (link.children) {
+            return (
               <Dropdown
                 key={link.path}
                 locale={link.locale}
@@ -93,18 +93,18 @@ export default async function NavLinks() {
                 children={link.children}
                 t={t}
               />
-            </div>
-          );
-        }
+            );
+          }
 
-        return (
-          <li key={link.path} className="nav-item">
-            <Link href={link.path} className="nav-link text-dark">
-              {t(`nav.${link.locale}`)}
-            </Link>
-          </li>
-        );
-      })}
-    </ul>
+          return (
+            <li key={link.path} className="nav-item">
+              <Link href={link.path} className="nav-link text-dark">
+                {t(`nav.${link.locale}`)}
+              </Link>
+            </li>
+          );
+        })}
+      </ul>
+    </div>
   );
 }
