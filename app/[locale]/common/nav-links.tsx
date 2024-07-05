@@ -12,6 +12,7 @@ enum NavLinksLocale {
   Finance = "Finance",
   Parts = "Parts",
   Support = "Support",
+  BodyShop = "BodyShop",
   Contact = "Contact",
 }
 
@@ -50,15 +51,19 @@ const linksConfig: NavLink[] = [
     children: [
       {
         locale: NavLinksLocale.Aftersale,
-        path: "/aftersale/service",
+        path: "/aftersale",
       },
       {
         locale: NavLinksLocale.Parts,
-        path: "/aftersale/parts",
+        path: "/aftersale/service",
       },
       {
         locale: NavLinksLocale.Support,
-        path: "/aftersale/support",
+        path: "/aftersale/parts",
+      },
+      {
+        locale: NavLinksLocale.BodyShop,
+        path: "/aftersale/bodyshop",
       },
     ],
   },
