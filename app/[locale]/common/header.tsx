@@ -28,13 +28,7 @@ const Header = ({ children }: HeaderProps) => {
     }
   };
 
-  // Memoize the handleScroll function using useCallback
   const handleScroll = useCallback(() => {
-    //   const currentScrollPos = window.pageYOffset;
-    //   setHeader(currentScrollPos > prevScrollPos || prevScrollPos === 0 || prevScrollPos < 0 );
-
-    //   setPrevScrollPos(currentScrollPos);
-    // }, [prevScrollPos]); // Only recreate handleScroll if prevScrollPos changes
     const currentScrollPos = window.pageYOffset;
     setHeader(currentScrollPos >= prevScrollPos || prevScrollPos < -1);
     setPrevScrollPos(currentScrollPos);
@@ -47,8 +41,6 @@ const Header = ({ children }: HeaderProps) => {
     setShowMobileMenu(false);
     document.body.style.overflow = "auto";
   };
-
-  // Include handleScroll in the dependency array of useEffect
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     return () => {
