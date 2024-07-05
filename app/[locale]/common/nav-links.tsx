@@ -85,13 +85,15 @@ export default async function NavLinks() {
       {linksConfig.map((link: NavLink) => {
         if (link.children) {
           return (
-            <Dropdown
-              key={link.path}
-              locale={link.locale}
-              path={link.path}
-              children={link.children}
-              t={t}
-            />
+            <div>
+              <Dropdown
+                key={link.path}
+                locale={link.locale}
+                path={link.path}
+                children={link.children}
+                t={t}
+              />
+            </div>
           );
         }
 
