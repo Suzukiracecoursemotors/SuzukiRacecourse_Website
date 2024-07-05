@@ -112,7 +112,7 @@ const Header = ({ children }: HeaderProps) => {
     <>
       {prevScrollPos === 0 ? (
         <nav id="mainNav" className={`navbar navbar-sticky bg-white`}>
-          <div className="container">
+          <div className="container bg-white text-black">
             <Link href="/" className="navbar-brand">
               <Image
                 src={theme === "dark" ? logo : logo}
