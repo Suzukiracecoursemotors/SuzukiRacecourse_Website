@@ -1,12 +1,11 @@
 import Image from "next/image";
-import image1 from "../../public/img10.jpg";
+import image1 from "../public/PurchaseOfferuptoRs.50,000forWagonR_1_011802.png";
 import React from "react";
-import Carosil from "../../common/carosil";
 import { getTranslations } from "next-intl/server";
 
 export default async function Quaid() {
   const t = await getTranslations({
-    namespace: "page.course_page.qaida_page",
+    namespace: "page.course_page",
   });
   return (
     <article>
@@ -51,7 +50,6 @@ export default async function Quaid() {
               <p className="fs-lg text-secondary">{t("paragraphs5")}</p>
               <p className="fs-lg text-secondary">{t("paragraphs6")}</p>
 
-              <Carosil />
               <p className="fs-lg text-secondary">{t("paragraphs7")}</p>
 
               <div className="alert alert-primary my-5" role="alert">

@@ -1,10 +1,10 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import image1 from "../../[locale]/public/banner1.jpeg";
-import image2 from "../../[locale]/public/aftersale1.jpeg";
-import image4 from "../../[locale]/public/banner2.jpg";
-import image5 from "../../[locale]/public/banner3.jpeg";
-import image6 from "../../[locale]/public/banner4.jpeg";
+import image1 from "../../[locale]/public/PurchaseOfferuptoRs.50,000forWagonR_1_011802.png";
+import image2 from "../../[locale]/public/PurchaseOfferuptoRs.50,000forWagonR_1_011802.png";
+import image4 from "../../[locale]/public/PurchaseOfferuptoRs.50,000forWagonR_1_011802.png";
+import image5 from "../../[locale]/public/PurchaseOfferuptoRs.50,000forWagonR_1_011802.png";
+import image6 from "../../[locale]/public/PurchaseOfferuptoRs.50,000forWagonR_1_011802.png";
 import Image from "next/image";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";

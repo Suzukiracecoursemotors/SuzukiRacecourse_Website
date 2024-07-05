@@ -2,12 +2,12 @@ import Image from "next/image";
 import { Link } from "@/navigation";
 import { getTranslations } from "next-intl/server";
 
-import aim from "../../[locale]/public/aims.jpg";
-import aim1 from "../../[locale]/public/n1.jpg";
-import aim2 from "../../[locale]/public/n2.jpg";
-import aim3 from "../../[locale]/public/n3.jpg";
-import aim4 from "../../[locale]/public/n4.jpg";
-import aim5 from "../../[locale]/public/n5.jpg";
+import aim from "../../[locale]/public/PurchaseOfferuptoRs.50,000forWagonR_1_011802.png";
+import aim1 from "../../[locale]/public/PurchaseOfferuptoRs.50,000forWagonR_1_011802.png";
+import aim2 from "../../[locale]/public/PurchaseOfferuptoRs.50,000forWagonR_1_011802.png";
+import aim3 from "../../[locale]/public/PurchaseOfferuptoRs.50,000forWagonR_1_011802.png";
+import aim4 from "../../[locale]/public/PurchaseOfferuptoRs.50,000forWagonR_1_011802.png";
+import aim5 from "../../[locale]/public/PurchaseOfferuptoRs.50,000forWagonR_1_011802.png";
 
 const blogData = [
   { src: aim3, title: "title1", date: "date1" },

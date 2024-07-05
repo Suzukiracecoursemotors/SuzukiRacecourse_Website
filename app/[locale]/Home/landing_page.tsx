@@ -21,12 +21,13 @@ export default async function Landingpage() {
                 {t("banner_title")}
               </h1>
               <br />
+
               <Link
                 href={"tel:" + Constants.PHONE}
                 className="btn btn-with-icon btn-yellow rounded-pill ms-2"
               >
                 <i className="bi bi-telephone-fill ms-1"></i>{" "}
-                {t("banner_btn_text")}
+                {t("banner_btn_text")}{" "}
               </Link>
             </div>
           </div>
