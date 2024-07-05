@@ -13,7 +13,7 @@ type DropdownProps = {
 
 const Dropdown: React.FC<DropdownProps> = ({ locale, path, children, t }) => {
   return (
-    <li className="nav-item dropdown ">
+    <li className="nav-item dropdown">
       <a
         className="nav-link dropdown-toggle text-dark"
         href="#"
@@ -25,8 +25,8 @@ const Dropdown: React.FC<DropdownProps> = ({ locale, path, children, t }) => {
         {t(`nav.${locale}`)}
       </a>
       <ul
-        className={`dropdown-menu dropdown-animation dropdown-menu-end min-w-auto bg-light `}
-        aria-labelledby="languageDropdown"
+        className="dropdown-menu dropdown-animation dropdown-menu-end min-w-auto bg-light"
+        aria-labelledby={`dropdown-${locale}`}
       >
         {children.map((child) => (
           <li key={child.path}>
