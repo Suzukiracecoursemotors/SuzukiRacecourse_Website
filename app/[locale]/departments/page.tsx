@@ -1,4 +1,3 @@
-import Designhome from "../public/banner3.jpeg";
 import Image from "next/image";
 import { getTranslations } from "next-intl/server";
 
@@ -32,7 +31,7 @@ export default async function Landingpage() {
                 >
                   <Image
                     className="background"
-                    src={Designhome}
+                    src={""}
                     width={1000}
                     height={1000}
                     layout="responsive"
