@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { getTranslations } from "next-intl/server";
-
+import S from "../public/3275466.png";
 export default async function Landingpage() {
   const t = await getTranslations({
     namespace: "page.home",
@@ -31,7 +31,7 @@ export default async function Landingpage() {
                 >
                   <Image
                     className="background"
-                    src={""}
+                    src={S}
                     width={1000}
                     height={1000}
                     layout="responsive"
