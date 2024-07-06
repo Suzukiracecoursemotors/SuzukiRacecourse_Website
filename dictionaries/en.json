@@ -14,7 +14,8 @@
       "AfterSale": "After Sales",
       "Support": "Support ",
       "BodyShop": "BodyShop ",
-      "Parts": "Parts"
+      "Parts": "Parts",
+      "Departments": "Departments"
     },
     "reserve_appointment": "Reserve Appointment",
     "language": {

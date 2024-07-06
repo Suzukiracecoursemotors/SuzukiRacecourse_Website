@@ -4,7 +4,7 @@ import { Link } from "@/navigation";
 
 enum NavLinksLocale {
   Home = "Home",
-  Sale = "Sale",
+  Departments = "Departments",
   CUC = "CUC",
   Aftersale = "Aftersale",
   Gallery = "Gallery",
@@ -14,6 +14,7 @@ enum NavLinksLocale {
   Support = "Support",
   BodyShop = "BodyShop",
   Contact = "Contact",
+  Sale = "Sale",
 }
 
 type NavLink = {
@@ -24,8 +25,8 @@ type NavLink = {
 
 const linksConfig: NavLink[] = [
   {
-    locale: NavLinksLocale.Home,
-    path: "/",
+    locale: NavLinksLocale.Departments,
+    path: "/departments",
   },
   {
     locale: NavLinksLocale.Sale,
