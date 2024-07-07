@@ -17,11 +17,11 @@ export default async function Landingpage() {
           </div>
           <div className="row g-3 g-xl-5" data-masonry>
             {[
+              { title: "Sale", link: "/en/sales" },
               { title: "CUC", link: "/en/sales/cuc" },
               { title: "Finance", link: "/en/sales/finance" },
               { title: "Parts", link: "/en/aftersale/parts" },
               { title: "Service", link: "/en/aftersale/service" },
-              { title: "Sale", link: "/en/sales" },
               { title: "Body Shop", link: "/en/aftersale/bodyshop" },
             ].map((department, index) => (
               <div className="col-md-4" data-aos="fade-up" key={index}>
@@ -30,10 +30,8 @@ export default async function Landingpage() {
                   className="card equal-md-1-1 card-hover-gradient"
                 >
                   <Image
-                    className="background"
+                    className="background  "
                     src={S}
-                    width={1000}
-                    height={1000}
                     layout="responsive"
                     alt={department.title}
                   />

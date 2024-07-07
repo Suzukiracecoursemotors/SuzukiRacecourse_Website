@@ -8,10 +8,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/blog/blog-post",
     "/aftersale",
     "/aftersale/service",
-    "/aftersale/parts",
+    "/aftersale/extend_warrenty",
     "/aftersale/bodyshop",
     "/sales/finance",
     "/sales/cuc",
+    "/sales/insurance",
+    "/sales/extend_warranty",
+    "/sales/register_transfer",
   ];
 
   /*

@@ -9,13 +9,16 @@
       "Contact": "Contact",
       "language": "Language",
       "sales": "Sales",
-      "CUC": "CUC",
-      "Finance": "Finance",
+      "CUC": "Exchange & CUC",
+      "Finance": "Lease & Finance",
       "AfterSale": "After Sales",
-      "Support": "Support ",
-      "BodyShop": "BodyShop ",
-      "Parts": "Parts",
-      "Departments": "Departments"
+      "Support": "Extend Warrenty ",
+      "BodyShop": "Body & PaintShop ",
+      "Mechanical": " Workshop",
+      "SpareParts": "SpareParts",
+      "Extend_Warranty": "Extend Warranty",
+      "Insurance": "Insurance",
+      "Registration_Transfer": "Register & Transfer"
     },
     "reserve_appointment": "Reserve Appointment",
     "language": {

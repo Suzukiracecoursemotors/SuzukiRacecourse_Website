@@ -4,17 +4,20 @@ import { Link } from "@/navigation";
 
 enum NavLinksLocale {
   Home = "Home",
-  Departments = "Departments",
+  SpareParts = "SpareParts",
   CUC = "CUC",
   Aftersale = "Aftersale",
   Gallery = "Gallery",
   Blog = "Blog",
   Finance = "Finance",
-  Parts = "Parts",
+  Mechanical = "Mechanical",
   Support = "Support",
   BodyShop = "BodyShop",
   Contact = "Contact",
   Sale = "Sale",
+  Warranty = "Extend_Warranty",
+  Insurance = "Insurance",
+  Transfer = "Registration_Transfer",
 }
 
 type NavLink = {
@@ -24,10 +27,6 @@ type NavLink = {
 };
 
 const linksConfig: NavLink[] = [
-  {
-    locale: NavLinksLocale.Departments,
-    path: "/departments",
-  },
   {
     locale: NavLinksLocale.Sale,
     path: "/sales",
@@ -44,6 +43,18 @@ const linksConfig: NavLink[] = [
         locale: NavLinksLocale.Finance,
         path: "/sales/finance",
       },
+      {
+        locale: NavLinksLocale.Insurance,
+        path: "/sales/insurance",
+      },
+      {
+        locale: NavLinksLocale.Warranty,
+        path: "/sales/extend_warranty",
+      },
+      {
+        locale: NavLinksLocale.Transfer,
+        path: "/sales/register_transfer",
+      },
     ],
   },
   {
@@ -55,18 +66,23 @@ const linksConfig: NavLink[] = [
         path: "/aftersale",
       },
       {
-        locale: NavLinksLocale.Parts,
+        locale: NavLinksLocale.Mechanical,
         path: "/aftersale/service",
       },
+
       {
         locale: NavLinksLocale.Support,
-        path: "/aftersale/parts",
+        path: "/aftersale/extend_warrenty",
       },
       {
         locale: NavLinksLocale.BodyShop,
         path: "/aftersale/bodyshop",
       },
     ],
+  },
+  {
+    locale: NavLinksLocale.SpareParts,
+    path: "/spareparts",
   },
   {
     locale: NavLinksLocale.Gallery,
