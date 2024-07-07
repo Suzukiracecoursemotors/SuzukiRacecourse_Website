@@ -104,7 +104,7 @@ const Header = ({ children }: HeaderProps) => {
         >
           {children}
           <div className="locale-switcher">
-            <HeaderLocaleSwitcher />
+            {/* <HeaderLocaleSwitcher /> */}
           </div>
         </div>
       </div>

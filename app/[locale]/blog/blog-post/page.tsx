@@ -35,6 +35,106 @@ export default async function Post1() {
           alt="background image"
         />
       </section>
+
+      <section className="py-15 py-xl-20">
+        <div className="container">
+          <div className="row mb-5 align-items-end">
+            <div className="col-lg-6">
+              <h2 className="fw-bold">Latest blog posts</h2>
+            </div>
+            <div className="col-lg-6 text-lg-end">
+              <a href="" className="action underline">
+                View all <i className="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+          <div className="row g-3 g-xl-5">
+            <div className="col-md-6 col-lg-4" data-aos="fade-up">
+              <a
+                href=""
+                className="card equal equal-3-4 card-hover-gradient inverted"
+              >
+                <figure
+                  className="background"
+                  // style="background-image: url('./assets/images/job-board-2.jpg')"
+                ></figure>
+                <div className="card-wrap">
+                  <div className="card-footer mt-auto text-shadow">
+                    <time
+                      // datetime="2020-12-18 20:00"
+                      className="eyebrow text-secondary mb-1"
+                    >
+                      18 December
+                    </time>
+                    <h5 className="card-title">
+                      Ethical Considerations In UX Research: The Need For
+                      Training And Review
+                    </h5>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div
+              className="col-md-6 col-lg-4"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <a
+                href=""
+                className="card equal equal-3-4 card-hover-gradient inverted"
+              >
+                <figure
+                  className="background"
+                  // style="background-image: url('./assets/images/job-board-3.jpg')"
+                ></figure>
+                <div className="card-wrap">
+                  <div className="card-footer mt-auto text-shadow">
+                    <time
+                      // datetime="2020-12-18 20:00"
+                      className="eyebrow text-secondary mb-1"
+                    >
+                      18 December
+                    </time>
+                    <h5 className="card-title">
+                      Ethical Considerations In UX Research: The Need For
+                      Training And Review
+                    </h5>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div
+              className="col-md-6 col-lg-4"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <a
+                href=""
+                className="card equal equal-3-4 card-hover-gradient inverted"
+              >
+                <figure
+                  className="background"
+                  // style="background-image: url('./assets/images/job-board-4.jpg')"
+                ></figure>
+                <div className="card-wrap">
+                  <div className="card-footer mt-auto text-shadow">
+                    <time
+                      // datetime="2020-12-18 20:00"
+                      className="eyebrow text-secondary mb-1"
+                    >
+                      18 December
+                    </time>
+                    <h5 className="card-title">
+                      Ethical Considerations In UX Research: The Need For
+                      Training And Review
+                    </h5>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
       <section className="py-10 py-xl-15">
         <div className="container">
           <div className="row justify-content-center">

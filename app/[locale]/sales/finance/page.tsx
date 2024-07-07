@@ -1,52 +1,129 @@
-import Designhome from "../../public/PurchaseOfferuptoRs.50,000forWagonR_1_011802.png";
-import { Link } from "@/navigation";
-import Constants from "@/data/Constants";
-import Image from "next/image";
+import { Locale } from "@/i18n";
 import { getTranslations } from "next-intl/server";
-export default async function Landingpage() {
-  const t = await getTranslations({
-    namespace: "page.home",
-  });
-  return (
-    <>
-      <section className="overflow-hidden bg-black inverted">
-        <div className="d-flex flex-column container py-20 min-vh-100 level-1">
-          <div className="row align-items-center justify-content-center justify-content-lg-end my-auto">
-            <div className="col-md-8 col-lg-5 text-center text-lg-start">
-              <span className="badge bg-opaque-yellow text-yellow rounded-pill">
-                {t("banner_span")}
-              </span>
-              <h1 className="display-3 fw-bold lh-sm my-2 my-xl-2">
-                {" "}
-                {t("banner_title")}
-              </h1>
-              <br />
+import Image from "next/image";
+import React from "react";
+import bannersales from "../../public/bannersales.jpg";
+import Carosil from "../../common/carosil";
 
-              <Link
-                href={"tel:" + Constants.PHONE}
-                className="btn btn-with-icon btn-yellow rounded-pill ms-2"
-              >
-                <i className="bi bi-telephone-fill ms-1"></i>{" "}
-                {t("banner_btn_text")}{" "}
-              </Link>
+type PricingPageProps = {
+  params: { locale: Locale };
+};
+
+export default async function Finance({
+  params: { locale },
+}: PricingPageProps) {
+  const t = await getTranslations({ locale, namespace: "page" });
+
+  return (
+    <article>
+      <section className="bg-black inverted overflow-hidden">
+        <div className="d-flex flex-column py-15 container min-vh-75 level-3">
+          <div className="row justify-content-center mt-auto">
+            <div className="col-lg-10 col-xl-8">
+              <span className="badge bg-opaque-white text-white rounded-pill mb-2">
+                {t("blog_page.banner_title")}
+              </span>
+              <h1 className="display-1">{t("blog_page.title1")}</h1>
             </div>
           </div>
         </div>
-        <div className="container-fluid back back-background">
-          <div className="row h-100">
-            <div className="col-lg-6 h-100">
-              <Image
-                className="back-background h-100"
-                src={Designhome}
-                alt={""}
-                layout="contain"
-                width={750}
-                height={600}
-              />
+        <Image
+          className="background "
+          src={bannersales}
+          layout="responsive"
+          alt="background image"
+        />
+      </section>
+      <section className="py-10 py-xl-15">
+        <div className="container">
+          <div className="row justify-content-center">
+            <div className="col-lg-10 col-xl-8">
+              <div>
+                <h6 className="lead text-secondary">{t("blog_page.title")}</h6>
+                <div>
+                  <h5>{t("blog_page.title11")}</h5>
+                  <p className="fs-lg text-secondary">
+                    {t("blog_page.description11")}
+                  </p>
+                </div>
+              </div>
+              <div>
+                <div>
+                  <h5>{t("blog_page.title22")}</h5>
+                  <p className="fs-lg text-secondary">
+                    {t("blog_page.description22")}
+                  </p>
+                </div>
+              </div>
+              <div>
+                <div>
+                  <h5>{t("blog_page.title33")}</h5>
+                  <p className="fs-lg text-secondary">
+                    {t("blog_page.description33")}
+                  </p>
+                </div>
+              </div>
+              <div>
+                <div>
+                  <h5>{t("blog_page.title44")}</h5>
+                  <p className="fs-lg text-secondary">
+                    {t("blog_page.description44")}
+                  </p>
+                </div>
+              </div>
+              <div>
+                <div>
+                  <h5>{t("blog_page.title55")}</h5>
+                  <p className="fs-lg text-secondary">
+                    {t("blog_page.description55")}
+                  </p>
+                </div>
+              </div>
+              <div>
+                <div>
+                  <h5>{t("blog_page.title66")}</h5>
+                  <p className="fs-lg text-secondary">
+                    {t("blog_page.description66")}
+                  </p>
+                </div>
+              </div>
+              <div>
+                <div>
+                  <h5>{t("blog_page.title77")}</h5>
+                  <p className="fs-lg text-secondary">
+                    {t("blog_page.description77")}
+                  </p>
+                </div>
+              </div>
+              <Carosil />
+              <div>
+                <div>
+                  <h5>{t("blog_page.title88")}</h5>
+                  <p className="fs-lg text-secondary">
+                    {t("blog_page.description88")}
+                  </p>
+                </div>
+              </div>
+              <div>
+                <div>
+                  <h5>{t("blog_page.title99")}</h5>
+                  <p className="fs-lg text-secondary">
+                    {t("blog_page.description99")}
+                  </p>
+                </div>
+              </div>
+              <div>
+                <div>
+                  <h5>{t("blog_page.title1010")}</h5>
+                  <p className="fs-lg text-secondary">
+                    {t("blog_page.description1010")}
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
-    </>
+    </article>
   );
 }
