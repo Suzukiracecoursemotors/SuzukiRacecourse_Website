@@ -4,7 +4,6 @@ import Image from "next/image";
 import React from "react";
 import bannersales from "../public/bannersales.jpg";
 import Carosil from "../common/carosil";
-import CarModal from "../common/modal";
 
 type PricingPageProps = {
   params: { locale: Locale };
