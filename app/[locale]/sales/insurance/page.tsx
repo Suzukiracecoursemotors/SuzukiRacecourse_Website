@@ -19,7 +19,7 @@ export default async function CUC({ params: { locale } }: PricingPageProps) {
           <div className="row justify-content-center">
             <div className="col-lg-10 col-xl-8">
               <div>
-                <h1 className="display-1 text-blue">Insurance </h1>
+                <h1 className="display-1 text-blue">Lease & finance </h1>
                 <div>
                   <p className="fs-lg text-secondary">
                     Welcome to Suzuki Racecourse Motor Sales Team, your trusted
@@ -37,24 +37,7 @@ export default async function CUC({ params: { locale } }: PricingPageProps) {
               </div>
               <div>
                 <div>
-                  <h5>Insurance</h5>
-                  <p className="fs-lg text-secondary">
-                    Welcome to Suzuki Racecourse Motor Sales Team, your trusted
-                    source for high-quality Suzuki vehicles and exceptional
-                    customer service. Our dealership offers a wide range of new
-                    and pre-owned Suzuki cars, SUVs, and trucks, ensuring you
-                    find the perfect vehicle to meet your needs. Our
-                    knowledgeable sales team is dedicated to providing a
-                    seamless car buying experience, with transparent pricing and
-                    flexible financing options. Whether you're looking for the
-                    latest models or certified pre-owned vehicles, we have
-                    something for everyone.
-                  </p>
-                </div>
-              </div>
-
-              <div>
-                <div>
+                  <h5>Lease</h5>
                   <p className="fs-lg text-secondary">
                     Welcome to Suzuki Racecourse Motor Sales Team, your trusted
                     source for high-quality Suzuki vehicles and exceptional
@@ -72,7 +55,24 @@ export default async function CUC({ params: { locale } }: PricingPageProps) {
 
               <div>
                 <div>
-                  <h5>Insurance Method</h5>
+                  <p className="fs-lg text-secondary">
+                    Welcome to Suzuki Racecourse Motor Sales Team, your trusted
+                    source for high-quality Suzuki vehicles and exceptional
+                    customer service. Our dealership offers a wide range of new
+                    and pre-owned Suzuki cars, SUVs, and trucks, ensuring you
+                    find the perfect vehicle to meet your needs. Our
+                    knowledgeable sales team is dedicated to providing a
+                    seamless car buying experience, with transparent pricing and
+                    flexible financing options. Whether you're looking for the
+                    latest models or certified pre-owned vehicles, we have
+                    something for everyone.
+                  </p>
+                </div>
+              </div>
+
+              <div>
+                <div>
+                  <h5>Finance</h5>
                   <p className="fs-lg text-secondary">
                     Welcome to Suzuki Racecourse Motor Sales Team, your trusted
                     source for high-quality Suzuki vehicles and exceptional
