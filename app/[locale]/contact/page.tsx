@@ -1,7 +1,7 @@
 import { Locale } from "@/i18n";
 import { getTranslations } from "next-intl/server";
 // import Image from "next/image";
-import mapimg from "../public/PurchaseOfferuptoRs.50,000forWagonR_1_011802.png";
+import mapimg from "../public/map.png";
 import { Link } from "@/navigation";
 import Image from "next/image";
 import Constants from "@/data/Constants";
@@ -13,28 +13,22 @@ async function Contact() {
       <div className="container mt-5 mt-lg-10">
         <div className="row align-items-center justify-content-between">
           <div className="col-lg-6 mb-4 mb-lg-0">
-            <h1 className="text-dark ">{t("home.addresses.title")}</h1>
-            <p className="text-dark ">{t("home.addresses.description")}</p>
+            <h1 className="text-dark ">RaceCourse</h1>
+            <p className="text-dark ">home.addresses.description</p>
             <hr className="my-4 fw-25 ml-0" />
             <ul className="list-group list-group-minimal">
               <li className="list-group-item d-flex align-items-top">
-                <span className="w-25 text-dark">
-                  {" "}
-                  {t("home.addresses.address")}
-                </span>
+                <span className="w-25 text-dark"> Email</span>
                 <Link
                   href={Constants.GOOGLE_MAP}
                   className="text-dark underline"
                   target="_blank"
                 >
-                  {t("home.addresses.address_area")}
+                  Suzukiracecoursemotors.pk{" "}
                 </Link>
               </li>
               <li className="list-group-item d-flex align-items-top">
-                <span className="w-25 text-dark">
-                  {" "}
-                  {t("home.addresses.phone")}
-                </span>
+                <span className="w-25 text-dark"> Phone </span>
                 <Link
                   href={"tel:" + Constants.PHONE}
                   className="text-dark underline"
@@ -44,12 +38,8 @@ async function Contact() {
                 </Link>
               </li>
               <li className="list-group-item d-flex align-items-top text-dark">
-                <span className="w-25 text-dark">
-                  {" "}
-                  {t("home.addresses.work_time")}
-                </span>
-                {t("home.addresses.working_days")}{" "}
-                {t("home.addresses.working_hours")}
+                <span className="w-25 text-dark"> Work Time </span>
+                Monday to Saturday 9:00am to 5:00pm
               </li>
             </ul>
           </div>

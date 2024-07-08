@@ -19,7 +19,7 @@ async function DepartmentsList() {
           <div className="col-md-8">
             <h2 className="display-1 fw-bold text-black">{t("maintitle")}</h2>
           </div>
-          {/* <div className="col-md-4 text-lg-end">
+          <div className="col-md-4 text-lg-end">
             <div className="d-inline-flex align-items-center mb-0">
               <span className="fs-2 me-2 lh-1 fw-bold text-black">
                 {Constants.GOOGLE_REVIEW_SCORE}{" "}
@@ -33,7 +33,7 @@ async function DepartmentsList() {
               </ul>
             </div>
             <small className="d-block text-muted">{t("reviewCount")}</small>
-          </div> */}
+          </div>
         </div>
         <div className="row mb-5 g-3 g-xl-5">
           <Link href="/sales">
