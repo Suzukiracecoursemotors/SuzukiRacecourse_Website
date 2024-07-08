@@ -29,7 +29,7 @@ export default async function CUC({ params: { locale } }: PricingPageProps) {
                     find the perfect vehicle to meet your needs. Our
                     knowledgeable sales team is dedicated to providing a
                     seamless car buying experience, with transparent pricing and
-                    flexible financing options. Whether you're looking for the
+                    flexible financing options. Whether youre looking for the
                     latest models or certified pre-owned vehicles, we have
                     something for everyone.
                   </p>
@@ -46,7 +46,7 @@ export default async function CUC({ params: { locale } }: PricingPageProps) {
                     find the perfect vehicle to meet your needs. Our
                     knowledgeable sales team is dedicated to providing a
                     seamless car buying experience, with transparent pricing and
-                    flexible financing options. Whether you're looking for the
+                    flexible financing options. Whether youre looking for the
                     latest models or certified pre-owned vehicles, we have
                     something for everyone.
                   </p>
@@ -63,7 +63,7 @@ export default async function CUC({ params: { locale } }: PricingPageProps) {
                     find the perfect vehicle to meet your needs. Our
                     knowledgeable sales team is dedicated to providing a
                     seamless car buying experience, with transparent pricing and
-                    flexible financing options. Whether you're looking for the
+                    flexible financing options. Whether youre looking for the
                     latest models or certified pre-owned vehicles, we have
                     something for everyone.
                   </p>
@@ -81,7 +81,7 @@ export default async function CUC({ params: { locale } }: PricingPageProps) {
                     find the perfect vehicle to meet your needs. Our
                     knowledgeable sales team is dedicated to providing a
                     seamless car buying experience, with transparent pricing and
-                    flexible financing options. Whether you're looking for the
+                    flexible financing options. Whether youre looking for the
                     latest models or certified pre-owned vehicles, we have
                     something for everyone.
                   </p>
@@ -97,7 +97,7 @@ export default async function CUC({ params: { locale } }: PricingPageProps) {
                     find the perfect vehicle to meet your needs. Our
                     knowledgeable sales team is dedicated to providing a
                     seamless car buying experience, with transparent pricing and
-                    flexible financing options. Whether you're looking for the
+                    flexible financing options. Whether youre looking for the
                     latest models or certified pre-owned vehicles, we have
                     something for everyone.
                   </p>
