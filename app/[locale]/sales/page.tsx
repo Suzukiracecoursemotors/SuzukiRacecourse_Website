@@ -17,7 +17,7 @@ export default async function Sale({ params: { locale } }: PricingPageProps) {
       <div className="container">
         <div className="row mb-10">
           <div className="col">
-            <h2 className="fw-bold text-dark"> Pricing Cars</h2>
+            <h2 className="fw-bold text-dark"> Sales</h2>
           </div>
         </div>
         <div className="row g-3 g-xl-5 justify-content-between">

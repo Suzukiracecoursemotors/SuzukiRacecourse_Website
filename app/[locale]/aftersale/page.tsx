@@ -1,12 +1,5 @@
-import { Locale } from "@/i18n";
 import { getTranslations } from "next-intl/server";
 // import Image from "next/image";
-import NotFound from "../[...slug]/page";
-import Address from "../common/address";
-import III from "../public/PurchaseOfferuptoRs.50,000forWagonR_1_011802.png";
-import img from "../public/PurchaseOfferuptoRs.50,000forWagonR_1_011802.png";
-import Image from "next/image";
-import Carosil from "../common/carosil";
 
 async function Aftersale() {
   const t = await getTranslations({ namespace: "page" });

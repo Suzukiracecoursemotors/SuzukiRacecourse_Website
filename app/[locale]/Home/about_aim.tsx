@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "@/navigation";
 import Image from "next/image";
 import missionimg from "../../[locale]/public/misison.jpg";
 import vissionimg from "../../[locale]/public/vission.jpg";
