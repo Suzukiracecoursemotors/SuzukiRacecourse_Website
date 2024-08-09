@@ -28,9 +28,9 @@ export default async function Sale({ params: { locale } }: PricingPageProps) {
               id="component-1"
               role="tablist"
             >
-              <li className="nav-item">
+              <li className="nav-item ">
                 <button
-                  className="nav-link fs-5 active"
+                  className="nav-link fs-5 active text-blue"
                   id="component-1-1-tab"
                   data-bs-toggle="pill"
                   data-bs-target="#component-1-1"
@@ -42,9 +42,9 @@ export default async function Sale({ params: { locale } }: PricingPageProps) {
                   ALTO
                 </button>
               </li>
-              <li className="nav-item">
+              <li className="nav-item ">
                 <button
-                  className="nav-link fs-5"
+                  className="nav-link fs-5 text-blue"
                   id="component-1-2-tab"
                   data-bs-toggle="pill"
                   data-bs-target="#component-1-2"
@@ -58,7 +58,7 @@ export default async function Sale({ params: { locale } }: PricingPageProps) {
               </li>
               <li className="nav-item">
                 <button
-                  className="nav-link fs-5"
+                  className="nav-link fs-5 text-blue"
                   id="component-1-3-tab"
                   data-bs-toggle="pill"
                   data-bs-target="#component-1-3"
@@ -72,7 +72,7 @@ export default async function Sale({ params: { locale } }: PricingPageProps) {
               </li>
               <li className="nav-item">
                 <button
-                  className="nav-link fs-5"
+                  className="nav-link fs-5 text-blue"
                   id="component-1-4-tab"
                   data-bs-toggle="pill"
                   data-bs-target="#component-1-4"
@@ -86,7 +86,7 @@ export default async function Sale({ params: { locale } }: PricingPageProps) {
               </li>
               <li className="nav-item">
                 <button
-                  className="nav-link fs-5"
+                  className="nav-link fs-5 text-blue"
                   id="component-1-5-tab"
                   data-bs-toggle="pill"
                   data-bs-target="#component-1-5"
@@ -100,7 +100,7 @@ export default async function Sale({ params: { locale } }: PricingPageProps) {
               </li>
               <li className="nav-item">
                 <button
-                  className="nav-link fs-5"
+                  className="nav-link fs-5 text-blue"
                   id="component-1-6-tab"
                   data-bs-toggle="pill"
                   data-bs-target="#component-1-6"
@@ -138,7 +138,9 @@ export default async function Sale({ params: { locale } }: PricingPageProps) {
                           />
                         </div>
                         <div className="card-footer mt-20 pt-5">
-                          <h4 className="card-title text-dark">ALTO VX</h4>
+                          <h4 className="card-title text-dark text-blue">
+                            ALTO VX
+                          </h4>
                           <p className="text-secondary">RS: 24,000,00/- </p>
                           <p className="underline action text-red fs-lg mt-1">
                             See more <i className="bi bi-arrow-right"></i>
@@ -162,7 +164,9 @@ export default async function Sale({ params: { locale } }: PricingPageProps) {
                           />
                         </div>
                         <div className="card-footer mt-20 pt-5">
-                          <h4 className="card-title text-dark">ALTO VXR</h4>
+                          <h4 className="card-title text-dark text-blue">
+                            ALTO VXR
+                          </h4>
                           <p className="text-secondary">RS: 24,000,00/- </p>
                           <p className="underline action text-red fs-lg mt-1">
                             See more <i className="bi bi-arrow-right"></i>
@@ -186,7 +190,9 @@ export default async function Sale({ params: { locale } }: PricingPageProps) {
                           />
                         </div>
                         <div className="card-footer mt-20 pt-5">
-                          <h4 className="card-title text-dark">ALTO VXR AGS</h4>
+                          <h4 className="card-title text-dark text-blue">
+                            ALTO VXR AGS
+                          </h4>
                           <p className="text-secondary">RS: 24,000,00/- </p>
                           <p className="underline action text-red fs-lg mt-1">
                             See more <i className="bi bi-arrow-right"></i>
