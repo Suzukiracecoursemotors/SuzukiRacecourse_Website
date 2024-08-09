@@ -1,17 +1,22 @@
+"use client";
 import { Locale } from "@/i18n";
 import { getTranslations } from "next-intl/server";
 import Image from "next/image";
-import React from "react";
+import React, { useEffect } from "react";
 import bannersales from "../public/bannersales.jpg";
 import Carosil from "../common/carosil";
-
+import "aos/dist/aos.css";
+import AOS from "aos";
+import { useTranslations } from "next-intl";
 type PricingPageProps = {
   params: { locale: Locale };
 };
 
-export default async function Sale({ params: { locale } }: PricingPageProps) {
-  const t = await getTranslations({ locale, namespace: "page" });
-
+export default function Sale({ params: { locale } }: PricingPageProps) {
+  const t = useTranslations({ locale, namespace: "page" });
+  useEffect(() => {
+    AOS.init({ duration: 1000 }); // Initialize AOS with duration and once option
+  }, []);
   return (
     <section className="py-15 py-xl-20 bg-light">
       <div className="container">
@@ -123,7 +128,7 @@ export default async function Sale({ params: { locale } }: PricingPageProps) {
                 aria-labelledby="component-1-1-tab"
               >
                 <div className="row g-3 g-xl-5">
-                  <div className="col-md-6" data-aos="fade-up">
+                  <div className="col-md-6" data-aos="flip-left">
                     <a
                       href=""
                       className="card equal-md-1-1 card-hover-border bg-white"
@@ -149,7 +154,7 @@ export default async function Sale({ params: { locale } }: PricingPageProps) {
                       </div>
                     </a>
                   </div>
-                  <div className="col-md-6" data-aos="fade-up">
+                  <div className="col-md-6" data-aos="flip-left">
                     <a
                       href=""
                       className="card equal-md-1-1 card-hover-border bg-white"
@@ -175,7 +180,7 @@ export default async function Sale({ params: { locale } }: PricingPageProps) {
                       </div>
                     </a>
                   </div>
-                  <div className="col-md-6" data-aos="fade-up">
+                  <div className="col-md-6" data-aos="flip-left">
                     <a
                       href=""
                       className="card equal-md-1-1 card-hover-border bg-white"
@@ -209,7 +214,7 @@ export default async function Sale({ params: { locale } }: PricingPageProps) {
                 role="tabpanel"
                 aria-labelledby="component-1-2-tab"
               >
-                <div className="col-md-6" data-aos="fade-up">
+                <div className="col-md-6" data-aos="flip-left">
                   <a
                     href=""
                     className="card equal-md-1-1 card-hover-border bg-white"
@@ -240,7 +245,7 @@ export default async function Sale({ params: { locale } }: PricingPageProps) {
                 role="tabpanel"
                 aria-labelledby="component-1-3-tab"
               >
-                <div className="col-md-6" data-aos="fade-up">
+                <div className="col-md-6" data-aos="flip-left">
                   <a
                     href=""
                     className="card equal-md-1-1 card-hover-border bg-white"
@@ -271,7 +276,7 @@ export default async function Sale({ params: { locale } }: PricingPageProps) {
                 role="tabpanel"
                 aria-labelledby="component-1-4-tab"
               >
-                <div className="col-md-6" data-aos="fade-up">
+                <div className="col-md-6" data-aos="flip-left">
                   <a
                     href=""
                     className="card equal-md-1-1 card-hover-border bg-white"
@@ -302,7 +307,7 @@ export default async function Sale({ params: { locale } }: PricingPageProps) {
                 role="tabpanel"
                 aria-labelledby="component-1-5-tab"
               >
-                <div className="col-md-6" data-aos="fade-up">
+                <div className="col-md-6" data-aos="flip-left">
                   <a
                     href=""
                     className="card equal-md-1-1 card-hover-border bg-white"
@@ -333,7 +338,7 @@ export default async function Sale({ params: { locale } }: PricingPageProps) {
                 role="tabpanel"
                 aria-labelledby="component-1-6-tab"
               >
-                <div className="col-md-6" data-aos="fade-up">
+                <div className="col-md-6" data-aos="flip-left">
                   <a
                     href=""
                     className="card equal-md-1-1 card-hover-border bg-white"
