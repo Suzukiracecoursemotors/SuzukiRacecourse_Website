@@ -39,9 +39,7 @@ export default async function Landingpage() {
                 className="back-background h-100"
                 src={Designhome}
                 alt={""}
-                layout="contain"
-                width={750}
-                height={600}
+                layout="responsive"
               />
             </div>
           </div>
