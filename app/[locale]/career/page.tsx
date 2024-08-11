@@ -14,7 +14,7 @@ async function Careers() {
         <div className="container mt-5 mt-xl-10">
           <div className="row mb-5">
             <div className="col-lg-7">
-              <span className="eyebrow text-muted mb-1">We're hiring</span>
+              <span className="eyebrow text-muted mb-1">We are hiring</span>
               <h1 className="display-1">Visual Designer</h1>
             </div>
           </div>
