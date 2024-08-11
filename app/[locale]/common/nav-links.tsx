@@ -18,6 +18,7 @@ enum NavLinksLocale {
   Warranty = "Extend_Warranty",
   Insurance = "Insurance",
   Transfer = "Registration_Transfer",
+  Careers = "Careers",
 }
 
 type NavLink = {
@@ -91,6 +92,10 @@ const linksConfig: NavLink[] = [
   {
     locale: NavLinksLocale.Blog,
     path: "/blog",
+  },
+  {
+    locale: NavLinksLocale.Careers,
+    path: "/career",
   },
   {
     locale: NavLinksLocale.Contact,

@@ -7,8 +7,8 @@ import Landingpage from "./landing_page";
 export default async function HomePage() {
   return (
     <>
-      {/* <Landingpage /> */}
-      <Carosil />
+      <Landingpage />
+      {/* <Carosil /> */}
       {/* <DepartmentsList /> */}
       <Sale
         params={{

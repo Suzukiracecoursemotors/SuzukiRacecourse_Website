@@ -1,4 +1,4 @@
-import Designhome from "../../[locale]/public/3275466.png";
+import Designhome from "../../[locale]/public/banner2.jpg";
 import { Link } from "@/navigation";
 import Constants from "@/data/Constants";
 import Image from "next/image";
