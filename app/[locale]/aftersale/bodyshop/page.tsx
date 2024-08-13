@@ -107,6 +107,7 @@ export default async function CUC({ params: { locale } }: PricingPageProps) {
           </div>
         </div>
       </section>
+
       <section className="py-15 py-xl-20 bg-black inverted">
         <div className="container">
           <div className="row align-items-end mb-5">

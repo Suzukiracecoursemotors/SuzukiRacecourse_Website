@@ -37,23 +37,6 @@ export default async function CUC({ params: { locale } }: PricingPageProps) {
                   </p>
                 </div>
               </div>
-              <div>
-                <div>
-                  <h5>Certified Used Car</h5>
-                  <p className="fs-lg text-secondary">
-                    Welcome to Suzuki Racecourse Motor Sales Team, your trusted
-                    source for high-quality Suzuki vehicles and exceptional
-                    customer service. Our dealership offers a wide range of new
-                    and pre-owned Suzuki cars, SUVs, and trucks, ensuring you
-                    find the perfect vehicle to meet your needs. Our
-                    knowledgeable sales team is dedicated to providing a
-                    seamless car buying experience, with transparent pricing and
-                    flexible financing options. Whether youre looking for the
-                    latest models or certified pre-owned vehicles, we have
-                    something for everyone.
-                  </p>
-                </div>
-              </div>
               <div className="container py-10 py-xl-15">
                 <div className="row mb-5">
                   <div className="col-lg-6">
