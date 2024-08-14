@@ -10,11 +10,7 @@ export default async function HomePage() {
       <Landingpage />
       {/* <Carosil /> */}
       {/* <DepartmentsList /> */}
-      <Sale
-        params={{
-          locale: undefined,
-        }}
-      />
+      <Sale />
       <Aftersale />
       <AimsandMissions />
     </>
