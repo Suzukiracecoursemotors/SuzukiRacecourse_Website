@@ -5,7 +5,18 @@ import alto from "../public/Alto/alto.png";
 import altovxr from "../public/Alto/vxlalto.png";
 import altovxl from "../public/Alto/alto1.png";
 import altovxagsl from "../public/Alto/agsvxlalto.png";
-import bannersales from "../public/bannersales.jpg";
+import cultus1 from "../public/Cultus/Cultus-White.jpg";
+import cultus2 from "../public/Cultus/Cultus-Gray.jpg";
+import cultus3 from "../public/Cultus/New-Cultus-Brochure-title-.png";
+import wagon1 from "../public/Wagonr/Wagonr-Back.png";
+import wagon2 from "../public/Wagonr/Wagonr.png";
+import wagon3 from "../public/Wagonr/Wagonr-Back.png";
+import swift1 from "../public/Swift/02.png";
+import swift2 from "../public/Swift/Swift-Back-Side-Angle.png";
+import swift3 from "../public/Swift/Swift-Grey.png";
+import bolan1 from "../public/Suzuki-Bolan-Front.jpg";
+import bolan2 from "../public/Suzuki-Bolan-Front.jpg";
+import ravi from "../public/suzuki-ravi6.jpg";
 import Carosil from "../common/carosil";
 import { useTranslations } from "next-intl";
 type PricingPageProps = {
@@ -70,7 +81,7 @@ export default function SaleHome({ params: { locale } }: PricingPageProps) {
                   aria-controls="component-1-3"
                   aria-selected="false"
                 >
-                  SWIFT
+                  WagnoR{" "}
                 </button>
               </li>
               <li className="nav-item">
@@ -84,7 +95,7 @@ export default function SaleHome({ params: { locale } }: PricingPageProps) {
                   aria-controls="component-1-4"
                   aria-selected="false"
                 >
-                  WagnoR{" "}
+                  SWIFT
                 </button>
               </li>
               <li className="nav-item">
@@ -117,6 +128,8 @@ export default function SaleHome({ params: { locale } }: PricingPageProps) {
               </li>
             </ul>
           </div>
+          {/* //cardbody */}
+
           <div className="col-xl-8">
             <div className="tab-content" id="component-1-content">
               <div
@@ -238,29 +251,85 @@ export default function SaleHome({ params: { locale } }: PricingPageProps) {
                 role="tabpanel"
                 aria-labelledby="component-1-2-tab"
               >
-                <div className="col-md-6" data-aos="flip-left">
-                  <a
-                    href=""
-                    className="card equal-md-1-1 card-hover-border bg-white"
-                  >
-                    <div className="card-wrap">
-                      <div className="card-header pb-0">
-                        <Image
-                          className="background "
-                          src={bannersales}
-                          layout="responsive"
-                          alt="background image"
-                        />
+                <div className="row g-3 g-xl-5">
+                  <div className="col-md-6" data-aos="flip-left">
+                    <a
+                      href=""
+                      className="card equal-md-1-1 card-hover-border bg-white"
+                    >
+                      <div className="card-wrap">
+                        <div className="card-header pb-0">
+                          <Image
+                            className="background "
+                            src={cultus1}
+                            layout="responsive"
+                            alt="background image"
+                          />
+                        </div>
+                        <div className="card-footer mt-20 pt-9">
+                          <h4 className="card-title text-dark text-blue">
+                            Cultus VXR
+                          </h4>
+                          <p className="text-secondary">Rs: 24,000,00/- </p>
+                          <p className="underline action text-red fs-lg ">
+                            See more <i className="bi bi-arrow-right"></i>
+                          </p>
+                        </div>
                       </div>
-                      <div className="card-footer mt-20 pt-9">
-                        <h4 className="card-title text-dark">CULTUS VXR</h4>
-                        <p className="text-secondary">RS: 24,000,00/- </p>
-                        <p className="underline action text-red fs-lg ">
-                          See more <i className="bi bi-arrow-right"></i>
-                        </p>
+                    </a>
+                  </div>
+                  <div className="col-md-6" data-aos="flip-left">
+                    <a
+                      href=""
+                      className="card equal-md-1-1 card-hover-border bg-white"
+                    >
+                      <div className="card-wrap">
+                        <div className="card-header pb-0">
+                          <Image
+                            className="background "
+                            src={cultus2}
+                            layout="responsive"
+                            alt="background image"
+                          />
+                        </div>
+                        <div className="card-footer mt-20 pt-9">
+                          <h4 className="card-title text-dark text-blue">
+                            Cultus VXL
+                          </h4>
+                          <p className="text-secondary">RS: 24,000,00/- </p>
+                          <p className="underline action text-red fs-lg ">
+                            See more <i className="bi bi-arrow-right"></i>
+                          </p>
+                        </div>
                       </div>
-                    </div>
-                  </a>
+                    </a>
+                  </div>
+                  <div className="col-md-6" data-aos="flip-left">
+                    <a
+                      href=""
+                      className="card equal-md-1-1 card-hover-border bg-white"
+                    >
+                      <div className="card-wrap">
+                        <div className="card-header pb-0">
+                          <Image
+                            className="background "
+                            src={cultus3}
+                            layout="responsive"
+                            alt="background image"
+                          />
+                        </div>
+                        <div className="card-footer mt-20 pt-9">
+                          <h4 className="card-title text-dark text-blue">
+                            Cultus AGS
+                          </h4>
+                          <p className="text-secondary">RS: 24,000,00/- </p>
+                          <p className="underline action text-red fs-lg ">
+                            See more <i className="bi bi-arrow-right"></i>
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
                 </div>
               </div>
               <div
@@ -269,29 +338,85 @@ export default function SaleHome({ params: { locale } }: PricingPageProps) {
                 role="tabpanel"
                 aria-labelledby="component-1-3-tab"
               >
-                <div className="col-md-6" data-aos="flip-left">
-                  <a
-                    href=""
-                    className="card equal-md-1-1 card-hover-border bg-white"
-                  >
-                    <div className="card-wrap">
-                      <div className="card-header pb-0">
-                        <Image
-                          className="background "
-                          src={bannersales}
-                          layout="responsive"
-                          alt="background image"
-                        />
+                <div className="row g-3 g-xl-5">
+                  <div className="col-md-6" data-aos="flip-left">
+                    <a
+                      href=""
+                      className="card equal-md-1-1 card-hover-border bg-white"
+                    >
+                      <div className="card-wrap">
+                        <div className="card-header pb-0">
+                          <Image
+                            className="background "
+                            src={wagon1}
+                            layout="responsive"
+                            alt="background image"
+                          />
+                        </div>
+                        <div className="card-footer mt-20 pt-9">
+                          <h4 className="card-title text-dark text-blue">
+                            Wagnon-R VXR{" "}
+                          </h4>
+                          <p className="text-secondary">Rs: 24,000,00/- </p>
+                          <p className="underline action text-red fs-lg ">
+                            See more <i className="bi bi-arrow-right"></i>
+                          </p>
+                        </div>
                       </div>
-                      <div className="card-footer mt-20 pt-9">
-                        <h4 className="card-title text-dark">Swift VXR</h4>
-                        <p className="text-secondary">RS: 24,000,00/- </p>
-                        <p className="underline action text-red fs-lg ">
-                          See more <i className="bi bi-arrow-right"></i>
-                        </p>
+                    </a>
+                  </div>
+                  <div className="col-md-6" data-aos="flip-left">
+                    <a
+                      href=""
+                      className="card equal-md-1-1 card-hover-border bg-white"
+                    >
+                      <div className="card-wrap">
+                        <div className="card-header pb-0">
+                          <Image
+                            className="background "
+                            src={wagon2}
+                            layout="responsive"
+                            alt="background image"
+                          />
+                        </div>
+                        <div className="card-footer mt-20 pt-9">
+                          <h4 className="card-title text-dark text-blue">
+                            Wagnon-R VXL{" "}
+                          </h4>
+                          <p className="text-secondary">RS: 24,000,00/- </p>
+                          <p className="underline action text-red fs-lg ">
+                            See more <i className="bi bi-arrow-right"></i>
+                          </p>
+                        </div>
                       </div>
-                    </div>
-                  </a>
+                    </a>
+                  </div>
+                  <div className="col-md-6" data-aos="flip-left">
+                    <a
+                      href=""
+                      className="card equal-md-1-1 card-hover-border bg-white"
+                    >
+                      <div className="card-wrap">
+                        <div className="card-header pb-0">
+                          <Image
+                            className="background "
+                            src={wagon3}
+                            layout="responsive"
+                            alt="background image"
+                          />
+                        </div>
+                        <div className="card-footer mt-20 pt-9">
+                          <h4 className="card-title text-dark text-blue">
+                            Wagnon-R AGS{" "}
+                          </h4>
+                          <p className="text-secondary">RS: 24,000,00/- </p>
+                          <p className="underline action text-red fs-lg ">
+                            See more <i className="bi bi-arrow-right"></i>
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
                 </div>
               </div>
               <div
@@ -300,29 +425,85 @@ export default function SaleHome({ params: { locale } }: PricingPageProps) {
                 role="tabpanel"
                 aria-labelledby="component-1-4-tab"
               >
-                <div className="col-md-6" data-aos="flip-left">
-                  <a
-                    href=""
-                    className="card equal-md-1-1 card-hover-border bg-white"
-                  >
-                    <div className="card-wrap">
-                      <div className="card-header pb-0">
-                        <Image
-                          className="background "
-                          src={bannersales}
-                          layout="responsive"
-                          alt="background image"
-                        />
+                <div className="row g-3 g-xl-5">
+                  <div className="col-md-6" data-aos="flip-left">
+                    <a
+                      href=""
+                      className="card equal-md-1-1 card-hover-border bg-white"
+                    >
+                      <div className="card-wrap">
+                        <div className="card-header pb-0">
+                          <Image
+                            className="background "
+                            src={swift1}
+                            layout="responsive"
+                            alt="background image"
+                          />
+                        </div>
+                        <div className="card-footer mt-20 pt-9">
+                          <h4 className="card-title text-dark text-blue">
+                            Swift GL MT{" "}
+                          </h4>
+                          <p className="text-secondary">Rs: 24,000,00/- </p>
+                          <p className="underline action text-red fs-lg ">
+                            See more <i className="bi bi-arrow-right"></i>
+                          </p>
+                        </div>
                       </div>
-                      <div className="card-footer mt-20 pt-9">
-                        <h4 className="card-title text-dark">Wagnor VXR</h4>
-                        <p className="text-secondary">RS: 24,000,00/- </p>
-                        <p className="underline action text-red fs-lg ">
-                          See more <i className="bi bi-arrow-right"></i>
-                        </p>
+                    </a>
+                  </div>
+                  <div className="col-md-6" data-aos="flip-left">
+                    <a
+                      href=""
+                      className="card equal-md-1-1 card-hover-border bg-white"
+                    >
+                      <div className="card-wrap">
+                        <div className="card-header pb-0">
+                          <Image
+                            className="background "
+                            src={swift2}
+                            layout="responsive"
+                            alt="background image"
+                          />
+                        </div>
+                        <div className="card-footer mt-20 pt-9">
+                          <h4 className="card-title text-dark text-blue">
+                            Swift GL VT{" "}
+                          </h4>
+                          <p className="text-secondary">RS: 24,000,00/- </p>
+                          <p className="underline action text-red fs-lg ">
+                            See more <i className="bi bi-arrow-right"></i>
+                          </p>
+                        </div>
                       </div>
-                    </div>
-                  </a>
+                    </a>
+                  </div>
+                  <div className="col-md-6" data-aos="flip-left">
+                    <a
+                      href=""
+                      className="card equal-md-1-1 card-hover-border bg-white"
+                    >
+                      <div className="card-wrap">
+                        <div className="card-header pb-0">
+                          <Image
+                            className="background "
+                            src={swift3}
+                            layout="responsive"
+                            alt="background image"
+                          />
+                        </div>
+                        <div className="card-footer mt-20 pt-9">
+                          <h4 className="card-title text-dark text-blue">
+                            Swift GL VVT{" "}
+                          </h4>
+                          <p className="text-secondary">RS: 24,000,00/- </p>
+                          <p className="underline action text-red fs-lg ">
+                            See more <i className="bi bi-arrow-right"></i>
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
                 </div>
               </div>
               <div
@@ -331,29 +512,59 @@ export default function SaleHome({ params: { locale } }: PricingPageProps) {
                 role="tabpanel"
                 aria-labelledby="component-1-5-tab"
               >
-                <div className="col-md-6" data-aos="flip-left">
-                  <a
-                    href=""
-                    className="card equal-md-1-1 card-hover-border bg-white"
-                  >
-                    <div className="card-wrap">
-                      <div className="card-header pb-0">
-                        <Image
-                          className="background "
-                          src={bannersales}
-                          layout="responsive"
-                          alt="background image"
-                        />
+                <div className="row g-3 g-xl-5">
+                  <div className="col-md-6" data-aos="flip-left">
+                    <a
+                      href=""
+                      className="card equal-md-1-1 card-hover-border bg-white"
+                    >
+                      <div className="card-wrap">
+                        <div className="card-header pb-0">
+                          <Image
+                            className="background "
+                            src={bolan1}
+                            layout="responsive"
+                            alt="background image"
+                          />
+                        </div>
+                        <div className="card-footer mt-20 pt-9">
+                          <h4 className="card-title text-dark text-blue">
+                            Bolan VX
+                          </h4>
+                          <p className="text-secondary">Rs: 24,000,00/- </p>
+                          <p className="underline action text-red fs-lg ">
+                            See more <i className="bi bi-arrow-right"></i>
+                          </p>
+                        </div>
                       </div>
-                      <div className="card-footer mt-20 pt-9">
-                        <h4 className="card-title text-dark">Bolan</h4>
-                        <p className="text-secondary">RS: 24,000,00/- </p>
-                        <p className="underline action text-red fs-lg ">
-                          See more <i className="bi bi-arrow-right"></i>
-                        </p>
+                    </a>
+                  </div>
+                  <div className="col-md-6" data-aos="flip-left">
+                    <a
+                      href=""
+                      className="card equal-md-1-1 card-hover-border bg-white"
+                    >
+                      <div className="card-wrap">
+                        <div className="card-header pb-0">
+                          <Image
+                            className="background "
+                            src={bolan2}
+                            layout="responsive"
+                            alt="background image"
+                          />
+                        </div>
+                        <div className="card-footer mt-20 pt-9">
+                          <h4 className="card-title text-dark text-blue">
+                            Bolan CARGO
+                          </h4>
+                          <p className="text-secondary">RS: 24,000,00/- </p>
+                          <p className="underline action text-red fs-lg ">
+                            See more <i className="bi bi-arrow-right"></i>
+                          </p>
+                        </div>
                       </div>
-                    </div>
-                  </a>
+                    </a>
+                  </div>
                 </div>
               </div>
               <div
@@ -362,29 +573,33 @@ export default function SaleHome({ params: { locale } }: PricingPageProps) {
                 role="tabpanel"
                 aria-labelledby="component-1-6-tab"
               >
-                <div className="col-md-6" data-aos="flip-left">
-                  <a
-                    href=""
-                    className="card equal-md-1-1 card-hover-border bg-white"
-                  >
-                    <div className="card-wrap">
-                      <div className="card-header pb-0">
-                        <Image
-                          className="background "
-                          src={bannersales}
-                          layout="responsive"
-                          alt="background image"
-                        />
+                <div className="row g-3 g-xl-5">
+                  <div className="col-md-6" data-aos="flip-left">
+                    <a
+                      href=""
+                      className="card equal-md-1-1 card-hover-border bg-white"
+                    >
+                      <div className="card-wrap">
+                        <div className="card-header pb-0">
+                          <Image
+                            className="background "
+                            src={ravi}
+                            layout="responsive"
+                            alt="background image"
+                          />
+                        </div>
+                        <div className="card-footer mt-20 pt-9">
+                          <h4 className="card-title text-dark text-blue">
+                            Ravi VX
+                          </h4>
+                          <p className="text-secondary">Rs: 24,000,00/- </p>
+                          <p className="underline action text-red fs-lg ">
+                            See more <i className="bi bi-arrow-right"></i>
+                          </p>
+                        </div>
                       </div>
-                      <div className="card-footer mt-20 pt-9">
-                        <h4 className="card-title text-dark">RAVI</h4>
-                        <p className="text-secondary">RS: 24,000,00/- </p>
-                        <p className="underline action text-red fs-lg ">
-                          See more <i className="bi bi-arrow-right"></i>
-                        </p>
-                      </div>
-                    </div>
-                  </a>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
