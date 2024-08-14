@@ -9,20 +9,10 @@ import "aos/dist/aos.css";
 import AOS from "aos";
 import { useTranslations } from "next-intl";
 import SaleHome from "./salehome";
-type PricingPageProps = {
-  params: { locale: Locale };
-};
 
-export default function Sale({ params: { locale } }: PricingPageProps) {
-  const t = useTranslations({ locale, namespace: "page" });
+export default function Sale() {
   useEffect(() => {
     AOS.init({ duration: 1000 }); // Initialize AOS with duration and once option
   }, []);
-  return (
-    <SaleHome
-      params={{
-        locale: undefined,
-      }}
-    />
-  );
+  return <SaleHome />;
 }

@@ -15,6 +15,22 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/sales/insurance",
     "/sales/extend_warranty",
     "/sales/register_transfer",
+    "/sales/cars/altovx",
+    "/sales/cars/altovxl",
+    "/sales/cars/altovxrags",
+    "/sales/cars/altovxlags",
+    "/sales/cars/cultusvxr",
+    "/sales/cars/cultusvxl",
+    "/sales/cars/cultusags",
+    "/sales/cars/wagonrags",
+    "/sales/cars/wagonrvxl",
+    "/sales/cars/wagonrvxr",
+    "/sales/cars/swiftglvvt",
+    "/sales/cars/swiftglvt",
+    "/sales/cars/swiftglmt",
+    "/sales/cars/bolancargo",
+    "/sales/cars/bolanvx",
+    "/sales/cars/ravi",
   ];
 
   /*
