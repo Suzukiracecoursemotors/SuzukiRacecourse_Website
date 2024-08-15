@@ -8,67 +8,24 @@ export default async function Landingpage() {
 
   return (
     <>
-      {/* <section classNameName="py-10 py-xl-20">
+      {/* <section classNameName="py-15 py-xl-20 bg-light text-dark">
         <div classNameName="container">
-          <div classNameName="row mb-5">
-            <div classNameName="col text-center">
-              <h2 classNameName="fw-bold mb-0">Departments</h2>
+          <div classNameName="row align-items-end mb-5">
+            <div classNameName="col-lg-8">
+              <h2 classNameName="fw-light">Spare Parts</h2>
             </div>
           </div>
-          <div classNameName="row g-3 g-xl-5" data-masonry>
-            {[
-              { title: "Sale", link: "/en/sales" },
-              { title: "CUC", link: "/en/sales/cuc" },
-              { title: "Finance", link: "/en/sales/finance" },
-              { title: "Parts", link: "/en/aftersale/parts" },
-              { title: "Service", link: "/en/aftersale/service" },
-              { title: "Body Shop", link: "/en/aftersale/bodyshop" },
-            ].map((department, index) => (
-              <div classNameName="col-md-4" data-aos="fade-up" key={index}>
-                <a
-                  href={department.link}
-                  classNameName="card equal-md-1-1 card-hover-gradient"
-                >
-                  <Image
-                    classNameName="background  "
-                    src={S}
-                    layout="responsive"
-                    alt={department.title}
-                  />
-                  <div classNameName="card-wrap">
-                    <div classNameName="card-footer my-auto">
-                      <div classNameName="text-center text-shadow">
-                        <h3 classNameName="mb-0 fw-bold text-white">
-                          {department.title}
-                        </h3>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section> */}
-
-      <section className="py-15 py-xl-20 bg-light text-dark">
-        <div className="container">
-          <div className="row align-items-end mb-5">
-            <div className="col-lg-8">
-              <h2 className="fw-light">Spare Parts</h2>
-            </div>
-          </div>
-          <div className="row justify-content-between">
-            <div className="col">
-              <ul className="list-unstyled">
+          <div classNameName="row justify-content-between">
+            <div classNameName="col">
+              <ul classNameName="list-unstyled">
                 <li>
-                  <a href="" className="card bg-white card-hover-border">
-                    <div className="card-body py-4">
-                      <div className="row align-items-center g-2 g-md-4 text-center text-md-start">
-                        <div className="col-md-9">
-                          <p className="fs-lg mb-0">Senior Visual Designer</p>
-                          <ul className="list-inline list-inline-separated text-muted">
-                            <li className="list-inline-item">at Spotify</li>
+                  <a href="" classNameName="card bg-white card-hover-border">
+                    <div classNameName="card-body py-4">
+                      <div classNameName="row align-items-center g-2 g-md-4 text-center text-md-start">
+                        <div classNameName="col-md-9">
+                          <p classNameName="fs-lg mb-0">Senior Visual Designer</p>
+                          <ul classNameName="list-inline list-inline-separated text-muted">
+                            <li classNameName="list-inline-item">at Spotify</li>
                             <li className="list-inline-item">
                               San Francisco, CA
                             </li>
@@ -162,6 +119,77 @@ export default async function Landingpage() {
                   </a>
                 </li>
               </ul>
+            </div>
+          </div>
+        </div>
+      </section> */}
+      <section className="py-15 py-xl-20">
+        <div className="container">
+          <div className="row mb-5">
+            <div className="col text-center">
+              <h2 className="fw-bold mb-0">Categories</h2>
+            </div>
+          </div>
+          <div className="row g-3 g-xl-4" data-masonry>
+            <div className="col-md-6" data-aos="fade-up">
+              <a
+                href="https://suzukiparts.pk/collections/all"
+                className="card equal-md-16-9 card-hover-gradient"
+              >
+                <div className="card-wrap">
+                  <div className="card-footer my-auto">
+                    <div className="text-center text-shadow">
+                      <h3 className="mb-0 fw-bold text-white">All Products</h3>
+                    </div>
+                  </div>
+                </div>
+                <figure className="background"></figure>
+              </a>
+            </div>
+            <div className="col-md-6" data-aos="fade-up">
+              <a
+                href="https://suzukiparts.pk/collections"
+                className="card equal-md-16-9 card-hover-gradient"
+              >
+                <div className="card-wrap">
+                  <div className="card-footer my-auto">
+                    <div className="text-center text-shadow">
+                      <h3 className="mb-0 fw-bold text-white">Collections</h3>
+                    </div>
+                  </div>
+                </div>
+                <figure className="background"></figure>
+              </a>
+            </div>
+            <div className="col-md-6" data-aos="fade-up">
+              <a
+                href="https://suzukiparts.pk/collections/accessories-equipment"
+                className="card equal-md-16-9 card-hover-gradient"
+              >
+                <div className="card-wrap">
+                  <div className="card-footer my-auto">
+                    <div className="text-center text-shadow">
+                      <h3 className="mb-0 fw-bold text-white">Accessories</h3>
+                    </div>
+                  </div>
+                </div>
+                <figure className="background"></figure>
+              </a>
+            </div>
+            <div className="col-md-6" data-aos="fade-up">
+              <a
+                href="https://suzukiparts.pk/collections/all"
+                className="card equal-md-16-9 card-hover-gradient"
+              >
+                <div className="card-wrap">
+                  <div className="card-footer my-auto">
+                    <div className="text-center text-shadow">
+                      <h3 className="mb-0 fw-bold text-white">Equipments</h3>
+                    </div>
+                  </div>
+                </div>
+                <figure className="background"></figure>
+              </a>
             </div>
           </div>
         </div>
