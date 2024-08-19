@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import { Modal, Button, Form } from "react-bootstrap";
 
-export function BookingForm() {
+export function CarBookingForm() {
   const [status, setStatus] = useState("");
   const [show, setShow] = useState(false);
 
@@ -52,13 +52,13 @@ export function BookingForm() {
 
   return (
     <>
-      <Button className="btn btn-primary rounded-pill" onClick={handleShow}>
-        Book a Test Drive
+      <Button className="btn btn-red rounded-pill" onClick={handleShow}>
+        Car Booking Form
       </Button>
 
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
-          <Modal.Title>Test Drive Form</Modal.Title>
+          <Modal.Title>Car Booking Form</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <Form onSubmit={handleSubmit}>

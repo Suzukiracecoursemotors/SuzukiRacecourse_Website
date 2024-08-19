@@ -18,6 +18,8 @@ import bolan1 from "../public/Suzuki-Bolan-Front.jpg";
 import bolan2 from "../public/Suzuki-Bolan-Front.jpg";
 import ravi from "../public/suzuki-ravi6.jpg";
 import { Link } from "@/navigation";
+import { BookingForm } from "../common/form";
+import { CarBookingForm } from "../common/form copy";
 
 const carModels = [
   {
@@ -159,7 +161,7 @@ function SaleHome() {
   return (
     <section className="py-15 py-xl-20 bg-light">
       <div className="container">
-        <div className="row mb-10">
+        <div className="row mb-10 d-flex">
           <div className="col">
             <h2 className="fw-bold text-dark">Sales</h2>
           </div>
@@ -190,6 +192,7 @@ function SaleHome() {
                 </li>
               ))}
             </ul>
+            <CarBookingForm />
           </div>
 
           <div className="col-xl-8">
