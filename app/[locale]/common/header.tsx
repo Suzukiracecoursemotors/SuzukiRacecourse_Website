@@ -35,12 +35,13 @@ const Header = ({ children }: HeaderProps) => {
   }, [prevScrollPos]);
   const closeMenu = (event: React.MouseEvent<HTMLDivElement>) => {
     const target = event.target as HTMLElement;
-    if (target.closest(".locale-switcher") || target.closest(".dropdown")) {
+    if (target.closest(".dropdown")) {
       return;
     }
     setShowMobileMenu(false);
-    document.body.style.overflow = "auto";
+    document.body.style.overflow = "hidden";
   };
+
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     return () => {

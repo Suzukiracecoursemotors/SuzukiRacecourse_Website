@@ -1,8 +1,9 @@
-import Designhome from "../../[locale]/public/banner2.jpg";
-import { Link } from "@/navigation";
-import Constants from "@/data/Constants";
 import Image from "next/image";
 import { getTranslations } from "next-intl/server";
+import { BookingForm } from "../common/form";
+import banner from "../public/WhatsApp Image 2024-07-06 at 10.14.39 AM.jpeg";
+import { Link } from "@/navigation";
+import Constants from "@/data/Constants";
 export default async function Landingpage() {
   const t = await getTranslations({
     namespace: "page.home",
@@ -21,10 +22,13 @@ export default async function Landingpage() {
                 {t("banner_title")}
               </h1>
               <br />
+              <BookingForm />
+              <br />
+              <br />
 
               <Link
                 href={"tel:" + Constants.PHONE}
-                className="btn btn-with-icon btn-yellow rounded-pill ms-2"
+                className="btn btn-with-icon btn-yellow rounded-pill "
               >
                 <i className="bi bi-telephone-fill ms-1"></i>{" "}
                 {t("banner_btn_text")}{" "}
@@ -37,7 +41,7 @@ export default async function Landingpage() {
             <div className="col-lg-6 h-100">
               <Image
                 className="back-background h-100"
-                src={Designhome}
+                src={banner}
                 alt={""}
                 layout="responsive"
               />

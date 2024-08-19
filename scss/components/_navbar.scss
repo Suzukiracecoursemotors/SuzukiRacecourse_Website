@@ -221,3 +221,21 @@
 .cursor {
   cursor: pointer;
 }
+@keyframes blink {
+  0% {
+    visibility: visible;
+    color: rgb(255, 0, 0);
+  }
+  50% {
+    visibility: hidden;
+    color: rgb(255, 0, 0);
+  }
+  100% {
+    visibility: visible;
+    color: rgb(255, 0, 0);
+  }
+}
+
+.blinking-text {
+  animation: blink 1s step-start infinite;
+}

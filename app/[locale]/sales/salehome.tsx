@@ -228,9 +228,16 @@ function SaleHome() {
                               <h4 className="card-title text-dark text-blue">
                                 {variant.title}
                               </h4>
-                              <p className="text-secondary text-dark margin0">
-                                {variant.price}
-                              </p>
+                              <h6 className="text-secondary text-dark margin0">
+                                <span>
+                                  {variant.price}{" "}
+                                  <span className="blinking-text">
+                                    Book now
+                                  </span>
+                                </span>
+                              </h6>
+
+                              <br />
                               <p className="underline action text-red fs-lg">
                                 See more <i className="bi bi-arrow-right"></i>
                               </p>
