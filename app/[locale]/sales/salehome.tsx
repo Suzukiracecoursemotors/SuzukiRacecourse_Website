@@ -167,10 +167,6 @@ function SaleHome() {
           </div>
         </div>
         <div className="row g-3 g-xl-5 justify-content-between">
-          <div className="container ">
-            <CarBookingForm />
-          </div>
-
           <div className="col-xl-4">
             <ul
               className="nav nav-tabs flex-xl-column"

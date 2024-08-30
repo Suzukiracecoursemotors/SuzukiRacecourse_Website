@@ -239,3 +239,19 @@
 .blinking-text {
   animation: blink 1s step-start infinite;
 }
+
+.brand-label:hover {
+  color: blue;
+  text-decoration: underline;
+}
+.car-model-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+@media (max-width: 576px) {
+  .widget .list-unstyled {
+    flex-direction: row;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}
