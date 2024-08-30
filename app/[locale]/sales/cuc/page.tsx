@@ -2,32 +2,38 @@
 
 import Image from "next/image";
 import React, { useState } from "react";
-import CUCbanner from "../../public/Alto/alto.png";
+import Cultuspng from "../../public/Cultus/Cultus-Gray.jpg";
+import Swiftpng from "../../public/Swift/Swift-Back-Side-Angle.png";
+import { BookingForm } from "../../common/form";
+import { CarBookingForm } from "../../common/form copy";
+import { Link } from "@/navigation";
+import { Seemore } from "../../common/seemore";
+import { DropdownDivider } from "react-bootstrap";
 
 const carData = [
   {
-    model: "Alto Vx",
-    price: 15000,
-    mileage: "50,000 km",
-    year: 2019,
-    brand: "Alto",
-    img: CUCbanner,
-  },
-  {
     model: "Cultus VXL",
-    price: 13000,
+    price: 360000,
     mileage: "60,000 km",
     year: 2018,
     brand: "Cultus",
-    img: CUCbanner,
+    img: Cultuspng,
   },
   {
     model: "Swift vvt",
-    price: 12000,
+    price: 400000,
     mileage: "70,000 km",
     year: 2017,
     brand: "Swift",
-    img: CUCbanner,
+    img: Swiftpng,
+  },
+  {
+    model: "Swift vvt",
+    price: 300000,
+    mileage: "70,000 km",
+    year: 2017,
+    brand: "Swift",
+    img: Swiftpng,
   },
 ];
 
@@ -73,7 +79,7 @@ export default function CUC() {
             </p>
           </div>
           <div className="col-md-6 text-md-end">
-            <div className="dropdown">
+            {/* <div className="dropdown">
               <a
                 className="underline text-black"
                 href="#"
@@ -130,7 +136,8 @@ export default function CUC() {
                   </a>
                 </li>
               </ul>
-            </div>
+            </div> */}
+            <CarBookingForm />
           </div>
         </div>
         {/* Main Content Section */}
@@ -138,7 +145,7 @@ export default function CUC() {
           {/* Sidebar Section */}
           <aside className="col-xl-3 d-none d-xl-block">
             <div className="widget">
-              <span className="d-flex eyebrow text-muted mb-2">Car Brands</span>
+              <h5 className="d-flex  text-muted mb-2">Car Brands</h5>
               <ul className="list-unstyled">
                 {[
                   "Alto",
@@ -159,7 +166,7 @@ export default function CUC() {
                         onChange={() => handleBrandChange(brand)}
                       />
                       <label
-                        className="form-check-label"
+                        className="form-check-label "
                         htmlFor={`brand-${index}`}
                       >
                         {brand}
@@ -176,26 +183,29 @@ export default function CUC() {
               {filteredCars.length > 0 ? (
                 filteredCars.map((car, index) => (
                   <div key={index} className="col-md-6 col-xl-4">
-                    <div className="product">
-                      <figure className="product-image">
-                        <a href="#!">
-                          <Image
-                            src={car.img}
-                            alt={car.model}
-                            layout="responsive"
-                            width={500}
-                            height={300}
-                            className="img-fluid"
-                          />
-                        </a>
-                      </figure>
-                      <a className="product-title" href="#!">
-                        {car.model}
-                      </a>
-                      <div className="text-muted">
-                        {car.year} • {car.mileage}
+                    <div className="border card flex-1 flex  ">
+                      <div className="card-header ">
+                        <Image
+                          src={car.img}
+                          alt={car.model}
+                          layout="responsive"
+                          width={700}
+                          height={700}
+                          className=" card "
+                        />
                       </div>
-                      <span className="product-price">${car.price}</span>
+
+                      <div className="card-footer card  flex-1">
+                        <h5 className="">{car.model}</h5>
+                        <div className="text-muted">
+                          {car.year} • {car.mileage}
+                        </div>
+                        <span className="product-price text-blue underline">
+                          Rs: {car.price}
+                        </span>
+                        <br />
+                        <Seemore />
+                      </div>
                     </div>
                   </div>
                 ))
