@@ -8,21 +8,23 @@ import image6 from "../../[locale]/public/PurchaseOfferuptoRs.50,000forWagonR_1_
 import Image from "next/image";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Link } from "@/navigation";
+import Constants from "@/data/Constants";
 function Carosil() {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const images = [image4, image1, image2, image5, image6]; // Replace with your image paths
+  const images = [image4, image1, image2, image5, image6];
 
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 2000); // Auto slide change interval in milliseconds
+    }, 2000);
 
     return () => clearInterval(interval);
   }, [images.length]);
   const autoSlideInterval = 2000;
 
   return (
-    <section className="py-4 py-xl-8">
+    <section className="">
       <Carousel
         autoPlay={true}
         interval={autoSlideInterval}

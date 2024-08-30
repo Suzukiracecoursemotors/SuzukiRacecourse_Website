@@ -1,309 +1,247 @@
-import { Locale } from "@/i18n";
-import { getTranslations } from "next-intl/server";
+"use client";
+
 import Image from "next/image";
-import React from "react";
-import CUCbanner from "../../public/WhatsApp Image 2024-07-06 at 10.14.39 AM.jpeg";
-import Carosil from "../../common/carosil";
+import React, { useState } from "react";
+import CUCbanner from "../../public/Alto/alto.png";
 
-type PricingPageProps = {
-  params: { locale: Locale };
-};
+const carData = [
+  {
+    model: "Alto Vx",
+    price: 15000,
+    mileage: "50,000 km",
+    year: 2019,
+    brand: "Alto",
+    img: CUCbanner,
+  },
+  {
+    model: "Cultus VXL",
+    price: 13000,
+    mileage: "60,000 km",
+    year: 2018,
+    brand: "Cultus",
+    img: CUCbanner,
+  },
+  {
+    model: "Swift vvt",
+    price: 12000,
+    mileage: "70,000 km",
+    year: 2017,
+    brand: "Swift",
+    img: CUCbanner,
+  },
+];
 
-export default async function CUC({ params: { locale } }: PricingPageProps) {
-  const t = await getTranslations({ locale, namespace: "page" });
+export default function CUC() {
+  const [selectedBrands, setSelectedBrands] = useState<string[]>([]);
+  const [sortOption, setSortOption] = useState<string>("priceHighToLow");
+
+  const handleBrandChange = (brand: string) => {
+    setSelectedBrands((prev) =>
+      prev.includes(brand) ? prev.filter((b) => b !== brand) : [...prev, brand]
+    );
+  };
+
+  const handleSortChange = (option: string) => {
+    setSortOption(option);
+  };
+
+  const sortedCars = [...carData].sort((a, b) => {
+    if (sortOption === "priceLowToHigh") {
+      return a.price - b.price;
+    } else if (sortOption === "newestFirst") {
+      return b.year - a.year;
+    } else if (sortOption === "oldestFirst") {
+      return a.year - b.year;
+    } else {
+      return b.price - a.price; // Default: priceHighToLow
+    }
+  });
+
+  const filteredCars = sortedCars.filter(
+    (car) => selectedBrands.length === 0 || selectedBrands.includes(car.brand)
+  );
 
   return (
-    <article>
-      <section className="py-10 py-xl-15">
-        <div className="container">
-          <div className="row justify-content-center">
-            <div className="col-lg-10 col-xl-8">
-              <div>
-                <h1 className="display-1 text-blue">
-                  Exchange & Certified Used Car
-                </h1>
-                <div>
-                  <p className="fs-lg text-secondary">
-                    Welcome to Suzuki Racecourse Motor Sales Team, your trusted
-                    source for high-quality Suzuki vehicles and exceptional
-                    customer service. Our dealership offers a wide range of new
-                    and pre-owned Suzuki cars, SUVs, and trucks, ensuring you
-                    find the perfect vehicle to meet your needs. Our
-                    knowledgeable sales team is dedicated to providing a
-                    seamless car buying experience, with transparent pricing and
-                    flexible financing options. Whether youre looking for the
-                    latest models or certified pre-owned vehicles, we have
-                    something for everyone.
-                  </p>
-                </div>
-              </div>
-              <div className="container py-10 py-xl-15">
-                <div className="row mb-5">
-                  <div className="col-lg-6">
-                    <h2 className="fw-light">Benefits </h2>
-                  </div>
-                </div>
-
-                <div className="row mb-10">
-                  <div className="col-lg-10">
-                    <p className="fs-lg">
-                      Certified Used Car And Exchange policies{" "}
-                    </p>
-                  </div>
-                </div>
-                <div className="row g-3 g-xl-5">
-                  <div className="col-lg-4" key={"index"}>
-                    <div className="d-flex align-items-center">
-                      <div className="icon-box icon-box-sm bg-opaque-green rounded-circle me-2">
-                        <i className="bi bi-check2 text-green"></i>
-                      </div>
-                      <div>
-                        <p className="fs-lg">{"packageDescription"}</p>
-                      </div>
-                    </div>
-                    <br />
-                    <div className="d-flex align-items-center">
-                      <div className="icon-box icon-box-sm bg-opaque-green rounded-circle me-2">
-                        <i className="bi bi-check2 text-green"></i>
-                      </div>
-                      <div>
-                        <p className="fs-lg">{"packageDescription"}</p>
-                      </div>
-                    </div>
-                    <br />
-                    <div className="d-flex align-items-center">
-                      <div className="icon-box icon-box-sm bg-opaque-green rounded-circle me-2">
-                        <i className="bi bi-check2 text-green"></i>
-                      </div>
-                      <div>
-                        <p className="fs-lg">{"packageDescription"}</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div>
-                <div>
-                  <p className="fs-lg text-secondary">
-                    Welcome to Suzuki Racecourse Motor Sales Team, your trusted
-                    source for high-quality Suzuki vehicles and exceptional
-                    customer service. Our dealership offers a wide range of new
-                    and pre-owned Suzuki cars, SUVs, and trucks, ensuring you
-                    find the perfect vehicle to meet your needs. Our
-                    knowledgeable sales team is dedicated to providing a
-                    seamless car buying experience, with transparent pricing and
-                    flexible financing options. Whether youre looking for the
-                    latest models or certified pre-owned vehicles, we have
-                    something for everyone.
-                  </p>
-                </div>
-              </div>
-              <Carosil />
-
-              <div>
-                <div>
-                  <h5>Used Car</h5>
-                  <p className="fs-lg text-secondary">
-                    Welcome to Suzuki Racecourse Motor Sales Team, your trusted
-                    source for high-quality Suzuki vehicles and exceptional
-                    customer service. Our dealership offers a wide range of new
-                    and pre-owned Suzuki cars, SUVs, and trucks, ensuring you
-                    find the perfect vehicle to meet your needs. Our
-                    knowledgeable sales team is dedicated to providing a
-                    seamless car buying experience, with transparent pricing and
-                    flexible financing options. Whether youre looking for the
-                    latest models or certified pre-owned vehicles, we have
-                    something for everyone.
-                  </p>
-                </div>
-              </div>
-              <div>
-                <div>
-                  <p className="fs-lg text-secondary">
-                    Welcome to Suzuki Racecourse Motor Sales Team, your trusted
-                    source for high-quality Suzuki vehicles and exceptional
-                    customer service. Our dealership offers a wide range of new
-                    and pre-owned Suzuki cars, SUVs, and trucks, ensuring you
-                    find the perfect vehicle to meet your needs. Our
-                    knowledgeable sales team is dedicated to providing a
-                    seamless car buying experience, with transparent pricing and
-                    flexible financing options. Whether youre looking for the
-                    latest models or certified pre-owned vehicles, we have
-                    something for everyone.
-                  </p>
-                </div>
-              </div>
-            </div>
+    <section className="py-15 py-xl-20">
+      <div className="container mt-5">
+        {/* Header Section */}
+        <div className="row g-3 g-md-5 align-items-end mb-5">
+          <div className="col-md-6">
+            <h1 className="mb-2">Available Used Cars</h1>
+            <p className="text-muted">
+              Choose from our wide range of used cars.
+            </p>
           </div>
-        </div>
-      </section>
-      <section className="py-15 py-xl-20 bg-black inverted">
-        <div className="container">
-          <div className="row align-items-end mb-5">
-            <div className="col-lg-8 mb-2 mb-lg-0">
-              <h2>Frequently asked questions</h2>
-            </div>
-          </div>
-          <div className="row mb-8">
-            <div className="col-12">
-              <div
-                className="accordion accordion-highlight border-top border-bottom"
-                id="accordion-1"
+          <div className="col-md-6 text-md-end">
+            <div className="dropdown">
+              <a
+                className="underline text-black"
+                href="#"
+                role="button"
+                id="dropdownMenuLink"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
               >
-                <div className="accordion-item">
-                  <h2 className="accordion-header" id="heading-1-1">
-                    <button
-                      className="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapse-1-1"
-                      aria-expanded="false"
-                      aria-controls="collapse-1-1"
-                    >
-                      What is the difference between an editor and a viewer ?
-                    </button>
-                  </h2>
-                  <div
-                    id="collapse-1-1"
-                    className="accordion-collapse collapse"
-                    aria-labelledby="heading-1-1"
-                    data-bs-parent="#accordion-1"
+                Sort by:{" "}
+                {sortOption === "priceLowToHigh"
+                  ? "Price low to high"
+                  : sortOption === "newestFirst"
+                  ? "Newest first"
+                  : sortOption === "oldestFirst"
+                  ? "Oldest first"
+                  : "Price high to low"}
+                <i className="bi bi-chevron-down"></i>
+              </a>
+              <ul className="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <li>
+                  <a
+                    className="dropdown-item"
+                    href="#"
+                    onClick={() => handleSortChange("priceLowToHigh")}
                   >
-                    <div className="accordion-body">
-                      <p className="text-secondary">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Dolore cumque quos libero, ratione non hic nisi autem
-                        dicta saepe asperiores repellendus quis ab est.
-                        Repellendus dicta itaque aliquid officiis animi?
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="accordion-item">
-                  <h2 className="accordion-header" id="heading-1-2">
-                    <button
-                      className="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapse-1-2"
-                      aria-expanded="false"
-                      aria-controls="collapse-1-2"
-                    >
-                      What if more editors are added to my team each month ?
-                    </button>
-                  </h2>
-                  <div
-                    id="collapse-1-2"
-                    className="accordion-collapse collapse"
-                    aria-labelledby="heading-1-2"
-                    data-bs-parent="#accordion-1"
+                    Price low to high
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="dropdown-item"
+                    href="#"
+                    onClick={() => handleSortChange("newestFirst")}
                   >
-                    <div className="accordion-body">
-                      <p className="text-secondary">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Voluptates quisquam aut quod culpa fugit voluptatibus
-                        sunt, obcaecati eveniet impedit eligendi voluptatem
-                        reiciendis cum consequatur sit quia mollitia. Nam,
-                        tempora tempore!
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="accordion-item">
-                  <h2 className="accordion-header" id="heading-1-3">
-                    <button
-                      className="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapse-1-3"
-                      aria-expanded="false"
-                      aria-controls="collapse-1-3"
-                    >
-                      What payment methods do you offer ?
-                    </button>
-                  </h2>
-                  <div
-                    id="collapse-1-3"
-                    className="accordion-collapse collapse"
-                    aria-labelledby="heading-1-3"
-                    data-bs-parent="#accordion-1"
+                    Newest first
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="dropdown-item"
+                    href="#"
+                    onClick={() => handleSortChange("oldestFirst")}
                   >
-                    <div className="accordion-body">
-                      <p className="text-secondary">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Est ullam soluta ipsam, commodi atque tempore debitis
-                        quaerat molestias neque aperiam, doloribus vero?
-                        Suscipit et dignissimos minus, vel distinctio odit.
-                        Earum.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="accordion-item">
-                  <h2 className="accordion-header" id="heading-1-4">
-                    <button
-                      className="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapse-1-4"
-                      aria-expanded="false"
-                      aria-controls="collapse-1-4"
-                    >
-                      What is your refund policy?
-                    </button>
-                  </h2>
-                  <div
-                    id="collapse-1-4"
-                    className="accordion-collapse collapse"
-                    aria-labelledby="heading-1-4"
-                    data-bs-parent="#accordion-1"
+                    Oldest first
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="dropdown-item"
+                    href="#"
+                    onClick={() => handleSortChange("priceHighToLow")}
                   >
-                    <div className="accordion-body">
-                      <p className="text-secondary">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Est ullam soluta ipsam, commodi atque tempore debitis
-                        quaerat molestias neque aperiam, doloribus vero?
-                        Suscipit et dignissimos minus, vel distinctio odit.
-                        Earum.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="accordion-item">
-                  <h2 className="accordion-header" id="heading-1-5">
-                    <button
-                      className="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapse-1-5"
-                      aria-expanded="false"
-                      aria-controls="collapse-1-5"
-                    >
-                      Do you have educational or non-profit discounts ?
-                    </button>
-                  </h2>
-                  <div
-                    id="collapse-1-5"
-                    className="accordion-collapse collapse"
-                    aria-labelledby="heading-1-5"
-                    data-bs-parent="#accordion-1"
-                  >
-                    <div className="accordion-body">
-                      <p className="text-secondary">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Est ullam soluta ipsam, commodi atque tempore debitis
-                        quaerat molestias neque aperiam, doloribus vero?
-                        Suscipit et dignissimos minus, vel distinctio odit.
-                        Earum.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+                    Price high to low
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
-      </section>
-    </article>
+        {/* Main Content Section */}
+        <div className="row justify-content-between">
+          {/* Sidebar Section */}
+          <aside className="col-xl-3 d-none d-xl-block">
+            <div className="widget">
+              <span className="d-flex eyebrow text-muted mb-2">Car Brands</span>
+              <ul className="list-unstyled">
+                {[
+                  "Alto",
+                  "Mehran",
+                  "Cultus",
+                  "Wagno-R",
+                  "Swift",
+                  "Bolan",
+                  "Ravi",
+                ].map((brand, index) => (
+                  <li key={index} className="mt-1">
+                    <div className="form-check form-check-minimal">
+                      <input
+                        className="form-check-input"
+                        type="checkbox"
+                        id={`brand-${index}`}
+                        checked={selectedBrands.includes(brand)}
+                        onChange={() => handleBrandChange(brand)}
+                      />
+                      <label
+                        className="form-check-label"
+                        htmlFor={`brand-${index}`}
+                      >
+                        {brand}
+                      </label>
+                    </div>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </aside>
+          {/* Product Listing Section */}
+          <div className="col-xl-9">
+            <div className="row g-3">
+              {filteredCars.length > 0 ? (
+                filteredCars.map((car, index) => (
+                  <div key={index} className="col-md-6 col-xl-4">
+                    <div className="product">
+                      <figure className="product-image">
+                        <a href="#!">
+                          <Image
+                            src={car.img}
+                            alt={car.model}
+                            layout="responsive"
+                            width={500}
+                            height={300}
+                            className="img-fluid"
+                          />
+                        </a>
+                      </figure>
+                      <a className="product-title" href="#!">
+                        {car.model}
+                      </a>
+                      <div className="text-muted">
+                        {car.year} • {car.mileage}
+                      </div>
+                      <span className="product-price">${car.price}</span>
+                    </div>
+                  </div>
+                ))
+              ) : (
+                <div className="col-12">
+                  <p>No cars match the selected filters.</p>
+                </div>
+              )}
+            </div>
+          </div>
+        </div>
+        {/* Pagination Section */}
+        <div className="row mt-6">
+          <div className="col text-center">
+            <nav aria-label="Page navigation">
+              <ul className="pagination">
+                <li className="page-item">
+                  <a className="page-link" href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                  </a>
+                </li>
+                <li className="page-item">
+                  <a className="page-link" href="#">
+                    1
+                  </a>
+                </li>
+                <li className="page-item">
+                  <a className="page-link" href="#">
+                    2
+                  </a>
+                </li>
+                <li className="page-item">
+                  <a className="page-link" href="#">
+                    3
+                  </a>
+                </li>
+                <li className="page-item">
+                  <a className="page-link" href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </section>
   );
 }

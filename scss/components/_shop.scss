@@ -1,13 +1,16 @@
 //
 // product
 //
-
+.height11 {
+  max-height: 200px !important;
+}
 .product-image {
   position: relative;
   margin-bottom: rem(12);
 
   img {
     max-width: 100%;
+    max-height: 200px !important;
   }
 
   &:hover {

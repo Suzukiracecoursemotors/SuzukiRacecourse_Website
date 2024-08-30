@@ -53,7 +53,7 @@ export function CarBookingForm() {
   return (
     <>
       <Button className="btn btn-red rounded-pill" onClick={handleShow}>
-        Car Booking Form
+        Booking Form
       </Button>
 
       <Modal show={show} onHide={handleClose}>
