@@ -1,11 +1,11 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import image1 from "../../cars/altovx/New folder/1alto.jpg";
-import image2 from "../../cars/altovx/New folder/2alto.jpg";
+import image1 from "../../cars/altovx/New folder/Exterior Alto-2 (1920x800).jpg";
+import image2 from "../../cars/altovx/New folder/Studio Session-479.jpg";
 import image3 from "../../cars/altovx/New folder/3alto.jpg";
-import image4 from "../../cars/altovx/New folder/4alto.jpg";
+import image4 from "../../cars/altovx/New folder/exterior2.jpg";
 import image5 from "../../cars/altovx/New folder/5alto.jpg";
-import image6 from "../../cars/altovx/New folder/6alto.jpg";
+import image6 from "../../cars/altovx/New folder/2alto.jpg";
 import image7 from "../../cars/altovx/New folder/7alto.jpg";
 import image8 from "../../cars/altovx/New folder/8alt.jpg";
 import image9 from "../../cars/altovx/New folder/9alto.jpg";
@@ -25,7 +25,6 @@ function CarosilAltoVX() {
     image4,
     image1,
     image2,
-    image3,
     image5,
     image6,
     image7,

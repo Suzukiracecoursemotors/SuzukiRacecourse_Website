@@ -1,7 +1,8 @@
 import React from "react";
 import CarosilAltoVX from "./carosilalto";
 import Image from "next/image";
-import image12 from "../../cars/altovx/New folder/12alt.jpg";
+import image12 from "../../cars/altovx/New folder/Untitled.png";
+import image1 from "../../cars/altovx/New folder/Untitled1.png";
 import { CarBookingForm } from "@/app/[locale]/common/form copy";
 import { Link } from "@/navigation";
 import Constants from "@/data/Constants";
@@ -204,6 +205,7 @@ export default async function Alto() {
 
               <br />
               <Image src={image12} layout="responsive" alt="Suzuki Alto" />
+              <Image src={image1} layout="responsive" alt="Suzuki Alto" />
             </div>
           </div>
         </div>

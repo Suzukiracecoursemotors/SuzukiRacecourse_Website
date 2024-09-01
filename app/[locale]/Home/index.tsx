@@ -11,7 +11,7 @@ export default async function HomePage() {
       <Carosil />
       {/* <DepartmentsList /> */}
       <Sale />
-      <Aftersale />
+      {/* <Aftersale /> */}
       <AimsandMissions />
     </>
   );
