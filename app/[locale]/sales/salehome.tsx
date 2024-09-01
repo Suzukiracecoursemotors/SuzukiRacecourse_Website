@@ -257,10 +257,11 @@ const SaleHome = () => {
                               />
                             </div>
                             <h5 className="card-title text-dark text-center">
-                              {variant.title}
-                            </h5>
+                              {variant.title}{" "}
+                            </h5>{" "}
                             <p className="card-text text-center text-secondary mb-2">
-                              Price: <strong>{variant.price}</strong>
+                              Price: <strong>{variant.price}</strong>{" "}
+                              <span className="blinking-text">Book now</span>
                             </p>
                             <p className="card-text text-center">
                               <span className="badge bg-success me-2">
