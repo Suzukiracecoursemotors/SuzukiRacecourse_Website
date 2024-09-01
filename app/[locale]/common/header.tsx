@@ -3,7 +3,7 @@ import React, { useEffect, useState, useMemo, useCallback } from "react";
 import { Link } from "@/navigation";
 import Constants from "@/data/Constants";
 import Image from "next/image";
-import logo from "../../[locale]/public/logo.png";
+import logo from "../../[locale]/public/suzuki-logo-5311518DD9-seeklogo.com.png";
 import { usePathname } from "next/navigation";
 import { useTranslations } from "next-intl";
 import HeaderLocaleSwitcher from "./locale-switcher";

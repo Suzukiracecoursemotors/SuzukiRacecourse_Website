@@ -1,14 +1,14 @@
 import React from "react";
-import Image from "next/image";
-import image1 from "../../../public/PurchaseOfferuptoRs.50,000forWagonR_1_011802.png";
 import { getTranslations } from "next-intl/server";
-import Carosil from "@/app/[locale]/common/carosil";
+import image12 from "./Ravi/002 Ravi_page-0001.jpg";
+import image13 from "./Ravi/002 Ravi_page-0002.jpg";
+import { Link } from "@/navigation";
+import Constants from "@/data/Constants";
+import Image from "next/image";
+import { CarBookingForm } from "@/app/[locale]/common/form copy";
+import CarosilsRavi from "./carosilcultus";
 
-const banner_post = {
-  img: image1,
-};
-
-export default async function Post1() {
+export default async function Ravi() {
   const t = await getTranslations({
     namespace: "page.blogs",
   });
@@ -16,216 +16,166 @@ export default async function Post1() {
   return (
     <article>
       <section className="bg-black inverted overflow-hidden">
-        <div className="d-flex flex-column py-15 container min-vh-75 level-3">
-          <div className="row justify-content-center mt-auto">
-            <div className="col-lg-10 col-xl-8">
-              <span className="badge bg-opaque-white text-white rounded-pill mb-2">
-                {t("blog_page.banner_title")}
-              </span>
-              <h1 className="display-1">{t("blog_page.title1")}</h1>
-            </div>
-          </div>
-        </div>
-        <Image
-          className="background background-gradient-horizontal"
-          data-top-top="transform: translateY(0%);"
-          data-top-bottom="transform: translateY(10%);"
-          src={banner_post.img}
-          layout="responsive"
-          alt="background image"
-        />
+        <CarosilsRavi />
       </section>
 
-      <section className="py-15 py-xl-20">
-        <div className="container">
-          <div className="row mb-5 align-items-end">
-            <div className="col-lg-6">
-              <h2 className="fw-bold">Latest blog posts</h2>
-            </div>
-            <div className="col-lg-6 text-lg-end">
-              <a href="" className="action underline">
-                View all <i className="bi bi-arrow-right"></i>
-              </a>
-            </div>
-          </div>
-          <div className="row g-3 g-xl-5">
-            <div className="col-md-6 col-lg-4" data-aos="fade-up">
-              <a
-                href=""
-                className="card equal equal-3-4 card-hover-gradient inverted"
-              >
-                <figure
-                  className="background"
-                  // style="background-image: url('./assets/images/job-board-2.jpg')"
-                ></figure>
-                <div className="card-wrap">
-                  <div className="card-footer mt-auto text-shadow">
-                    <time
-                      // datetime="2020-12-18 20:00"
-                      className="eyebrow text-secondary mb-1"
-                    >
-                      18 December
-                    </time>
-                    <h5 className="card-title">
-                      Ethical Considerations In UX Research: The Need For
-                      Training And Review
-                    </h5>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div
-              className="col-md-6 col-lg-4"
-              data-aos="fade-up"
-              data-aos-delay="100"
-            >
-              <a
-                href=""
-                className="card equal equal-3-4 card-hover-gradient inverted"
-              >
-                <figure
-                  className="background"
-                  // style="background-image: url('./assets/images/job-board-3.jpg')"
-                ></figure>
-                <div className="card-wrap">
-                  <div className="card-footer mt-auto text-shadow">
-                    <time
-                      // datetime="2020-12-18 20:00"
-                      className="eyebrow text-secondary mb-1"
-                    >
-                      18 December
-                    </time>
-                    <h5 className="card-title">
-                      Ethical Considerations In UX Research: The Need For
-                      Training And Review
-                    </h5>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div
-              className="col-md-6 col-lg-4"
-              data-aos="fade-up"
-              data-aos-delay="200"
-            >
-              <a
-                href=""
-                className="card equal equal-3-4 card-hover-gradient inverted"
-              >
-                <figure
-                  className="background"
-                  // style="background-image: url('./assets/images/job-board-4.jpg')"
-                ></figure>
-                <div className="card-wrap">
-                  <div className="card-footer mt-auto text-shadow">
-                    <time
-                      // datetime="2020-12-18 20:00"
-                      className="eyebrow text-secondary mb-1"
-                    >
-                      18 December
-                    </time>
-                    <h5 className="card-title">
-                      Ethical Considerations In UX Research: The Need For
-                      Training And Review
-                    </h5>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
+      <section className="py-5 py-xl-15">
+        <div className="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center text-center p-4">
+          <h1 className="display-3 fw-bold lh-sm text-white mb-4">
+            Suzuki Ravi
+          </h1>
+          <CarBookingForm />
+          <Link
+            href={"tel:" + Constants.PHONE}
+            className="btn btn-with-icon btn-yellow rounded-pill"
+          >
+            <i className="bi bi-telephone-fill ms-1"></i> Book Now
+          </Link>
         </div>
-      </section>
-      <section className="py-10 py-xl-15">
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-lg-10 col-xl-8">
               <div>
-                <h6 className="lead text-secondary">{t("blog_page.title")}</h6>
-                <div>
-                  <h5>{t("blog_page.title11")}</h5>
-                  <p className="fs-lg text-secondary">
-                    {t("blog_page.description11")}
-                  </p>
-                </div>
+                <h3 style={{ textAlign: "center" }}>
+                  Suzuki Ravi: A Comprehensive Review
+                </h3>
+                <p className="fs-lg text-secondary">
+                  The Suzuki Ravi, a versatile and reliable light commercial
+                  vehicle, is known for its durability, practicality, and
+                  affordability. Designed to meet the needs of businesses and
+                  individuals alike, the Ravi has become a popular choice in the
+                  light truck segment. This article explores the features,
+                  performance, and advantages of the Suzuki Ravi, offering
+                  insights into why it remains a top choice for commercial
+                  transportation.
+                </p>
               </div>
-              <div>
-                <div>
-                  <h5>{t("blog_page.title22")}</h5>
-                  <p className="fs-lg text-secondary">
-                    {t("blog_page.description22")}
-                  </p>
-                </div>
-              </div>
-              <div>
-                <div>
-                  <h5>{t("blog_page.title33")}</h5>
-                  <p className="fs-lg text-secondary">
-                    {t("blog_page.description33")}
-                  </p>
-                </div>
-              </div>
-              <div>
-                <div>
-                  <h5>{t("blog_page.title44")}</h5>
-                  <p className="fs-lg text-secondary">
-                    {t("blog_page.description44")}
-                  </p>
-                </div>
-              </div>
-              <div>
-                <div>
-                  <h5>{t("blog_page.title55")}</h5>
-                  <p className="fs-lg text-secondary">
-                    {t("blog_page.description55")}
-                  </p>
-                </div>
-              </div>
-              <div>
-                <div>
-                  <h5>{t("blog_page.title66")}</h5>
-                  <p className="fs-lg text-secondary">
-                    {t("blog_page.description66")}
-                  </p>
-                </div>
-              </div>
-              <div>
-                <div>
-                  <h5>{t("blog_page.title77")}</h5>
-                  <p className="fs-lg text-secondary">
-                    {t("blog_page.description77")}
-                  </p>
-                </div>
-              </div>
-              <Carosil />
 
               <div>
-                <div>
-                  <h5>{t("blog_page.title88")}</h5>
-                  <p className="fs-lg text-secondary">
-                    {t("blog_page.description88")}
-                  </p>
-                </div>
+                <h5>History and Evolution</h5>
+                <p className="fs-lg text-secondary">
+                  Since its introduction, the Suzuki Ravi has evolved
+                  significantly to meet the changing demands of the market. From
+                  its early days as a simple and robust workhorse, the Ravi has
+                  continually improved in terms of design, performance, and
+                  technology. Today, it is recognized as a dependable vehicle
+                  for various commercial applications, from small business
+                  deliveries to personal transport needs.
+                </p>
               </div>
+
               <div>
-                <div>
-                  <h5>{t("blog_page.title99")}</h5>
-                  <p className="fs-lg text-secondary">
-                    {t("blog_page.description99")}
-                  </p>
-                </div>
+                <h5>Design and Exterior Features</h5>
+                <p className="fs-lg text-secondary">
+                  The Suzuki Ravi is designed with practicality in mind. Its
+                  compact dimensions allow for easy navigation through narrow
+                  streets and tight spaces, while its sturdy construction
+                  ensures durability even in demanding conditions. The Ravi's
+                  design is straightforward, with a focus on functionality and
+                  utility. The vehicle features a spacious cargo area, making it
+                  ideal for transporting goods and equipment.
+                </p>
               </div>
+
               <div>
-                <div>
-                  <h5>{t("blog_page.title1010")}</h5>
-                  <p className="fs-lg text-secondary">
-                    {t("blog_page.description1010")}
-                  </p>
-                </div>
+                <h5>Interior Comfort and Space</h5>
+                <p className="fs-lg text-secondary">
+                  Inside, the Suzuki Ravi offers a basic yet functional cabin
+                  designed to maximize comfort for the driver. The interior is
+                  simple, with easy-to-use controls and a layout that
+                  prioritizes practicality. While the Ravi is primarily focused
+                  on utility, it does not compromise on providing a comfortable
+                  driving experience, even during long hauls.
+                </p>
               </div>
+
+              <div>
+                <h5>Performance and Efficiency</h5>
+                <p className="fs-lg text-secondary">
+                  The Suzuki Ravi is powered by a reliable and fuel-efficient
+                  engine, making it a cost-effective choice for businesses
+                  concerned about operating expenses. The vehicle's performance
+                  is tailored to meet the demands of commercial use, offering
+                  sufficient power for carrying loads while maintaining good
+                  fuel economy. Its robust suspension and handling make it
+                  capable of handling a variety of road conditions with ease.
+                </p>
+              </div>
+
+              <div>
+                <h5>Safety Features</h5>
+                <p className="fs-lg text-secondary">
+                  Safety is a critical consideration in the design of the Suzuki
+                  Ravi. The vehicle is equipped with essential safety features
+                  such as seat belts, a reinforced body structure, and
+                  responsive braking systems to ensure the safety of the driver
+                  and cargo. The Ravi's compact size also enhances its
+                  maneuverability, allowing drivers to navigate safely in tight
+                  spaces.
+                </p>
+              </div>
+
+              <div>
+                <h5>Technology and Infotainment</h5>
+                <p className="fs-lg text-secondary">
+                  While the Suzuki Ravi is primarily a commercial vehicle, it
+                  does offer some basic technological features to enhance the
+                  driving experience. These include a straightforward
+                  infotainment system and essential connectivity options,
+                  allowing drivers to stay connected while on the move.
+                </p>
+              </div>
+
+              <div>
+                <h5>Comparison with Competitors</h5>
+                <p className="fs-lg text-secondary">
+                  In the light truck segment, the Suzuki Ravi competes with
+                  other vehicles like the Daihatsu Hijet and the Hyundai Porter.
+                  However, the Ravi stands out due to its combination of
+                  affordability, reliability, and low maintenance costs. Its
+                  simplicity and focus on practicality make it a preferred
+                  choice for businesses that need a dependable work vehicle
+                  without the frills.
+                </p>
+              </div>
+
+              <div>
+                <h5>Environmental Impact</h5>
+                <p className="fs-lg text-secondary">
+                  The Suzuki Ravi is designed to be environmentally conscious,
+                  with a focus on fuel efficiency and reduced emissions. Its
+                  lightweight design and efficient engine contribute to lower
+                  fuel consumption, making it a more eco-friendly option in the
+                  commercial vehicle market. Suzuki's ongoing efforts to
+                  minimize the environmental impact of its vehicles are
+                  reflected in the Ravi's design and performance.
+                </p>
+              </div>
+
+              <div>
+                <h5>Conclusion</h5>
+                <p className="fs-lg text-secondary">
+                  The Suzuki Ravi is a practical and reliable light commercial
+                  vehicle that offers excellent value for money. Its combination
+                  of durability, efficiency, and affordability makes it an ideal
+                  choice for businesses and individuals alike. Whether you need
+                  a vehicle for daily deliveries or for transporting goods over
+                  longer distances, the Suzuki Ravi delivers the performance and
+                  reliability you need.
+                </p>
+              </div>
+
+              <br />
             </div>
           </div>
         </div>
       </section>
+      <Image
+        className="back-background"
+        src={image13}
+        alt="Suzuki Ravi"
+        layout="responsive"
+      />
     </article>
   );
 }

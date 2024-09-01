@@ -1,6 +1,8 @@
-import { Locale } from "@/i18n";
-import Image from "next/image";
 import React from "react";
+import Image from "next/image";
+import { Link } from "@/navigation";
+
+// Importing images
 import alto from "../public/Alto/alto.png";
 import altovxr from "../public/Alto/vxlalto.png";
 import altovxl from "../public/Alto/alto1.png";
@@ -17,63 +19,74 @@ import swift3 from "../public/Swift/Swift-Grey.png";
 import bolan1 from "../public/Suzuki-Bolan-Front.jpg";
 import bolan2 from "../public/Suzuki-Bolan-Front.jpg";
 import ravi from "../public/suzuki-ravi6.jpg";
-import { Link } from "@/navigation";
-import { BookingForm } from "../common/form";
-import { CarBookingForm } from "../common/form copy";
 
+// Car models data
 const carModels = [
   {
     id: "alto",
-    name: "ALTO",
+    name: "Alto",
     variants: [
       {
-        title: "ALTO VX",
+        title: "Alto VX",
         image: alto,
-        price: "Rs : 2,331,000/-",
+        price: "Rs 2,331,000/-",
         link: "/sales/cars/altovx",
+        filer: "Rs 11,655/-",
+        nonFiler: "Rs 34,965/-",
       },
       {
-        title: "ALTO VXL",
+        title: "Alto VXL",
         image: altovxr,
-
-        price: "Rs : 2,707,000/-",
+        price: "Rs 2,707,000/-",
         link: "/sales/cars/altovxl",
+        filer: "Rs 12,000/-",
+        nonFiler: "Rs 36,000/-",
       },
       {
-        title: "ALTO VXR AGS",
+        title: "Alto VXR AGS",
         image: altovxl,
-        price: "Rs : 2,894,000/-",
+        price: "Rs 2,894,000/-",
         link: "/sales/cars/altovxrags",
+        filer: "Rs 12,500/-",
+        nonFiler: "Rs 37,500/-",
       },
       {
-        title: "ALTO VXL AGS",
+        title: "Alto VXL AGS",
         image: altovxagsl,
-        price: "Rs : 3,045,000/-",
+        price: "Rs 3,045,000/-",
         link: "/sales/cars/altovxlags",
+        filer: "Rs 13,000/-",
+        nonFiler: "Rs 39,000/-",
       },
     ],
   },
   {
     id: "cultus",
-    name: "CULTUS",
+    name: "Cultus",
     variants: [
       {
         title: "Cultus VXR",
         image: cultus1,
-        price: "Rs: 3,858,000/-",
+        price: "Rs 3,858,000/-",
         link: "/sales/cars/cultusvxr",
+        filer: "Rs 14,000/-",
+        nonFiler: "Rs 42,000/-",
       },
       {
         title: "Cultus VXL",
         image: cultus2,
-        price: "Rs: 4,244,00/-",
+        price: "Rs 4,244,000/-",
         link: "/sales/cars/cultusvxl",
+        filer: "Rs 15,000/-",
+        nonFiler: "Rs 45,000/-",
       },
       {
         title: "Cultus AGS",
         image: cultus3,
-        price: "Rs: 4,546,00/-",
+        price: "Rs 4,546,000/-",
         link: "/sales/cars/cultusags",
+        filer: "Rs 16,000/-",
+        nonFiler: "Rs 48,000/-",
       },
     ],
   },
@@ -84,93 +97,112 @@ const carModels = [
       {
         title: "WagonR VXR",
         image: wagon1,
-        price: "Rs: 3,214,00/-",
+        price: "Rs 3,214,000/-",
         link: "/sales/cars/wagonrvxr",
+        filer: "Rs 10,000/-",
+        nonFiler: "Rs 30,000/-",
       },
       {
         title: "WagonR VXL",
         image: wagon2,
-        price: "Rs: 3,412,00/-",
+        price: "Rs 3,412,000/-",
         link: "/sales/cars/wagonrvxl",
+        filer: "Rs 11,000/-",
+        nonFiler: "Rs 33,000/-",
       },
       {
         title: "WagonR AGS",
         image: wagon3,
-        price: "Rs: 37,410,00/-",
+        price: "Rs 3,741,000/-",
         link: "/sales/cars/wagonrags",
+        filer: "Rs 12,000/-",
+        nonFiler: "Rs 36,000/-",
       },
     ],
   },
   {
     id: "swift",
-    name: "SWIFT",
+    name: "Swift",
     variants: [
       {
         title: "Swift GL MT",
         image: swift1,
-        price: "Rs: 4,336,00/-",
-        link: "/sales/cars/swiftglmt",
+        price: "Rs 4,336,000/-",
+        link: "/sales/cars/swiftglvvt",
+        filer: "Rs 18,000/-",
+        nonFiler: "Rs 54,000/-",
       },
       {
         title: "Swift GL VT",
         image: swift2,
-        price: "Rs: 4,560,00/-",
-        link: "/sales/cars/swiftglvt",
+        price: "Rs 4,560,000/-",
+        link: "/sales/cars/swiftglvvt",
+        filer: "Rs 19,000/-",
+        nonFiler: "Rs 57,000/-",
       },
       {
         title: "Swift GL VVT",
         image: swift3,
-        price: "Rs: 4,719,00/-",
+        price: "Rs 4,719,000/-",
         link: "/sales/cars/swiftglvvt",
+        filer: "Rs 20,000/-",
+        nonFiler: "Rs 60,000/-",
       },
     ],
   },
   {
     id: "bolan",
-    name: "BOLAN",
+    name: "Bolan",
     variants: [
       {
         title: "Bolan VX",
         image: bolan1,
-        price: "Rs: 1,940,00/-",
+        price: "Rs 1,940,000/-",
         link: "/sales/cars/bolanvx",
+        filer: "Rs 5,000/-",
+        nonFiler: "Rs 15,000/-",
       },
       {
-        title: "Bolan CARGO",
+        title: "Bolan Cargo",
         image: bolan2,
-        price: "Rs: 1,944,00/-",
-        link: "/sales/cars/bolancargo",
+        price: "Rs 1,944,000/-",
+        link: "/sales/cars/bolanvx",
+        filer: "Rs 5,500/-",
+        nonFiler: "Rs 16,500/-",
       },
     ],
   },
   {
     id: "ravi",
-    name: "RAVI",
+    name: "Ravi",
     variants: [
       {
         title: "Ravi VX",
         image: ravi,
-        price: "Rs: 1,856,00/-",
+        price: "Rs 1,856,000/-",
         link: "/sales/cars/ravivx",
+        filer: "Rs 4,500/-",
+        nonFiler: "Rs 13,500/-",
       },
     ],
   },
 ];
 
-function SaleHome() {
+const SaleHome = () => {
   return (
     <section className="py-15 py-xl-20 bg-light">
       <div className="container">
-        <div className="row mb-10 d-flex">
+        <div className="row mb-10">
           <div className="col">
             <h2 className="fw-bold text-dark">Sales</h2>
           </div>
         </div>
-        <div className="row g-3 g-xl-5 justify-content-between">
+        <div className="row g-3 g-xl-5">
+          {/* Sidebar Navigation */}
           <div className="col-xl-4">
             <ul
               className="nav nav-tabs flex-xl-column"
-              id="component-1"
+              id="carModelTabs"
               role="tablist"
             >
               {carModels.map((carModel, index) => (
@@ -179,13 +211,13 @@ function SaleHome() {
                     className={`nav-link fs-5 ${
                       index === 0 ? "active" : ""
                     } text-blue`}
-                    id={`component-1-${index + 1}-tab`}
-                    data-bs-toggle="pill"
-                    data-bs-target={`#component-1-${index + 1}`}
+                    id={`${carModel.id}-tab`}
+                    data-bs-toggle="tab"
+                    data-bs-target={`#${carModel.id}`}
                     type="button"
                     role="tab"
-                    aria-controls={`component-1-${index + 1}`}
-                    aria-selected={index === 0 ? "true" : "false"}
+                    aria-controls={carModel.id}
+                    aria-selected={index === 0}
                   >
                     {carModel.name}
                   </button>
@@ -194,51 +226,51 @@ function SaleHome() {
             </ul>
           </div>
 
-          <div className="col-xl-8">
-            <div className="tab-content" id="component-1-content">
+          {/* Tab Content */}
+          <div className="col-xl-8 ">
+            <div className="tab-content " id="carModelTabsContent">
               {carModels.map((carModel, index) => (
                 <div
                   key={carModel.id}
                   className={`tab-pane fade ${
                     index === 0 ? "show active" : ""
                   }`}
-                  id={`component-1-${index + 1}`}
+                  id={carModel.id}
                   role="tabpanel"
-                  aria-labelledby={`component-1-${index + 1}-tab`}
+                  aria-labelledby={`${carModel.id}-tab`}
                 >
-                  <div className="row g-3 g-xl-5">
-                    {carModel.variants.map((variant, variantIndex) => (
-                      <div
-                        className="col-md-6"
-                        data-aos="flip-left"
-                        key={variantIndex}
-                      >
+                  <div className="row g-3  g-xl-4">
+                    {carModel.variants.map((variant) => (
+                      <div className="col-md-6" key={variant.title}>
                         <Link
                           href={variant.link}
-                          className="card equal-md-1-1 card-hover-border bg-white"
+                          className="card h-100 text-decoration-none"
                         >
-                          <div className="card-wrap">
-                            <div className="card-header pb-0">
+                          <div className="card-body border d-flex flex-column">
+                            <div className="mb-3 text-center">
                               <Image
-                                className="background"
                                 src={variant.image}
-                                layout="responsive"
-                                alt={`${variant.title} image`}
+                                alt={variant.title}
+                                width={300}
+                                height={200}
+                                objectFit="contain"
                               />
                             </div>
-                            <div className="card-footer mt-20 pt-9">
-                              <h4 className="card-title text-dark text-blue">
-                                {variant.title}
-                              </h4>
-                              <h6 className="text-secondary text-dark margin0">
-                                <span>
-                                  {variant.price}{" "}
-                                  <span className="blinking-text">
-                                    Book now
-                                  </span>
-                                </span>
-                              </h6>
-
+                            <h5 className="card-title text-dark text-center">
+                              {variant.title}
+                            </h5>
+                            <p className="card-text text-center text-secondary mb-2">
+                              Price: <strong>{variant.price}</strong>
+                            </p>
+                            <p className="card-text text-center">
+                              <span className="badge bg-success me-2">
+                                Filer: {variant.filer}
+                              </span>
+                              <span className="badge bg-danger">
+                                Non-Filer: {variant.nonFiler}
+                              </span>
+                            </p>
+                            <div className="mt-auto text-center">
                               <br />
                               <p className="underline action text-red fs-lg">
                                 See more <i className="bi bi-arrow-right"></i>
@@ -257,6 +289,6 @@ function SaleHome() {
       </div>
     </section>
   );
-}
+};
 
 export default SaleHome;

@@ -1,226 +1,181 @@
 import React from "react";
-import Image from "next/image";
-import image1 from "../../../public/PurchaseOfferuptoRs.50,000forWagonR_1_011802.png";
 import { getTranslations } from "next-intl/server";
-import Carosil from "@/app/[locale]/common/carosil";
+import Image from "next/image";
+import imageSwift from "./Swift/001 Swift_page-0001.jpg";
+import { Link } from "@/navigation";
+import Constants from "@/data/Constants";
+import { CarBookingForm } from "@/app/[locale]/common/form copy";
+import CarosilSwift from "./carosilcultus";
 
-const banner_post = {
-  img: image1,
-};
-
-export default async function Post1() {
+export default async function Swift() {
   const t = await getTranslations({
     namespace: "page.blogs",
   });
 
   return (
     <article>
+      {/* Carousel Section */}
       <section className="bg-black inverted overflow-hidden">
-        <div className="d-flex flex-column py-15 container min-vh-75 level-3">
-          <div className="row justify-content-center mt-auto">
-            <div className="col-lg-10 col-xl-8">
-              <span className="badge bg-opaque-white text-white rounded-pill mb-2">
-                {t("blog_page.banner_title")}
-              </span>
-              <h1 className="display-1">{t("blog_page.title1")}</h1>
-            </div>
-          </div>
-        </div>
-        <Image
-          className="background background-gradient-horizontal"
-          data-top-top="transform: translateY(0%);"
-          data-top-bottom="transform: translateY(10%);"
-          src={banner_post.img}
-          layout="responsive"
-          alt="background image"
-        />
+        <CarosilSwift />
       </section>
 
-      <section className="py-15 py-xl-20">
-        <div className="container">
-          <div className="row mb-5 align-items-end">
-            <div className="col-lg-6">
-              <h2 className="fw-bold">Latest blog posts</h2>
-            </div>
-            <div className="col-lg-6 text-lg-end">
-              <a href="" className="action underline">
-                View all <i className="bi bi-arrow-right"></i>
-              </a>
-            </div>
-          </div>
-          <div className="row g-3 g-xl-5">
-            <div className="col-md-6 col-lg-4" data-aos="fade-up">
-              <a
-                href=""
-                className="card equal equal-3-4 card-hover-gradient inverted"
-              >
-                <figure
-                  className="background"
-                  // style="background-image: url('./assets/images/job-board-2.jpg')"
-                ></figure>
-                <div className="card-wrap">
-                  <div className="card-footer mt-auto text-shadow">
-                    <time
-                      // datetime="2020-12-18 20:00"
-                      className="eyebrow text-secondary mb-1"
-                    >
-                      18 December
-                    </time>
-                    <h5 className="card-title">
-                      Ethical Considerations In UX Research: The Need For
-                      Training And Review
-                    </h5>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div
-              className="col-md-6 col-lg-4"
-              data-aos="fade-up"
-              data-aos-delay="100"
-            >
-              <a
-                href=""
-                className="card equal equal-3-4 card-hover-gradient inverted"
-              >
-                <figure
-                  className="background"
-                  // style="background-image: url('./assets/images/job-board-3.jpg')"
-                ></figure>
-                <div className="card-wrap">
-                  <div className="card-footer mt-auto text-shadow">
-                    <time
-                      // datetime="2020-12-18 20:00"
-                      className="eyebrow text-secondary mb-1"
-                    >
-                      18 December
-                    </time>
-                    <h5 className="card-title">
-                      Ethical Considerations In UX Research: The Need For
-                      Training And Review
-                    </h5>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div
-              className="col-md-6 col-lg-4"
-              data-aos="fade-up"
-              data-aos-delay="200"
-            >
-              <a
-                href=""
-                className="card equal equal-3-4 card-hover-gradient inverted"
-              >
-                <figure
-                  className="background"
-                  // style="background-image: url('./assets/images/job-board-4.jpg')"
-                ></figure>
-                <div className="card-wrap">
-                  <div className="card-footer mt-auto text-shadow">
-                    <time
-                      // datetime="2020-12-18 20:00"
-                      className="eyebrow text-secondary mb-1"
-                    >
-                      18 December
-                    </time>
-                    <h5 className="card-title">
-                      Ethical Considerations In UX Research: The Need For
-                      Training And Review
-                    </h5>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
+      {/* Suzuki Swift Article */}
+      <section className="py-5 py-xl-15">
+        <div className="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center text-center p-4">
+          <h1 className="display-3 fw-bold lh-sm text-white mb-4">
+            Suzuki Swift
+          </h1>
+          <CarBookingForm />
+          <Link
+            href={"tel:" + Constants.PHONE}
+            className="btn btn-with-icon btn-yellow rounded-pill"
+          >
+            <i className="bi bi-telephone-fill ms-1"></i> Book Now
+          </Link>
         </div>
-      </section>
-      <section className="py-10 py-xl-15">
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-lg-10 col-xl-8">
               <div>
-                <h6 className="lead text-secondary">{t("blog_page.title")}</h6>
-                <div>
-                  <h5>{t("blog_page.title11")}</h5>
-                  <p className="fs-lg text-secondary">
-                    {t("blog_page.description11")}
-                  </p>
-                </div>
+                <h3 style={{ textAlign: "center" }}>
+                  Suzuki Swift: A Sporty Hatchback with Style
+                </h3>
+                <p className="fs-lg text-secondary">
+                  The Suzuki Swift is a compact hatchback that combines sporty
+                  design with a fun driving experience. Renowned for its agile
+                  handling and stylish appearance, the Swift has been a popular
+                  choice for drivers who value both performance and aesthetics.
+                  This article provides an in-depth look at the Suzuki Swift,
+                  highlighting its key features and what sets it apart from
+                  other hatchbacks in its class.
+                </p>
               </div>
-              <div>
-                <div>
-                  <h5>{t("blog_page.title22")}</h5>
-                  <p className="fs-lg text-secondary">
-                    {t("blog_page.description22")}
-                  </p>
-                </div>
-              </div>
-              <div>
-                <div>
-                  <h5>{t("blog_page.title33")}</h5>
-                  <p className="fs-lg text-secondary">
-                    {t("blog_page.description33")}
-                  </p>
-                </div>
-              </div>
-              <div>
-                <div>
-                  <h5>{t("blog_page.title44")}</h5>
-                  <p className="fs-lg text-secondary">
-                    {t("blog_page.description44")}
-                  </p>
-                </div>
-              </div>
-              <div>
-                <div>
-                  <h5>{t("blog_page.title55")}</h5>
-                  <p className="fs-lg text-secondary">
-                    {t("blog_page.description55")}
-                  </p>
-                </div>
-              </div>
-              <div>
-                <div>
-                  <h5>{t("blog_page.title66")}</h5>
-                  <p className="fs-lg text-secondary">
-                    {t("blog_page.description66")}
-                  </p>
-                </div>
-              </div>
-              <div>
-                <div>
-                  <h5>{t("blog_page.title77")}</h5>
-                  <p className="fs-lg text-secondary">
-                    {t("blog_page.description77")}
-                  </p>
-                </div>
-              </div>
-              <Carosil />
 
               <div>
-                <div>
-                  <h5>{t("blog_page.title88")}</h5>
-                  <p className="fs-lg text-secondary">
-                    {t("blog_page.description88")}
-                  </p>
-                </div>
+                <h5>History and Evolution</h5>
+                <p className="fs-lg text-secondary">
+                  The Suzuki Swift first made its debut in 1983 and has since
+                  undergone several generations of refinement. Known for its
+                  dynamic performance and contemporary design, the Swift has
+                  continually evolved to meet modern driving demands. With each
+                  new iteration, Suzuki has introduced advanced features and
+                  improved the Swift's overall driving experience, maintaining
+                  its status as a popular choice in the compact car segment.
+                </p>
               </div>
+
               <div>
-                <div>
-                  <h5>{t("blog_page.title99")}</h5>
-                  <p className="fs-lg text-secondary">
-                    {t("blog_page.description99")}
-                  </p>
-                </div>
+                <h5>Design and Exterior Features</h5>
+                <p className="fs-lg text-secondary">
+                  The Suzuki Swift stands out with its bold and dynamic design.
+                  Its sporty stance is characterized by a low profile,
+                  aggressive front grille, and sleek lines that convey a sense
+                  of motion. The Swift's exterior design is complemented by
+                  stylish alloy wheels and distinctive headlamp designs, which
+                  enhance its overall visual appeal. The compact dimensions make
+                  it ideal for urban driving, while its aerodynamic shape
+                  contributes to improved performance and fuel efficiency.
+                </p>
               </div>
+
               <div>
-                <div>
-                  <h5>{t("blog_page.title1010")}</h5>
-                  <p className="fs-lg text-secondary">
-                    {t("blog_page.description1010")}
-                  </p>
-                </div>
+                <h5>Interior Comfort and Features</h5>
+                <p className="fs-lg text-secondary">
+                  Inside, the Suzuki Swift offers a driver-focused cockpit with
+                  intuitive controls and modern technology. The cabin features
+                  quality materials and ergonomic design, providing a
+                  comfortable driving environment. The Swift's spacious interior
+                  offers ample legroom and headroom for both front and rear
+                  passengers, and the rear seats can be folded to expand the
+                  cargo space. Notable interior features include a touchscreen
+                  infotainment system, automatic climate control, and steering
+                  wheel-mounted controls for added convenience.
+                </p>
+              </div>
+
+              <div>
+                <h5>Performance and Handling</h5>
+                <p className="fs-lg text-secondary">
+                  The Suzuki Swift delivers a lively and engaging driving
+                  experience, thanks to its responsive handling and efficient
+                  engine options. Available with various engine configurations,
+                  including petrol and diesel variants, the Swift offers a
+                  balance of performance and fuel economy. Its lightweight
+                  construction and precise steering contribute to nimble
+                  handling, making it well-suited for both city driving and
+                  spirited weekend drives. The Swift's suspension system ensures
+                  a smooth ride while maintaining excellent road feedback.
+                </p>
+              </div>
+
+              <div>
+                <h5>Safety and Security</h5>
+                <p className="fs-lg text-secondary">
+                  Safety is a key priority in the Suzuki Swift, which is
+                  equipped with a range of safety features to protect occupants.
+                  Standard safety equipment includes multiple airbags, ABS with
+                  EBD, and electronic stability control. The Swift also features
+                  a robust body structure and advanced safety technologies such
+                  as rear parking sensors and a rearview camera. These features
+                  contribute to the Swift's strong safety performance and
+                  enhance driver and passenger confidence.
+                </p>
+              </div>
+
+              <div>
+                <h5>Technology and Infotainment</h5>
+                <p className="fs-lg text-secondary">
+                  The Suzuki Swift is equipped with a range of technology and
+                  infotainment features that enhance the driving experience. The
+                  car comes with a modern touchscreen infotainment system that
+                  supports smartphone connectivity through Apple CarPlay and
+                  Android Auto. Other technological amenities include Bluetooth
+                  hands-free calling, USB ports, and a high-quality audio
+                  system. These features ensure that drivers and passengers stay
+                  connected and entertained during their journeys.
+                </p>
+              </div>
+
+              <div>
+                <h5>Comparison with Competitors</h5>
+                <p className="fs-lg text-secondary">
+                  The Suzuki Swift competes with other compact hatchbacks such
+                  as the Hyundai i20, Ford Fiesta, and Honda Jazz. What sets the
+                  Swift apart is its sporty design, engaging driving dynamics,
+                  and strong value for money. While some competitors may offer
+                  more luxury features, the Swift excels in delivering a fun
+                  driving experience and practicality at an accessible price
+                  point. Its blend of style, performance, and affordability
+                  makes it a compelling option in its segment.
+                </p>
+              </div>
+
+              <div>
+                <h5>Environmental Impact</h5>
+                <p className="fs-lg text-secondary">
+                  The Suzuki Swift is designed with environmental considerations
+                  in mind. Its efficient engines contribute to lower carbon
+                  emissions, and Suzuki has focused on incorporating
+                  eco-friendly materials and sustainable manufacturing
+                  processes. The Swift's fuel-efficient performance helps reduce
+                  the overall environmental footprint, making it a suitable
+                  choice for environmentally-conscious drivers who seek a
+                  balance between performance and ecological responsibility.
+                </p>
+              </div>
+
+              <div>
+                <h5>Conclusion</h5>
+                <p className="fs-lg text-secondary">
+                  The Suzuki Swift stands out as a sporty and practical
+                  hatchback that delivers a blend of performance, style, and
+                  value. With its engaging driving experience, modern features,
+                  and strong safety profile, the Swift remains a popular choice
+                  among drivers seeking a compact car with character. Whether
+                  for daily commuting or weekend adventures, the Suzuki Swift
+                  offers a well-rounded package that continues to impress and
+                  appeal to a wide range of drivers.
+                </p>
               </div>
             </div>
           </div>

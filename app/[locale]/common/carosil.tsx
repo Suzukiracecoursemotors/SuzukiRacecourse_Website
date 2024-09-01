@@ -8,7 +8,6 @@ import image6 from "../../[locale]/public/PurchaseOfferuptoRs.50,000forWagonR_1_
 import Image from "next/image";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Link } from "@/navigation";
 import Constants from "@/data/Constants";
 function Carosil() {
   const [currentIndex, setCurrentIndex] = useState(0);
