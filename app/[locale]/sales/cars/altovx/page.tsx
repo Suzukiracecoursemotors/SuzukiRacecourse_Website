@@ -1,5 +1,4 @@
 import React from "react";
-import { getTranslations } from "next-intl/server";
 import CarosilAltoVX from "./carosilalto";
 import Image from "next/image";
 import image12 from "../../cars/altovx/New folder/12alt.jpg";
@@ -8,10 +7,6 @@ import { Link } from "@/navigation";
 import Constants from "@/data/Constants";
 
 export default async function Alto() {
-  const t = await getTranslations({
-    namespace: "page.blogs",
-  });
-
   return (
     <article>
       <section className="bg-black inverted overflow-hidden">
@@ -74,7 +69,7 @@ export default async function Alto() {
                 <div>
                   <h5>Design and Exterior Features</h5>
                   <p className="fs-lg text-secondary">
-                    The Suzuki Alto's design has always been focused on
+                    The Suzuki Alto s design has always been focused on
                     practicality and efficiency. Its compact dimensions make it
                     easy to maneuver through crowded city streets and park in
                     tight spaces. Despite its small size, the Alto s design is
@@ -195,7 +190,7 @@ export default async function Alto() {
                   <h5>Conclusion</h5>
                   <p className="fs-lg text-secondary">
                     The Suzuki Alto is a car that perfectly embodies the concept
-                    of "less is more." Its compact size, efficient engine, and
+                    of less is more. Its compact size, efficient engine, and
                     practical features make it an ideal choice for urban
                     drivers. Whether you re a first-time car buyer, looking for
                     a reliable second car, or simply want a vehicle that is easy
