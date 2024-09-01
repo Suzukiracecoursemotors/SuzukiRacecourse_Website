@@ -1,8 +1,6 @@
 import React from "react";
 import Image from "next/image";
 import { Link } from "@/navigation";
-
-// Importing images
 import alto from "../public/Alto/alto.png";
 import altovxr from "../public/Alto/vxlalto.png";
 import altovxl from "../public/Alto/alto1.png";
@@ -20,7 +18,6 @@ import bolan1 from "../public/Suzuki-Bolan-Front.jpg";
 import bolan2 from "../public/Suzuki-Bolan-Front.jpg";
 import ravi from "../public/suzuki-ravi6.jpg";
 
-// Car models data
 const carModels = [
   {
     id: "alto",
@@ -190,7 +187,7 @@ const carModels = [
 
 const SaleHome = () => {
   return (
-    <section className="py-15 py-xl-20 bg-light">
+    <section className="py-15 py-xl-15  bg-light">
       <div className="container">
         <div className="row mb-10">
           <div className="col">
@@ -198,7 +195,6 @@ const SaleHome = () => {
           </div>
         </div>
         <div className="row g-3 g-xl-5">
-          {/* Sidebar Navigation */}
           <div className="col-xl-4">
             <ul
               className="nav nav-tabs flex-xl-column"
@@ -217,7 +213,7 @@ const SaleHome = () => {
                     type="button"
                     role="tab"
                     aria-controls={carModel.id}
-                    aria-selected={index === 0}
+                    aria-selected={index === 4}
                   >
                     {carModel.name}
                   </button>
@@ -225,8 +221,6 @@ const SaleHome = () => {
               ))}
             </ul>
           </div>
-
-          {/* Tab Content */}
           <div className="col-xl-8 ">
             <div className="tab-content " id="carModelTabsContent">
               {carModels.map((carModel, index) => (

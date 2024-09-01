@@ -5,7 +5,7 @@ type GalleryProps = {
   params: { locale: Locale };
 };
 
-export default async function GalleryPage({
+export default async function AboutUspage({
   params: { locale },
 }: GalleryProps) {
   const t = await getTranslations({ locale, namespace: "page" });

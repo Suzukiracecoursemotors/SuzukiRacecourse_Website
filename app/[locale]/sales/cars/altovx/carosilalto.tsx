@@ -16,9 +16,6 @@ import image12 from "../../cars/altovx/New folder/12alt.jpg";
 import Image from "next/image";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { BookingForm } from "@/app/[locale]/common/form";
-import { Link } from "@/navigation";
-import Constants from "@/data/Constants";
 function CarosilAltoVX() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const images = [
@@ -48,7 +45,7 @@ function CarosilAltoVX() {
         autoPlay={true}
         interval={autoSlideInterval}
         selectedItem={currentIndex}
-        showArrows={false}
+        showArrows={true}
         showStatus={false}
         showThumbs={false}
       >

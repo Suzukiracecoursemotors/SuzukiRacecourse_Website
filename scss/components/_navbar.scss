@@ -255,3 +255,19 @@
     white-space: nowrap;
   }
 }
+.carouselContainer {
+  width: 100%;
+  height: 100%;
+  margin-top: 5rem;
+}
+
+.imageContainer {
+  width: 100%;
+
+  @media (max-width: 768px) {
+    .imageContainer {
+      height: 600px; /* Increase height for mobile view */
+      min-height: 400px;
+    }
+  }
+}

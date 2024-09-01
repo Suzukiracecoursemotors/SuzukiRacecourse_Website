@@ -7,9 +7,6 @@ import image3 from "./bolanpic/bolan2.jpg";
 import Image from "next/image";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { BookingForm } from "@/app/[locale]/common/form";
-import { Link } from "@/navigation";
-import Constants from "@/data/Constants";
 function CarosilBolan() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const images = [image1, image2, image3];

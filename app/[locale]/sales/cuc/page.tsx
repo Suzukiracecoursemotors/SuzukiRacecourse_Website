@@ -4,6 +4,7 @@ import Image from "next/image";
 import React, { useState } from "react";
 import Cultuspng from "../../public/Cultus/Cultus-Gray.jpg";
 import Swiftpng from "../../public/Swift/Swift-Back-Side-Angle.png";
+import alto from "../../public/Alto/Studio Session-328.png";
 import { Seemore } from "../../common/seemore";
 
 const carData = [
@@ -16,7 +17,7 @@ const carData = [
     img: Cultuspng,
   },
   {
-    model: "Swift vvt",
+    model: "Swift MT",
     price: 400000,
     mileage: "70,000 km",
     year: 2017,
@@ -24,12 +25,20 @@ const carData = [
     img: Swiftpng,
   },
   {
-    model: "Swift vvt",
+    model: "Swift VVT",
     price: 300000,
     mileage: "70,000 km",
     year: 2017,
     brand: "Swift",
     img: Swiftpng,
+  },
+  {
+    model: "Alto VX",
+    price: 200000,
+    mileage: "70,000 km",
+    year: 2017,
+    brand: "Swift",
+    img: alto,
   },
 ];
 
@@ -179,6 +188,7 @@ export default function CUC() {
               </ul>
               {/* Price Range */}
               <div className="price-range d-inline-block">
+                <h5 className="">Price Range</h5>
                 <input
                   type="number"
                   className="form-control d-inline-block me-2"

@@ -30,7 +30,7 @@ function CarosilCultus() {
         autoPlay={true}
         interval={autoSlideInterval}
         selectedItem={currentIndex}
-        showArrows={false}
+        showArrows={true}
         showStatus={false}
         showThumbs={false}
       >

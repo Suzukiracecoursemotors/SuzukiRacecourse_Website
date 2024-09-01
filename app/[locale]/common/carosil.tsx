@@ -1,39 +1,36 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import image1 from "../../[locale]/public/PurchaseOfferuptoRs.50,000forWagonR_1_011802.png";
-import image2 from "../../[locale]/public/PurchaseOfferuptoRs.50,000forWagonR_1_011802.png";
-import image4 from "../../[locale]/public/PurchaseOfferuptoRs.50,000forWagonR_1_011802.png";
-import image5 from "../../[locale]/public/PurchaseOfferuptoRs.50,000forWagonR_1_011802.png";
-import image6 from "../../[locale]/public/PurchaseOfferuptoRs.50,000forWagonR_1_011802.png";
+import image1 from "../../[locale]/public/Big Saving Faysal Bank Revised.webp";
+import image2 from "../../[locale]/public/Swift two-tone.webp";
+
 import Image from "next/image";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import Constants from "@/data/Constants";
 function Carosil() {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const images = [image4, image1, image2, image5, image6];
+  const images = [image1, image2];
 
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 2000);
+    }, 4000);
 
     return () => clearInterval(interval);
   }, [images.length]);
-  const autoSlideInterval = 2000;
+  const autoSlideInterval = 3000;
 
   return (
-    <section className="">
+    <section className="carouselContainer ">
       <Carousel
         autoPlay={true}
         interval={autoSlideInterval}
         selectedItem={currentIndex}
-        showArrows={false}
+        showArrows={true}
         showStatus={false}
         showThumbs={false}
       >
         {images.map((image, index) => (
-          <div key={index}>
+          <div key={index} className="">
             <Image src={image} layout="responsive" alt="background image" />
           </div>
         ))}

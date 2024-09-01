@@ -7,7 +7,7 @@ enum NavLinksLocale {
   SpareParts = "SpareParts",
   CUC = "CUC",
   Aftersale = "Aftersale",
-  Gallery = "Gallery",
+  Aboutus = "About Us",
   Blog = "Blog",
   Finance = "Finance",
   Mechanical = "Mechanical",
@@ -86,8 +86,8 @@ const linksConfig: NavLink[] = [
     path: "/spareparts",
   },
   {
-    locale: NavLinksLocale.Gallery,
-    path: "/gallery",
+    locale: NavLinksLocale.Aboutus,
+    path: "/aboutus",
   },
   {
     locale: NavLinksLocale.Blog,
