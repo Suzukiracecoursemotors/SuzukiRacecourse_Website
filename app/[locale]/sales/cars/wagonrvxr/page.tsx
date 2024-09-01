@@ -71,8 +71,8 @@ export default async function WagonR() {
                 <div>
                   <h5>Design and Exterior Features</h5>
                   <p className="fs-lg text-secondary">
-                    The Suzuki WagonR's design is instantly recognizable with
-                    its tall-boy stance, providing excellent headroom and a
+                    The Suzuki WagonRs design is instantly recognizable with its
+                    tall-boy stance, providing excellent headroom and a
                     commanding view of the road. The boxy shape not only
                     maximizes interior space but also gives the car a distinct
                     identity. The WagonR features modern design elements such as
@@ -89,12 +89,12 @@ export default async function WagonR() {
                 <div>
                   <h5>Interior Comfort and Space</h5>
                   <p className="fs-lg text-secondary">
-                    Inside the Suzuki WagonR, you'll find a surprisingly roomy
+                    Inside the Suzuki WagonR, youll find a surprisingly roomy
                     and comfortable cabin. The tall-boy design allows for ample
                     headroom, and the clever use of space ensures that even
                     taller passengers can sit comfortably. The seats are well
                     cushioned, providing good support during long drives. The
-                    WagonR's interior is practical, with numerous storage
+                    WagonRs interior is practical, with numerous storage
                     compartments and a large boot space, making it ideal for
                     families and those who need extra room for their belongings.
                     The dashboard is user-friendly, with easy-to-reach controls
@@ -143,7 +143,7 @@ export default async function WagonR() {
                   <h5>Technology and Infotainment</h5>
                   <p className="fs-lg text-secondary">
                     The Suzuki WagonR may be a budget-friendly car, but it
-                    doesn't compromise on technology. The car is equipped with a
+                    doesnt compromise on technology. The car is equipped with a
                     range of features, including a touchscreen infotainment
                     system, Bluetooth connectivity, and steering-mounted
                     controls. These features make driving the WagonR a pleasant
@@ -195,7 +195,7 @@ export default async function WagonR() {
                     The Suzuki WagonR is a car that combines practicality,
                     efficiency, and affordability in a unique package. Its
                     spacious interior, reliable performance, and budget-friendly
-                    price make it a top choice for urban drivers. Whether you're
+                    price make it a top choice for urban drivers. Whether youre
                     looking for a family car or a vehicle for your daily
                     commute, the WagonR offers everything you need in a compact
                     and stylish design. With its proven track record and

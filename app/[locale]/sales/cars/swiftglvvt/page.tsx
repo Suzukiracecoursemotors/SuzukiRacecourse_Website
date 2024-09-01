@@ -59,7 +59,7 @@ export default async function Swift() {
                   dynamic performance and contemporary design, the Swift has
                   continually evolved to meet modern driving demands. With each
                   new iteration, Suzuki has introduced advanced features and
-                  improved the Swift's overall driving experience, maintaining
+                  improved the Swifts overall driving experience, maintaining
                   its status as a popular choice in the compact car segment.
                 </p>
               </div>
@@ -70,7 +70,7 @@ export default async function Swift() {
                   The Suzuki Swift stands out with its bold and dynamic design.
                   Its sporty stance is characterized by a low profile,
                   aggressive front grille, and sleek lines that convey a sense
-                  of motion. The Swift's exterior design is complemented by
+                  of motion. The Swifts exterior design is complemented by
                   stylish alloy wheels and distinctive headlamp designs, which
                   enhance its overall visual appeal. The compact dimensions make
                   it ideal for urban driving, while its aerodynamic shape
@@ -84,7 +84,7 @@ export default async function Swift() {
                   Inside, the Suzuki Swift offers a driver-focused cockpit with
                   intuitive controls and modern technology. The cabin features
                   quality materials and ergonomic design, providing a
-                  comfortable driving environment. The Swift's spacious interior
+                  comfortable driving environment. The Swifts spacious interior
                   offers ample legroom and headroom for both front and rear
                   passengers, and the rear seats can be folded to expand the
                   cargo space. Notable interior features include a touchscreen
@@ -103,7 +103,7 @@ export default async function Swift() {
                   balance of performance and fuel economy. Its lightweight
                   construction and precise steering contribute to nimble
                   handling, making it well-suited for both city driving and
-                  spirited weekend drives. The Swift's suspension system ensures
+                  spirited weekend drives. The Swifts suspension system ensures
                   a smooth ride while maintaining excellent road feedback.
                 </p>
               </div>
@@ -117,8 +117,8 @@ export default async function Swift() {
                   EBD, and electronic stability control. The Swift also features
                   a robust body structure and advanced safety technologies such
                   as rear parking sensors and a rearview camera. These features
-                  contribute to the Swift's strong safety performance and
-                  enhance driver and passenger confidence.
+                  contribute to the Swifts strong safety performance and enhance
+                  driver and passenger confidence.
                 </p>
               </div>
 
@@ -157,7 +157,7 @@ export default async function Swift() {
                   in mind. Its efficient engines contribute to lower carbon
                   emissions, and Suzuki has focused on incorporating
                   eco-friendly materials and sustainable manufacturing
-                  processes. The Swift's fuel-efficient performance helps reduce
+                  processes. The Swifts fuel-efficient performance helps reduce
                   the overall environmental footprint, making it a suitable
                   choice for environmentally-conscious drivers who seek a
                   balance between performance and ecological responsibility.

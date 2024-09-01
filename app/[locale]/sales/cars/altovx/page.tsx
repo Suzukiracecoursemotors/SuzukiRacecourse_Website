@@ -77,7 +77,7 @@ export default async function Alto() {
                     The Suzuki Alto's design has always been focused on
                     practicality and efficiency. Its compact dimensions make it
                     easy to maneuver through crowded city streets and park in
-                    tight spaces. Despite its small size, the Alto’s design is
+                    tight spaces. Despite its small size, the Alto s design is
                     modern and appealing, with smooth lines and a sleek profile
                     that contribute to its aerodynamic efficiency. The
                     contemporary design elements, such as stylish headlights and
@@ -91,7 +91,7 @@ export default async function Alto() {
                 <div>
                   <h5>Interior Comfort and Space</h5>
                   <p className="fs-lg text-secondary">
-                    Step inside the Suzuki Alto, and you’ll be surprised by how
+                    Step inside the Suzuki Alto, and you ll be surprised by how
                     spacious it feels for a compact car. The interior is
                     thoughtfully designed to maximize space, providing ample
                     room for both the driver and passengers. The seats are
@@ -111,8 +111,8 @@ export default async function Alto() {
                   <p className="fs-lg text-secondary">
                     Under the hood, the Suzuki Alto is powered by a
                     fuel-efficient engine that delivers a balance of power and
-                    economy. Whether you’re driving through city traffic or on
-                    the open road, the Alto’s engine provides adequate
+                    economy. Whether you re driving through city traffic or on
+                    the open road, the Alto s engine provides adequate
                     performance while keeping fuel consumption to a minimum.
                     This makes it an ideal choice for those looking to reduce
                     their carbon footprint without sacrificing the convenience
@@ -131,10 +131,10 @@ export default async function Alto() {
                     Alto. The car is equipped with essential safety features to
                     protect both the driver and passengers. These include seat
                     belts with pre-tensioners, child safety locks, an
-                    immobilizer, and airbags in some models. The Alto’s compact
+                    immobilizer, and airbags in some models. The Alto s compact
                     size and responsive handling also contribute to its safety,
                     making it easier to avoid potential hazards on the road.
-                    Suzuki’s commitment to safety is evident in the build
+                    Suzuki s commitment to safety is evident in the build
                     quality of the Alto, ensuring that it meets or exceeds
                     safety standards in all markets where it is sold.
                   </p>
@@ -146,7 +146,7 @@ export default async function Alto() {
                   <h5>Technology and Infotainment</h5>
                   <p className="fs-lg text-secondary">
                     While the Suzuki Alto is designed as a budget-friendly car,
-                    it doesn’t skimp on technology. Depending on the trim level,
+                    it doesn t skimp on technology. Depending on the trim level,
                     the Alto can be equipped with various infotainment options,
                     including a touchscreen display, Bluetooth connectivity, and
                     a sound system that delivers clear and crisp audio. The
@@ -184,7 +184,7 @@ export default async function Alto() {
                     been working on further reducing the environmental impact of
                     the Alto by incorporating more sustainable materials and
                     manufacturing processes. For eco-conscious drivers, the Alto
-                    represents a responsible choice that doesn’t compromise on
+                    represents a responsible choice that doesn t compromise on
                     practicality or affordability.
                   </p>
                 </div>
@@ -197,7 +197,7 @@ export default async function Alto() {
                     The Suzuki Alto is a car that perfectly embodies the concept
                     of "less is more." Its compact size, efficient engine, and
                     practical features make it an ideal choice for urban
-                    drivers. Whether you’re a first-time car buyer, looking for
+                    drivers. Whether you re a first-time car buyer, looking for
                     a reliable second car, or simply want a vehicle that is easy
                     to drive and maintain, the Alto delivers on all fronts. With
                     its long history of reliability and continuous improvement,

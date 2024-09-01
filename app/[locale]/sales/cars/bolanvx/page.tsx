@@ -53,7 +53,7 @@ export default async function BolanSuzuki() {
                   design that prioritizes functionality. Its compact size allows
                   it to navigate tight city streets with ease, while its sturdy
                   build ensures it can handle the demands of daily use. The
-                  Bolan's exterior design is minimalistic, with a focus on
+                  Bolans exterior design is minimalistic, with a focus on
                   maximizing interior space for cargo and passengers.
                 </p>
               </div>
@@ -90,9 +90,8 @@ export default async function BolanSuzuki() {
                   Bolan. The vehicle is equipped with essential safety features,
                   including seat belts and a reinforced body structure, to
                   ensure the safety of both the driver and passengers. The
-                  Bolan's reputation for reliability further enhances its
-                  appeal, particularly in regions where dependability is
-                  critical.
+                  Bolans reputation for reliability further enhances its appeal,
+                  particularly in regions where dependability is critical.
                 </p>
               </div>
 

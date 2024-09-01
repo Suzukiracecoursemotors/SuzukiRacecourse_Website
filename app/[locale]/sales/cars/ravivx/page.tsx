@@ -70,7 +70,7 @@ export default async function Ravi() {
                   The Suzuki Ravi is designed with practicality in mind. Its
                   compact dimensions allow for easy navigation through narrow
                   streets and tight spaces, while its sturdy construction
-                  ensures durability even in demanding conditions. The Ravi's
+                  ensures durability even in demanding conditions. The Ravis
                   design is straightforward, with a focus on functionality and
                   utility. The vehicle features a spacious cargo area, making it
                   ideal for transporting goods and equipment.
@@ -94,7 +94,7 @@ export default async function Ravi() {
                 <p className="fs-lg text-secondary">
                   The Suzuki Ravi is powered by a reliable and fuel-efficient
                   engine, making it a cost-effective choice for businesses
-                  concerned about operating expenses. The vehicle's performance
+                  concerned about operating expenses. The vehicles performance
                   is tailored to meet the demands of commercial use, offering
                   sufficient power for carrying loads while maintaining good
                   fuel economy. Its robust suspension and handling make it
@@ -109,7 +109,7 @@ export default async function Ravi() {
                   Ravi. The vehicle is equipped with essential safety features
                   such as seat belts, a reinforced body structure, and
                   responsive braking systems to ensure the safety of the driver
-                  and cargo. The Ravi's compact size also enhances its
+                  and cargo. The Ravis compact size also enhances its
                   maneuverability, allowing drivers to navigate safely in tight
                   spaces.
                 </p>
@@ -146,9 +146,9 @@ export default async function Ravi() {
                   with a focus on fuel efficiency and reduced emissions. Its
                   lightweight design and efficient engine contribute to lower
                   fuel consumption, making it a more eco-friendly option in the
-                  commercial vehicle market. Suzuki's ongoing efforts to
-                  minimize the environmental impact of its vehicles are
-                  reflected in the Ravi's design and performance.
+                  commercial vehicle market. Suzukis ongoing efforts to minimize
+                  the environmental impact of its vehicles are reflected in the
+                  Ravis design and performance.
                 </p>
               </div>
 
