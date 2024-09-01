@@ -15,7 +15,7 @@ export default async function Alto() {
 
       <section className="py-5 py-xl-15">
         <div className="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center text-center p-4">
-          <h1 className="display-3 fw-bold lh-sm text-white mb-4">
+          <h1 className="display-3 fw-bold lh-sm text-dark mb-4">
             Suzuki Alto
           </h1>
           <CarBookingForm />
