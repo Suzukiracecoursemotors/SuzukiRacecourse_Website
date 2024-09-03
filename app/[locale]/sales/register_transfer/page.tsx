@@ -14,259 +14,130 @@ export default async function CUC({ params: { locale } }: PricingPageProps) {
 
   return (
     <article>
-      <section className="py-10 py-xl-15">
+      <section className="py-15 py-xl-20 bg-light">
         <div className="container">
-          <div className="row justify-content-center">
-            <div className="col-lg-10 col-xl-8">
-              <div>
-                <h1 className="display-1 text-blue">Lease & finance </h1>
-                <div>
-                  <p className="fs-lg text-secondary">
-                    Welcome to Suzuki Racecourse Motor Sales Team, your trusted
-                    source for high-quality Suzuki vehicles and exceptional
-                    customer service. Our dealership offers a wide range of new
-                    and pre-owned Suzuki cars, SUVs, and trucks, ensuring you
-                    find the perfect vehicle to meet your needs. Our
-                    knowledgeable sales team is dedicated to providing a
-                    seamless car buying experience, with transparent pricing and
-                    flexible financing options. Whether youre looking for the
-                    latest models or certified pre-owned vehicles, we have
-                    something for everyone.
-                  </p>
+          <div className="row align-items-center justify-content-center justify-content-lg-between">
+            <div className="col-md-10 col-lg-6 mb-5 mb-lg-0">
+              <h2 className="lh-sm mb-5">
+                We create beautiful, functional spaces
+              </h2>
+              <div className="row g-2">
+                <div className="col-md-6">
+                  <ul className="list-group list-group-minimal">
+                    <li className="list-group-item d-flex align-items-center mb-1">
+                      <div className="icon-box icon-box-sm bg-opaque-green rounded-circle me-2">
+                        <i className="bi bi-check2 text-green"></i>
+                      </div>
+                      Powerfull Tools
+                    </li>
+                    <li className="list-group-item d-flex align-items-center mb-1">
+                      <div className="icon-box icon-box-sm bg-opaque-green rounded-circle me-2">
+                        <i className="bi bi-check2 text-green"></i>
+                      </div>
+                      Online Booking
+                    </li>
+                    <li className="list-group-item d-flex align-items-center">
+                      <div className="icon-box icon-box-sm bg-opaque-green rounded-circle me-2">
+                        <i className="bi bi-check2 text-green"></i>
+                      </div>
+                      24/7 Availability
+                    </li>
+                  </ul>
+                </div>
+                <div className="col-md-6">
+                  <ul className="list-group list-group-minimal">
+                    <li className="list-group-item d-flex align-items-center mb-1">
+                      <div className="icon-box icon-box-sm bg-opaque-green rounded-circle me-2">
+                        <i className="bi bi-check2 text-green"></i>
+                      </div>
+                      Quick delivery{" "}
+                      <span className="badge bg-green rounded-pill ms-2">
+                        New
+                      </span>
+                    </li>
+                    <li className="list-group-item d-flex align-items-center mb-1">
+                      <div className="icon-box icon-box-sm bg-opaque-green rounded-circle me-2">
+                        <i className="bi bi-check2 text-green"></i>
+                      </div>
+                      100% Guarantee
+                    </li>
+                    <li className="list-group-item d-flex align-items-center">
+                      <div className="icon-box icon-box-sm bg-opaque-green rounded-circle me-2">
+                        <i className="bi bi-check2 text-green"></i>
+                      </div>
+                      Disscounts
+                    </li>
+                  </ul>
                 </div>
               </div>
-              <div>
-                <div>
-                  <h5>Lease</h5>
-                  <p className="fs-lg text-secondary">
-                    Welcome to Suzuki Racecourse Motor Sales Team, your trusted
-                    source for high-quality Suzuki vehicles and exceptional
-                    customer service. Our dealership offers a wide range of new
-                    and pre-owned Suzuki cars, SUVs, and trucks, ensuring you
-                    find the perfect vehicle to meet your needs. Our
-                    knowledgeable sales team is dedicated to providing a
-                    seamless car buying experience, with transparent pricing and
-                    flexible financing options. Whether youre looking for the
-                    latest models or certified pre-owned vehicles, we have
-                    something for everyone.
-                  </p>
-                </div>
+            </div>
+            <div
+              className="col-md-10 col-lg-5 position-relative"
+              data-aos="fade-up"
+            >
+              <div className="equal-1-1 rounded-circle">
+                {/* <figure className="background" style="background-image: url('./assets/images/service-2.jpg')"></figure> */}
               </div>
-
-              <div>
-                <div>
-                  <p className="fs-lg text-secondary">
-                    Welcome to Suzuki Racecourse Motor Sales Team, your trusted
-                    source for high-quality Suzuki vehicles and exceptional
-                    customer service. Our dealership offers a wide range of new
-                    and pre-owned Suzuki cars, SUVs, and trucks, ensuring you
-                    find the perfect vehicle to meet your needs. Our
-                    knowledgeable sales team is dedicated to providing a
-                    seamless car buying experience, with transparent pricing and
-                    flexible financing options. Whether youre looking for the
-                    latest models or certified pre-owned vehicles, we have
-                    something for everyone.
-                  </p>
-                </div>
-              </div>
-
-              <div>
-                <div>
-                  <h5>Finance</h5>
-                  <p className="fs-lg text-secondary">
-                    Welcome to Suzuki Racecourse Motor Sales Team, your trusted
-                    source for high-quality Suzuki vehicles and exceptional
-                    customer service. Our dealership offers a wide range of new
-                    and pre-owned Suzuki cars, SUVs, and trucks, ensuring you
-                    find the perfect vehicle to meet your needs. Our
-                    knowledgeable sales team is dedicated to providing a
-                    seamless car buying experience, with transparent pricing and
-                    flexible financing options. Whether youre looking for the
-                    latest models or certified pre-owned vehicles, we have
-                    something for everyone.
-                  </p>
-                </div>
-              </div>
-              <div>
-                <div>
-                  <p className="fs-lg text-secondary">
-                    Welcome to Suzuki Racecourse Motor Sales Team, your trusted
-                    source for high-quality Suzuki vehicles and exceptional
-                    customer service. Our dealership offers a wide range of new
-                    and pre-owned Suzuki cars, SUVs, and trucks, ensuring you
-                    find the perfect vehicle to meet your needs. Our
-                    knowledgeable sales team is dedicated to providing a
-                    seamless car buying experience, with transparent pricing and
-                    flexible financing options. Whether youre looking for the
-                    latest models or certified pre-owned vehicles, we have
-                    something for everyone.
-                  </p>
-                </div>
+              {/* <img className="position-absolute bottom-0 start-0 rotate" src="./assets/images/svg/featured.svg" alt=""> */}
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="pb-15 pb-xl-20">
+        <div className="container">
+          <div className="row align-items-center justify-content-between">
+            <div className="col-lg-5">
+              <h2>Get closer to your customers.</h2>
+              <ul className="list-group list-group-minimal">
+                <li className="list-group-item d-flex align-items-center">
+                  <div className="icon-box icon-box-sm bg-opaque-green rounded-circle me-2">
+                    <i className="bi bi-check2 text-green"></i>
+                  </div>
+                  High-fidelity interactive design
+                </li>
+                <li className="list-group-item d-flex align-items-center">
+                  <div className="icon-box icon-box-sm bg-opaque-green rounded-circle me-2">
+                    <i className="bi bi-check2 text-green"></i>
+                  </div>
+                  Immersive prototyping experience
+                </li>
+                <li className="list-group-item d-flex align-items-center">
+                  <div className="icon-box icon-box-sm bg-opaque-green rounded-circle me-2">
+                    <i className="bi bi-check2 text-green"></i>
+                  </div>
+                  Outstranding component animations
+                </li>
+              </ul>
+            </div>
+            <div className="col-lg-6" data-aos="fade-up">
+              <div className="browser bg-white shadow-lg">
+                {/* <img src="./assets/images/pages/event.jpg" className="img-fluid" alt="Image"> */}
+                <span></span>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section className="py-15 py-xl-20 bg-black inverted">
+      <section className="pb-15 pb-xl-20 overflow-hidden">
         <div className="container">
-          <div className="row align-items-end mb-5">
-            <div className="col-lg-8 mb-2 mb-lg-0">
-              <h2>Frequently asked questions</h2>
-            </div>
-          </div>
-          <div className="row mb-8">
-            <div className="col-12">
-              <div
-                className="accordion accordion-highlight border-top border-bottom"
-                id="accordion-1"
-              >
-                <div className="accordion-item">
-                  <h2 className="accordion-header" id="heading-1-1">
-                    <button
-                      className="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapse-1-1"
-                      aria-expanded="false"
-                      aria-controls="collapse-1-1"
-                    >
-                      What is the difference between an editor and a viewer ?
-                    </button>
-                  </h2>
-                  <div
-                    id="collapse-1-1"
-                    className="accordion-collapse collapse"
-                    aria-labelledby="heading-1-1"
-                    data-bs-parent="#accordion-1"
-                  >
-                    <div className="accordion-body">
-                      <p className="text-secondary">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Dolore cumque quos libero, ratione non hic nisi autem
-                        dicta saepe asperiores repellendus quis ab est.
-                        Repellendus dicta itaque aliquid officiis animi?
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="accordion-item">
-                  <h2 className="accordion-header" id="heading-1-2">
-                    <button
-                      className="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapse-1-2"
-                      aria-expanded="false"
-                      aria-controls="collapse-1-2"
-                    >
-                      What if more editors are added to my team each month ?
-                    </button>
-                  </h2>
-                  <div
-                    id="collapse-1-2"
-                    className="accordion-collapse collapse"
-                    aria-labelledby="heading-1-2"
-                    data-bs-parent="#accordion-1"
-                  >
-                    <div className="accordion-body">
-                      <p className="text-secondary">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Voluptates quisquam aut quod culpa fugit voluptatibus
-                        sunt, obcaecati eveniet impedit eligendi voluptatem
-                        reiciendis cum consequatur sit quia mollitia. Nam,
-                        tempora tempore!
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="accordion-item">
-                  <h2 className="accordion-header" id="heading-1-3">
-                    <button
-                      className="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapse-1-3"
-                      aria-expanded="false"
-                      aria-controls="collapse-1-3"
-                    >
-                      What payment methods do you offer ?
-                    </button>
-                  </h2>
-                  <div
-                    id="collapse-1-3"
-                    className="accordion-collapse collapse"
-                    aria-labelledby="heading-1-3"
-                    data-bs-parent="#accordion-1"
-                  >
-                    <div className="accordion-body">
-                      <p className="text-secondary">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Est ullam soluta ipsam, commodi atque tempore debitis
-                        quaerat molestias neque aperiam, doloribus vero?
-                        Suscipit et dignissimos minus, vel distinctio odit.
-                        Earum.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="accordion-item">
-                  <h2 className="accordion-header" id="heading-1-4">
-                    <button
-                      className="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapse-1-4"
-                      aria-expanded="false"
-                      aria-controls="collapse-1-4"
-                    >
-                      What is your refund policy?
-                    </button>
-                  </h2>
-                  <div
-                    id="collapse-1-4"
-                    className="accordion-collapse collapse"
-                    aria-labelledby="heading-1-4"
-                    data-bs-parent="#accordion-1"
-                  >
-                    <div className="accordion-body">
-                      <p className="text-secondary">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Est ullam soluta ipsam, commodi atque tempore debitis
-                        quaerat molestias neque aperiam, doloribus vero?
-                        Suscipit et dignissimos minus, vel distinctio odit.
-                        Earum.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="accordion-item">
-                  <h2 className="accordion-header" id="heading-1-5">
-                    <button
-                      className="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapse-1-5"
-                      aria-expanded="false"
-                      aria-controls="collapse-1-5"
-                    >
-                      Do you have educational or non-profit discounts ?
-                    </button>
-                  </h2>
-                  <div
-                    id="collapse-1-5"
-                    className="accordion-collapse collapse"
-                    aria-labelledby="heading-1-5"
-                    data-bs-parent="#accordion-1"
-                  >
-                    <div className="accordion-body">
-                      <p className="text-secondary">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Est ullam soluta ipsam, commodi atque tempore debitis
-                        quaerat molestias neque aperiam, doloribus vero?
-                        Suscipit et dignissimos minus, vel distinctio odit.
-                        Earum.
-                      </p>
-                    </div>
+          <div className="row justify-content-center">
+            <div className="col-lg-8">
+              <div className="carousel carousel-with-nav">
+                <div data-carousel='{"controls": false, "autoHeight": true ,"gutter": 200, "center": true, "mouseDrag": true }'>
+                  <div>
+                    <blockquote className="text-center">
+                      {/* <span className="logo"><img src="./assets/images/logo/logo-1.svg" alt="Logo"></span> */}
+                      <h4 className="fs-2 my-3">
+                        “Amazing experience I love it a lot. Thanks to the team
+                        that dreams come true.”
+                      </h4>
+                      <footer className="blockquote-footer">
+                        <span>
+                          <span className="text-black">Michael Doe</span>{" "}
+                          Creative Director
+                        </span>
+                      </footer>
+                    </blockquote>
                   </div>
                 </div>
               </div>

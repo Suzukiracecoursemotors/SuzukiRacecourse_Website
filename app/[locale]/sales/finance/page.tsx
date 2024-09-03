@@ -2,8 +2,8 @@ import { Locale } from "@/i18n";
 import { getTranslations } from "next-intl/server";
 import Image from "next/image";
 import React from "react";
-import CUCbanner from "../../public/WhatsApp Image 2024-07-08 at 11.26.08 AM.jpeg";
-import Carosil from "../../common/carosil";
+import ed from "./pics/ed.jpg";
+import ed1 from "./pics/SavebiguptoRs.800,000withFixedRateupto18Percent_1_080754.webp";
 
 type PricingPageProps = {
   params: { locale: Locale };
@@ -14,93 +14,111 @@ export default async function CUC({ params: { locale } }: PricingPageProps) {
 
   return (
     <article>
-      <section className="py-10 py-xl-15">
+      <section className="py-10">
+        <Image
+          src={ed1}
+          layout="responsive"
+          alt=" background-image background "
+        />{" "}
+        <br />
         <div className="container">
           <div className="row justify-content-center">
-            <div className="col-lg-10 col-xl-8">
+            <div className="col-lg-12 col-xl-9">
               <div>
-                <h1 className="display-1 text-blue">Lease & finance </h1>
+                <br />
+
+                <h1 className="display-4 text-blue">
+                  What is Suzuki Finance Arrangement Program?
+                </h1>
                 <div>
                   <p className="fs-lg text-secondary">
-                    Welcome to Suzuki Racecourse Motor Sales Team, your trusted
-                    source for high-quality Suzuki vehicles and exceptional
-                    customer service. Our dealership offers a wide range of new
-                    and pre-owned Suzuki cars, SUVs, and trucks, ensuring you
-                    find the perfect vehicle to meet your needs. Our
-                    knowledgeable sales team is dedicated to providing a
-                    seamless car buying experience, with transparent pricing and
-                    flexible financing options. Whether youre looking for the
-                    latest models or certified pre-owned vehicles, we have
-                    something for everyone.
+                    financed. Now you can sit back & relax at your home or
+                    office and apply online! Suzuki Finance arrangement program
+                    is a one of its kind innovative financing solution having
+                    multiple value added benefits.
                   </p>
                 </div>
               </div>
               <div>
                 <div>
-                  <h5>Lease</h5>
-                  <p className="fs-lg text-secondary">
-                    Welcome to Suzuki Racecourse Motor Sales Team, your trusted
-                    source for high-quality Suzuki vehicles and exceptional
-                    customer service. Our dealership offers a wide range of new
-                    and pre-owned Suzuki cars, SUVs, and trucks, ensuring you
-                    find the perfect vehicle to meet your needs. Our
-                    knowledgeable sales team is dedicated to providing a
-                    seamless car buying experience, with transparent pricing and
-                    flexible financing options. Whether youre looking for the
-                    latest models or certified pre-owned vehicles, we have
-                    something for everyone.
-                  </p>
+                  <h5>
+                    The Advantages of getting your car financed through Suzuki
+                    Finance Arrangement Program are:
+                  </h5>
+                  <li className="list-group-item d-flex align-items-center">
+                    <div className="icon-box icon-box-sm bg-opaque-green rounded-circle me-2">
+                      <i className="bi bi-check2 text-green"></i>
+                    </div>
+                    Fast & Hassle free processing
+                  </li>
+                  <li className="list-group-item d-flex align-items-center">
+                    <div className="icon-box icon-box-sm bg-opaque-green rounded-circle me-2">
+                      <i className="bi bi-check2 text-green"></i>
+                    </div>
+                    Down payment as per your affordability
+                  </li>
+                  <li className="list-group-item d-flex align-items-center">
+                    <div className="icon-box icon-box-sm bg-opaque-green rounded-circle me-2">
+                      <i className="bi bi-check2 text-green"></i>
+                    </div>
+                    Comprehensive Insurance at lowest rates
+                  </li>
+                  <li className="list-group-item d-flex align-items-center">
+                    <div className="icon-box icon-box-sm bg-opaque-green rounded-circle me-2">
+                      <i className="bi bi-check2 text-green"></i>
+                    </div>
+                    Priority Deliveries
+                  </li>
+                  <li className="list-group-item d-flex align-items-center">
+                    <div className="icon-box icon-box-sm bg-opaque-green rounded-circle me-2">
+                      <i className="bi bi-check2 text-green"></i>
+                    </div>
+                    Best competitive & affordable rate
+                  </li>
+                  <li className="list-group-item d-flex align-items-center">
+                    <div className="icon-box icon-box-sm bg-opaque-green rounded-circle me-2">
+                      <i className="bi bi-check2 text-green"></i>
+                    </div>
+                    No hidden charges
+                  </li>
+                  <li className="list-group-item d-flex align-items-center">
+                    <div className="icon-box icon-box-sm bg-opaque-green rounded-circle me-2">
+                      <i className="bi bi-check2 text-green"></i>
+                    </div>
+                    Transparent Deals
+                  </li>
                 </div>
               </div>
 
               <div>
                 <div>
                   <p className="fs-lg text-secondary">
-                    Welcome to Suzuki Racecourse Motor Sales Team, your trusted
-                    source for high-quality Suzuki vehicles and exceptional
-                    customer service. Our dealership offers a wide range of new
-                    and pre-owned Suzuki cars, SUVs, and trucks, ensuring you
-                    find the perfect vehicle to meet your needs. Our
-                    knowledgeable sales team is dedicated to providing a
-                    seamless car buying experience, with transparent pricing and
-                    flexible financing options. Whether youre looking for the
-                    latest models or certified pre-owned vehicles, we have
-                    something for everyone.
+                    Keeping up with the age of digital transformation and with
+                    customer centric approach, Pak Suzuki, the No. 1 Automobile
+                    Manufacturer bank joined hands with leading Auto Finance
+                    Banks of Pakistan to provide an innovative financing
+                    solution having multiple value added benefits. This program
+                    is available online and also at Pak Suzuki authorized
+                    dealerships and Partner Bank branches across Pakistan. The
+                    program offers attractive features along with unmatched
+                    benefits as compared to any other Auto Financing program.
+                    Then why wait? Apply for Suzuki Auto Finance now and get
+                    your vehicle on easy terms. For further details, please
+                    apply on line; contact your nearest Pak Suzuki authorized
+                    dealership. Note: All loan processing and approvals are
+                    subject to the prevailing credit policy of Partner Bank/s.
                   </p>
                 </div>
               </div>
 
               <div>
                 <div>
-                  <h5>Finance</h5>
-                  <p className="fs-lg text-secondary">
-                    Welcome to Suzuki Racecourse Motor Sales Team, your trusted
-                    source for high-quality Suzuki vehicles and exceptional
-                    customer service. Our dealership offers a wide range of new
-                    and pre-owned Suzuki cars, SUVs, and trucks, ensuring you
-                    find the perfect vehicle to meet your needs. Our
-                    knowledgeable sales team is dedicated to providing a
-                    seamless car buying experience, with transparent pricing and
-                    flexible financing options. Whether youre looking for the
-                    latest models or certified pre-owned vehicles, we have
-                    something for everyone.
-                  </p>
-                </div>
-              </div>
-              <div>
-                <div>
-                  <p className="fs-lg text-secondary">
-                    Welcome to Suzuki Racecourse Motor Sales Team, your trusted
-                    source for high-quality Suzuki vehicles and exceptional
-                    customer service. Our dealership offers a wide range of new
-                    and pre-owned Suzuki cars, SUVs, and trucks, ensuring you
-                    find the perfect vehicle to meet your needs. Our
-                    knowledgeable sales team is dedicated to providing a
-                    seamless car buying experience, with transparent pricing and
-                    flexible financing options. Whether youre looking for the
-                    latest models or certified pre-owned vehicles, we have
-                    something for everyone.
-                  </p>
+                  <h5>Eligibility and Documentation</h5>
+                  <Image
+                    src={ed}
+                    layout="responsive"
+                    alt=" background-image"
+                  />{" "}
                 </div>
               </div>
             </div>
