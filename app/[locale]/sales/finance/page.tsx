@@ -9,7 +9,9 @@ type PricingPageProps = {
   params: { locale: Locale };
 };
 
-export default async function CUC({ params: { locale } }: PricingPageProps) {
+export default async function FinanceandLease({
+  params: { locale },
+}: PricingPageProps) {
   const t = await getTranslations({ locale, namespace: "" });
 
   return (
@@ -32,10 +34,12 @@ export default async function CUC({ params: { locale } }: PricingPageProps) {
                 </h1>
                 <div>
                   <p className="fs-lg text-secondary">
-                    financed. Now you can sit back & relax at your home or
-                    office and apply online! Suzuki Finance arrangement program
-                    is a one of its kind innovative financing solution having
-                    multiple value added benefits.
+                    Suzuki Finance Arrangement Program is the most convenient
+                    and hassle free way of getting your car financed. Now you
+                    can sit back & relax at your home or office and apply
+                    online! Suzuki Finance arrangement program is a one of its
+                    kind innovative financing solution having multiple value
+                    added benefits.
                   </p>
                 </div>
               </div>
@@ -141,14 +145,14 @@ export default async function CUC({ params: { locale } }: PricingPageProps) {
                 <div className="accordion-item">
                   <h2 className="accordion-header" id="heading-1-1">
                     <button
-                      className="accordion-button collapsed"
+                      className="accordion-button collapsed text-white"
                       type="button"
                       data-bs-toggle="collapse"
                       data-bs-target="#collapse-1-1"
                       aria-expanded="false"
                       aria-controls="collapse-1-1"
                     >
-                      What is the difference between an editor and a viewer ?
+                      What is Suzuki Finance Arrangement Program?
                     </button>
                   </h2>
                   <div
@@ -159,25 +163,28 @@ export default async function CUC({ params: { locale } }: PricingPageProps) {
                   >
                     <div className="accordion-body">
                       <p className="text-secondary">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Dolore cumque quos libero, ratione non hic nisi autem
-                        dicta saepe asperiores repellendus quis ab est.
-                        Repellendus dicta itaque aliquid officiis animi?
+                        Suzuki Finance Arrangement Program is the most
+                        convenient and hassle-free way of getting your car
+                        financed. Now you can sit back & relax at your home or
+                        office and apply online! Suzuki Finance Arrangement
+                        Program is a one-of-its-kind innovative financing
+                        solution with multiple value-added benefits.
                       </p>
                     </div>
                   </div>
                 </div>
+
                 <div className="accordion-item">
                   <h2 className="accordion-header" id="heading-1-2">
                     <button
-                      className="accordion-button collapsed"
+                      className="accordion-button collapsed text-white"
                       type="button"
                       data-bs-toggle="collapse"
                       data-bs-target="#collapse-1-2"
                       aria-expanded="false"
                       aria-controls="collapse-1-2"
                     >
-                      What if more editors are added to my team each month ?
+                      What is Suzuki Lease Program?
                     </button>
                   </h2>
                   <div
@@ -188,101 +195,13 @@ export default async function CUC({ params: { locale } }: PricingPageProps) {
                   >
                     <div className="accordion-body">
                       <p className="text-secondary">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Voluptates quisquam aut quod culpa fugit voluptatibus
-                        sunt, obcaecati eveniet impedit eligendi voluptatem
-                        reiciendis cum consequatur sit quia mollitia. Nam,
-                        tempora tempore!
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="accordion-item">
-                  <h2 className="accordion-header" id="heading-1-3">
-                    <button
-                      className="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapse-1-3"
-                      aria-expanded="false"
-                      aria-controls="collapse-1-3"
-                    >
-                      What payment methods do you offer ?
-                    </button>
-                  </h2>
-                  <div
-                    id="collapse-1-3"
-                    className="accordion-collapse collapse"
-                    aria-labelledby="heading-1-3"
-                    data-bs-parent="#accordion-1"
-                  >
-                    <div className="accordion-body">
-                      <p className="text-secondary">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Est ullam soluta ipsam, commodi atque tempore debitis
-                        quaerat molestias neque aperiam, doloribus vero?
-                        Suscipit et dignissimos minus, vel distinctio odit.
-                        Earum.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="accordion-item">
-                  <h2 className="accordion-header" id="heading-1-4">
-                    <button
-                      className="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapse-1-4"
-                      aria-expanded="false"
-                      aria-controls="collapse-1-4"
-                    >
-                      What is your refund policy?
-                    </button>
-                  </h2>
-                  <div
-                    id="collapse-1-4"
-                    className="accordion-collapse collapse"
-                    aria-labelledby="heading-1-4"
-                    data-bs-parent="#accordion-1"
-                  >
-                    <div className="accordion-body">
-                      <p className="text-secondary">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Est ullam soluta ipsam, commodi atque tempore debitis
-                        quaerat molestias neque aperiam, doloribus vero?
-                        Suscipit et dignissimos minus, vel distinctio odit.
-                        Earum.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="accordion-item">
-                  <h2 className="accordion-header" id="heading-1-5">
-                    <button
-                      className="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapse-1-5"
-                      aria-expanded="false"
-                      aria-controls="collapse-1-5"
-                    >
-                      Do you have educational or non-profit discounts ?
-                    </button>
-                  </h2>
-                  <div
-                    id="collapse-1-5"
-                    className="accordion-collapse collapse"
-                    aria-labelledby="heading-1-5"
-                    data-bs-parent="#accordion-1"
-                  >
-                    <div className="accordion-body">
-                      <p className="text-secondary">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Est ullam soluta ipsam, commodi atque tempore debitis
-                        quaerat molestias neque aperiam, doloribus vero?
-                        Suscipit et dignissimos minus, vel distinctio odit.
-                        Earum.
+                        The Suzuki Lease Program allows customers to lease a
+                        vehicle for a specific period, typically with lower
+                        monthly payments compared to traditional financing. This
+                        program offers the flexibility to upgrade to a new
+                        vehicle at the end of the lease term, making it an
+                        attractive option for those who prefer driving the
+                        latest models without long-term commitment.
                       </p>
                     </div>
                   </div>
