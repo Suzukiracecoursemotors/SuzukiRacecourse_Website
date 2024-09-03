@@ -2,104 +2,84 @@ import { Locale } from "@/i18n";
 import { getTranslations } from "next-intl/server";
 import Image from "next/image";
 import React from "react";
-import CUCbanner from "../../public/WhatsApp Image 2024-07-08 at 11.26.08 AM.jpeg";
-import Carosil from "../../common/carosil";
+import insurancepic from "./pics/SuzukiAutoInsuranceArrangementProgram_1_122815.png";
 
 type PricingPageProps = {
   params: { locale: Locale };
 };
 
-export default async function CUC({ params: { locale } }: PricingPageProps) {
+export default async function FinanceandLease({
+  params: { locale },
+}: PricingPageProps) {
   const t = await getTranslations({ locale, namespace: "" });
 
   return (
     <article>
-      <section className="py-10 py-xl-15">
+      <section className="py-10">
+        <Image
+          src={insurancepic}
+          layout="responsive"
+          alt=" background-image background "
+        />{" "}
+        <br />
         <div className="container">
           <div className="row justify-content-center">
-            <div className="col-lg-10 col-xl-8">
+            <div className="col-lg-12 col-xl-9">
               <div>
-                <h1 className="display-1 text-blue">Lease & finance </h1>
-                <div>
-                  <p className="fs-lg text-secondary">
-                    Welcome to Suzuki Racecourse Motor Sales Team, your trusted
-                    source for high-quality Suzuki vehicles and exceptional
-                    customer service. Our dealership offers a wide range of new
-                    and pre-owned Suzuki cars, SUVs, and trucks, ensuring you
-                    find the perfect vehicle to meet your needs. Our
-                    knowledgeable sales team is dedicated to providing a
-                    seamless car buying experience, with transparent pricing and
-                    flexible financing options. Whether youre looking for the
-                    latest models or certified pre-owned vehicles, we have
-                    something for everyone.
-                  </p>
-                </div>
-              </div>
-              <div>
-                <div>
-                  <h5>Lease</h5>
-                  <p className="fs-lg text-secondary">
-                    Welcome to Suzuki Racecourse Motor Sales Team, your trusted
-                    source for high-quality Suzuki vehicles and exceptional
-                    customer service. Our dealership offers a wide range of new
-                    and pre-owned Suzuki cars, SUVs, and trucks, ensuring you
-                    find the perfect vehicle to meet your needs. Our
-                    knowledgeable sales team is dedicated to providing a
-                    seamless car buying experience, with transparent pricing and
-                    flexible financing options. Whether youre looking for the
-                    latest models or certified pre-owned vehicles, we have
-                    something for everyone.
-                  </p>
-                </div>
-              </div>
+                <br />
 
-              <div>
+                <h1 className="display-4 text-blue">
+                  Suzuki Auto Insurance Arrangement Program{" "}
+                </h1>
                 <div>
                   <p className="fs-lg text-secondary">
-                    Welcome to Suzuki Racecourse Motor Sales Team, your trusted
-                    source for high-quality Suzuki vehicles and exceptional
-                    customer service. Our dealership offers a wide range of new
-                    and pre-owned Suzuki cars, SUVs, and trucks, ensuring you
-                    find the perfect vehicle to meet your needs. Our
-                    knowledgeable sales team is dedicated to providing a
-                    seamless car buying experience, with transparent pricing and
-                    flexible financing options. Whether youre looking for the
-                    latest models or certified pre-owned vehicles, we have
-                    something for everyone.
-                  </p>
-                </div>
-              </div>
-
-              <div>
-                <div>
-                  <h5>Finance</h5>
-                  <p className="fs-lg text-secondary">
-                    Welcome to Suzuki Racecourse Motor Sales Team, your trusted
-                    source for high-quality Suzuki vehicles and exceptional
-                    customer service. Our dealership offers a wide range of new
-                    and pre-owned Suzuki cars, SUVs, and trucks, ensuring you
-                    find the perfect vehicle to meet your needs. Our
-                    knowledgeable sales team is dedicated to providing a
-                    seamless car buying experience, with transparent pricing and
-                    flexible financing options. Whether youre looking for the
-                    latest models or certified pre-owned vehicles, we have
-                    something for everyone.
+                    Your Suzuki car is more than just a means of transportation;
+                    its a valuable asset! SuzukiPakistan car insurance
+                    arrangement program provides you with one window solution
+                    for all your car coverage needs together with following
+                    unmatchable multiple benefits, exclusively available at Pak
+                    Suzuki authorized dealerships
                   </p>
                 </div>
               </div>
               <div>
                 <div>
+                  <h5>1. Best Premium Rate:</h5>
                   <p className="fs-lg text-secondary">
-                    Welcome to Suzuki Racecourse Motor Sales Team, your trusted
-                    source for high-quality Suzuki vehicles and exceptional
-                    customer service. Our dealership offers a wide range of new
-                    and pre-owned Suzuki cars, SUVs, and trucks, ensuring you
-                    find the perfect vehicle to meet your needs. Our
-                    knowledgeable sales team is dedicated to providing a
-                    seamless car buying experience, with transparent pricing and
-                    flexible financing options. Whether youre looking for the
-                    latest models or certified pre-owned vehicles, we have
-                    something for everyone.
+                    Best Premium rate of upto 2.25%
+                  </p>
+                  <h5>2. Online Policy Issuance:</h5>
+                  <p className="fs-lg text-secondary">
+                    Hassle free and convenient experience with online policy
+                    issuance
+                  </p>
+                  <h5>2. Online Policy Issuance:</h5>
+                  <p className="fs-lg text-secondary">
+                    Hassle free and convenient experience with online policy
+                    issuance
+                  </p>
+                  <h5>3. Authorized Dealership facility:</h5>
+                  <p className="fs-lg text-secondary">
+                    Repairs at Suzuki Authorized 3S Dealerships, with certified
+                    technicians and equipment
+                  </p>
+                  <h5>4. SGP</h5>
+                  <p className="fs-lg text-secondary">
+                    Suzuki Genuine Parts (with 6 months Warranty)
+                  </p>
+                  <h5>5. Depreciation:</h5>
+                  <p className="fs-lg text-secondary">
+                    0% Depreciation (for first 6 months)
+                  </p>
+                  <h5>6.Policy:</h5>
+                  <p className="fs-lg text-secondary">
+                    Conventional & Islamic both policies available.
+                  </p>
+                  <h5>7. Available for both used and new cars</h5>
+                  <p className="fs-lg text-secondary">
+                    Secure a peaceful journey for yourself and your Suzuki car
+                    by getting insured with us today! visit Pak Suzuki
+                    dealerships near you.
                   </p>
                 </div>
               </div>
@@ -123,14 +103,14 @@ export default async function CUC({ params: { locale } }: PricingPageProps) {
                 <div className="accordion-item">
                   <h2 className="accordion-header" id="heading-1-1">
                     <button
-                      className="accordion-button collapsed"
+                      className="accordion-button collapsed text-white"
                       type="button"
                       data-bs-toggle="collapse"
                       data-bs-target="#collapse-1-1"
                       aria-expanded="false"
                       aria-controls="collapse-1-1"
                     >
-                      What is the difference between an editor and a viewer ?
+                      What is Suzuki insurance Program?
                     </button>
                   </h2>
                   <div
@@ -141,130 +121,14 @@ export default async function CUC({ params: { locale } }: PricingPageProps) {
                   >
                     <div className="accordion-body">
                       <p className="text-secondary">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Dolore cumque quos libero, ratione non hic nisi autem
-                        dicta saepe asperiores repellendus quis ab est.
-                        Repellendus dicta itaque aliquid officiis animi?
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="accordion-item">
-                  <h2 className="accordion-header" id="heading-1-2">
-                    <button
-                      className="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapse-1-2"
-                      aria-expanded="false"
-                      aria-controls="collapse-1-2"
-                    >
-                      What if more editors are added to my team each month ?
-                    </button>
-                  </h2>
-                  <div
-                    id="collapse-1-2"
-                    className="accordion-collapse collapse"
-                    aria-labelledby="heading-1-2"
-                    data-bs-parent="#accordion-1"
-                  >
-                    <div className="accordion-body">
-                      <p className="text-secondary">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Voluptates quisquam aut quod culpa fugit voluptatibus
-                        sunt, obcaecati eveniet impedit eligendi voluptatem
-                        reiciendis cum consequatur sit quia mollitia. Nam,
-                        tempora tempore!
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="accordion-item">
-                  <h2 className="accordion-header" id="heading-1-3">
-                    <button
-                      className="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapse-1-3"
-                      aria-expanded="false"
-                      aria-controls="collapse-1-3"
-                    >
-                      What payment methods do you offer ?
-                    </button>
-                  </h2>
-                  <div
-                    id="collapse-1-3"
-                    className="accordion-collapse collapse"
-                    aria-labelledby="heading-1-3"
-                    data-bs-parent="#accordion-1"
-                  >
-                    <div className="accordion-body">
-                      <p className="text-secondary">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Est ullam soluta ipsam, commodi atque tempore debitis
-                        quaerat molestias neque aperiam, doloribus vero?
-                        Suscipit et dignissimos minus, vel distinctio odit.
-                        Earum.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="accordion-item">
-                  <h2 className="accordion-header" id="heading-1-4">
-                    <button
-                      className="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapse-1-4"
-                      aria-expanded="false"
-                      aria-controls="collapse-1-4"
-                    >
-                      What is your refund policy?
-                    </button>
-                  </h2>
-                  <div
-                    id="collapse-1-4"
-                    className="accordion-collapse collapse"
-                    aria-labelledby="heading-1-4"
-                    data-bs-parent="#accordion-1"
-                  >
-                    <div className="accordion-body">
-                      <p className="text-secondary">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Est ullam soluta ipsam, commodi atque tempore debitis
-                        quaerat molestias neque aperiam, doloribus vero?
-                        Suscipit et dignissimos minus, vel distinctio odit.
-                        Earum.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="accordion-item">
-                  <h2 className="accordion-header" id="heading-1-5">
-                    <button
-                      className="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapse-1-5"
-                      aria-expanded="false"
-                      aria-controls="collapse-1-5"
-                    >
-                      Do you have educational or non-profit discounts ?
-                    </button>
-                  </h2>
-                  <div
-                    id="collapse-1-5"
-                    className="accordion-collapse collapse"
-                    aria-labelledby="heading-1-5"
-                    data-bs-parent="#accordion-1"
-                  >
-                    <div className="accordion-body">
-                      <p className="text-secondary">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Est ullam soluta ipsam, commodi atque tempore debitis
-                        quaerat molestias neque aperiam, doloribus vero?
-                        Suscipit et dignissimos minus, vel distinctio odit.
-                        Earum.
+                        The Suzuki Insurance Program is a comprehensive
+                        insurance solution designed to protect your Suzuki
+                        vehicle. It offers competitive premium rates, easy
+                        online policy issuance, and exclusive benefits at Pak
+                        Suzuki authorized dealerships. Whether you own a new or
+                        used Suzuki, this program provides peace of mind by
+                        ensuring your vehicle is covered with genuine Suzuki
+                        parts and repair services at certified 3S dealerships.
                       </p>
                     </div>
                   </div>
