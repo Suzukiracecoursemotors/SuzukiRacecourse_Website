@@ -246,9 +246,9 @@ const SaleHome = () => {
                       <div className="col-md-6" key={variant.title}>
                         <Link
                           href={variant.link}
-                          className="card h-100 text-decoration-none"
+                          className="card h-100  text-decoration-none"
                         >
-                          <div className="card-body border d-flex flex-column">
+                          <div className="card-body bg-white border d-flex flex-column">
                             <div className="mb-3 text-center">
                               <Image
                                 src={variant.image}

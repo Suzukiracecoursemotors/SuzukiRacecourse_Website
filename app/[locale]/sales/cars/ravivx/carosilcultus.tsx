@@ -20,7 +20,7 @@ function CarosilsRavi() {
   const autoSlideInterval = 2000;
 
   return (
-    <section className="">
+    <section className="mt-10">
       <Carousel
         autoPlay={true}
         interval={autoSlideInterval}
