@@ -39,13 +39,13 @@ const Header = ({ children }: HeaderProps) => {
       return;
     }
     setShowMobileMenu(false);
-    document.body.style.overflow = "hidden";
+    document.body.style.overflow = "scroll";
   };
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("auto", handleScroll);
     };
   }, [handleScroll]); // handleScroll is a dependency here
   const pathname = usePathname();
