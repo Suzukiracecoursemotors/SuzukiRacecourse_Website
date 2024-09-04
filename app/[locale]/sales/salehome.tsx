@@ -18,6 +18,14 @@ import bolan1 from "../public/cars/Bolan.png";
 import bolan2 from "../public/cars/Suzuki Bolan 3.png";
 import ravi from "../public/cars/Suzuki Ravi.png";
 
+const config = {
+  sales: "Sales",
+  priceLabel: "Price:",
+  filerLabel: "Filer:",
+  nonFilerLabel: "Non-Filer:",
+  seeMore: "See more",
+  booknow: "Book Now",
+};
 const carModels = [
   {
     id: "alto",
@@ -187,11 +195,11 @@ const carModels = [
 
 const SaleHome = () => {
   return (
-    <section className="py-15 py-xl-15  bg-light">
+    <section className="py-15 py-xl-9  bg-light">
       <div className="container">
-        <div className="row mb-10">
+        <div className="row mb-3">
           <div className="col">
-            <h2 className="fw-bold text-dark">Sales</h2>
+            <h2 className="fw-bold text-dark">{config.sales}</h2>
           </div>
         </div>
         <div className="row g-3 g-xl-5">
@@ -254,21 +262,25 @@ const SaleHome = () => {
                               {variant.title}{" "}
                             </h5>{" "}
                             <p className="card-text text-center text-secondary mb-2">
-                              Price: <strong>{variant.price}</strong>{" "}
-                              <span className="blinking-text">Book now</span>
+                              {config.priceLabel}
+                              <strong>{variant.price}</strong>{" "}
+                              <span className="blinking-text">
+                                {config.booknow}
+                              </span>
                             </p>
                             <p className="card-text text-center">
                               <span className="badge bg-success me-2">
-                                Filer: {variant.filer}
+                                {config.filerLabel} {variant.filer}
                               </span>
                               <span className="badge bg-danger">
-                                Non-Filer: {variant.nonFiler}
+                                {config.nonFilerLabel} {variant.nonFiler}
                               </span>
                             </p>
                             <div className="mt-auto text-center">
                               <br />
                               <p className="underline action text-red fs-lg">
-                                See more <i className="bi bi-arrow-right"></i>
+                                {config.seeMore}{" "}
+                                <i className="bi bi-arrow-right"></i>
                               </p>
                             </div>
                           </div>

@@ -1,17 +1,22 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import image1 from "../../cars/altovx/New folder/Exterior Alto-2 (1920x800).jpg";
-import image2 from "../../cars/altovx/New folder/Studio Session-479.jpg";
-import image3 from "../../cars/altovx/New folder/3alto.jpg";
-import image4 from "../../cars/altovx/New folder/exterior2.jpg";
-import image5 from "../../cars/altovx/New folder/5alto.jpg";
-import image6 from "../../cars/altovx/New folder/2alto.jpg";
-import image7 from "../../cars/altovx/New folder/7alto.jpg";
-import image8 from "../../cars/altovx/New folder/8alt.jpg";
-import image9 from "../../cars/altovx/New folder/9alto.jpg";
-import image10 from "../../cars/altovx/New folder/10alto.jpg";
-import image11 from "../../cars/altovx/New folder/11alto.jpg";
-import image12 from "../../cars/altovx/New folder/12alt.jpg";
+import image1 from "./carosilpic/Studio Session-1150.jpg";
+import image2 from "./carosilpic/Studio Session-1158.jpg";
+import image3 from "./carosilpic/Studio Session-1163.jpg";
+import image4 from "./carosilpic/Studio Session-1168.jpg";
+import image5 from "./carosilpic/Studio Session-1177.jpg";
+import image6 from "./carosilpic/Studio Session-1179.jpg";
+import image7 from "./carosilpic/Studio Session-1190.jpg";
+import image8 from "./carosilpic/Studio Session-1203.jpg";
+import image9 from "./carosilpic/Studio Session-1250.jpg";
+import image10 from "./carosilpic/Studio Session-1304.jpg";
+import image11 from "./carosilpic/Studio Session-1310.jpg";
+import image12 from "./carosilpic/Studio Session-1334.jpg";
+import image13 from "./carosilpic/Studio Session-1357.jpg";
+import image14 from "./carosilpic/Studio Session-1370.jpg";
+import image15 from "./carosilpic/Studio Session-1429.jpg";
+import image16 from "./carosilpic/Studio Session-1429_01.jpg";
+import image17 from "./carosilpic/Studio Session-1461.jpg";
 
 import Image from "next/image";
 import { Carousel } from "react-responsive-carousel";
@@ -23,11 +28,20 @@ function CarosilAltoVX() {
     image1,
     image2,
     image5,
+    image3,
     image6,
     image7,
     image8,
     image9,
     image11,
+    image10,
+    image11,
+    image12,
+    image13,
+    image14,
+    image15,
+    image16,
+    image17,
   ];
 
   useEffect(() => {
@@ -54,7 +68,8 @@ function CarosilAltoVX() {
             <Image
               src={image}
               layout="responsive"
-              alt="background background-image"
+              alt="
+             background-image"
             />
           </div>
         ))}
