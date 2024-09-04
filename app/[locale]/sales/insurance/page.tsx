@@ -54,11 +54,7 @@ export default async function FinanceandLease({
                     Hassle free and convenient experience with online policy
                     issuance
                   </p>
-                  <h5>2. Online Policy Issuance:</h5>
-                  <p className="fs-lg text-secondary">
-                    Hassle free and convenient experience with online policy
-                    issuance
-                  </p>
+
                   <h5>3. Authorized Dealership facility:</h5>
                   <p className="fs-lg text-secondary">
                     Repairs at Suzuki Authorized 3S Dealerships, with certified

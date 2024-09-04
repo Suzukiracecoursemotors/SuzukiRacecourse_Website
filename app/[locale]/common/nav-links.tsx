@@ -17,7 +17,7 @@ enum NavLinksLocale {
   Sale = "Sale",
   Warranty = "Extend_Warranty",
   Insurance = "Insurance",
-  Transfer = "Registration_Transfer",
+  // Transfer = "Registration_Transfer",
   Careers = "Careers",
 }
 
@@ -52,10 +52,10 @@ const linksConfig: NavLink[] = [
         locale: NavLinksLocale.Warranty,
         path: "/sales/extend_warranty",
       },
-      {
-        locale: NavLinksLocale.Transfer,
-        path: "/sales/register_transfer",
-      },
+      // {
+      //   locale: NavLinksLocale.Transfer,
+      //   path: "/sales/register_transfer",
+      // },
     ],
   },
   {

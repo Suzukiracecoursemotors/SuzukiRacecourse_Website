@@ -6,17 +6,17 @@ import altovxr from "../public/Alto/vxlalto.png";
 import altovxl from "../public/Alto/alto1.png";
 import altovxagsl from "../public/Alto/agsvxlalto.png";
 import cultus1 from "../public/Cultus/Cultus-White.jpg";
-import cultus2 from "../public/Cultus/Cultus-Gray.jpg";
-import cultus3 from "../public/Cultus/New-Cultus-Brochure-title-.png";
-import wagon1 from "../public/Wagonr/Wagonr-Back.png";
-import wagon2 from "../public/Wagonr/Wagonr.png";
-import wagon3 from "../public/Wagonr/Wagonr-Back.png";
+import cultus3 from "../public/cars/Cultus AGS Back.png";
+import cultus2 from "../public/cars/Cultus Silver flip.png";
+import wagon2 from "../public/cars/wagonr vxl.png";
+import wagon1 from "../public/cars/WagonR.png";
+import wagon3 from "../public/cars/WagonR Gray.png";
 import swift1 from "../public/Swift/02.png";
 import swift2 from "../public/Swift/Swift-Back-Side-Angle.png";
 import swift3 from "../public/Swift/Swift-Grey.png";
-import bolan1 from "../public/Suzuki-Bolan-Front.jpg";
-import bolan2 from "../public/Suzuki-Bolan-Front.jpg";
-import ravi from "../public/suzuki-ravi6.jpg";
+import bolan1 from "../public/cars/Bolan.png";
+import bolan2 from "../public/cars/Suzuki Bolan 3.png";
+import ravi from "../public/cars/Suzuki Ravi.png";
 
 const carModels = [
   {
@@ -247,7 +247,7 @@ const SaleHome = () => {
                                 alt={variant.title}
                                 width={300}
                                 height={200}
-                                objectFit="contain"
+                                objectFit="responsive"
                               />
                             </div>
                             <h5 className="card-title text-dark text-center">
