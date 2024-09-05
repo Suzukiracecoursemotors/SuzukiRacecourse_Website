@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import homepic from "./WhatsApp Image 2024-09-05 at 11.10.02 AM.jpeg";
+import homepic from "./abc.jpeg";
 const config = {
   title: "Mechanical Workshop",
   note: "NOTE: √: Applicable X: Not Applicable",
