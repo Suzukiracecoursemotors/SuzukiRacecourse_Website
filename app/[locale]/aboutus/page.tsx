@@ -3,6 +3,7 @@ import Gallery from "../common/gallery";
 import { getTranslations } from "next-intl/server";
 import Image from "next/image";
 import Moazzmpic from "./WhatsApp Image 2024-09-05 at 11.10.02 AM.jpeg";
+import mohtashim from "./1672853464297.jpeg";
 import AimsandMissions from "../Home/about_aim";
 type GalleryProps = {
   params: { locale: Locale };
@@ -88,7 +89,7 @@ export default async function AboutUspage({
               data-aos-delay="100"
             >
               <Image
-                src={Moazzmpic}
+                src={mohtashim}
                 alt="awais_image"
                 width={600}
                 height={500}
