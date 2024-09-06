@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import homepic from "./abc.jpeg";
+import homepic from "./bodyandpaint.webp";
 const config = {
   title: "Mechanical Workshop",
   note: "NOTE: √: Applicable X: Not Applicable",
@@ -18,7 +18,7 @@ export default async function MechanicalWorkshop() {
           <div className="row justify-content-center">
             <div className="col-lg-10 col-xl-8">
               <div>
-                <h1 className="display-1 text-blue">{config.title} </h1>
+                <h1 className="display-1 ">{config.title} </h1>
                 <div>
                   <p className="fs-lg text-secondary">
                     At Suzuki, our mechanical workshops are designed to provide
@@ -93,10 +93,10 @@ export default async function MechanicalWorkshop() {
                   </ul>
                 </div>
               </div>
-              <h1 className="display-1 text-blue">{config.title} </h1>
+              <h1 className="display-3 text-blue">Why Choose Suzuki? </h1>
               <div>
                 <div>
-                  <h5>Genuine Parts</h5>
+                  <h5>1. Genuine Parts</h5>
                   <p className="fs-lg text-secondary">
                     We use only authentic Suzuki parts to maintain the integrity
                     of your vehicle.
@@ -105,7 +105,7 @@ export default async function MechanicalWorkshop() {
               </div>
               <div>
                 <div>
-                  <h5>Certified Technicians</h5>
+                  <h5>2. Certified Technicians</h5>
                   <p className="fs-lg text-secondary">
                     Our team is trained to handle every Suzuki model with
                     expertise.{" "}
@@ -114,7 +114,7 @@ export default async function MechanicalWorkshop() {
               </div>
               <div>
                 <div>
-                  <h5>State-of-the-art Equipment</h5>
+                  <h5>3. State-of-the-art Equipment</h5>
                   <p className="fs-lg text-secondary">
                     Our workshops are equipped with the latest tools and
                     technology to ensure accurate and efficient repairs.
