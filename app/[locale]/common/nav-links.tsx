@@ -19,6 +19,7 @@ enum NavLinksLocale {
   Insurance = "Insurance",
   // Transfer = "Registration_Transfer",
   Careers = "Careers",
+  Infrastructure = "Infrastructure",
 }
 
 type NavLink = {
@@ -80,6 +81,10 @@ const linksConfig: NavLink[] = [
   {
     locale: NavLinksLocale.SpareParts,
     path: "/spareparts",
+  },
+  {
+    locale: NavLinksLocale.Infrastructure,
+    path: "/infrastructure",
   },
   {
     locale: NavLinksLocale.Aboutus,

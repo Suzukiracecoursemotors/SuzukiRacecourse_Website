@@ -16,10 +16,6 @@ export default async function Team() {
           <div className="col-md-6 col-lg-4">
             <div className="card">
               <div className="equal-1-1 mb-2">
-                {/* <figure
-                  className="background"
-                  style="background-image: url('./assets/images/users/user-1.jpg')"
-                ></figure> */}
                 <Image
                   className="background"
                   src={mohtashim}
