@@ -10,10 +10,10 @@ export default async function Landingpage() {
   });
   return (
     <>
-      <section className="overflow-hidden bg-black inverted mt-10">
-        <div className="d-flex flex-column container py-20 min-vh-100 level-1">
+      <section className="overflow-hidden  inverted mt-10 ">
+        <div className="d-flex flex-column container py-20 min-vh-100 level-1 ">
           <div className="row align-items-center justify-content-center justify-content-lg-end my-auto">
-            <div className="col-md-8 col-lg-5 text-center text-lg-start">
+            <div className="col-md-8 col-lg-6 text-center text-lg-start">
               <span className="badge bg-opaque-yellow text-yellow rounded-pill">
                 {t("banner_span")}
               </span>
@@ -22,7 +22,11 @@ export default async function Landingpage() {
                 {t("banner_title")}
               </h1>
               {/* <BookingForm /> */}
-
+              <p>7S | Authorized Suzuki Dealership.</p>
+              <p>
+                Location: 229/A, Lane no. 1, Main Peshawar Road, Rawalpindi
+                Cantt, Pakistan.{" "}
+              </p>
               <Link
                 href={"tel:" + Constants.PHONE}
                 className="btn btn-with-icon btn-yellow rounded-pill "
@@ -33,14 +37,16 @@ export default async function Landingpage() {
             </div>
           </div>
         </div>
-        <div className="container-fluid back back-background">
-          <div className="row h-100">
-            <div className="col-lg-6 h-100">
+        <div className="container-fluid back back-background ">
+          <div className="row ">
+            <div className="col-lg-6 ">
               <Image
-                className="back-background h-100"
+                className="back-background h100"
                 src={banner}
                 alt={""}
-                layout="responsive"
+                height={1000}
+                width={1000}
+                layout="contain"
               />
             </div>
           </div>
