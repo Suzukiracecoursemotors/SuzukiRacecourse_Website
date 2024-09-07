@@ -52,10 +52,6 @@ const linksConfig: NavLink[] = [
         locale: NavLinksLocale.Warranty,
         path: "/sales/extend_warranty",
       },
-      // {
-      //   locale: NavLinksLocale.Transfer,
-      //   path: "/sales/register_transfer",
-      // },
     ],
   },
   {
