@@ -10,7 +10,7 @@ export default async function Landingpage() {
   });
   return (
     <>
-      <section className="overflow-hidden bg-black inverted">
+      <section className="overflow-hidden bg-black inverted mt-10">
         <div className="d-flex flex-column container py-20 min-vh-100 level-1">
           <div className="row align-items-center justify-content-center justify-content-lg-end my-auto">
             <div className="col-md-8 col-lg-5 text-center text-lg-start">
@@ -21,10 +21,7 @@ export default async function Landingpage() {
                 {" "}
                 {t("banner_title")}
               </h1>
-              <br />
-              <BookingForm />
-              <br />
-              <br />
+              {/* <BookingForm /> */}
 
               <Link
                 href={"tel:" + Constants.PHONE}

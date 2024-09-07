@@ -7,7 +7,7 @@ import Constants from "@/data/Constants";
 const Departments = async () => {
   return (
     <section className="py-15 ">
-      <div className="container mt-5 mt-xl-10">
+      <div className="container mt-5 ">
         <div className="row mb-10 g-3 g-xl-5 align-items-end">
           <div className="col-lg-8">
             <h1 className="display-1">Departments </h1>
