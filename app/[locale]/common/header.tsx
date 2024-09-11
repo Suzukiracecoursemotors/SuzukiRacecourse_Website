@@ -39,15 +39,15 @@ const Header = ({ children }: HeaderProps) => {
       return;
     }
     setShowMobileMenu(false);
-    document.body.style.overflow = "scroll";
+    document.body.style.overflow = "auto";
   };
 
   useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("hidden", handleScroll);
     return () => {
       window.removeEventListener("auto", handleScroll);
     };
-  }, [handleScroll]); // handleScroll is a dependency here
+  }, [handleScroll]);
   const pathname = usePathname();
   const theme = lightNavPaths.some((path) => pathname.includes(path))
     ? "light"

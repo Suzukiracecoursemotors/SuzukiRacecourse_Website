@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { getTranslations } from "next-intl/server";
-import { BookingForm } from "../common/form";
 import banner from "../public/WhatsApp Image 2024-07-06 at 10.14.39 AM.jpeg";
 import { Link } from "@/navigation";
 import Constants from "@/data/Constants";
@@ -45,7 +44,7 @@ export default async function Landingpage() {
                 src={banner}
                 alt={""}
                 height={1000}
-                width={1000}
+                width={500}
                 layout="contain"
               />
             </div>
