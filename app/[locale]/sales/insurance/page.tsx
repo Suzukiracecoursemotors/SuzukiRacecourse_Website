@@ -46,7 +46,7 @@ const config = {
 export default function FinanceandLease() {
   return (
     <article>
-      <section className="py-10">
+      <section className="py-9">
         <Image src={insurancepic} layout="responsive" alt="background-image" />
         <br />
         <br />

@@ -3,10 +3,9 @@ import React, { useEffect, useState, useMemo, useCallback } from "react";
 import { Link } from "@/navigation";
 import Constants from "@/data/Constants";
 import Image from "next/image";
-import logo from "../../[locale]/public/racecourse png.png";
+import logo from "../../[locale]/public/Asset 1.svg";
 import { usePathname } from "next/navigation";
 import { useTranslations } from "next-intl";
-import HeaderLocaleSwitcher from "./locale-switcher";
 import { lightNavPaths } from "@/lib/utils";
 
 type HeaderProps = {
@@ -43,7 +42,7 @@ const Header = ({ children }: HeaderProps) => {
   };
 
   useEffect(() => {
-    window.addEventListener("hidden", handleScroll);
+    window.addEventListener("auto", handleScroll);
     return () => {
       window.removeEventListener("auto", handleScroll);
     };
@@ -68,8 +67,8 @@ const Header = ({ children }: HeaderProps) => {
           <Image
             src={theme === "dark" ? logo : logo}
             alt="racecoursemotors"
-            width={50}
-            height={50}
+            width={40}
+            height={40}
           />
         </Link>
         {/* Secondary */}
@@ -88,9 +87,9 @@ const Header = ({ children }: HeaderProps) => {
               href={`tel:${Constants.PHONE}`}
               className={`btn btn-outline-${
                 theme === "light" ? "dark" : "white"
-              } rounded-pill ms-2`}
+              } rounded-pill text-dark ms-2`}
             >
-              <i className="bi bi-telephone-fill me-1"></i>
+              <i className="bi bi-telephone-fill text-dark me-1"></i>
               {t("reserve_appointment")}
             </Link>
           </div>
@@ -109,7 +108,7 @@ const Header = ({ children }: HeaderProps) => {
     </nav>
   ) : (
     <>
-      {prevScrollPos === 0 ? (
+      {prevScrollPos === -1 ? (
         <nav id="mainNav" className={`navbar navbar-sticky`}>
           <div className="container bg-white">
             <Link href="/" className="navbar-brand">

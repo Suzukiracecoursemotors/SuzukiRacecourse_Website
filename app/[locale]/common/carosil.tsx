@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import image1 from "../../[locale]/public/Big Saving Faysal Bank Revised.webp";
-import image2 from "../../[locale]/public/Swift two-tone.webp";
+import image1 from "../../[locale]/public/swift awais website.jpg";
+import image2 from "../../[locale]/public/swift awais website 2.jpg";
 
 import Image from "next/image";
 import { Carousel } from "react-responsive-carousel";

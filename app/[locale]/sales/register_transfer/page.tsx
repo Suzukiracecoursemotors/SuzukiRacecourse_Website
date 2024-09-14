@@ -14,7 +14,7 @@ export default async function CUC({ params: { locale } }: PricingPageProps) {
 
   return (
     <article>
-      <section className="py-10 py-xl-15">
+      <section className="py-9 py-xl-15">
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-lg-10 col-xl-8">

@@ -37,7 +37,7 @@ const carData = [
     price: 200000,
     mileage: "70,000 km",
     year: 2017,
-    brand: "alto",
+    brand: "Alto",
     img: alto,
   },
 ];

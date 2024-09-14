@@ -29,12 +29,6 @@ async function AimsandMissions() {
                 </div>
                 {t("description1")}
               </li>
-              <li className="list-group-item text-black d-flex align-items-center">
-                <div className="icon-box icon-box-sm bg-opaque-white rounded-circle me-2">
-                  <i className="bi bi-check2 text-yellow" />
-                </div>
-                {t("description2")}
-              </li>
             </ul>
 
             {/* <p className="lead text-secondary">
@@ -73,12 +67,6 @@ async function AimsandMissions() {
                   <i className="bi bi-check2 text-yellow" />
                 </div>
                 {t("descriptionm1")}
-              </li>
-              <li className="list-group-item text-black d-flex align-items-center">
-                <div className="icon-box icon-box-sm bg-opaque-white rounded-circle me-2">
-                  <i className="bi bi-check2 text-yellow" />
-                </div>
-                {t("descriptionm2")}
               </li>
             </ul>
           </div>

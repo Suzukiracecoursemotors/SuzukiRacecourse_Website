@@ -13,7 +13,7 @@ const config = {
 export default async function ExtendWarrenty() {
   return (
     <article>
-      <section className="py-10">
+      <section className="py-9">
         <Image
           src={warrentypic}
           layout="responsive"

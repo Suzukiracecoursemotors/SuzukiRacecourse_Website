@@ -258,7 +258,7 @@
 .carouselContainer {
   width: 100%;
   height: 100%;
-  margin-top: 5rem;
+  margin-top: 4.5rem;
 }
 
 .imageContainer {
@@ -268,6 +268,17 @@
     .imageContainer {
       height: 600px; /* Increase height for mobile view */
       min-height: 400px;
+    }
+  }
+}
+.flexcoloum {
+  @media (max-width: 768px) {
+    .flexcolumn {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 7px; /* Optional gap between the badges */
     }
   }
 }

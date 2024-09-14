@@ -1,5 +1,3 @@
-import { Locale } from "@/i18n";
-
 export default async function Missions() {
   return (
     <section className="py-15 py-xl-20 bg-black inverted">
@@ -31,10 +29,11 @@ export default async function Missions() {
                 >
                   <div className="accordion-body">
                     <p className="text-secondary">
-                      Develop products of superior value by focusing on the
-                      customer. Establish a refreshing and innovative company
-                      through teamwork.Strive for individual excellence through
-                      continuous improvement
+                      Our Mission is to Earn customers trust by delivering sales
+                      and service experiences with high Quality customer care,
+                      integrity and enthusiasm.We value our customers feedback
+                      that makes us strive for excellence through continuous
+                      improvement.
                     </p>
                   </div>
                 </div>
@@ -61,11 +60,10 @@ export default async function Missions() {
                 >
                   <div className="accordion-body">
                     <p className="text-secondary">
-                      Provide personalized service, transparent transactions,
-                      and exceptional support for complete satisfaction.Embrace
-                      the latest technologies and practices for superior sales
-                      and service.Promote sustainability and support local
-                      initiatives, fostering responsibility and care.
+                      To work for customer satisfaction and long termretention
+                      in a dedicated , motivated , service oriented and
+                      profesional working environment.To make our Dealership No.
+                      1 choice any auto-mobile related service.
                     </p>
                   </div>
                 </div>
