@@ -43,8 +43,8 @@ export default async function Landingpage() {
                 className="back-background h100"
                 src={banner}
                 alt={""}
-                height={1000}
-                width={725}
+                height={700}
+                width={700}
                 layout="contain"
               />
             </div>
