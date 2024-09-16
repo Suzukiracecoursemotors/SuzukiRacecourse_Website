@@ -44,7 +44,7 @@ export default async function Landingpage() {
                 src={banner}
                 alt={""}
                 height={1000}
-                width={750}
+                width={725}
                 layout="contain"
               />
             </div>
