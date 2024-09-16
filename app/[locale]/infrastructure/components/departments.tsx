@@ -23,6 +23,62 @@ const Departments = async () => {
       description:
         "Providing top-notch maintenance, service, and support to keep your vehicle running smoothly. We prioritize customer satisfaction long after the sale. Our certified technicians use the latest tools and genuine parts to ensure quality service. Whether it's routine maintenance or complex repairs, we've got you covered.",
     },
+    {
+      href: "/sales/cuc",
+      image: sale,
+      alt: "Exchange and CUC",
+      title: "Exchange and CUC Department",
+      description:
+        "Facilitating seamless vehicle exchanges and offering competitive CUC rates. We ensure you get the best value when trading in your old car for a new one.",
+    },
+    {
+      href: "/sales/finance",
+      image: sale,
+      alt: "Lease and Finance",
+      title: "Lease and Finance Department",
+      description:
+        "Offering flexible leasing and financing options tailored to your needs. Our team works with top financial institutions to secure the best rates for you.",
+    },
+    {
+      href: "/sales/insurance",
+      image: sale,
+      alt: "Insurance",
+      title: "Insurance Department",
+      description:
+        "Providing comprehensive insurance solutions for your vehicle. We work with leading providers to ensure maximum coverage and peace of mind.",
+    },
+    {
+      href: "/aftersale/service",
+      image: sale,
+      alt: "Workshop",
+      title: "Workshop",
+      description:
+        "Our state-of-the-art workshops provide expert maintenance and repair services. With certified technicians, we ensure your vehicle is in top condition.",
+    },
+    {
+      href: "/aftersale/spareparts",
+      image: sale,
+      alt: "Spare Parts",
+      title: "Spare Parts ",
+      description:
+        "We offer genuine spare parts to ensure your vehicle performs optimally. Our extensive inventory covers all your vehicle’s needs.",
+    },
+    {
+      href: "/aftersale/bodyshop",
+      image: sale,
+      alt: "Body and Paint",
+      title: "Body and Paint Shop",
+      description:
+        "Our body and paint department provides top-notch repair services, ensuring your vehicle looks brand new. We use advanced tools and high-quality materials.",
+    },
+    {
+      href: "/sales/extend_warranty",
+      image: sale,
+      alt: "Extended Warranty",
+      title: "Extended Warranty ",
+      description:
+        "With our extended warranty programs, you can enjoy peace of mind long after your vehicle’s original warranty expires, covering repairs and services as needed.",
+    },
   ];
 
   return (
