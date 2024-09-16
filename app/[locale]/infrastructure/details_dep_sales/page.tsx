@@ -1,36 +1,42 @@
-import { Link } from "@/navigation";
 import Image from "next/image";
 import React from "react";
 import sale from "../../public/sale.jpeg";
-import aftersale from "../../public/aftersale1.jpeg";
-import Constants from "@/data/Constants";
+import { Link } from "@/navigation";
 
-const Departments = async () => {
-  const departmentData = [
+const DepartmentsDetailsSales = async () => {
+  const departmentDetails = [
     {
-      href: "infrastructure/details_dep_sales",
+      href: "/sales/cuc",
       image: sale,
-      alt: "Sales",
-      title: "Sales Department",
+      alt: "Exchange and CUC",
+      title: "Exchange and CUC Department",
       description:
-        "Offering the best deals and a wide range of vehicles to meet your needs. Our dedicated team ensures a smooth buying experience for every customer. From selection to financing, we guide you every step of the way. With exclusive promotions and personalized services, we make car ownership hassle-free. Trust us to deliver a seamless experience tailored to your preferences.",
+        "Facilitating seamless vehicle exchanges and offering competitive CUC rates. We ensure you get the best value when trading in your old car for a new one.",
     },
     {
-      href: "infrastructure/details_dep_aftersale",
-      image: aftersale,
-      alt: "After Sales",
-      title: "After Sales Department",
+      href: "/sales/finance",
+      image: sale,
+      alt: "Lease and Finance",
+      title: "Lease and Finance Department",
       description:
-        "Providing top-notch maintenance, service, and support to keep your vehicle running smoothly. We prioritize customer satisfaction long after the sale. Our certified technicians use the latest tools and genuine parts to ensure quality service. Whether it's routine maintenance or complex repairs, we've got you covered.",
+        "Offering flexible leasing and financing options tailored to your needs. Our team works with top financial institutions to secure the best rates for you.",
+    },
+    {
+      href: "/sales/insurance",
+      image: sale,
+      alt: "Insurance",
+      title: "Insurance Department",
+      description:
+        "Providing comprehensive insurance solutions for your vehicle. We work with leading providers to ensure maximum coverage and peace of mind.",
     },
   ];
 
   return (
-    <section className="py-8">
+    <section className="py-8 py-xl-10">
       <div className="container">
         <div className="row mb-10 g-3 g-xl-5 align-items-end">
           <div className="col-lg-8">
-            <h1 className="display-1">Departments</h1>
+            <h1 className="display-1">Sales Departments</h1>
           </div>
           <div className="col-lg-4 text-lg-end">
             <p className="fs-lg text-muted">
@@ -41,7 +47,7 @@ const Departments = async () => {
         </div>
 
         <div className="row mb-5 g-3 g-xl-5">
-          {departmentData.map((department, index) => (
+          {departmentDetails.map((department, index) => (
             <Link href={department.href} key={index}>
               <div className="col-md-12">
                 <div className="card card-arrow card-hover-border bg-white">
@@ -77,4 +83,4 @@ const Departments = async () => {
   );
 };
 
-export default Departments;
+export default DepartmentsDetailsSales;

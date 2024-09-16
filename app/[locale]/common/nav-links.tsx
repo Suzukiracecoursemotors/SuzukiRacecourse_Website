@@ -11,7 +11,6 @@ enum NavLinksLocale {
   Blog = "Blog",
   Finance = "Finance",
   Mechanical = "Mechanical",
-  Support = "Support",
   BodyShop = "BodyShop",
   Contact = "Contact",
   Sale = "Sale",
@@ -67,10 +66,9 @@ const linksConfig: NavLink[] = [
         locale: NavLinksLocale.Mechanical,
         path: "/aftersale/service",
       },
-
       {
-        locale: NavLinksLocale.Support,
-        path: "/aftersale/extend_warrenty",
+        locale: NavLinksLocale.SpareParts,
+        path: "/aftersale/spareparts",
       },
       {
         locale: NavLinksLocale.BodyShop,
@@ -78,10 +76,10 @@ const linksConfig: NavLink[] = [
       },
     ],
   },
-  {
-    locale: NavLinksLocale.SpareParts,
-    path: "/spareparts",
-  },
+  // {
+  //   locale: NavLinksLocale.SpareParts,
+  //   path: "/spareparts",
+  // },
   {
     locale: NavLinksLocale.Infrastructure,
     path: "/infrastructure",

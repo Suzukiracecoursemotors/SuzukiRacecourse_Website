@@ -1,36 +1,50 @@
-import { Link } from "@/navigation";
 import Image from "next/image";
 import React from "react";
-import sale from "../../public/sale.jpeg";
-import aftersale from "../../public/aftersale1.jpeg";
-import Constants from "@/data/Constants";
+import sale from "../../public/sale.jpeg"; // Replace with actual images
+import { Link } from "@/navigation";
 
-const Departments = async () => {
-  const departmentData = [
+const DepartmentsDetailsAfterSales = async () => {
+  const departmentDetails = [
     {
-      href: "infrastructure/details_dep_sales",
+      href: "/aftersale/service",
       image: sale,
-      alt: "Sales",
-      title: "Sales Department",
+      alt: "Workshop",
+      title: "Workshop",
       description:
-        "Offering the best deals and a wide range of vehicles to meet your needs. Our dedicated team ensures a smooth buying experience for every customer. From selection to financing, we guide you every step of the way. With exclusive promotions and personalized services, we make car ownership hassle-free. Trust us to deliver a seamless experience tailored to your preferences.",
+        "Our state-of-the-art workshops provide expert maintenance and repair services. With certified technicians, we ensure your vehicle is in top condition.",
     },
     {
-      href: "infrastructure/details_dep_aftersale",
-      image: aftersale,
-      alt: "After Sales",
-      title: "After Sales Department",
+      href: "/aftersale/spareparts",
+      image: sale,
+      alt: "Spare Parts",
+      title: "Spare Parts ",
       description:
-        "Providing top-notch maintenance, service, and support to keep your vehicle running smoothly. We prioritize customer satisfaction long after the sale. Our certified technicians use the latest tools and genuine parts to ensure quality service. Whether it's routine maintenance or complex repairs, we've got you covered.",
+        "We offer genuine spare parts to ensure your vehicle performs optimally. Our extensive inventory covers all your vehicle’s needs.",
+    },
+    {
+      href: "/aftersale/bodyshop",
+      image: sale,
+      alt: "Body and Paint",
+      title: "Body and Paint Shop",
+      description:
+        "Our body and paint department provides top-notch repair services, ensuring your vehicle looks brand new. We use advanced tools and high-quality materials.",
+    },
+    {
+      href: "/sales/extend_warranty",
+      image: sale,
+      alt: "Extended Warranty",
+      title: "Extended Warranty ",
+      description:
+        "With our extended warranty programs, you can enjoy peace of mind long after your vehicle’s original warranty expires, covering repairs and services as needed.",
     },
   ];
 
   return (
-    <section className="py-8">
+    <section className="py-8 py-xl-10">
       <div className="container">
         <div className="row mb-10 g-3 g-xl-5 align-items-end">
           <div className="col-lg-8">
-            <h1 className="display-1">Departments</h1>
+            <h1 className="display-1"> After Sales Departments</h1>
           </div>
           <div className="col-lg-4 text-lg-end">
             <p className="fs-lg text-muted">
@@ -41,7 +55,7 @@ const Departments = async () => {
         </div>
 
         <div className="row mb-5 g-3 g-xl-5">
-          {departmentData.map((department, index) => (
+          {departmentDetails.map((department, index) => (
             <Link href={department.href} key={index}>
               <div className="col-md-12">
                 <div className="card card-arrow card-hover-border bg-white">
@@ -77,4 +91,4 @@ const Departments = async () => {
   );
 };
 
-export default Departments;
+export default DepartmentsDetailsAfterSales;

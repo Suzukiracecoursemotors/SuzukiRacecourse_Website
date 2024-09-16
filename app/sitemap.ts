@@ -7,7 +7,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/",
     "/blog/blog-post",
     "/aftersale",
-    "/aftersale/service",
+    "/aftersale/spareparts",
     "/aftersale/extend_warrenty",
     "/aftersale/bodyshop",
     "/sales/finance",
@@ -31,6 +31,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // "/sales/cars/bolancargo",
     "/sales/cars/bolanvx",
     "/sales/cars/ravi",
+    "/infrastructure/details_dep_sales",
+    "infrastructure/details_dep_aftersales",
   ];
 
   /*

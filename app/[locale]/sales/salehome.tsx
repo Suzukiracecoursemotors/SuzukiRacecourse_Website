@@ -25,6 +25,7 @@ const config = {
   nonFilerLabel: "Non-Filer:",
   seeMore: "See more",
   booknow: "Book Now",
+  sale_des: "Select Your Favourite Car Today !",
 };
 const carModels = [
   {
@@ -195,11 +196,12 @@ const carModels = [
 
 const SaleHome = () => {
   return (
-    <section className="py-15 py-xl-9  bg-light">
+    <section className="py-3 py-xl-9 bg-light">
       <div className="container">
         <div className="row mb-3">
           <div className="col">
             <h2 className="fw-bold text-dark">{config.sales}</h2>
+            <h6 className="fw-bold text-dark">{config.sale_des}</h6>
           </div>
         </div>
         <div className="row g-3 g-xl-5">
