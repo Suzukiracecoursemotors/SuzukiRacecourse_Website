@@ -13,8 +13,7 @@ export function CarBookingForm() {
     e.preventDefault();
     setStatus("Submitting...");
 
-    const formData = {
-      access_key: "", // Replace with your actual access key
+    const formData = new URLSearchParams({
       name: e.currentTarget.yourName.value,
       phone: e.currentTarget.phone.value,
       email: e.currentTarget.email.value,
@@ -22,31 +21,33 @@ export function CarBookingForm() {
       carColor: e.currentTarget.carColor.value,
       bookingDate: e.currentTarget.bookingDate.value,
       message: e.currentTarget.message.value,
-    };
+    });
 
     try {
-      const response = await fetch("https://api.web3forms.com/submit", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Accept: "application/json",
-        },
-        body: JSON.stringify(formData),
-      });
+      const response = await fetch(
+        "https://script.google.com/macros/s/AKfycbzFWVMGwQiNkzztfaqsU9D4Psac1qOKNbcQqIy1alH-rmgBLWK_oSZmr9peJ8ZSwp1kJA/exec",
+        {
+          // Update this URL
+          method: "POST",
+          headers: {
+            "Content-Type": "application/x-www-form-urlencoded",
+          },
+          body: formData.toString(),
+        }
+      );
 
       const result = await response.json();
 
-      if (result.success) {
+      if (result.result === "success") {
         alert("Booking submitted successfully!");
-        e.currentTarget.reset(); // Reset form fields
-        // Reset the captcha
-        handleClose(); // Close the modal on success
+        e.currentTarget.reset();
+        handleClose();
       } else {
         alert("There was an issue submitting the booking. Please try again.");
       }
     } catch (error) {
       console.error("Error submitting booking:", error);
-      alert("Thank you for your interest! We will get back to you soon.");
+      alert("There was an error. Please try again later.");
     } finally {
       setStatus("");
     }
