@@ -1,10 +1,10 @@
 import React from "react";
 import image1 from "./Cultus/006 Cultus_page-0007.jpg";
-import { CarBookingForm } from "@/app/[locale]/common/booking-form-";
 import { Link } from "@/navigation";
 import Constants from "@/data/Constants";
 import Image from "next/image";
 import CarosilCultus from "./carosilcultus";
+import { CarBookingForm } from "@/app/[locale]/common/booking-form-new-cars";
 // textConfig.js
 const textConfig = {
   title: "Suzuki Cultus",

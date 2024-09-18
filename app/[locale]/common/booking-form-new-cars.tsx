@@ -20,7 +20,6 @@ export function CarBookingForm() {
       email: e.currentTarget.email.value,
       carModel: e.currentTarget.carModel.value,
       carColor: e.currentTarget.carColor.value,
-      carType: e.currentTarget.carType.value,
       bookingDate: e.currentTarget.bookingDate.value,
       message: e.currentTarget.message.value,
     };
@@ -40,6 +39,7 @@ export function CarBookingForm() {
       if (result.success) {
         alert("Booking submitted successfully!");
         e.currentTarget.reset(); // Reset form fields
+        // Reset the captcha
         handleClose(); // Close the modal on success
       } else {
         alert("There was an issue submitting the booking. Please try again.");
@@ -47,6 +47,8 @@ export function CarBookingForm() {
     } catch (error) {
       console.error("Error submitting booking:", error);
       alert("Thank you for your interest! We will get back to you soon.");
+    } finally {
+      setStatus("");
     }
   };
 
@@ -90,8 +92,8 @@ export function CarBookingForm() {
                 <option value="suzuki-vitara">Suzuki Cultus</option>
                 <option value="suzuki-swift">Suzuki Swift</option>
                 <option value="suzuki-wagonR">Suzuki WagonR</option>
-                <option value="suzuki-wagonR">Suzuki Bolan </option>
-                <option value="suzuki-wagonR">Suzuki Ravi</option>
+                <option value="suzuki-bolan">Suzuki Bolan</option>
+                <option value="suzuki-ravi">Suzuki Ravi</option>
               </Form.Select>
             </Form.Group>
             <Form.Group className="mb-3" controlId="carColor">
@@ -105,7 +107,6 @@ export function CarBookingForm() {
                 <option value="red">Red</option>
               </Form.Select>
             </Form.Group>
-
             <Form.Group className="mb-3" controlId="bookingDate">
               <Form.Label>Preferred Booking Date</Form.Label>
               <Form.Control type="date" required />
@@ -125,6 +126,7 @@ export function CarBookingForm() {
                 required
               />
             </Form.Group>
+
             <Button variant="primary" type="submit">
               Submit Booking
             </Button>

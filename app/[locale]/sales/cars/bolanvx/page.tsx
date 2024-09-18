@@ -1,8 +1,8 @@
 import React from "react";
 import CarosilBolan from "./carosilalto";
-import { CarBookingForm } from "@/app/[locale]/common/booking-form-";
 import Constants from "@/data/Constants";
 import { Link } from "@/navigation";
+import { CarBookingForm } from "@/app/[locale]/common/booking-form-new-cars";
 
 const bolanContent = {
   bannerSection: {
@@ -15,7 +15,7 @@ const bolanContent = {
       {
         heading: "Suzuki Bolan: A Versatile Workhorse",
         text: "The Suzuki Bolan, also known as the Suzuki Carry in some markets, is a compact and versatile van that has served as a reliable workhorse for businesses and individuals alike. With its robust design and practical features, the Bolan is a popular choice for those needing a dependable vehicle for transporting goods, passengers, or both.",
-      },
+      },s
       {
         heading: "Design and Exterior",
         text: "The Suzuki Bolan features a straightforward and utilitarian design that prioritizes functionality. Its compact size allows it to navigate tight city streets with ease, while its sturdy build ensures it can handle the demands of daily use. The Bolan's exterior design is minimalistic, with a focus on maximizing interior space for cargo and passengers.",

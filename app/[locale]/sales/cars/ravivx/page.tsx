@@ -5,8 +5,8 @@ import image13 from "./Ravi/002 Ravi_page-0002.jpg";
 import { Link } from "@/navigation";
 import Constants from "@/data/Constants";
 import Image from "next/image";
-import { CarBookingForm } from "@/app/[locale]/common/booking-form-";
 import CarosilsRavi from "./carosilcultus";
+import { CarBookingForm } from "@/app/[locale]/common/booking-form-new-cars";
 
 export default async function Ravi() {
   const textConfig = {

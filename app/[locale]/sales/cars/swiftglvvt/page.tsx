@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "@/navigation";
 import Constants from "@/data/Constants";
-import { CarBookingForm } from "@/app/[locale]/common/booking-form-";
 import CarosilSwift from "./carosilcultus";
+import { CarBookingForm } from "@/app/[locale]/common/booking-form-new-cars";
 const textConfig = {
   title: "Suzuki Swift",
   booknow: "Book Now",
