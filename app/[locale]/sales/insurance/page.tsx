@@ -54,17 +54,18 @@ export default function FinanceandLease() {
           <div className="row justify-content-center">
             <div className="col-lg-12 col-xl-9">
               <div>
-                <br />
                 <h1 className="display-4 text-blue">{config.header}</h1>
                 <div>
                   <p className="fs-lg text-secondary">{config.description}</p>
                 </div>
               </div>
+              <br />
               <div>
                 {config.benefits.map((benefit, index) => (
                   <div key={index}>
                     <h5>{benefit.title}</h5>
-                    <p className="fs-lg text-secondary">{benefit.text}</p>
+                    <p className="fs-lg text-secondary">{benefit.text}</p>{" "}
+                    <br />
                   </div>
                 ))}
               </div>

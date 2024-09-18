@@ -1,6 +1,6 @@
 import React from "react";
 import image1 from "./Cultus/006 Cultus_page-0007.jpg";
-import { CarBookingForm } from "@/app/[locale]/common/form copy";
+import { CarBookingForm } from "@/app/[locale]/common/booking-form-";
 import { Link } from "@/navigation";
 import Constants from "@/data/Constants";
 import Image from "next/image";

@@ -3,7 +3,6 @@ import Image from "next/image";
 import React from "react";
 import sale from "../../public/sale.jpeg";
 import aftersale from "../../public/aftersale1.jpeg";
-import Constants from "@/data/Constants";
 
 const Departments = async () => {
   const departmentData = [

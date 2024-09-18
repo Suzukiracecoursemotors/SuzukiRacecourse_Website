@@ -102,7 +102,6 @@ export default async function AboutUspage({
       </section>
       <Missions />
       <Team />
-      {/* <Gallery isGrey={true} title={t("gallery.title")} /> */}
     </>
   );
 }

@@ -5,18 +5,19 @@ import alto from "../public/Alto/alto.png";
 import altovxr from "../public/Alto/vxlalto.png";
 import altovxl from "../public/Alto/alto1.png";
 import altovxagsl from "../public/Alto/agsvxlalto.png";
-import cultus1 from "../public/Cultus/Cultus-White.jpg";
-import cultus3 from "../public/cars/Cultus AGS Back.png";
-import cultus2 from "../public/cars/Cultus Silver flip.png";
+import cultus1 from "../public/Cultus/Cultus-Gray.jpg";
+import cultus2 from "../public/cars/Cultus Red.png";
+import cultus3 from "../public/cars/Cultus Silver flip.png";
 import wagon2 from "../public/cars/wagonr vxl.png";
 import wagon1 from "../public/cars/WagonR.png";
 import wagon3 from "../public/cars/WagonR Gray.png";
 import swift1 from "../public/Swift/02.png";
 import swift2 from "../public/Swift/Swift-Back-Side-Angle.png";
-import swift3 from "../public/Swift/Swift-Grey.png";
+import swift3 from "../public/cars/Group 12.png";
 import bolan1 from "../public/cars/Bolan.png";
 import bolan2 from "../public/cars/Suzuki Bolan 3.png";
 import ravi from "../public/cars/Suzuki Ravi.png";
+import { CarBookingForm } from "../common/booking-form-new-cars";
 
 const config = {
   sales: "Sales",
@@ -202,6 +203,10 @@ const SaleHome = () => {
           <div className="col">
             <h2 className="fw-bold text-dark">{config.sales}</h2>
             <h6 className="fw-bold text-dark">{config.sale_des}</h6>
+            <br />
+          </div>
+          <div className="col-lg-4 text-lg-end">
+            <CarBookingForm />
           </div>
         </div>
         <div className="row g-3 g-xl-5">

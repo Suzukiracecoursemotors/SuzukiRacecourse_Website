@@ -5,7 +5,7 @@ import imageWagonR from "./Wagonr/005 Wagon R_page-0003.jpg";
 import { Link } from "@/navigation";
 import Constants from "@/data/Constants";
 import CarosilWagonR from "./carosilwagonr";
-import { CarBookingForm } from "@/app/[locale]/common/form copy";
+import { CarBookingForm } from "@/app/[locale]/common/booking-form-";
 const textConfig = {
   title: "Suzuki WagonR",
   booknow: "Book Now",

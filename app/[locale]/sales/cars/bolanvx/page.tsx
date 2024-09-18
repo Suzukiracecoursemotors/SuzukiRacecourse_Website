@@ -1,6 +1,6 @@
 import React from "react";
 import CarosilBolan from "./carosilalto";
-import { CarBookingForm } from "@/app/[locale]/common/form copy";
+import { CarBookingForm } from "@/app/[locale]/common/booking-form-";
 import Constants from "@/data/Constants";
 import { Link } from "@/navigation";
 

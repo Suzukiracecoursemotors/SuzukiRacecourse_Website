@@ -5,7 +5,7 @@ import image13 from "./Ravi/002 Ravi_page-0002.jpg";
 import { Link } from "@/navigation";
 import Constants from "@/data/Constants";
 import Image from "next/image";
-import { CarBookingForm } from "@/app/[locale]/common/form copy";
+import { CarBookingForm } from "@/app/[locale]/common/booking-form-";
 import CarosilsRavi from "./carosilcultus";
 
 export default async function Ravi() {

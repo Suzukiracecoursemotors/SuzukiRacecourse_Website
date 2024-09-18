@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "@/navigation";
 import Constants from "@/data/Constants";
-import { CarBookingForm } from "@/app/[locale]/common/form copy";
+import { CarBookingForm } from "@/app/[locale]/common/booking-form-";
 import CarosilSwift from "./carosilcultus";
 const textConfig = {
   title: "Suzuki Swift",
