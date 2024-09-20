@@ -235,7 +235,7 @@ export default function CUC() {
   const [maxPrice, setMaxPrice] = useState<number>(5000000);
   const [currentPage, setCurrentPage] = useState<number>(1); // New state for pagination
 
-  const carsPerPage = 9; // Number of cars to show per page
+  const carsPerPage = 6; // Number of cars to show per page
   // Handles brand filtering
   const handleBrandChange = (brand: string) => {
     setSelectedBrands((prev) =>

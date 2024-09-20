@@ -86,8 +86,8 @@ export function CarBookingForm() {
               <Form.Label>Preferred Car Model</Form.Label>
               <Form.Select required>
                 <option value="">Select a Car Model</option>
-                <option value="suzuki-ciaz">Suzuki Alto</option>
-                <option value="suzuki-vitara">Suzuki Cultus</option>
+                <option value="suzuki-alto">Suzuki Alto</option>
+                <option value="suzuki-cultus">Suzuki Cultus</option>
                 <option value="suzuki-swift">Suzuki Swift</option>
                 <option value="suzuki-wagonR">Suzuki WagonR</option>
                 <option value="suzuki-bolan">Suzuki Bolan</option>
