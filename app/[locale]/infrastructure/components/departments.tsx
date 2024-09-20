@@ -120,9 +120,6 @@ const Departments = async () => {
                     </div>
                     <div className="col-xl-7">
                       <div className="card-body">
-                        <h3 className="card-title mt-2 fs-4 lh-2 pe-xl-10 text-black">
-                          {department.title}
-                        </h3>
                         <small className="d-block">
                           {department.description}
                         </small>
