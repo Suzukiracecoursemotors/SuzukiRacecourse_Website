@@ -6,6 +6,8 @@ import Cultuspng from "../../public/Cultus/Cultus-Gray.jpg";
 import Swiftpng from "../../public/Swift/Swift-Back-Side-Angle.png";
 import alto from "../../public/Alto/Studio Session-328.png";
 import { Seemore } from "../../common/seemore";
+import { Link } from "@/navigation";
+import Constants from "@/data/Constants";
 
 const carData = [
   {
@@ -15,6 +17,7 @@ const carData = [
     year: 2018,
     brand: "Cultus",
     img: Cultuspng,
+    isSold: false,
   },
   {
     model: "Swift MT",
@@ -23,6 +26,7 @@ const carData = [
     year: 2017,
     brand: "Swift",
     img: Swiftpng,
+    isSold: true,
   },
   {
     model: "Swift VVT",
@@ -31,6 +35,7 @@ const carData = [
     year: 2017,
     brand: "Swift",
     img: Swiftpng,
+    isSold: true,
   },
   {
     model: "Alto VX",
@@ -39,6 +44,187 @@ const carData = [
     year: 2017,
     brand: "Alto",
     img: alto,
+    isSold: false,
+  },
+  {
+    model: "Swift VVT",
+    price: 300000,
+    mileage: "70,000 km",
+    year: 2017,
+    brand: "Swift",
+    img: Swiftpng,
+    isSold: true,
+  },
+  {
+    model: "Alto VX",
+    price: 200000,
+    mileage: "70,000 km",
+    year: 2017,
+    brand: "Alto",
+    img: alto,
+    isSold: false,
+  },
+  {
+    model: "Swift VVT",
+    price: 300000,
+    mileage: "70,000 km",
+    year: 2017,
+    brand: "Swift",
+    img: Swiftpng,
+    isSold: true,
+  },
+  {
+    model: "Alto VX",
+    price: 200000,
+    mileage: "70,000 km",
+    year: 2017,
+    brand: "Alto",
+    img: alto,
+    isSold: false,
+  },
+  {
+    model: "Swift VVT",
+    price: 300000,
+    mileage: "70,000 km",
+    year: 2017,
+    brand: "Swift",
+    img: Swiftpng,
+    isSold: true,
+  },
+  {
+    model: "Alto VX",
+    price: 200000,
+    mileage: "70,000 km",
+    year: 2017,
+    brand: "Alto",
+    img: alto,
+    isSold: false,
+  },
+  {
+    model: "Swift VVT",
+    price: 300000,
+    mileage: "70,000 km",
+    year: 2017,
+    brand: "Swift",
+    img: Swiftpng,
+    isSold: true,
+  },
+  {
+    model: "Alto VX",
+    price: 200000,
+    mileage: "70,000 km",
+    year: 2017,
+    brand: "Alto",
+    img: alto,
+    isSold: false,
+  },
+  {
+    model: "Swift VVT",
+    price: 300000,
+    mileage: "70,000 km",
+    year: 2017,
+    brand: "Swift",
+    img: Swiftpng,
+    isSold: true,
+  },
+  {
+    model: "Alto VX",
+    price: 200000,
+    mileage: "70,000 km",
+    year: 2017,
+    brand: "Alto",
+    img: alto,
+    isSold: false,
+  },
+  {
+    model: "Swift VVT",
+    price: 300000,
+    mileage: "70,000 km",
+    year: 2017,
+    brand: "Swift",
+    img: Swiftpng,
+    isSold: true,
+  },
+  {
+    model: "Alto VX",
+    price: 200000,
+    mileage: "70,000 km",
+    year: 2017,
+    brand: "Alto",
+    img: alto,
+    isSold: false,
+  },
+  {
+    model: "Swift VVT",
+    price: 300000,
+    mileage: "70,000 km",
+    year: 2017,
+    brand: "Swift",
+    img: Swiftpng,
+    isSold: true,
+  },
+  {
+    model: "Alto VX",
+    price: 200000,
+    mileage: "70,000 km",
+    year: 2017,
+    brand: "Alto",
+    img: alto,
+    isSold: false,
+  },
+  {
+    model: "Swift VVT",
+    price: 300000,
+    mileage: "70,000 km",
+    year: 2017,
+    brand: "Swift",
+    img: Swiftpng,
+    isSold: true,
+  },
+  {
+    model: "Alto VX",
+    price: 200000,
+    mileage: "70,000 km",
+    year: 2017,
+    brand: "Alto",
+    img: alto,
+    isSold: false,
+  },
+  {
+    model: "Swift VVT",
+    price: 300000,
+    mileage: "70,000 km",
+    year: 2017,
+    brand: "Swift",
+    img: Swiftpng,
+    isSold: true,
+  },
+  {
+    model: "Alto VX",
+    price: 200000,
+    mileage: "70,000 km",
+    year: 2017,
+    brand: "Alto",
+    img: alto,
+    isSold: false,
+  },
+  {
+    model: "Swift VVT",
+    price: 300000,
+    mileage: "70,000 km",
+    year: 2017,
+    brand: "Swift",
+    img: Swiftpng,
+    isSold: true,
+  },
+  {
+    model: "Alto VX",
+    price: 200000,
+    mileage: "70,000 km",
+    year: 2017,
+    brand: "Alto",
+    img: alto,
+    isSold: false,
   },
 ];
 
@@ -47,17 +233,22 @@ export default function CUC() {
   const [sortOption, setSortOption] = useState<string>("priceHighToLow");
   const [minPrice, setMinPrice] = useState<number>(10000);
   const [maxPrice, setMaxPrice] = useState<number>(5000000);
+  const [currentPage, setCurrentPage] = useState<number>(1); // New state for pagination
 
+  const carsPerPage = 9; // Number of cars to show per page
+  // Handles brand filtering
   const handleBrandChange = (brand: string) => {
     setSelectedBrands((prev) =>
       prev.includes(brand) ? prev.filter((b) => b !== brand) : [brand]
     );
   };
 
+  // Handles sort changes
   const handleSortChange = (option: string) => {
     setSortOption(option);
   };
 
+  // Handles price range changes
   const handlePriceChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
     if (name === "minPrice") {
@@ -66,7 +257,7 @@ export default function CUC() {
       setMaxPrice(Number(value));
     }
   };
-
+  // Sorting cars
   const sortedCars = [...carData].sort((a, b) => {
     if (sortOption === "priceLowToHigh") {
       return a.price - b.price;
@@ -78,13 +269,25 @@ export default function CUC() {
       return b.price - a.price;
     }
   });
-
   const filteredCars = sortedCars.filter(
     (car) =>
       (selectedBrands.length === 0 || selectedBrands.includes(car.brand)) &&
       car.price >= minPrice &&
       car.price <= maxPrice
   );
+
+  // Pagination logic
+  const indexOfLastCar = currentPage * carsPerPage;
+  const indexOfFirstCar = indexOfLastCar - carsPerPage;
+  const currentCars = filteredCars.slice(indexOfFirstCar, indexOfLastCar);
+
+  const nextPage = () => {
+    setCurrentPage((prev) => prev + 1);
+  };
+
+  const prevPage = () => {
+    if (currentPage > 1) setCurrentPage((prev) => prev - 1);
+  };
 
   return (
     <section className="py-15 py-xl-20">
@@ -162,7 +365,7 @@ export default function CUC() {
                   "Alto",
                   "Mehran",
                   "Cultus",
-                  "Wagno-R",
+                  "Wagon-R",
                   "Swift",
                   "Bolan",
                   "Ravi",
@@ -214,11 +417,11 @@ export default function CUC() {
           {/* Product Listing Section */}
           <div className="col-xl-9">
             <div className="row g-3">
-              {filteredCars.length > 0 ? (
-                filteredCars.map((car, index) => (
+              {currentCars.length > 0 ? (
+                currentCars.map((car, index) => (
                   <div key={index} className="col-md-6 col-xl-4">
                     <div className="border card flex-1">
-                      <div className="card-header">
+                      <div className="card-header position-relative">
                         <Image
                           src={car.img}
                           alt={car.model}
@@ -227,6 +430,21 @@ export default function CUC() {
                           height={700}
                           className="card-img-top"
                         />
+                        {car.isSold ? (
+                          <span
+                            className="position-absolute top-0 start-0 badge bg-danger"
+                            style={{ fontSize: "1rem", padding: "0.5em" }}
+                          >
+                            Sold
+                          </span>
+                        ) : (
+                          <span
+                            className="position-absolute top-0 start-0 badge bg-success"
+                            style={{ fontSize: "1rem", padding: "0.5em" }}
+                          >
+                            Available
+                          </span>
+                        )}
                       </div>
                       <div className="card-footer">
                         <h5 className="car-model-title">{car.model}</h5>
@@ -237,7 +455,12 @@ export default function CUC() {
                           Rs: {car.price}
                         </span>
                         <br />
-                        <Seemore />
+                        <Link
+                          href={"tel:" + Constants.PHONE}
+                          className="btn btn-with-icon rounded-pill"
+                        >
+                          <i className="bi bi-telephone-fill"></i> Contact Now
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -247,6 +470,24 @@ export default function CUC() {
                   <p>No cars match the selected filters.</p>
                 </div>
               )}
+            </div>
+
+            {/* Pagination */}
+            <div className="mt-4 d-flex justify-content-between">
+              <button
+                className="btn btn-outline-primary"
+                disabled={currentPage === 1}
+                onClick={prevPage}
+              >
+                Previous
+              </button>
+              <button
+                className="btn btn-outline-primary"
+                disabled={indexOfLastCar >= filteredCars.length}
+                onClick={nextPage}
+              >
+                Next
+              </button>
             </div>
           </div>
         </div>
