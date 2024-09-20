@@ -1,8 +1,15 @@
 import { Link } from "@/navigation";
 import Image from "next/image";
 import React from "react";
-import sale from "../../public/sale.jpeg";
-import aftersale from "../../public/aftersale1.jpeg";
+import sale from "../../public/retaildep.png";
+import aftersale from "../../public/aftersale.png";
+import ecvhange from "../../public/cucdep.png";
+import lease from "../../public/leaseandfinance.png";
+import insurance from "../../public/insurance.png";
+import workshop from "../../public/workshop.png";
+import sapreparts from "../../public/spareparts.png";
+import bodyshop from "../../public/bodyshop.png";
+import extend from "../../public/extendwarrenty.png";
 
 const Departments = async () => {
   const departmentData = [
@@ -24,7 +31,7 @@ const Departments = async () => {
     },
     {
       href: "/sales/cuc",
-      image: sale,
+      image: ecvhange,
       alt: "Exchange and CUC",
       title: "Exchange and CUC Department",
       description:
@@ -32,7 +39,7 @@ const Departments = async () => {
     },
     {
       href: "/sales/finance",
-      image: sale,
+      image: lease,
       alt: "Lease and Finance",
       title: "Lease and Finance Department",
       description:
@@ -40,7 +47,7 @@ const Departments = async () => {
     },
     {
       href: "/sales/insurance",
-      image: sale,
+      image: insurance,
       alt: "Insurance",
       title: "Insurance Department",
       description:
@@ -48,7 +55,7 @@ const Departments = async () => {
     },
     {
       href: "/aftersale/service",
-      image: sale,
+      image: workshop,
       alt: "Workshop",
       title: "Workshop",
       description:
@@ -56,7 +63,7 @@ const Departments = async () => {
     },
     {
       href: "/aftersale/spareparts",
-      image: sale,
+      image: sapreparts,
       alt: "Spare Parts",
       title: "Spare Parts ",
       description:
@@ -64,7 +71,7 @@ const Departments = async () => {
     },
     {
       href: "/aftersale/bodyshop",
-      image: sale,
+      image: bodyshop,
       alt: "Body and Paint",
       title: "Body and Paint Shop",
       description:
@@ -72,7 +79,7 @@ const Departments = async () => {
     },
     {
       href: "/sales/extend_warranty",
-      image: sale,
+      image: extend,
       alt: "Extended Warranty",
       title: "Extended Warranty ",
       description:
