@@ -5,63 +5,54 @@ import { Modal, Button, Form } from "react-bootstrap";
 export function CarBookingForm() {
   const [status, setStatus] = useState("");
   const [show, setShow] = useState(false);
-  const [selectedModel, setSelectedModel] = useState("");
 
   const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setStatus("Submitting...");
 
-    const formData = new URLSearchParams(new FormData(e.currentTarget) as any);
+    const formData = new URLSearchParams({
+      name: e.currentTarget.yourName.value,
+      phone: e.currentTarget.phone.value,
+      email: e.currentTarget.email.value,
+      carModel: e.currentTarget.carModel.value,
+      carColor: e.currentTarget.carColor.value,
+      bookingDate: e.currentTarget.bookingDate.value,
+      message: e.currentTarget.message.value,
+    });
 
     try {
       const response = await fetch(
         "https://script.google.com/macros/s/AKfycbzFWVMGwQiNkzztfaqsU9D4Psac1qOKNbcQqIy1alH-rmgBLWK_oSZmr9peJ8ZSwp1kJA/exec",
         {
           method: "POST",
-          headers: { "Content-Type": "application/x-www-form-urlencoded" },
+          headers: {
+            "Content-Type": "application/x-www-form-urlencoded",
+          },
           body: formData.toString(),
         }
       );
 
-      if ((await response.json()).result === "success") {
+      const result = await response.json();
+
+      if (result.result === "success") {
         alert("Booking submitted successfully!");
         e.currentTarget.reset();
-        setStatus("Submitted Successfully");
+        handleClose();
       }
     } catch (error) {
       console.error("Error submitting booking:", error);
     } finally {
+      setStatus("Submitted Successfully ");
       handleClose();
-    }
-  };
-
-  const getColorOptions = (model: string) => {
-    switch (model) {
-      case "suzuki-alto":
-        return ["White", "Silver"];
-      case "suzuki-cultus":
-        return ["White"];
-      case "suzuki-wagonr":
-        return ["White", "Grey"];
-      case "suzuki-swift":
-        return ["Red", "Blue", "White"];
-      case "suzuki-bolan":
-        return ["White", "Red"];
-      case "suzuki-ravi":
-        return ["White"];
-      default:
-        return [];
     }
   };
 
   return (
     <>
-      <Button
-        className="btn btn-blue rounded-pill"
-        onClick={() => setShow(true)}
-      >
+      <Button className="btn btn-blue rounded-pill" onClick={handleShow}>
         Booking Form
       </Button>
 
@@ -71,60 +62,47 @@ export function CarBookingForm() {
         </Modal.Header>
         <Modal.Body>
           <Form onSubmit={handleSubmit}>
-            {["yourName", "phone", "email"].map((id, idx) => (
-              <Form.Group key={idx} className="mb-3" controlId={id}>
-                <Form.Label>
-                  {id === "yourName"
-                    ? "Full Name"
-                    : id.charAt(0).toUpperCase() + id.slice(1)}
-                </Form.Label>
-                <Form.Control
-                  type={id === "email" ? "email" : "text"}
-                  placeholder={
-                    id === "phone" ? "+92 *** *******" : `Your ${id}`
-                  }
-                  required
-                />
-              </Form.Group>
-            ))}
-
+            <Form.Group className="mb-3" controlId="yourName">
+              <Form.Label>Full Name</Form.Label>
+              <Form.Control type="text" placeholder="Your Full Name" required />
+            </Form.Group>
+            <Form.Group className="mb-3" controlId="phone">
+              <Form.Label>Phone Number</Form.Label>
+              <Form.Control
+                type="text"
+                placeholder="+92 *** *******"
+                required
+              />
+            </Form.Group>
+            <Form.Group className="mb-3" controlId="email">
+              <Form.Label>Email Address</Form.Label>
+              <Form.Control
+                type="email"
+                placeholder="email@example.com"
+                required
+              />
+            </Form.Group>
             <Form.Group className="mb-3" controlId="carModel">
               <Form.Label>Preferred Car Model</Form.Label>
-              <Form.Select
-                required
-                onChange={(e) => setSelectedModel(e.target.value)}
-              >
+              <Form.Select required>
                 <option value="">Select a Car Model</option>
-                {[
-                  "Suzuki Alto",
-                  "Suzuki Cultus",
-                  "Suzuki Swift",
-                  "Suzuki WagonR",
-                  "Suzuki Bolan",
-                  "Suzuki Ravi",
-                ].map((model, idx) => (
-                  <option
-                    key={idx}
-                    value={model.toLowerCase().replace(/\s/g, "-")}
-                  >
-                    {model}
-                  </option>
-                ))}
+                <option value="suzuki-ciaz">Suzuki Alto</option>
+                <option value="suzuki-vitara">Suzuki Cultus</option>
+                <option value="suzuki-swift">Suzuki Swift</option>
+                <option value="suzuki-wagonR">Suzuki WagonR</option>
+                <option value="suzuki-bolan">Suzuki Bolan</option>
+                <option value="suzuki-ravi">Suzuki Ravi</option>
               </Form.Select>
             </Form.Group>
-
             <Form.Group className="mb-3" controlId="carColor">
               <Form.Label>Preferred Car Color</Form.Label>
               <Form.Select required>
                 <option value="">Select a Car Color</option>
-                {getColorOptions(selectedModel).map((color, idx) => (
-                  <option key={idx} value={color.toLowerCase()}>
-                    {color}
-                  </option>
-                ))}
+                <option value="white">White</option>
+                <option value="black">Black</option>
+                <option value="silver">Silver</option>
               </Form.Select>
             </Form.Group>
-
             <Form.Group className="mb-3" controlId="bookingDate">
               <Form.Label>Preferred Booking Date</Form.Label>
               <Form.Control type="date" required />
@@ -140,10 +118,11 @@ export function CarBookingForm() {
             <Form.Group className="mb-3" controlId="gridCheck">
               <Form.Check
                 type="checkbox"
-                label="I accept the Terms & Conditions"
+                label="I accept the Terms & Conditions and acknowledge that my information will be used in accordance with the Privacy Policy."
                 required
               />
             </Form.Group>
+
             <Button variant="primary" type="submit">
               Submit Booking
             </Button>
