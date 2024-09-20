@@ -118,9 +118,9 @@ const Departments = async () => {
                         alt={department.alt}
                       />
                     </div>
-                    <div className="col-xl-7">
+                    <div className="col-xl-7 dflex">
                       <div className="card-body">
-                        <small className="d-block">
+                        <small className="d-block ">
                           {department.description}
                         </small>
                       </div>
