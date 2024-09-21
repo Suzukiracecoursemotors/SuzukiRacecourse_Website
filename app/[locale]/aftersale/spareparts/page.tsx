@@ -43,7 +43,7 @@ export default function SuzukiSpareParts() {
               ))}
 
               <p>
-                By choosing Suzuki genuine spare parts, you're ensuring your
+                By choosing Suzuki genuine spare parts, you are ensuring your
                 vehicle maintains its reliability, safety, and performance for
                 years to come.
               </p>
