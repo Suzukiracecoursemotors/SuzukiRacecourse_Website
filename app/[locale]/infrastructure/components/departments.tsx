@@ -14,7 +14,7 @@ import extend from "../../public/extendwarrenty.png";
 const Departments = async () => {
   const departmentData = [
     {
-      href: "infrastructure/details_dep_sales",
+      href: "sales",
       image: sale,
       alt: "Sales",
       title: "Sales Department",
@@ -22,7 +22,7 @@ const Departments = async () => {
         "Offering the best deals and a wide range of vehicles to meet your needs. Our dedicated team ensures a smooth buying experience for every customer. From selection to financing, we guide you every step of the way. With exclusive promotions and personalized services, we make car ownership hassle-free. Trust us to deliver a seamless experience tailored to your preferences.",
     },
     {
-      href: "infrastructure/details_dep_aftersale",
+      href: "aftersale",
       image: aftersale,
       alt: "After Sales",
       title: "After Sales Department",

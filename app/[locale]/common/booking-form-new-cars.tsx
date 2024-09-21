@@ -38,7 +38,7 @@ export function CarBookingForm() {
       const result = await response.json();
 
       if (result.result === "success") {
-        alert("Booking submitted successfully!");
+        alert("Booking Request submitted ");
         e.currentTarget.reset();
         handleClose();
       }

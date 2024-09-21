@@ -233,22 +233,19 @@ export default function CUC() {
   const [sortOption, setSortOption] = useState<string>("priceHighToLow");
   const [minPrice, setMinPrice] = useState<number>(10000);
   const [maxPrice, setMaxPrice] = useState<number>(5000000);
-  const [currentPage, setCurrentPage] = useState<number>(1); // New state for pagination
+  const [currentPage, setCurrentPage] = useState<number>(1);
 
-  const carsPerPage = 6; // Number of cars to show per page
-  // Handles brand filtering
+  const carsPerPage = 6;
   const handleBrandChange = (brand: string) => {
     setSelectedBrands((prev) =>
       prev.includes(brand) ? prev.filter((b) => b !== brand) : [brand]
     );
   };
 
-  // Handles sort changes
   const handleSortChange = (option: string) => {
     setSortOption(option);
   };
 
-  // Handles price range changes
   const handlePriceChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
     if (name === "minPrice") {
@@ -257,7 +254,6 @@ export default function CUC() {
       setMaxPrice(Number(value));
     }
   };
-  // Sorting cars
   const sortedCars = [...carData].sort((a, b) => {
     if (sortOption === "priceLowToHigh") {
       return a.price - b.price;
@@ -276,7 +272,6 @@ export default function CUC() {
       car.price <= maxPrice
   );
 
-  // Pagination logic
   const indexOfLastCar = currentPage * carsPerPage;
   const indexOfFirstCar = indexOfLastCar - carsPerPage;
   const currentCars = filteredCars.slice(indexOfFirstCar, indexOfLastCar);
@@ -292,7 +287,6 @@ export default function CUC() {
   return (
     <section className="py-15 py-xl-20">
       <div className="container mt-5">
-        {/* Header  */}
         <div className="row g-3 g-md-5 align-items-end mb-5">
           <div className="col-md-6">
             <h1 className="mb-2">Available Used Cars</h1>
@@ -300,7 +294,6 @@ export default function CUC() {
               Choose from our wide range of used cars.
             </p>
           </div>
-          {/* Sorting */}
           <div className="col-md-6 text-md-end">
             <div className="dropdown d-inline-block me-3">
               <a
@@ -354,9 +347,7 @@ export default function CUC() {
           </div>
         </div>
 
-        {/* Main Section */}
         <div className="row justify-content-between">
-          {/* Sidebar */}
           <aside className="col-xl-3 d-xl-block mb-4">
             <div className="widget">
               <h5 className="text-muted mb-2">Car Brands</h5>
@@ -414,7 +405,6 @@ export default function CUC() {
               </div>
             </div>
           </aside>
-          {/* Product Listing Section */}
           <div className="col-xl-9">
             <div className="row g-3">
               {currentCars.length > 0 ? (
@@ -472,7 +462,6 @@ export default function CUC() {
               )}
             </div>
 
-            {/* Pagination */}
             <div className="mt-4 d-flex justify-content-between">
               <button
                 className="btn btn-outline-primary"

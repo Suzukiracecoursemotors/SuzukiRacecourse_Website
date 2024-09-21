@@ -1,14 +1,49 @@
 import Image from "next/image";
 import React from "react";
 import homepic from "./bodyandpaint.webp";
+
 const config = {
   title: "Mechanical Workshop",
   note: "NOTE: √: Applicable X: Not Applicable",
+  Endnote:
+    " By choosing Suzuki, you're ensuring that your vehicle receives the best care possible, keeping it in peak condition for years to come.",
+  desc1:
+    "At Suzuki, our mechanical workshops are designed to provide top-tier service and expertise for all Suzuki vehicles. Whether it's routine maintenance, engine diagnostics, or complex repairs, our skilled technicians ensure that your vehicle is treated with the utmost care. We believe in delivering excellence through advanced tools, genuine Suzuki parts, and a team of certified professionals.",
+  title2: "Customer Choice of Engine Oil",
+  des2: "We prioritize our customers' preferences when it comes to engine oil selection. Suzuki vehicles require precision and high-quality products to maintain their performance. Our workshop offers a variety of engine oils, tailored to meet the diverse needs of each Suzuki model.",
+  title3: "Comprehensive Services",
+  des3: "We offer a wide range of services at our mechanical workshop, including:",
+  services: [
+    "Engine Overhauling",
+    "Transmission Repair",
+    "Brake System Maintenance",
+    "Suspension Tuning",
+    "Electrical Diagnostics",
+    "Air Conditioning Repair",
+  ],
+  whyChoose: [
+    {
+      title: "1. Genuine Parts",
+      description:
+        "We use only authentic Suzuki parts to maintain the integrity of your vehicle.",
+    },
+    {
+      title: "2. Certified Technicians",
+      description:
+        "Our team is trained to handle every Suzuki model with expertise.",
+    },
+    {
+      title: "3. State-of-the-art Equipment",
+      description:
+        "Our workshops are equipped with the latest tools and technology to ensure accurate and efficient repairs.",
+    },
+  ],
 };
-export default async function MechanicalWorkshop() {
+
+export default function MechanicalWorkshop() {
   return (
     <article>
-      <section className="py-10">
+      <section className="py-9">
         <Image
           src={homepic}
           layout="responsive"
@@ -17,115 +52,39 @@ export default async function MechanicalWorkshop() {
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-lg-10 col-xl-8">
-              <div>
-                <h1 className="display-1 ">{config.title} </h1>
-                <div>
-                  <p className="fs-lg text-secondary">
-                    At Suzuki, our mechanical workshops are designed to provide
-                    top-tier service and expertise for all Suzuki vehicles.
-                    Whether its routine maintenance, engine diagnostics, or
-                    complex repairs, our skilled technicians ensure that your
-                    vehicle is treated with the utmost care. We believe in
-                    delivering excellence through advanced tools, genuine Suzuki
-                    parts, and a team of certified professionals.
-                  </p>
-                </div>
-              </div>
-              <div>
-                <div>
-                  <h5>Customer Choice of Engine Oil</h5>
-                  <p className="fs-lg text-secondary">
-                    We prioritize our customers preferences when it comes to
-                    engine oil selection. Suzuki vehicles require precision and
-                    high-quality products to maintain their performance. Our
-                    workshop offers a variety of engine oils, tailored to meet
-                    the diverse needs of each Suzuki model.
-                  </p>
-                </div>
-              </div>
+              <h1 className="display-2">{config.title}</h1>
+              <p className="fs-lg text-secondary">{config.desc1}</p>
 
-              <div>
-                <div>
-                  <h5>Comprehensive Services</h5>
-                  <p className="fs-lg text-secondary">
-                    We offer a wide range of services at our mechanical
-                    workshop, including:
-                  </p>
+              <h5>{config.title2}</h5>
+              <p className="fs-lg text-secondary">{config.des2}</p>
+
+              <h5>{config.title3}</h5>
+              <p className="fs-lg text-secondary">{config.des3}</p>
+
+              <ul className="list-group">
+                {config.services.map((service, index) => (
+                  <li
+                    key={index}
+                    className="list-group-item d-flex align-items-center"
+                  >
+                    <div className="icon-box icon-box-sm bg-opaque-green rounded-circle me-2">
+                      <i className="bi bi-check2 text-green"></i>
+                    </div>
+                    {service}
+                  </li>
+                ))}
+              </ul>
+
+              <h1 className="display-3 text-blue">Why Choose Suzuki?</h1>
+              {config.whyChoose.map((item, index) => (
+                <div key={index}>
+                  <h5 className="">{item.title}</h5>
+                  <p className="fs-lg  text-secondary">{item.description}</p>
+                  <br />
                 </div>
-                <div>
-                  <ul className="list-group">
-                    <li className="list-group-item d-flex align-items-center">
-                      <div className="icon-box icon-box-sm bg-opaque-green rounded-circle me-2">
-                        <i className="bi bi-check2 text-green"></i>
-                      </div>
-                      Engine Overhauling{" "}
-                    </li>
-                    <li className="list-group-item d-flex align-items-center">
-                      <div className="icon-box icon-box-sm bg-opaque-green rounded-circle me-2">
-                        <i className="bi bi-check2 text-green"></i>
-                      </div>
-                      Transmission Repair{" "}
-                    </li>
-                    <li className="list-group-item d-flex align-items-center">
-                      <div className="icon-box icon-box-sm bg-opaque-green rounded-circle me-2">
-                        <i className="bi bi-check2 text-green"></i>
-                      </div>
-                      Brake System Maintenance{" "}
-                    </li>
-                    <li className="list-group-item d-flex align-items-center">
-                      <div className="icon-box icon-box-sm bg-opaque-green rounded-circle me-2">
-                        <i className="bi bi-check2 text-green"></i>
-                      </div>
-                      Suspension Tuning{" "}
-                    </li>
-                    <li className="list-group-item d-flex align-items-center">
-                      <div className="icon-box icon-box-sm bg-opaque-green rounded-circle me-2">
-                        <i className="bi bi-check2 text-green"></i>
-                      </div>
-                      Electrical Diagnostics{" "}
-                    </li>
-                    <li className="list-group-item d-flex align-items-center">
-                      <div className="icon-box icon-box-sm bg-opaque-green rounded-circle me-2">
-                        <i className="bi bi-check2 text-green"></i>
-                      </div>
-                      Air Conditioning Repair
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <h1 className="display-3 text-blue">Why Choose Suzuki? </h1>
-              <div>
-                <div>
-                  <h5>1. Genuine Parts</h5>
-                  <p className="fs-lg text-secondary">
-                    We use only authentic Suzuki parts to maintain the integrity
-                    of your vehicle.
-                  </p>
-                </div>
-              </div>
-              <div>
-                <div>
-                  <h5>2. Certified Technicians</h5>
-                  <p className="fs-lg text-secondary">
-                    Our team is trained to handle every Suzuki model with
-                    expertise.{" "}
-                  </p>
-                </div>
-              </div>
-              <div>
-                <div>
-                  <h5>3. State-of-the-art Equipment</h5>
-                  <p className="fs-lg text-secondary">
-                    Our workshops are equipped with the latest tools and
-                    technology to ensure accurate and efficient repairs.
-                  </p>
-                </div>
-              </div>
-              <p>
-                By choosing Suzuki, youre ensuring that your vehicle receives
-                the best care possible, keeping it in peak condition for years
-                to come
-              </p>
+              ))}
+
+              <p>{config.Endnote}</p>
             </div>
           </div>
         </div>
