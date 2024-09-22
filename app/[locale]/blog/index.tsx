@@ -2,7 +2,7 @@ import Image from "next/image";
 import { Link } from "@/navigation";
 
 import aim from "../../[locale]/sales/cars/altovx/New folder/Studio Session-479.jpg";
-import aim1 from "../../[locale]/public/PurchaseOfferuptoRs.50,000forWagonR_1_011802.png";
+
 import aim3 from "../../[locale]/sales/cars/swiftglvvt/swiftpic/Banner1.jpg";
 import aim2 from "../../[locale]/sales/cars/bolanvx/bolanpic/bolan2.jpg";
 import aim4 from "../../[locale]/sales/cars/cultusvxr/cultuscarosilimg/Exterior Cultus-1 (1920x800).jpg";
@@ -28,7 +28,7 @@ const blogData = [
     herf: "/sales/cars/altovx",
   },
   {
-    src: aim1,
+    src: aim5,
     title: "Is Wagon R better than Cultus?",
     date: "02/08/2024",
     herf: "/sales/cars/wagonrvxr",
