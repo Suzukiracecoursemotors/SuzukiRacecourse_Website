@@ -1,19 +1,12 @@
-import { Locale } from "@/i18n";
-import Gallery from "../common/gallery";
-import { getTranslations } from "next-intl/server";
 import Image from "next/image";
-import Moazzmpic from "./WhatsApp Image 2024-09-05 at 11.10.02 AM.jpeg";
-import mohtashim from "./1672853464297.jpeg";
-import Team from "./components/team";
-import Missions from "./components/mission";
-type GalleryProps = {
-  params: { locale: Locale };
-};
+import Moazzmpic from "../public/profiles/moazam.jpeg";
+import mohtashim from "../public/profiles/motashim.jpeg";
+import Team from "./team";
+import { getTranslations } from "next-intl/server";
 
-export default async function AboutUspage({
-  params: { locale },
-}: GalleryProps) {
-  const t = await getTranslations({ locale, namespace: "page" });
+export default async function AboutUspage() {
+  const t = await getTranslations({ namespace: "page.about" });
+
   return (
     <>
       <section className="py-15 py-xl-20 bg-light">
@@ -36,28 +29,18 @@ export default async function AboutUspage({
               data-aos="fade-right"
               data-aos-delay="100"
             >
-              <h2>Syed Moazzam Hussain Shah</h2>
+              <h2> {t("name1")} </h2>
               <ul className="list-group list-group-separated">
                 <li className="list-group-item py-4">
                   <p className="text-muted lead">
-                    <span className="text-black">
-                      Message from the Director
-                    </span>{" "}
-                    At Suzuki Racecourse Motors, our customers are at the heart
-                    of everything we do. We are committed to delivering vehicles
-                    and services that meet your highest expectations, with a
-                    focus on innovation, quality, and reliability. Whether you
-                    are purchasing your first car or returning for another, we
-                    are here to ensure your experience is seamless and
-                    satisfying. Your trust drives us to constantly improve, and
-                    we look forward to continuing this journey with you. Thank
-                    you for choosing Suzuki Racecourse Motors.
+                    <span className="text-black">{t("dir")} </span> {t("msg1")}
                   </p>
                 </li>
               </ul>
             </div>
           </div>
         </div>
+        <br />
         <div className="container">
           <div className="row align-items-center justify-content-center justify-content-lg-between">
             <div
@@ -65,22 +48,11 @@ export default async function AboutUspage({
               data-aos="fade-right"
               data-aos-delay="100"
             >
-              <h2>Syed Mohtashim Hussain Shah</h2>
+              <h2> {t("name2")} </h2>
               <ul className="list-group list-group-separated">
                 <li className="list-group-item py-4">
                   <p className="text-muted lead">
-                    <span className="text-black">
-                      Message from the Director
-                    </span>{" "}
-                    At Suzuki Racecourse Motors, our customers are at the heart
-                    of everything we do. We are committed to delivering vehicles
-                    and services that meet your highest expectations, with a
-                    focus on innovation, quality, and reliability. Whether you
-                    are purchasing your first car or returning for another, we
-                    are here to ensure your experience is seamless and
-                    satisfying. Your trust drives us to constantly improve, and
-                    we look forward to continuing this journey with you. Thank
-                    you for choosing Suzuki Racecourse Motors.
+                    <span className="text-black">{t("dir")} </span> {t("msg2")}
                   </p>
                 </li>
               </ul>
@@ -100,8 +72,9 @@ export default async function AboutUspage({
           </div>
         </div>
       </section>
-      <Missions />
       <Team />
+      <br />
+      <br />
     </>
   );
 }

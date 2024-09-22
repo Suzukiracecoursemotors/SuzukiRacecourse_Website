@@ -5,7 +5,7 @@ import React, { useState } from "react";
 import Cultuspng from "../../public/Cultus/Cultus-Gray.jpg";
 import Swiftpng from "../../public/Swift/Swift-Back-Side-Angle.png";
 import alto from "../../public/Alto/Studio Session-328.png";
-import { Seemore } from "../../common/seemore";
+import { Seemore } from "../../common/form-spare";
 import { Link } from "@/navigation";
 import Constants from "@/data/Constants";
 

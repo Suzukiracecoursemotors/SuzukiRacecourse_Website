@@ -1,6 +1,4 @@
-import Image from "next/image";
 import React from "react";
-import homepic from "../service/bodyandpaint.webp";
 
 const config = {
   title: "Suzuki Spare Parts",

@@ -76,10 +76,7 @@ const linksConfig: NavLink[] = [
       },
     ],
   },
-  // {
-  //   locale: NavLinksLocale.SpareParts,
-  //   path: "/spareparts",
-  // },
+
   {
     locale: NavLinksLocale.Infrastructure,
     path: "/infrastructure",

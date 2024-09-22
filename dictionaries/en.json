@@ -123,8 +123,11 @@
     "extendwarrenty": {
       "title": "sale"
     },
-    "registertransfer": {
-      "title": "sale"
+    "infrastructure": {
+      "title": "Suzuki Racecourse Motors",
+      "adress": "7S | Authorized Suzuki Dealership. Location: 229/A, Lane no. 1, Main Peshawar Road, Rawalpindi Cantt, Pakistan.",
+      "reserve_appointment": "Reserve Appointment",
+      "deptitle": "Departments"
     },
     "aftersale": {
       "title": "sale"
@@ -151,12 +154,12 @@
     "contact": {
       "title": "sale"
     },
-    "gallery": {
-      "title": "Photos from the Studio",
-      "all": "All",
-      "interior": "Interior",
-      "massages": "Massages",
-      "cosmetics": "Cosmetics"
+    "about": {
+      "dir": "Message from the Director",
+      "name1": "Syed Moazzam Hussain",
+      "name2": "Syed Mohtashim Hussain",
+      "msg1": " At Suzuki Racecourse Motors, our customers are at the heart of everything we do. We are committed to delivering vehicles and services that meet your highest expectations, with a focus on innovation, quality, and reliability. Whether you are purchasing your first car or returning for another, we are here to ensure your experience is seamless and satisfying. Your trust drives us to constantly improve, and we look forward to continuing this journey with you. Thank you for choosing Suzuki Racecourse Motors.",
+      "msg2": " At Suzuki Racecourse Motors, our customers are at the heart of everything we do. We are committed to delivering vehicles and services that meet your highest expectations, with a focus on innovation, quality, and reliability. Whether you are purchasing your first car or returning for another, we are here to ensure your experience is seamless and satisfying. Your trust drives us to constantly improve, and we look forward to continuing this journey with you. Thank you for choosing Suzuki Racecourse Motors."
     },
     "blog": {
       "title": "sale"

@@ -1,43 +1,25 @@
 import Image from "next/image";
-import Moazzmpic from "../WhatsApp Image 2024-09-05 at 11.10.02 AM.jpeg";
-import mohtashim from "../1672853464297.jpeg";
+import Moazzmpic from "../public/profiles/moazam.jpeg";
+import mohtashim from "../public/profiles/motashim.jpeg";
 
 const teamMembers = [
   {
-    id: 1,
-    img: mohtashim,
-    name: "Michael Doe",
-    title: "Senior Designer at Google",
-  },
-  {
     id: 2,
     img: Moazzmpic,
-    name: "Michael Doe",
-    title: "Senior Designer at Google",
+    name: "Syed Moazzam Hussain",
+    title: "Director ",
   },
   {
-    id: 3,
+    id: 1,
     img: mohtashim,
-    name: "Michael Doe",
-    title: "Senior Designer at Google",
-  },
-  {
-    id: 4,
-    img: Moazzmpic,
-    name: "Michael Doe",
-    title: "Senior Designer at Google",
-  },
-  {
-    id: 5,
-    img: mohtashim,
-    name: "Michael Doe",
-    title: "Senior Designer at Google",
+    name: "Syed Mohtashim Hussain ",
+    title: "Director ",
   },
 ];
 
 export default function Team() {
   return (
-    <section className="py-15 py-xl-20 bg-light overflow-hidden">
+    <section className="py-1 py-xl-2 bg-light overflow-hidden">
       <div className="container">
         <div className="row mb-10">
           <div className="col-lg-8">
