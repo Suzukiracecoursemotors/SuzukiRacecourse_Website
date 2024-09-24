@@ -27,7 +27,7 @@ export default async function BodyandPaint() {
                   <p className="fs-lg text-secondary">
                     Our state-of-the-art body shop provides expert repairs for
                     all Suzuki models. From minor dents to extensive collision
-                    damage, our certified technicians restore your vehicle’s
+                    damage, our certified technicians restore your vehicles
                     bodywork to factory standards.
                   </p>
                 </div>
@@ -37,7 +37,7 @@ export default async function BodyandPaint() {
                     Using advanced painting techniques and high-quality paints,
                     we ensure a flawless finish for every vehicle. Whether you
                     need a touch-up or a full-body respray, our paint
-                    specialists match your vehicle’s original color with
+                    specialists match your vehicles original color with
                     precision.
                   </p>
                 </div>
@@ -61,7 +61,7 @@ export default async function BodyandPaint() {
                 <div>
                   <h5>5. Frame and Structural Repairs</h5>
                   <p className="fs-lg text-secondary">
-                    If your vehicle’s frame has been compromised in an accident,
+                    If your vehicles frame has been compromised in an accident,
                     our team specializes in restoring its structural integrity,
                     ensuring safety and performance.
                   </p>
