@@ -5,225 +5,90 @@ import React, { useState } from "react";
 import Cultuspng from "../../public/Cultus/Cultus-Gray.jpg";
 import Swiftpng from "../../public/Swift/Swift-Back-Side-Angle.png";
 import alto from "../../public/Alto/Studio Session-328.png";
+import alto1 from "../../public/cuccar/1.jpeg";
+import alto2 from "../../public/cuccar/2.jpeg";
+import alto3 from "../../public/cuccar/3.jpeg";
+import alto4 from "../../public/cuccar/4.jpeg";
+import alto5 from "../../public/cuccar/5.jpeg";
+import alto6 from "../../public/cuccar/6.jpeg";
 import { Seemore } from "../../common/form-spare";
 import { Link } from "@/navigation";
 import Constants from "@/data/Constants";
 
 const carData = [
+  // {
+  //   model: "Cultus VXL",
+  //   price: 360000,
+  //   mileage: "60,000 km",
+  //   year: 2018,
+  //   brand: "Cultus",
+  //   img: Cultuspng,
+  //   isSold: false,
+  // },
+  // {
+  //   model: "Swift MT",
+  //   price: 400000,
+  //   mileage: "70,000 km",
+  //   year: 2017,
+  //   brand: "Swift",
+  //   img: Swiftpng,
+  //   isSold: true,
+  // },
+
   {
-    model: "Cultus VXL",
-    price: 360000,
-    mileage: "60,000 km",
-    year: 2018,
-    brand: "Cultus",
-    img: Cultuspng,
+    model: "Alto VX",
+    price: 200000,
+    mileage: "34,000 km",
+    year: 2022,
+    brand: "Alto",
+    img: alto1,
     isSold: false,
   },
-  {
-    model: "Swift MT",
-    price: 400000,
-    mileage: "70,000 km",
-    year: 2017,
-    brand: "Swift",
-    img: Swiftpng,
-    isSold: true,
-  },
-  {
-    model: "Swift VVT",
-    price: 300000,
-    mileage: "70,000 km",
-    year: 2017,
-    brand: "Swift",
-    img: Swiftpng,
-    isSold: true,
-  },
+
   {
     model: "Alto VX",
     price: 200000,
     mileage: "70,000 km",
     year: 2017,
     brand: "Alto",
-    img: alto,
+    img: alto2,
+    isSold: false,
+  },
+
+  {
+    model: "Mehran VXR",
+    price: 1300000,
+    mileage: "78,000 km",
+    year: 2014,
+    brand: "Mehran",
+    img: alto3,
     isSold: false,
   },
   {
-    model: "Swift VVT",
-    price: 300000,
-    mileage: "70,000 km",
-    year: 2017,
-    brand: "Swift",
-    img: Swiftpng,
-    isSold: true,
-  },
-  {
-    model: "Alto VX",
+    model: "Alto VXR",
     price: 200000,
-    mileage: "70,000 km",
-    year: 2017,
+    mileage: "42,000 km",
+    year: 2022,
     brand: "Alto",
-    img: alto,
+    img: alto4,
     isSold: false,
   },
   {
-    model: "Swift VVT",
-    price: 300000,
-    mileage: "70,000 km",
-    year: 2017,
-    brand: "Swift",
-    img: Swiftpng,
-    isSold: true,
-  },
-  {
-    model: "Alto VX",
+    model: "Alto AGS",
     price: 200000,
-    mileage: "70,000 km",
-    year: 2017,
+    mileage: "36,000 km",
+    year: 2022,
     brand: "Alto",
-    img: alto,
+    img: alto5,
     isSold: false,
   },
   {
-    model: "Swift VVT",
-    price: 300000,
-    mileage: "70,000 km",
-    year: 2017,
-    brand: "Swift",
-    img: Swiftpng,
-    isSold: true,
-  },
-  {
-    model: "Alto VX",
+    model: "Alto VXR",
     price: 200000,
-    mileage: "70,000 km",
-    year: 2017,
+    mileage: "27,000 km",
+    year: 2022,
     brand: "Alto",
-    img: alto,
-    isSold: false,
-  },
-  {
-    model: "Swift VVT",
-    price: 300000,
-    mileage: "70,000 km",
-    year: 2017,
-    brand: "Swift",
-    img: Swiftpng,
-    isSold: true,
-  },
-  {
-    model: "Alto VX",
-    price: 200000,
-    mileage: "70,000 km",
-    year: 2017,
-    brand: "Alto",
-    img: alto,
-    isSold: false,
-  },
-  {
-    model: "Swift VVT",
-    price: 300000,
-    mileage: "70,000 km",
-    year: 2017,
-    brand: "Swift",
-    img: Swiftpng,
-    isSold: true,
-  },
-  {
-    model: "Alto VX",
-    price: 200000,
-    mileage: "70,000 km",
-    year: 2017,
-    brand: "Alto",
-    img: alto,
-    isSold: false,
-  },
-  {
-    model: "Swift VVT",
-    price: 300000,
-    mileage: "70,000 km",
-    year: 2017,
-    brand: "Swift",
-    img: Swiftpng,
-    isSold: true,
-  },
-  {
-    model: "Alto VX",
-    price: 200000,
-    mileage: "70,000 km",
-    year: 2017,
-    brand: "Alto",
-    img: alto,
-    isSold: false,
-  },
-  {
-    model: "Swift VVT",
-    price: 300000,
-    mileage: "70,000 km",
-    year: 2017,
-    brand: "Swift",
-    img: Swiftpng,
-    isSold: true,
-  },
-  {
-    model: "Alto VX",
-    price: 200000,
-    mileage: "70,000 km",
-    year: 2017,
-    brand: "Alto",
-    img: alto,
-    isSold: false,
-  },
-  {
-    model: "Swift VVT",
-    price: 300000,
-    mileage: "70,000 km",
-    year: 2017,
-    brand: "Swift",
-    img: Swiftpng,
-    isSold: true,
-  },
-  {
-    model: "Alto VX",
-    price: 200000,
-    mileage: "70,000 km",
-    year: 2017,
-    brand: "Alto",
-    img: alto,
-    isSold: false,
-  },
-  {
-    model: "Swift VVT",
-    price: 300000,
-    mileage: "70,000 km",
-    year: 2017,
-    brand: "Swift",
-    img: Swiftpng,
-    isSold: true,
-  },
-  {
-    model: "Alto VX",
-    price: 200000,
-    mileage: "70,000 km",
-    year: 2017,
-    brand: "Alto",
-    img: alto,
-    isSold: false,
-  },
-  {
-    model: "Swift VVT",
-    price: 300000,
-    mileage: "70,000 km",
-    year: 2017,
-    brand: "Swift",
-    img: Swiftpng,
-    isSold: true,
-  },
-  {
-    model: "Alto VX",
-    price: 200000,
-    mileage: "70,000 km",
-    year: 2017,
-    brand: "Alto",
-    img: alto,
+    img: alto6,
     isSold: false,
   },
 ];
@@ -416,8 +281,8 @@ export default function CUC() {
                           src={car.img}
                           alt={car.model}
                           layout="responsive"
-                          width={700}
-                          height={700}
+                          width={500}
+                          height={500}
                           className="card-img-top"
                         />
                         {car.isSold ? (
@@ -436,7 +301,7 @@ export default function CUC() {
                           </span>
                         )}
                       </div>
-                      <div className="card-footer">
+                      <div className="card-footer dflexcolom flexcoloum">
                         <h5 className="car-model-title">{car.model}</h5>
                         <div className="text-muted">
                           Model: {car.year} • {car.mileage}

@@ -57,24 +57,6 @@ const linksConfig: NavLink[] = [
   {
     locale: NavLinksLocale.Aftersale,
     path: "/aftersale",
-    // children: [
-    //   {
-    //     locale: NavLinksLocale.Aftersale,
-    //     path: "/aftersale",
-    //   },
-    //   {
-    //     locale: NavLinksLocale.Mechanical,
-    //     path: "/aftersale/service",
-    //   },
-    //   {
-    //     locale: NavLinksLocale.SpareParts,
-    //     path: "/aftersale/spareparts",
-    //   },
-    //   {
-    //     locale: NavLinksLocale.BodyShop,
-    //     path: "/aftersale/bodyshop",
-    //   },
-    // ],
   },
 
   {

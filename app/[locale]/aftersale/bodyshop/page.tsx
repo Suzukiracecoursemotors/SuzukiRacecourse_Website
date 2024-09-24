@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import homepic from "../service/bodyandpaint.webp";
+import homepic from "../../public/paint-booth-banner.jpg";
 const config = {
   title: "Body And Paint Shop",
 };
