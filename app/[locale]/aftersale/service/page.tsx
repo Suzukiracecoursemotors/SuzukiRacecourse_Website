@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import homepic from "./bodyandpaint.webp";
+import homepic from "../../public/mechanical.webp";
 
 const config = {
   title: "Mechanical Workshop",

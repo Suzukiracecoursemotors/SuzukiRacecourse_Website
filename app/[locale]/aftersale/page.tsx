@@ -208,30 +208,6 @@ async function Aftersale() {
           </div>
         </div>
       </section>
-
-      <section className="py-5 py-xl-7 border-bottom overflow-hidden">
-        <div className="container">
-          <div className="row justify-content-center">
-            <div className="col-lg-8">
-              <div className="carousel carousel-with-nav">
-                <div>
-                  <div>
-                    <blockquote className="text-center">
-                      <span className="logo">
-                        {/* <img src="./assets/images/logo/logo-1.svg" alt="Logo"> */}
-                      </span>
-                      <h4 className="fs-2 my-3">
-                        “Amazing experience I love it a lot. Thanks to the team
-                        that dreams come true.”
-                      </h4>
-                    </blockquote>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
     </>
   );
 }
