@@ -63,7 +63,7 @@ export default async function AboutUspage() {
             >
               <Image
                 src={mohtashim}
-                alt="awais_image"
+                alt="motashimimg"
                 width={600}
                 height={500}
                 layout="responsive"
