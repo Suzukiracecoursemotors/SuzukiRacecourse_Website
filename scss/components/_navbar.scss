@@ -293,3 +293,15 @@
   justify-content: center !important;
   flex-direction: column;
 }
+.dflexrow {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 1rem;
+  @media (max-width: 768px) {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 0 !important;
+  }
+}
