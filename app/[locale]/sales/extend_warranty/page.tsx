@@ -36,7 +36,7 @@ export default async function ExtendWarrenty() {
               alt=" background-image background "
             />{" "}
           </div>{" "}
-          <h5>{config.customerChoice}</h5>
+          <h5 className="py-2">{config.customerChoice}</h5>
           <div className="row justify-content-center">
             <Image
               src={un2}
@@ -44,7 +44,7 @@ export default async function ExtendWarrenty() {
               alt=" background-image background "
             />{" "}
           </div>
-          <h5>{config.note}</h5>
+          <h5 className="py-2">{config.note}</h5>
         </div>
       </section>
     </article>

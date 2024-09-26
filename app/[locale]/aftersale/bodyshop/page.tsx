@@ -52,7 +52,7 @@ export default function BodyShop() {
               <div className="dflexrow">
                 <div className="col-md-auto py-3">
                   <a
-                    href={`tel:${Constants.PHONE}`}
+                    href={`tel:${Constants.BODYSHOP}`}
                     className="btn btn-yellow btn-with-icon rounded-pill btn-lg"
                     data-aos="zoom-out"
                     data-aos-delay="300"

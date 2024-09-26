@@ -64,7 +64,7 @@ export default function MechanicalWorkshop() {
                 <h5>{config.title3}</h5>
                 <div className="col-md-auto py-3">
                   <a
-                    href={`tel:${Constants.PHONE}`}
+                    href={`tel:${Constants.CRO}`}
                     className="btn btn-yellow btn-with-icon rounded-pill btn-lg"
                     data-aos="zoom-out"
                     data-aos-delay="300"

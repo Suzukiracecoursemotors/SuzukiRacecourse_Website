@@ -306,13 +306,13 @@ export default function CUC() {
                         <div className="text-muted ">
                           Model: {car.year} • {car.mileage}
                         </div>
-                        <span className="product-price text-light display-5 underline">
+                        <span className="product-price text-dark display-6 underline">
                           Rs: {car.price}
                         </span>
                         <br />
                         <Link
-                          href={"tel:" + Constants.PHONE}
-                          className="btn btn-with-icon rounded-pill"
+                          href={"tel:" + Constants.USEDCAR}
+                          className="btn border btn-with-icon rounded-pill"
                         >
                           <i className="bi bi-telephone-fill"></i> Contact Now
                         </Link>

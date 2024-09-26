@@ -121,7 +121,7 @@ async function Aftersale() {
               ))}
               <div className="col-md-auto py-3">
                 <a
-                  href={`tel:${Constants.PHONE}`}
+                  href={`tel:${Constants.CRO}`}
                   className="btn btn-yellow btn-with-icon rounded-pill btn-lg"
                   data-aos="zoom-out"
                   data-aos-delay="300"

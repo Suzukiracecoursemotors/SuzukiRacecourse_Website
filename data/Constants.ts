@@ -1,8 +1,10 @@
 const Constants = {
   PHONE: "+92 341 1990930",
-  GOOGLE_MAP: "",
-  GOOGLE_REVIEW_SCORE: "5.0",
-  GOOGLE_REVIEWS_COUNT: "31",
+  CRO: "+92 341 1990930",
+  USEDCAR: "+92 341 1990930",
+  BODYSHOP: "+92 341 1990930",
+  Insurance: "+92 341 1990930",
+  finance: "+92 341 1990930",
 };
 
 export default Constants;
