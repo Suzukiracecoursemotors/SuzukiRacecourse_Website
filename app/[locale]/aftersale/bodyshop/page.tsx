@@ -19,12 +19,12 @@ export default async function BodyandPaint() {
               {/* Existing sections omitted for brevity */}
 
               <div>
-                <h1 className="display-3 ">
+                <h1 className="display-3 py-3">
                   Professional Paint and Body Shop Services
                 </h1>
                 <div>
                   <h5>1. Precision Body Repairs</h5>
-                  <p className="fs-lg text-secondary">
+                  <p className="fs-lg text-secondary ">
                     Our state-of-the-art body shop provides expert repairs for
                     all Suzuki models. From minor dents to extensive collision
                     damage, our certified technicians restore your vehicles
@@ -32,8 +32,8 @@ export default async function BodyandPaint() {
                   </p>
                 </div>
                 <div>
-                  <h5>2. Premium Paint Services</h5>
-                  <p className="fs-lg text-secondary">
+                  <h5 className="py-1">2. Premium Paint Services</h5>
+                  <p className="fs-lg text-secondary ">
                     Using advanced painting techniques and high-quality paints,
                     we ensure a flawless finish for every vehicle. Whether you
                     need a touch-up or a full-body respray, our paint
@@ -42,7 +42,7 @@ export default async function BodyandPaint() {
                   </p>
                 </div>
                 <div>
-                  <h5>3. Dent and Scratch Removal</h5>
+                  <h5 className="py-1">3. Dent and Scratch Removal</h5>
                   <p className="fs-lg text-secondary">
                     Minor imperfections like dents and scratches can affect the
                     appearance and value of your vehicle. At our body shop, we
@@ -51,7 +51,7 @@ export default async function BodyandPaint() {
                   </p>
                 </div>
                 <div>
-                  <h5>4. Insurance Coordination</h5>
+                  <h5 className="py-1">4. Insurance Coordination</h5>
                   <p className="fs-lg text-secondary">
                     We assist with insurance claims and work directly with
                     providers to streamline the repair process, ensuring that
@@ -59,7 +59,7 @@ export default async function BodyandPaint() {
                   </p>
                 </div>
                 <div>
-                  <h5>5. Frame and Structural Repairs</h5>
+                  <h5 className="py-1">5. Frame and Structural Repairs</h5>
                   <p className="fs-lg text-secondary">
                     If your vehicles frame has been compromised in an accident,
                     our team specializes in restoring its structural integrity,

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import homepic from "../../public/mechanical.webp";
+import homepic from "../../public/mechanical.jpg";
 
 const config = {
   title: "Mechanical Workshop",
@@ -52,7 +52,7 @@ export default function MechanicalWorkshop() {
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-lg-10 col-xl-8">
-              <h1 className="display-2">{config.title}</h1>
+              <h1 className="display-3 py-3">{config.title}</h1>
               <p className="fs-lg text-secondary">{config.desc1}</p>
 
               <h5>{config.title2}</h5>
@@ -75,11 +75,11 @@ export default function MechanicalWorkshop() {
                 ))}
               </ul>
 
-              <h1 className="display-3 text-blue">Why Choose Suzuki?</h1>
+              <h1 className="display-3 py-2 text-blue">Why Choose Suzuki?</h1>
               {config.whyChoose.map((item, index) => (
                 <div key={index}>
-                  <h5 className="">{item.title}</h5>
-                  <p className="fs-lg  text-secondary">{item.description}</p>
+                  <h5 className="py-1">{item.title}</h5>
+                  <p className=" text-secondary">{item.description}</p>
                   <br />
                 </div>
               ))}

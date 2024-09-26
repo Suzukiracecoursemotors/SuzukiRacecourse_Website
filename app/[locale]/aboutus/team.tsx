@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Moazzmpic from "../public/profiles/moazam.jpeg";
 import mohtashim from "../public/profiles/motashim.jpeg";
-
+import muzammilpic from "../public/IMG-20240308-WA0022~2.jpg";
 const teamMembers = [
   {
     id: 2,
@@ -14,6 +14,12 @@ const teamMembers = [
     img: mohtashim,
     name: "Syed Mohtashim Hussain ",
     title: "Director ",
+  },
+  {
+    id: 3,
+    img: muzammilpic,
+    name: "Muzammal Zaman",
+    title: "Service Manager After Sales  ",
   },
 ];
 

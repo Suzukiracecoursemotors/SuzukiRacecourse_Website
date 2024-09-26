@@ -86,11 +86,22 @@ async function Aftersale() {
               <h6 className="text-secondary">1. Genuine Parts</h6>
               <h6 className="text-secondary">2. Certified Technicians</h6>
               <h6 className="text-secondary">3. State-of-the-art Equipment</h6>
+              <div className="col-md-auto py-3">
+                <a
+                  href={`tel:${Constants.PHONE}`}
+                  className="btn btn-yellow btn-with-icon   rounded-pill btn-lg"
+                  data-aos="zoom-out"
+                  data-aos-delay="300"
+                >
+                  {" "}
+                  Reserve Appointment <i className="bi bi-telephone-fill"></i>
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </section>
-      <section className="">
+      <section className="py-5">
         <div className="container">
           <div className="row mb-10">
             <div className="col-lg-6">
@@ -100,17 +111,6 @@ async function Aftersale() {
                 </span>
               </h2>
             </div>{" "}
-            <div className="col-md-auto">
-              <a
-                href={`tel:${Constants.PHONE}`}
-                className="btn btn-yellow btn-with-icon   rounded-pill btn-lg"
-                data-aos="zoom-out"
-                data-aos-delay="300"
-              >
-                {" "}
-                Reserve Appointment <i className="bi bi-telephone-fill"></i>
-              </a>
-            </div>
           </div>
           <div className="row g-3 g-xl-5">
             <div className="col-lg-4">
