@@ -114,7 +114,7 @@ export default async function FinanceandLease() {
                   <h5>{config.eligibilityTitle}</h5>
                   <div className="col-md-auto py-3">
                     <a
-                      href={`tel:${Constants.CRO}`}
+                      href={`tel:${Constants.finance}`}
                       className="btn btn-yellow btn-with-icon rounded-pill btn-lg"
                       data-aos="zoom-out"
                       data-aos-delay="300"

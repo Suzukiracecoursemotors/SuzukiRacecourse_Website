@@ -11,8 +11,6 @@ const config = {
   phoneLabel: "Phone",
   workTimeLabel: "Work Time",
   workTime: "Monday to Saturday 9:00am to 5:00pm",
-  googleMap: Constants.GOOGLE_MAP,
-  phone: Constants.PHONE,
   formTitle: "Let's make something big.",
   formSubtitle: "Together.",
   form: {
