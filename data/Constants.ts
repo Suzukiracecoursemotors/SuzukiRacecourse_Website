@@ -5,6 +5,7 @@ const Constants = {
   BODYSHOP: "+92 341 1990930",
   Insurance: "+92 341 1990930",
   finance: "+92 341 1990930",
+  GOOGLE_MAP: "",
 };
 
 export default Constants;
