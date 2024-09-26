@@ -57,7 +57,7 @@ const carData = [
 
   {
     model: "Mehran VXR",
-    price: 1300000,
+    price: 1280000,
     mileage: "78,000 km",
     year: 2014,
     brand: "Mehran",
@@ -66,16 +66,16 @@ const carData = [
   },
   {
     model: "Alto VXR",
-    price: 200000,
+    price: 2575000,
     mileage: "42,000 km",
     year: 2022,
     brand: "Alto",
     img: alto4,
-    isSold: false,
+    isSold: true,
   },
   {
     model: "Alto AGS",
-    price: 200000,
+    price: 2650000,
     mileage: "36,000 km",
     year: 2022,
     brand: "Alto",
@@ -84,7 +84,7 @@ const carData = [
   },
   {
     model: "Alto VXR",
-    price: 200000,
+    price: 2570000,
     mileage: "27,000 km",
     year: 2022,
     brand: "Alto",
@@ -303,10 +303,10 @@ export default function CUC() {
                       </div>
                       <div className="card-footer dflexcolom flexcoloum">
                         <h5 className="car-model-title">{car.model}</h5>
-                        <div className="text-muted">
+                        <div className="text-muted ">
                           Model: {car.year} • {car.mileage}
                         </div>
-                        <span className="product-price text-blue underline">
+                        <span className="product-price text-light display-5 underline">
                           Rs: {car.price}
                         </span>
                         <br />

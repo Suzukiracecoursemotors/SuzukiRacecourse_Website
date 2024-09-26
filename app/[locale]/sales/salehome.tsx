@@ -210,14 +210,14 @@ const SaleHome = () => {
           </div>
         </div>
         <div className="row g-3 g-xl-5">
-          <div className="col-xl-4">
+          <div className="col-xl-4 ">
             <ul
               className="nav nav-tabs flex-xl-column"
               id="carModelTabs"
               role="tablist"
             >
               {carModels.map((carModel, index) => (
-                <li className="nav-item" key={carModel.id}>
+                <li className="nav-item  " key={carModel.id}>
                   <button
                     className={`nav-link fs-5 ${
                       index === 0 ? "active" : ""
