@@ -5,7 +5,7 @@ const Constants = {
   BODYSHOP: "+92 341 1990930",
   Insurance: "+92 341 1990930",
   finance: "+92 341 1990930",
-  GOOGLE_MAP: "",
+  GOOGLE_MAP: "info@suzukiracecoursemotors.com.pk",
 };
 
 export default Constants;
