@@ -1,7 +1,7 @@
 import { getTranslations } from "next-intl/server";
 import { Link } from "@/navigation";
 import Image from "next/image";
-import Bannerimg from "../public/banner1.jpeg";
+import Bannerimg from "../public/office.jpeg";
 import Constants from "@/data/Constants";
 import sale from "../public/retaildep.png";
 import aftersale from "../public/aftersale.png";
@@ -102,7 +102,7 @@ async function Infrastructure() {
                 height={500}
                 data-aos="zoom-out"
                 data-aos-delay="300"
-                // layout="responsive"
+                layout="responsive"
               />
             </div>
             <div className="col-md-10 col-lg-6 col-xl-5 text-center text-lg-start order-lg-1">
@@ -178,18 +178,18 @@ async function Infrastructure() {
         </figure>
       </section>
 
-      <section className="py-8">
+      <section className="py-1">
         <div className="container">
           <div className="row mb-10 g-3 g-xl-5 align-items-end">
             <div className="col-lg-8">
               <h1 className="display-1">{t("deptitle")}</h1>
             </div>
-            {/* <div className="col-lg-4 text-lg-end">
+            <div className="col-lg-4 text-lg-end">
               <p className="fs-lg text-muted">
                 Trusted by <span className="text-black">250k+</span>{" "}
                 <span className="d-block">customers worldwide</span>
               </p>
-            </div> */}
+            </div>
           </div>
 
           <div className="row mb-5 g-3 g-xl-5">

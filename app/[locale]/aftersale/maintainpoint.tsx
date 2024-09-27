@@ -4,7 +4,6 @@ import oil from "../public/aftersalejpg.jpg";
 import Constants from "@/data/Constants";
 import Maintain from "./maintainpoint";
 import Whychose from "./whychose";
-import Cards from "./maintainpoint";
 
 const aftersaleConfig = {
   title: "AfterSales",
@@ -34,53 +33,41 @@ const aftersaleConfig = {
       linkText: "Learn More",
     },
   ],
-  whyChooseUs: {
-    title: "Why Choose Suzuki?",
-    features: [
-      "1. Genuine Parts",
-      "2. Certified Technicians",
-      "3. State-of-the-art Equipment",
-    ],
-    buttonText: "Reserve Appointment",
-  },
-  services: [
-    "First Free Inspection (1,000 Km)",
-    "Second Free Inspection (5,000 Km)",
-    "Schedule Maintenance (every 5,000 Km)",
-    "A/C Service, Repair, Replacement & Installation",
-    "Engine Tuning Petrol & CNG",
-    "Wheel Balancing & Alignment",
-    "Brake Overhauling",
-    "Suspension Repair & Overhauling",
-    "Washing & Interior Cleaning",
-    "Transmission Repair & Replacement",
-    "Battery Check & Replacement",
-    "Fuel System Cleaning",
-    "Exhaust System Repair & Replacement",
-    "Tire Rotation & Replacement",
-    "Oil Change & Filter Replacement",
-    "Radiator & Cooling System Service",
-    "Headlight & Taillight Replacement",
-    "Windshield & Window Repair",
-    "Electrical Diagnostics & Repair",
-    "Steering & Suspension Inspection",
-  ],
-
-  maintenanceTitle: "We maintain all types of vehicles.",
 };
 
-async function Aftersale() {
+async function Cards() {
   const t = await getTranslations({ namespace: "page" });
 
   return (
     <>
-      <Cards />
-
-      <Whychose />
-
-      <Maintain />
+      <section className="py-1 py-xl-1">
+        <div className="container mt-15">
+          <div className="row mb-9">
+            <div className="col text-center">
+              <h2 className="fw-bold mb-0">{aftersaleConfig.title}</h2>
+            </div>
+          </div>
+          <div className="row g-5 ">
+            {aftersaleConfig.sections.map((section, index) => (
+              <div
+                className="col-md-6 col-lg-4 text-center"
+                data-aos="fade-up"
+                data-aos-delay={index * 100}
+                key={index}
+              >
+                <i className={`bi ${section.icon} fs-1 text-primary`}></i>
+                <h4 className="fs-5 mt-4">{section.title}</h4>
+                <p className="text-secondary mx-2">{section.description}</p>
+                <a href={section.link} className="underline">
+                  {section.linkText}
+                </a>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
     </>
   );
 }
 
-export default Aftersale;
+export default Cards;

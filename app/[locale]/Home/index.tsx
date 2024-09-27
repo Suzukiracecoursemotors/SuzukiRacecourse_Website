@@ -1,3 +1,6 @@
+import Cards from "../aftersale/maintainpoint";
+import Aftersale from "../aftersale/page";
+import Whychose from "../aftersale/whychose";
 import Carosil from "../common/carosil";
 import Sale from "../sales/page";
 import AimsandMissions from "./about_aim";
@@ -10,8 +13,10 @@ export default async function HomePage() {
       {/* <DepartmentsList /> */}
       <Sale />
       {/* <Aftersale /> */}
-      <AimsandMissions />
+      {/* <AimsandMissions /> */}
       {/* <Missions /> */}
+      <Cards />
+      <Whychose />
     </>
   );
 }

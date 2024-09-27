@@ -1,25 +1,33 @@
 import Image from "next/image";
-import Moazzmpic from "../public/profiles/moazam.jpeg";
-import mohtashim from "../public/profiles/motashim.jpeg";
-import muzammilpic from "../public/IMG-20240308-WA0022~2.jpg";
+
+import muzammilpic from "../public/profiles/muzammil.jpg";
+import hamayopic from "../public/profiles/hamayo.jpeg";
+import kalsoompic from "../public/profiles/kulsoom.jpeg";
+import umerpic from "../public/profiles/umer.jpeg";
 const teamMembers = [
   {
-    id: 2,
-    img: Moazzmpic,
-    name: "Syed Moazzam Hussain",
-    title: "Director ",
+    id: 1,
+    img: hamayopic,
+    name: "Hamayun Bhatti",
+    title: "Sales Manager",
   },
   {
-    id: 1,
-    img: mohtashim,
-    name: "Syed Mohtashim Hussain ",
-    title: "Director ",
+    id: 2,
+    img: kalsoompic,
+    name: "Kulsoom Baloch",
+    title: "Sales Manager ",
   },
   {
     id: 3,
+    img: umerpic,
+    name: "Umer Khan",
+    title: "User Car Manager",
+  },
+  {
+    id: 4,
     img: muzammilpic,
     name: "Muzammal Zaman",
-    title: "Service Manager After Sales  ",
+    title: "Service Manager After Sales",
   },
 ];
 

@@ -79,7 +79,7 @@ export default function Bolan() {
       </section>
 
       {/* Suzuki Bolan Article */}
-      <section className="py-5 py-xl-15">
+      <section className="py-1 py-xl-1">
         <div className="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center text-center p-4">
           <h1 className="display-3 fw-bold lh-sm text-dark mb-4 py-2">
             {bolanConfig.title}
