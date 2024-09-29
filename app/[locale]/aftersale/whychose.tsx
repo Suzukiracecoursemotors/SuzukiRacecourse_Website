@@ -1,4 +1,3 @@
-import { getTranslations } from "next-intl/server";
 import Image from "next/image";
 import oil from "../public/aftersalejpg.jpg";
 import Constants from "@/data/Constants";
@@ -16,8 +15,6 @@ const aftersaleConfig = {
 };
 
 async function Whychose() {
-  const t = await getTranslations({ namespace: "page" });
-
   return (
     <>
       <section className="py-15 py-xl-20">

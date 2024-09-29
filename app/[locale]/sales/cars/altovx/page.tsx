@@ -1,13 +1,9 @@
 import React from "react";
-import Image from "next/image";
-import image12 from "../../cars/altovx/New folder/Untitled.png";
-import image1 from "../../cars/altovx/New folder/Untitled1.png";
 import { Link } from "@/navigation";
 import Constants from "@/data/Constants";
 import { CarBookingForm } from "@/app/[locale]/common/booking-form-new-cars";
 import CarosilAltoVX from "./carosilalto";
 
-// Configuration object for the text content
 const altoConfig = {
   title: "Suzuki Alto",
   booknow: "Book Now",

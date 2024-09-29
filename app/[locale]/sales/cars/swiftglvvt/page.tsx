@@ -4,7 +4,6 @@ import Constants from "@/data/Constants";
 import Carosilswift from "./carosilswift";
 import { CarBookingForm } from "@/app/[locale]/common/booking-form-new-cars";
 
-// Configuration object for the Swift text content
 const swiftConfig = {
   title: "Suzuki Swift",
   booknow: "Book Now",
@@ -80,7 +79,6 @@ const swiftConfig = {
   ],
 };
 
-// Component to display tick or cross icons
 const TickCrossIcon = ({ value }: { value: boolean }) => {
   return value ? "✔️" : "❌";
 };
@@ -88,12 +86,10 @@ const TickCrossIcon = ({ value }: { value: boolean }) => {
 export default function Swift() {
   return (
     <article>
-      {/* Carousel Section */}
       <section className="bg-black inverted overflow-hidden">
         <Carosilswift />
       </section>
 
-      {/* Suzuki Swift Article */}
       <section className="py-1 py-xl-1">
         <div className="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center text-center p-4">
           <h1 className="display-3 fw-bold lh-sm text-dark mb-4 py-2">
@@ -111,7 +107,6 @@ export default function Swift() {
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-lg-10 col-xl-8">
-              {/* Overview Section */}
               <div>
                 <h3 style={{ textAlign: "center" }}>
                   {swiftConfig.overview.heading}
@@ -121,7 +116,6 @@ export default function Swift() {
                 </p>
               </div>
 
-              {/* Sections */}
               {swiftConfig.sections.map((section, index) => (
                 <div key={index}>
                   <h5 className="py-1">{section.title}</h5>
@@ -129,7 +123,6 @@ export default function Swift() {
                 </div>
               ))}
 
-              {/* Specifications Table */}
               <h5 className="py-2">Suzuki Swift Model Specifications</h5>
               <table className="table table-bordered text-center">
                 <thead>

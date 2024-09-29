@@ -60,7 +60,6 @@ const config = {
   ],
 };
 
-// Component to display tick or cross icons
 const TickCrossIcon = ({ value }: { value: boolean }) => {
   return <span>{value ? "✔️" : "❌"}</span>;
 };

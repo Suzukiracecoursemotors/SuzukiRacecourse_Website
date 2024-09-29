@@ -1,5 +1,4 @@
 import Image from "next/image";
-
 import muzammilpic from "../public/profiles/muzammil.jpg";
 import hamayopic from "../public/profiles/hamayo.jpeg";
 import kalsoompic from "../public/profiles/kulsoom.jpeg";

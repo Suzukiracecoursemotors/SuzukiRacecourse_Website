@@ -101,7 +101,7 @@ async function Infrastructure() {
                 width={450}
                 height={500}
                 data-aos="zoom-out"
-                data-aos-delay="300"
+                data-aos-delay="100"
                 layout="responsive"
               />
             </div>
@@ -123,7 +123,7 @@ async function Infrastructure() {
                     href={`tel:${Constants.PHONE}`}
                     className="btn btn-primary btn-with-icon   rounded-pill btn-lg"
                     data-aos="zoom-out"
-                    data-aos-delay="300"
+                    data-aos-delay="100"
                   >
                     {" "}
                     {t("reserve_appointment")}

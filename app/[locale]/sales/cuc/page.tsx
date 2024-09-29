@@ -2,9 +2,6 @@
 
 import Image from "next/image";
 import React, { useState } from "react";
-import Cultuspng from "../../public/Cultus/Cultus-Gray.jpg";
-import Swiftpng from "../../public/Swift/Swift-Back-Side-Angle.png";
-import alto from "../../public/Alto/Studio Session-328.png";
 import alto1 from "../../public/cuccar/1.jpeg";
 import alto2 from "../../public/cuccar/2.jpeg";
 import alto3 from "../../public/cuccar/3.jpeg";
@@ -245,7 +242,6 @@ export default function CUC() {
                   </li>
                 ))}
               </ul>
-              {/* Price Range */}
               <div className="price-range d-inline-block">
                 <h5 className="">Price Range</h5>
                 <input

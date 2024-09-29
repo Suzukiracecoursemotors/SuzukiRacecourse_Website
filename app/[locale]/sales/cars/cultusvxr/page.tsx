@@ -1,11 +1,9 @@
 import React from "react";
-import Image from "next/image";
 import { Link } from "@/navigation";
 import Constants from "@/data/Constants";
 import { CarBookingForm } from "@/app/[locale]/common/booking-form-new-cars";
 import CarosilCultus from "./carosilcultus";
 
-// Configuration object for the Cultus text content
 const cultusConfig = {
   title: "Suzuki Cultus",
   booknow: "Book Now",
@@ -69,7 +67,6 @@ const cultusConfig = {
   ],
 };
 
-// Component to display tick or cross icons
 const TickCrossIcon = ({ value }: { value: boolean }) => {
   return value ? "✔️" : "❌";
 };

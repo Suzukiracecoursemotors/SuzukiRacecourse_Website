@@ -4,7 +4,6 @@ import Constants from "@/data/Constants";
 import { CarBookingForm } from "@/app/[locale]/common/booking-form-new-cars";
 import CarosilBolan from "./carosilalto";
 
-// Configuration object for the Bolan text content
 const bolanConfig = {
   title: "Suzuki Bolan",
   booknow: "Book Now",
@@ -54,7 +53,6 @@ const bolanConfig = {
   ],
 };
 
-// Component to display specifications
 const SpecificationRow = ({
   feature,
   value,
@@ -73,12 +71,10 @@ const SpecificationRow = ({
 export default function Bolan() {
   return (
     <article>
-      {/* Carousel Section */}
       <section className="bg-black inverted overflow-hidden">
         <CarosilBolan />
       </section>
 
-      {/* Suzuki Bolan Article */}
       <section className="py-1 py-xl-1">
         <div className="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center text-center p-4">
           <h1 className="display-3 fw-bold lh-sm text-dark mb-4 py-2">
@@ -96,7 +92,6 @@ export default function Bolan() {
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-lg-10 col-xl-8">
-              {/* Overview Section */}
               <div>
                 <h3 style={{ textAlign: "center" }}>
                   {bolanConfig.overview.heading}
@@ -106,7 +101,6 @@ export default function Bolan() {
                 </p>
               </div>
 
-              {/* Sections */}
               {bolanConfig.sections.map((section, index) => (
                 <div key={index}>
                   <h5 className="py-1">{section.title}</h5>
@@ -114,7 +108,6 @@ export default function Bolan() {
                 </div>
               ))}
 
-              {/* Specifications Table */}
               <h5 className="py-2">Suzuki Bolan Specifications</h5>
               <table className="table table-bordered text-center">
                 <thead>

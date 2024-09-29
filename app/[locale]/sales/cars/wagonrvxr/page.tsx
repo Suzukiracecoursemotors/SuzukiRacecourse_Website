@@ -5,7 +5,6 @@ import Constants from "@/data/Constants";
 import { CarBookingForm } from "@/app/[locale]/common/booking-form-new-cars";
 import CarosilWagonR from "./carosilwagonr";
 
-// Configuration object for the Wagon R text content
 const wagonRConfig = {
   title: "Suzuki Wagon R",
   booknow: "Book Now",
@@ -69,7 +68,6 @@ const wagonRConfig = {
   ],
 };
 
-// Component to display tick or cross icons
 const TickCrossIcon = ({ value }: { value: boolean }) => {
   return value ? "✔️" : "❌";
 };

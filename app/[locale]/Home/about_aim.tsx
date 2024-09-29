@@ -29,11 +29,6 @@ async function AimsandMissions() {
                 {t("description1")}
               </li>
             </ul>
-            {/* <p className="lead text-secondary">
-              <Link href="/" className="underline action text-red fs-lg mt-5">
-                {t("learnmore")} <i className="bi bi-arrow-right"></i>
-              </Link> 
-            </p> */}
           </div>
           <div className="col-md-10 col-lg-5 position-relative">
             <div className="equal-1-1">

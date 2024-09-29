@@ -6,11 +6,8 @@ import Sale from "../sales/page";
 export default async function HomePage() {
   return (
     <>
-      {/* <Landingpage /> */}
       <Carosil />
-      {/* <DepartmentsList /> */}
       <Sale />
-      {/* <Aftersale /> */}
       {/* <AimsandMissions /> */}
       {/* <Missions /> */}
       <Cards />

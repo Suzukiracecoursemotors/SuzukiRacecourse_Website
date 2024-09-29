@@ -4,7 +4,6 @@ import Constants from "@/data/Constants";
 import { CarBookingForm } from "@/app/[locale]/common/booking-form-new-cars";
 import CarosilsRavi from "./carosilcultus";
 
-// Configuration object for the Ravi text content
 const raviConfig = {
   title: "Suzuki Ravi",
   booknow: "Book Now",
@@ -50,7 +49,6 @@ const raviConfig = {
   ],
 };
 
-// Component to display specifications
 const SpecificationRow = ({
   feature,
   value,
@@ -69,12 +67,10 @@ const SpecificationRow = ({
 export default function Ravi() {
   return (
     <article>
-      {/* Carousel Section */}
       <section className="bg-black inverted overflow-hidden">
         <CarosilsRavi />
       </section>
 
-      {/* Suzuki Ravi Article */}
       <section className="py-1 py-xl-1">
         <div className="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center text-center p-4">
           <h1 className="display-3 fw-bold lh-sm text-dark mb-4 py-2">
@@ -92,7 +88,6 @@ export default function Ravi() {
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-lg-10 col-xl-8">
-              {/* Overview Section */}
               <div>
                 <h3 style={{ textAlign: "center" }}>
                   {raviConfig.overview.heading}
@@ -102,7 +97,6 @@ export default function Ravi() {
                 </p>
               </div>
 
-              {/* Sections */}
               {raviConfig.sections.map((section, index) => (
                 <div key={index}>
                   <h5 className="py-1">{section.title}</h5>
@@ -110,7 +104,6 @@ export default function Ravi() {
                 </div>
               ))}
 
-              {/* Specifications Table */}
               <h5 className="py-2">Suzuki Ravi Specifications</h5>
               <table className="table table-bordered text-center">
                 <thead>

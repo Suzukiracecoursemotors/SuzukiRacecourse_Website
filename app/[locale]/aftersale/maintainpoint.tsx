@@ -1,5 +1,3 @@
-import { getTranslations } from "next-intl/server";
-
 const aftersaleConfig = {
   services: [
     "First Free Inspection (1,000 Km)",
@@ -27,8 +25,6 @@ const aftersaleConfig = {
 };
 
 async function Maintaince() {
-  const t = await getTranslations({ namespace: "page" });
-
   return (
     <>
       <section className="py-5">
