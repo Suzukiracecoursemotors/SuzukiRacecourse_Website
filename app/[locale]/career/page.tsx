@@ -1,37 +1,34 @@
-import { Locale } from "@/i18n";
 import { getTranslations } from "next-intl/server";
-import mapimg from "../public/map.png";
-import { Link } from "@/navigation";
-import Image from "next/image";
-import Constants from "@/data/Constants";
 
 const config = {
   hiring: "We are hiring",
-  title: "Visual Designer",
+  title: "Graphic Designer",
   desc1:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    "Join our creative team as a Graphic Designer, where you will have the opportunity to bring concepts to life with your innovative designs. We're looking for someone with a keen eye for detail, a passion for visual storytelling, and a desire to stay updated with the latest design trends.",
   desc2:
-    "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+    "In this role, you’ll be responsible for creating visually compelling assets for digital and print platforms, including branding materials, social media graphics, and marketing campaigns. Your work will play a crucial role in shaping the brand’s visual identity and communicating our message to a global audience.",
   desc3:
-    "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?",
+    "If you're a creative thinker with a strong portfolio and experience in design software like Adobe Creative Suite, we’d love to hear from you.",
   responsibilities: [
-    "Personally passionate and up to date with current trends and technologies, committed to quality and comfortable working with adult media.",
-    "Bachelor or Master degree level educational background.",
-    "4 years relevant PHP dev experience.",
+    "Develop and create engaging designs for digital and print media.",
+    "Collaborate with marketing teams to deliver impactful campaigns.",
+    "Ensure consistency in designs and align with the brand’s voice.",
+    "Stay updated with design trends and tools to continually enhance creativity.",
+    "Work with cross-functional teams to deliver projects on time.",
   ],
   jobDetails: {
-    location: "Pakistan",
-    experience: "2+ years",
-    expiration: "December, 2024",
+    location: "Suzuki Racecourse Motors",
+    experience: "2+ years in graphic design",
+    expiration: "December 31, 2024",
   },
-  applyButton: "Apply",
+  applyButton: "Apply Now",
 };
 
 async function Careers() {
   const t = await getTranslations({ namespace: "page" });
   return (
     <>
-      <section className="py-15 py-xl-20">
+      <section className="py-5 py-xl-2">
         <div className="container mt-5 mt-xl-10">
           <div className="row mb-5">
             <div className="col-lg-7">

@@ -1,6 +1,4 @@
 import { Locale } from "@/i18n";
-import Gallery from "../common/gallery";
-import { getTranslations } from "next-intl/server";
 import Image from "next/image";
 import Moazzmpic from "./WhatsApp Image 2024-09-05 at 11.10.02 AM.jpeg";
 import mohtashim from "./1672853464297.jpeg";
@@ -27,11 +25,7 @@ const config = {
   ],
 };
 
-export default async function AboutUsPage({
-  params: { locale },
-}: GalleryProps) {
-  const t = await getTranslations({ locale, namespace: "page" });
-
+export default async function AboutUsPage() {
   return (
     <>
       <section className="py-15 py-xl-20 bg-light">
