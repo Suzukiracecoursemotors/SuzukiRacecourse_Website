@@ -15,7 +15,6 @@ async function AimsandMissions() {
         <div className="row align-items-center justify-content-center justify-content-lg-between">
           <div className="col-md-5 col-lg-4 mb-1 mb-lg-0">
             <h2 className="lh-sm text-black mb-5">{t("title")}</h2>
-
             <ul className="list-group list-group-minimal">
               <li className="list-group-item d-flex text-black align-items-center">
                 <div className="icon-box icon-box-sm bg-opaque-white rounded-circle me-2">
@@ -30,7 +29,6 @@ async function AimsandMissions() {
                 {t("description1")}
               </li>
             </ul>
-
             {/* <p className="lead text-secondary">
               <Link href="/" className="underline action text-red fs-lg mt-5">
                 {t("learnmore")} <i className="bi bi-arrow-right"></i>

@@ -99,10 +99,10 @@ const carModels = [
   },
   {
     id: "wagonr",
-    name: "WagonR",
+    name: "Wagon-R",
     variants: [
       {
-        title: "WagonR VXR",
+        title: "Wagon-R VXR",
         image: wagon1,
         price: "Rs 3,214,000/-",
         link: "/sales/cars/wagonrvxr",
@@ -110,7 +110,7 @@ const carModels = [
         nonFiler: "Rs 96,420/-",
       },
       {
-        title: "WagonR VXL",
+        title: "Wagon-R VXL",
         image: wagon2,
         price: "Rs 3,412,000/-",
         link: "/sales/cars/wagonrvxr",
@@ -118,7 +118,7 @@ const carModels = [
         nonFiler: "Rs 102,360/-",
       },
       {
-        title: "WagonR AGS",
+        title: "Wagon-R AGS",
         image: wagon3,
         price: "Rs 3,741,000/-",
         link: "/sales/cars/wagonrvxr",

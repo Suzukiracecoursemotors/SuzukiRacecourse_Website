@@ -44,17 +44,17 @@ const swiftConfig = {
     {
       feature: "Keyless Entry",
       glmt: false,
-      glvt: true,
+      glvt: false,
       glvvt: true,
     },
     {
       feature: "ABS with EBD",
-      glmt: true,
+      glmt: false,
       glvt: true,
       glvvt: true,
     },
     {
-      feature: "Dual Airbags",
+      feature: "Six Airbags",
       glmt: true,
       glvt: true,
       glvvt: true,
@@ -67,14 +67,14 @@ const swiftConfig = {
     },
     {
       feature: "Hill Hold Control",
-      glmt: false,
-      glvt: false,
+      glmt: true,
+      glvt: true,
       glvvt: true,
     },
     {
       feature: "Push Start System",
       glmt: false,
-      glvt: true,
+      glvt: false,
       glvvt: true,
     },
   ],

@@ -45,18 +45,18 @@ const cultusConfig = {
     {
       feature: "Keyless Entry",
       vxr: false,
-      vxl: true,
-      ags: true,
+      vxl: false,
+      ags: false,
     },
     {
       feature: "ABS",
       vxr: false,
-      vxl: true,
+      vxl: false,
       ags: true,
     },
     {
       feature: "Dual Airbags",
-      vxr: true,
+      vxr: false,
       vxl: true,
       ags: true,
     },

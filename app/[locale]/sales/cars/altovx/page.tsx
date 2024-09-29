@@ -28,7 +28,7 @@ const altoConfig = {
   specifications: [
     {
       feature: "Power Steering",
-      vx: false,
+      vx: true,
       vxr: true,
       vxl: true,
       ags: true,
@@ -44,15 +44,15 @@ const altoConfig = {
       feature: "Alloy Wheels",
       vx: false,
       vxr: false,
-      vxl: true,
-      ags: true,
+      vxl: false,
+      ags: false,
     },
     {
       feature: "Keyless Entry",
       vx: false,
       vxr: false,
-      vxl: true,
-      ags: true,
+      vxl: false,
+      ags: false,
     },
     {
       feature: "ABS",
