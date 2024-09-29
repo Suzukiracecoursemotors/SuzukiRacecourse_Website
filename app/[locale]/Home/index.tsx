@@ -1,9 +1,7 @@
-import Cards from "../aftersale/maintainpoint";
-import Aftersale from "../aftersale/page";
+import Cards from "../aftersale/cards";
 import Whychose from "../aftersale/whychose";
 import Carosil from "../common/carosil";
 import Sale from "../sales/page";
-import AimsandMissions from "./about_aim";
 
 export default async function HomePage() {
   return (

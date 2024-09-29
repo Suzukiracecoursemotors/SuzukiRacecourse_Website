@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import homepic from "../../public/mechanical.jpg";
+import homepic from "../../public/workshopa.png";
 import Constants from "@/data/Constants";
 
 const config = {
@@ -10,8 +10,6 @@ const config = {
     "By choosing Suzuki, you're ensuring that your vehicle receives the best care possible, keeping it in peak condition for years to come.",
   desc1:
     "At Suzuki, our mechanical workshops are designed to provide top-tier service and expertise for all Suzuki vehicles. Whether it's routine maintenance, engine diagnostics, or complex repairs, our skilled technicians ensure that your vehicle is treated with the utmost care. We believe in delivering excellence through advanced tools, genuine Suzuki parts, and a team of certified professionals. With a strong focus on precision and attention to detail, we ensure that every service is completed to the highest industry standards.",
-  title2: "Customer Choice of Engine Oil",
-  des2: "We prioritize our customers' preferences when it comes to engine oil selection. Suzuki vehicles require precision and high-quality products to maintain their performance. Our workshop offers a variety of engine oils, tailored to meet the diverse needs of each Suzuki model, ensuring optimal engine health and longevity.",
   title3: "Comprehensive Services",
   des3: "We offer a wide range of services at our mechanical workshop, including:",
   services: [
@@ -57,9 +55,7 @@ export default function MechanicalWorkshop() {
           <div className="row justify-content-center">
             <div className="col-lg-10 col-xl-8">
               <h1 className="display-3 py-4">{config.title}</h1>
-              <p className="fs-lg text-secondary">{config.desc1}</p>
-              <h5>{config.title2}</h5>
-              <p className="fs-lg text-secondary">{config.des2}</p>
+
               <div className="dflexrow">
                 <h5>{config.title3}</h5>
                 <div className="col-md-auto py-3">

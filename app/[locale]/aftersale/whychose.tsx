@@ -2,7 +2,6 @@ import { getTranslations } from "next-intl/server";
 import Image from "next/image";
 import oil from "../public/aftersalejpg.jpg";
 import Constants from "@/data/Constants";
-import Maintain from "./maintainpoint";
 
 const aftersaleConfig = {
   whyChooseUs: {

@@ -32,7 +32,7 @@ async function AimsandMissions() {
             {/* <p className="lead text-secondary">
               <Link href="/" className="underline action text-red fs-lg mt-5">
                 {t("learnmore")} <i className="bi bi-arrow-right"></i>
-              </Link>
+              </Link> 
             </p> */}
           </div>
           <div className="col-md-10 col-lg-5 position-relative">

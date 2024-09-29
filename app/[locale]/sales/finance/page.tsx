@@ -117,7 +117,7 @@ export default async function FinanceandLease() {
                       href={`tel:${Constants.finance}`}
                       className="btn btn-yellow btn-with-icon rounded-pill btn-lg"
                       data-aos="zoom-out"
-                      data-aos-delay="300"
+                      data-aos-delay="100"
                     >
                       Book Appointments <i className="bi bi-telephone-fill"></i>
                     </a>
