@@ -24,24 +24,13 @@ const raviConfig = {
   specifications: [
     {
       feature: "Payload Capacity",
-      value: "750 kg",
+      value: "600 kg",
     },
     {
       feature: "Engine Displacement",
       value: "0.8L",
     },
-    {
-      feature: "Power Steering",
-      value: "Yes",
-    },
-    {
-      feature: "Air Conditioning",
-      value: "Available in select variants",
-    },
-    {
-      feature: "ABS",
-      value: "No",
-    },
+
     {
       feature: "Seating Capacity",
       value: "2 passengers",
@@ -88,22 +77,6 @@ export default function Ravi() {
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-lg-10 col-xl-8">
-              <div>
-                <h3 style={{ textAlign: "center" }}>
-                  {raviConfig.overview.heading}
-                </h3>
-                <p className="fs-lg text-secondary">
-                  {raviConfig.overview.content}
-                </p>
-              </div>
-
-              {raviConfig.sections.map((section, index) => (
-                <div key={index}>
-                  <h5 className="py-1">{section.title}</h5>
-                  <p className="fs-lg text-secondary">{section.content}</p>
-                </div>
-              ))}
-
               <h5 className="py-2">Suzuki Ravi Specifications</h5>
               <table className="table table-bordered text-center">
                 <thead>

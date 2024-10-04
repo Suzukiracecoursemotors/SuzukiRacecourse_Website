@@ -7,6 +7,11 @@ import CarosilCultus from "./carosilcultus";
 const cultusConfig = {
   title: "Suzuki Cultus",
   booknow: "Book Now",
+  prices: {
+    vxr: "Rs 3,858,000",
+    vxl: "Rs 4,244,000",
+    ags: "Rs 4,546,000",
+  },
   overview: {
     heading: "Suzuki Cultus: A Comprehensive Review",
     content: `The Suzuki Cultus is a stylish and practical compact car that delivers excellent performance and features at an affordable price. With multiple variants, the Cultus offers something for everyone, whether you're looking for basic features or a fully loaded option.`,
@@ -41,15 +46,15 @@ const cultusConfig = {
       ags: true,
     },
     {
-      feature: "Keyless Entry",
-      vxr: false,
-      vxl: false,
-      ags: false,
+      feature: "Remote Central Lock",
+      vxr: true,
+      vxl: true,
+      ags: true,
     },
     {
       feature: "ABS",
       vxr: false,
-      vxl: false,
+      vxl: true,
       ags: true,
     },
     {
@@ -95,33 +100,30 @@ export default function Cultus() {
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-lg-10 col-xl-8">
-              <div>
-                <h3 style={{ textAlign: "center" }}>
-                  {cultusConfig.overview.heading}
-                </h3>
-                <p className="fs-lg text-secondary">
-                  {cultusConfig.overview.content}
-                </p>
-              </div>
-
-              {cultusConfig.sections.map((section, index) => (
-                <div key={index}>
-                  <h5 className="py-1">{section.title}</h5>
-                  <p className="fs-lg text-secondary">{section.content}</p>
-                </div>
-              ))}
-
               <h5 className="py-2">Cultus Model Specifications</h5>
+
+              {/* Adding Prices Row */}
               <table className="table table-bordered text-center">
                 <thead>
                   <tr>
-                    <th>Feature</th>
+                    <th>Variant</th>
                     <th>VXR</th>
                     <th>VXL</th>
                     <th>AGS</th>
                   </tr>
                 </thead>
                 <tbody>
+                  {/* Prices Row */}
+                  <tr>
+                    <td>
+                      <strong>Price</strong>
+                    </td>
+                    <td>{cultusConfig.prices.vxr}</td>
+                    <td>{cultusConfig.prices.vxl}</td>
+                    <td>{cultusConfig.prices.ags}</td>
+                  </tr>
+
+                  {/* Specifications Rows */}
                   {cultusConfig.specifications.map((spec, index) => (
                     <tr key={index}>
                       <td>{spec.feature}</td>

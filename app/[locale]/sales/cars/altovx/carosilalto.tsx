@@ -1,15 +1,16 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import image3 from "./New folder/Studio Session-479.jpg";
-import image2 from "./New folder/exterior2.jpg";
-import image4 from "./New folder/Exterior Alto-2 (1920x800).jpg";
+import image3 from "./New folder/7alto.jpg";
+import image2 from "./New folder/11alto.jpg";
+import image4 from "./New folder/5alto.jpg";
+import image1 from "./New folder/9alto.jpg";
 
 import Image from "next/image";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 function CarosilAltoVX() {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const images = [image2, image4, image3];
+  const images = [image4, image2, image3, image1];
 
   useEffect(() => {
     const interval = setInterval(() => {

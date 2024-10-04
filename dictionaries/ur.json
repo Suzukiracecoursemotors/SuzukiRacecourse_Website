@@ -1,68 +1,173 @@
 {
   "header": {
     "nav": {
-      "Home": "ہوم",
-      "Sale": "فروخت",
-      "Aftersale": "بعد از فروخت",
-      "Gallery": "گیلری",
-      "Blog": "بلاگ",
-      "Contact": "رابطہ",
-      "language": "زبان"
+      "Home": "Home",
+      "Sale": "Sales",
+      "Aftersale": "Aftersales",
+      "About Us": "AboutUs",
+      "Customerecare": "Customer Care",
+      "Contact": "ContactUs",
+      "language": "Language",
+      "sales": "Sales",
+      "CUC": "Exchange & CUC",
+      "Finance": "Lease & Finance",
+      "AfterSale": "After Sales",
+      "Support": "Extend Warrenty ",
+      "BodyShop": "Body & PaintShop ",
+      "Mechanical": " Workshop",
+      "SpareParts": "SpareParts",
+      "Extend_Warranty": "Extend Warranty",
+      "Infrastructure": "Infrastructure",
+      "Insurance": "Insurance",
+      "Registration_Transfer": "Register & Transfer",
+      "Careers": "Careers"
     },
-    "reserve_appointment": "اپائنٹمنٹ بک کریں",
+    "reserve_appointment": "Reserve Appointment",
     "language": {
       "bg": "Urdu",
-      "en": "انگریزی"
+      "en": "English"
     }
   },
   "page": {
     "home": {
-      "banner_title": "سوزوکی ریس کورس موٹرز",
-      "banner_span": "ڈیلرشپ",
-      "banner_btn_text": "اپنی کار ابھی بک کریں",
-      "departments": {
-        "maintitle": "شعبے",
-        "titledep": "فروخت کے شعبے",
-        "description": "سوزوکی ریس کورس موٹر سیلز ٹیم میں خوش آمدید، آپ کا قابل اعتماد ذریعہ اعلی معیار کی سوزوکی گاڑیوں اور شاندار کسٹمر سروس کے لیے۔ ہماری ڈیلرشپ نئے اور پری اونڈ سوزوکی کاروں، ایس یو ویز، اور ٹرکوں کی وسیع رینج پیش کرتی ہے، اس بات کو یقینی بناتی ہے کہ آپ کی ضروریات کے مطابق بہترین گاڑی ملے۔ ہماری جاننے والی سیلز ٹیم شفاف قیمتوں اور لچکدار فنانسنگ آپشنز کے ساتھ ایک ہموار کار خریدنے کا تجربہ فراہم کرنے کے لیے وقف ہے۔ چاہے آپ جدید ترین ماڈلز کی تلاش میں ہوں یا سرٹیفائیڈ پری اونڈ گاڑیاں، ہمارے پاس ہر کسی کے لیے کچھ ہے۔",
-        "titledep1": "بعد از فروخت کے شعبے",
-        "description1": "سوزوکی ریس کورس موٹر سیلز میں، ہماری بعد از فروخت ٹیم آپ کی سوزوکی گاڑی کی تمام ضروریات کے لیے شاندار سروس اور سپورٹ فراہم کرنے کے لیے وقف ہے۔ ہمارے مصدقہ تکنیشین سوزوکی کی مرمت اور دیکھ بھال میں ماہر ہیں، اس بات کو یقینی بناتے ہوئے کہ آپ کی گاڑی بہترین حالت میں رہے۔ ہم جامع خدمات کی پیشکش کرتے ہیں، روٹین آئل چینجز اور ٹائر روٹیشن سے لے کر پیچیدہ تشخیصات اور مرمت تک۔ صرف اصل سوزوکی پارٹس اور ایکسیسریز کا استعمال کرتے ہوئے، ہم ہر سروس میں معیار اور اعتبار کی ضمانت دیتے ہیں۔ گاہک کی تسکین ہماری اولین ترجیح ہے۔",
-        "learnmore": "مزید جانیں"
-      },
+      "banner_title": "Suzuki Racecourse Motors",
+      "banner_span": "DealerShip",
+      "banner_btn_text": "Book Your Car Now",
       "Aims": {
-        "title": "ہمارا مشن",
-        "description": "کسٹمر پر توجہ مرکوز کرتے ہوئے اعلی قدر کی مصنوعات تیار کریں",
-        "description1": "ٹیم ورک کے ذریعے ایک تازگی بخش اور جدید کمپنی قائم کریں",
-        "description2": "مسلسل بہتری کے ذریعے فرد کی برتری کی کوشش کریں",
-        "learnmore": "مزید جانیں",
-        "titlem": "ہمارا وژن",
-        "descriptionm": "مکمل تسکین کے لیے ذاتی سروس، شفاف لین دین، اور شاندار سپورٹ فراہم کریں۔",
-        "descriptionm1": "شاندار فروخت اور سروس کے لیے جدید ترین ٹیکنالوجیز اور طریقوں کو اپنائیں۔",
-        "descriptionm2": "پائیداری کو فروغ دیں اور مقامی اقدامات کی حمایت کریں، ذمہ داری اور دیکھ بھال کو فروغ دیں۔"
+        "title": "Our Mission",
+        "description": "Our Mission is to Earn customers trust by delivering sales and service experiences with high Quality customer care, integrity and enthusiasm.",
+        "description1": "We value our customers feedback that makes us strive for excellence through continuous improvement.",
+        "learnmore": "Learn More",
+        "titlem": "Our Vision",
+        "descriptionm": "To work for customer satisfaction and long termretention in a dedicated , motivated , service oriented and profesional working environment.",
+        "descriptionm1": "To make our Dealership No. 1 choice any auto-mobile related service."
       }
     },
-    "gallery": {
-      "title": "اسٹوڈیو سے تصاویر",
-      "all": "سب",
-      "interior": "اندرونی حصہ",
-      "massages": "مساج",
-      "cosmetics": "کاسمیٹکس"
-    },
+
     "sale": {
-      "title": "فروخت"
+      "title": "sale",
+      "alto-vx": {
+        "title": "Alto VX",
+        "price": "Rs : 2,331,000"
+      },
+      "alto-vxr": {
+        "title": "Alto VXR",
+        "price": "Rs : 2,707,000"
+      },
+      "alto-vxr-ags": {
+        "title": "Alto VXR AGS",
+        "price": "Rs : 2,894,000"
+      },
+      "alto-vxl-ags": {
+        "title": "Alto VXL AGS",
+        "price": "Rs : 3,045,000"
+      },
+      "cultus-vxr": {
+        "title": "Cultus VXR",
+        "price": ""
+      },
+      "cultus-vxl": {
+        "title": "Cultus VXL",
+        "price": ""
+      },
+      "cultus-ags": {
+        "title": "Cultus AGS",
+        "price": ""
+      },
+      "wagonr-vxr": {
+        "title": "Wagnon R VXR",
+        "price": ""
+      },
+      "wagonr-vxl": {
+        "title": "Wagnon R VXL",
+        "price": ""
+      },
+      "wagonr-ags": {
+        "title": "Wagnon R AGS",
+        "price": ""
+      },
+      "swift-mt": {
+        "title": "Swift GL MT",
+        "price": ""
+      },
+      "swift-vt": {
+        "title": "Swift GL VT",
+        "price": ""
+      },
+      "swift-vvt": {
+        "title": "Swift GL VVT",
+        "price": ""
+      },
+      "bolan-vx": {
+        "title": "Bolan VX",
+        "price": ""
+      },
+      "bolan-cargo": {
+        "title": "Bolan CARGO",
+        "price": ""
+      },
+      "ravi": {
+        "title": "Ravi VX",
+        "price": ""
+      }
+    },
+    "exchangecuc": {
+      "title": "sale"
+    },
+    "leasefinance": {
+      "title": "sale"
+    },
+    "insurance": {
+      "title": "sale"
+    },
+    "extendwarrenty": {
+      "title": "sale"
+    },
+    "infrastructure": {
+      "title": "Suzuki Racecourse Motors",
+      "adress": "7S | Authorized Suzuki Dealership. Location: 229/A, Lane no. 1, Main Peshawar Road, Rawalpindi Cantt, Pakistan.",
+      "reserve_appointment": "Reserve Appointment",
+      "deptitle": "Departments"
     },
     "aftersale": {
-      "title": "بعد از فروخت"
+      "title": "sale"
+    },
+    "workshop": {
+      "title1": "Mechanical Workshop",
+      "title2": "Extend Warrenty",
+      "title3": "Paint & Bodyshop"
+    },
+    "extendwarrentyaftersale": {
+      "title": "sale"
+    },
+    "bodypaint": {
+      "title": "sale"
+    },
+
+    "sparepart": {
+      "title": "sale"
+    },
+
+    "carrer": {
+      "title": "sale"
     },
     "contact": {
-      "title": "رابطہ"
+      "title": "sale"
+    },
+    "about": {
+      "dir": "Message from the Director",
+      "name1": "Syed Moazzam Hussain",
+      "name2": "Syed Mohtashim Hussain",
+      "msg1": " At Suzuki Racecourse Motors, our customers are at the heart of everything we do. We are committed to delivering vehicles and services that meet your highest expectations, with a focus on innovation, quality, and reliability. Whether you are purchasing your first car or returning for another, we are here to ensure your experience is seamless and satisfying. Your trust drives us to constantly improve, and we look forward to continuing this journey with you. Thank you for choosing Suzuki Racecourse Motors.",
+      "msg2": " At Suzuki Racecourse Motors, Our team of certified technicians and dedicated service staff are ready to assist you with everything from routine maintenance to genuine parts replacement, ensuring your car remains reliable and safe on the road. We pride ourselves on delivering timely, efficient, and transparent services that you can trust."
     },
     "blog": {
-      "title": "بلاگ"
+      "title": "sale"
     }
   },
   "footer": {
-    "title": "وڈر اسٹوڈیو",
-    "address": "شہر صوفیہ، شارع شہزادہ اسن اول، نمبر 11",
-    "intro": "پاورڈ بائی"
+    "title": "Voder Studio",
+    "address": "City of Sofia, Tsar Asen I Street, №11",
+    "intro": "Powered by"
   }
 }

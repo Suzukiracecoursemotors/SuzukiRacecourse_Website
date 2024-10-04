@@ -72,6 +72,7 @@ export default async function AboutUspage() {
           </div>
         </div>
       </section>
+
       <Team />
       <br />
       <br />

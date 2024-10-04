@@ -36,16 +36,9 @@ const bolanConfig = {
     },
     {
       feature: "Power Steering",
-      value: "Yes",
-    },
-    {
-      feature: "Air Conditioning",
-      value: "Available in VX variant",
-    },
-    {
-      feature: "ABS",
       value: "No",
     },
+
     {
       feature: "Seating Capacity (Cargo)",
       value: "2 passengers",
@@ -92,22 +85,6 @@ export default function Bolan() {
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-lg-10 col-xl-8">
-              <div>
-                <h3 style={{ textAlign: "center" }}>
-                  {bolanConfig.overview.heading}
-                </h3>
-                <p className="fs-lg text-secondary">
-                  {bolanConfig.overview.content}
-                </p>
-              </div>
-
-              {bolanConfig.sections.map((section, index) => (
-                <div key={index}>
-                  <h5 className="py-1">{section.title}</h5>
-                  <p className="fs-lg text-secondary">{section.content}</p>
-                </div>
-              ))}
-
               <h5 className="py-2">Suzuki Bolan Specifications</h5>
               <table className="table table-bordered text-center">
                 <thead>

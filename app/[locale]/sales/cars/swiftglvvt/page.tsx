@@ -7,6 +7,11 @@ import { CarBookingForm } from "@/app/[locale]/common/booking-form-new-cars";
 const swiftConfig = {
   title: "Suzuki Swift",
   booknow: "Book Now",
+  prices: {
+    glmt: "Rs 4,366,000",
+    glvt: "Rs 4,560,000",
+    glvvt: "Rs 4,719,000",
+  },
   overview: {
     heading: "Suzuki Swift: A Comprehensive Review",
     content: `The Suzuki Swift is a dynamic and sporty hatchback that combines excellent performance with stylish looks. It’s a favorite among city drivers and those who love a car with nimble handling and modern features.`,
@@ -36,19 +41,19 @@ const swiftConfig = {
     },
     {
       feature: "Alloy Wheels",
-      glmt: false,
+      glmt: true,
       glvt: true,
       glvvt: true,
     },
     {
-      feature: "Keyless Entry",
+      feature: "Smart Keyless Entry",
       glmt: false,
       glvt: false,
       glvvt: true,
     },
     {
       feature: "ABS with EBD",
-      glmt: false,
+      glmt: true,
       glvt: true,
       glvvt: true,
     },
@@ -59,14 +64,8 @@ const swiftConfig = {
       glvvt: true,
     },
     {
-      feature: "Automatic Gear Shift (AGS)",
-      glmt: false,
-      glvt: true,
-      glvvt: true,
-    },
-    {
       feature: "Hill Hold Control",
-      glmt: true,
+      glmt: false,
       glvt: true,
       glvvt: true,
     },
@@ -107,33 +106,30 @@ export default function Swift() {
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-lg-10 col-xl-8">
-              <div>
-                <h3 style={{ textAlign: "center" }}>
-                  {swiftConfig.overview.heading}
-                </h3>
-                <p className="fs-lg text-secondary">
-                  {swiftConfig.overview.content}
-                </p>
-              </div>
-
-              {swiftConfig.sections.map((section, index) => (
-                <div key={index}>
-                  <h5 className="py-1">{section.title}</h5>
-                  <p className="fs-lg text-secondary">{section.content}</p>
-                </div>
-              ))}
-
               <h5 className="py-2">Suzuki Swift Model Specifications</h5>
+
+              {/* Adding Prices Row */}
               <table className="table table-bordered text-center">
                 <thead>
                   <tr>
-                    <th>Feature</th>
+                    <th>Variant</th>
                     <th>GLMT</th>
                     <th>GLVT</th>
                     <th>GLVVT</th>
                   </tr>
                 </thead>
                 <tbody>
+                  {/* Prices Row */}
+                  <tr>
+                    <td>
+                      <strong>Price</strong>
+                    </td>
+                    <td>{swiftConfig.prices.glmt}</td>
+                    <td>{swiftConfig.prices.glvt}</td>
+                    <td>{swiftConfig.prices.glvvt}</td>
+                  </tr>
+
+                  {/* Specifications Rows */}
                   {swiftConfig.specifications.map((spec, index) => (
                     <tr key={index}>
                       <td>{spec.feature}</td>

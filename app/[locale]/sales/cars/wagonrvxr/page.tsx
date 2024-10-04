@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 import { Link } from "@/navigation";
 import Constants from "@/data/Constants";
 import { CarBookingForm } from "@/app/[locale]/common/booking-form-new-cars";
@@ -8,6 +7,11 @@ import CarosilWagonR from "./carosilwagonr";
 const wagonRConfig = {
   title: "Suzuki Wagon R",
   booknow: "Book Now",
+  prices: {
+    vxr: "Rs 3,214,000",
+    vxl: "Rs 3,412,000",
+    ags: "Rs 3,741,000",
+  },
   overview: {
     heading: "Suzuki Wagon R: A Comprehensive Review",
     content: `The Suzuki Wagon R is a practical and spacious hatchback that offers a unique combination of comfort, performance, and affordability. Its tall-boy design maximizes interior space, making it a popular choice for families and urban commuters alike.`,
@@ -96,33 +100,30 @@ export default function WagonR() {
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-lg-10 col-xl-8">
-              <div>
-                <h3 style={{ textAlign: "center" }}>
-                  {wagonRConfig.overview.heading}
-                </h3>
-                <p className="fs-lg text-secondary">
-                  {wagonRConfig.overview.content}
-                </p>
-              </div>
-
-              {wagonRConfig.sections.map((section, index) => (
-                <div key={index}>
-                  <h5 className="py-1">{section.title}</h5>
-                  <p className="fs-lg text-secondary">{section.content}</p>
-                </div>
-              ))}
-
               <h5 className="py-2">Wagon R Model Specifications</h5>
+
+              {/* Adding Prices Row */}
               <table className="table table-bordered text-center">
                 <thead>
                   <tr>
-                    <th>Feature</th>
+                    <th>Variant</th>
                     <th>VXR</th>
                     <th>VXL</th>
                     <th>AGS</th>
                   </tr>
                 </thead>
                 <tbody>
+                  {/* Prices Row */}
+                  <tr>
+                    <td>
+                      <strong>Price</strong>
+                    </td>
+                    <td>{wagonRConfig.prices.vxr}</td>
+                    <td>{wagonRConfig.prices.vxl}</td>
+                    <td>{wagonRConfig.prices.ags}</td>
+                  </tr>
+
+                  {/* Specifications Rows */}
                   {wagonRConfig.specifications.map((spec, index) => (
                     <tr key={index}>
                       <td>{spec.feature}</td>

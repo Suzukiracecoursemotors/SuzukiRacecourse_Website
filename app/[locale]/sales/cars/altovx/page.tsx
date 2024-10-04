@@ -7,10 +7,17 @@ import CarosilAltoVX from "./carosilalto";
 const altoConfig = {
   title: "Suzuki Alto",
   booknow: "Book Now",
+  prices: {
+    vx: "Rs 2,331,000",
+    vxr: "Rs 2,707,000",
+    vxl: "Rs 2,894,000",
+    ags: "Rs 3,045,000",
+  },
   overview: {
     heading: "Suzuki Alto: A Comprehensive Review",
     content: `The Suzuki Alto is a small car with a big reputation. Over the years, it has become synonymous with affordability, reliability, and practicality. Since its introduction, Suzuki has continuously refined the Alto to meet the evolving demands of drivers, particularly in urban settings where space and efficiency are paramount.`,
   },
+
   sections: [
     {
       title: "Performance and Efficiency",
@@ -37,18 +44,18 @@ const altoConfig = {
       ags: true,
     },
     {
-      feature: "Alloy Wheels",
+      feature: "Air Bags",
       vx: false,
-      vxr: false,
-      vxl: false,
-      ags: false,
+      vxr: true,
+      vxl: true,
+      ags: true,
     },
     {
-      feature: "Keyless Entry",
+      feature: "Power Window",
       vx: false,
       vxr: false,
       vxl: false,
-      ags: false,
+      ags: true,
     },
     {
       feature: "ABS",
@@ -88,27 +95,13 @@ export default function Alto() {
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-lg-10 col-xl-8">
-              <div>
-                <h3 style={{ textAlign: "center" }}>
-                  {altoConfig.overview.heading}
-                </h3>
-                <p className="fs-lg text-secondary">
-                  {altoConfig.overview.content}
-                </p>
-              </div>
-
-              {altoConfig.sections.map((section, index) => (
-                <div key={index}>
-                  <h5 className="py-1">{section.title}</h5>
-                  <p className="fs-lg text-secondary">{section.content}</p>
-                </div>
-              ))}
-
               <h5 className="py-2">Alto Model Specifications</h5>
+
+              {/* Adding Prices Row */}
               <table className="table table-bordered text-center">
                 <thead>
                   <tr>
-                    <th>Feature</th>
+                    <th>Variant</th>
                     <th>VX</th>
                     <th>VXR</th>
                     <th>VXL</th>
@@ -116,6 +109,16 @@ export default function Alto() {
                   </tr>
                 </thead>
                 <tbody>
+                  <tr>
+                    <td>
+                      <strong>Price</strong>
+                    </td>
+                    <td>{altoConfig.prices.vx}</td>
+                    <td>{altoConfig.prices.vxr}</td>
+                    <td>{altoConfig.prices.vxl}</td>
+                    <td>{altoConfig.prices.ags}</td>
+                  </tr>
+
                   {altoConfig.specifications.map((spec, index) => (
                     <tr key={index}>
                       <td>{spec.feature}</td>

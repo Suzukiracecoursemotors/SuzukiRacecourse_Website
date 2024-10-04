@@ -1,3 +1,4 @@
+import Constants from "@/data/Constants";
 import { getTranslations } from "next-intl/server";
 
 const config = {
@@ -89,7 +90,7 @@ async function Careers() {
               </div>
               <div className="d-grid">
                 <a
-                  href=""
+                  href={"tel:" + Constants.HR}
                   className="btn btn-block btn-lg btn-with-icon btn-primary"
                 >
                   {config.applyButton} <i className="bi bi-arrow-right"></i>

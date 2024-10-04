@@ -56,7 +56,7 @@ export default function InsurancePage() {
               <p className="fs-lg text-secondary">{config.description}</p>
               <br />
               <div>
-                <h5 className="mt-4 display-5 ">Key Benefits</h5>
+                <h5 className=" display-5 ">Key Benefits</h5>
                 {config.benefits.map((benefit, index) => (
                   <div key={index} className="mb-4">
                     <h6>{benefit.title}</h6>

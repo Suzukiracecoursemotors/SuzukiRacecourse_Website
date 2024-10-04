@@ -2,7 +2,6 @@
 import React, { useState, useEffect } from "react";
 import image1 from "./swiftpic/Banner1.jpg";
 import image2 from "./swiftpic/03.jpg";
-import image3 from "./swiftpic/Swift Banner Rear with Rear Foglamp.webp";
 import image4 from "./swiftpic/Web-banner final.png";
 
 import Image from "next/image";
@@ -10,7 +9,7 @@ import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 function Carosilswift() {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const images = [image4, image1, image2, image3];
+  const images = [image4, image1, image2];
 
   useEffect(() => {
     const interval = setInterval(() => {
