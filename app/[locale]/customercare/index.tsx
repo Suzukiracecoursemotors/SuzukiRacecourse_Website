@@ -52,42 +52,6 @@ export default function CareCenterLandingPage() {
         </div>
       </section>
 
-      <section className="maintenance-tips-section py-5 bg-light">
-        <div className="container">
-          <h2 className="text-center mb-4">Vehicle Maintenance Tips</h2>
-          <div className="row">
-            <div className="col-md-6">
-              <h3>Regular Oil Changes</h3>
-              <p>
-                Ensure your engine runs smoothly with routine oil changes. It
-                enhances performance and prolongs engine life.
-              </p>
-            </div>
-            <div className="col-md-6">
-              <h3>Tire Maintenance</h3>
-              <p>
-                Proper tire pressure and regular alignment checks are crucial to
-                safe driving and extending tire life.
-              </p>
-            </div>
-            <div className="col-md-6 mt-4">
-              <h3>Brake Inspections</h3>
-              <p>
-                Have your brakes inspected regularly to maintain safety and
-                avoid costly repairs.
-              </p>
-            </div>
-            <div className="col-md-6 mt-4">
-              <h3>Battery Health</h3>
-              <p>
-                Check your batterys health periodically to prevent breakdowns
-                and ensure optimal performance.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       <section className="booking-section py-5 text-center">
         <div className="container">
           <h2 className="mb-4">Schedule Your Service Today</h2>
