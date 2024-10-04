@@ -80,7 +80,7 @@ export default function CareCenterLandingPage() {
             <div className="col-md-6 mt-4">
               <h3>Battery Health</h3>
               <p>
-                Check your battery's health periodically to prevent breakdowns
+                Check your batterys health periodically to prevent breakdowns
                 and ensure optimal performance.
               </p>
             </div>
