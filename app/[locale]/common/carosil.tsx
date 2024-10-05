@@ -20,7 +20,7 @@ function Carosil() {
   const autoSlideInterval = 3000;
 
   return (
-    <section className="carouselContainer container bg-white ">
+    <section className="carouselContainer  bg-white ">
       <Carousel
         autoPlay={true}
         interval={autoSlideInterval}
