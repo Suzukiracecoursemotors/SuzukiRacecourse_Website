@@ -82,12 +82,12 @@ const Header = ({ children }: HeaderProps) => {
             </button>
           </li>
 
-          <div className="nav-item d-none d-lg-block">
+          <div className="nav-item d-none d-lg-block row">
             <Link
               href={`tel:${Constants.PHONE}`}
               className={`btn btn-outline-${
-                theme === "light" ? "dark" : "white"
-              } rounded-pill text-dark ms-2`}
+                theme === "light" ? "white" : "light"
+              }  btn btn-with-icon rounded-pill text-dark ms-2`}
             >
               <i className="bi bi-telephone-fill text-dark me-1"></i>
               {t("reserve_appointment")}
