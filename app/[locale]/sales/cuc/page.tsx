@@ -8,7 +8,6 @@ import alto3 from "../../public/cuccar/3.jpeg";
 import alto4 from "../../public/cuccar/4.jpeg";
 import alto5 from "../../public/cuccar/5.jpeg";
 import alto6 from "../../public/cuccar/6.jpeg";
-import { Seemore } from "../../common/form-spare";
 import { Link } from "@/navigation";
 import Constants from "@/data/Constants";
 
