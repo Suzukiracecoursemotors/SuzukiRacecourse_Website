@@ -67,7 +67,7 @@ const carData = [
     mileage: "42,000 km",
     year: 2022,
     brand: "Alto",
-    img: alto4,
+    img: alto5,
     isSold: true,
   },
   {
@@ -76,7 +76,7 @@ const carData = [
     mileage: "36,000 km",
     year: 2022,
     brand: "Alto",
-    img: alto5,
+    img: alto4,
     isSold: false,
   },
   {

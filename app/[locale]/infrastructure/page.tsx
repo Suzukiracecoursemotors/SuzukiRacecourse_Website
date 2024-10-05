@@ -61,14 +61,14 @@ const departmentData = [
     description:
       "Our state-of-the-art workshops provide expert maintenance and repair services. With certified technicians, we ensure your vehicle is in top condition.",
   },
-  {
-    href: "/aftersale/spareparts",
-    image: sapreparts,
-    alt: "Spare Parts",
-    title: "Spare Parts ",
-    description:
-      "We offer genuine spare parts to ensure your vehicle performs optimally. Our extensive inventory covers all your vehicle’s needs.",
-  },
+  // {
+  //   href: "/aftersale/spareparts",
+  //   image: sapreparts,
+  //   alt: "Spare Parts",
+  //   title: "Spare Parts ",
+  //   description:
+  //     "We offer genuine spare parts to ensure your vehicle performs optimally. Our extensive inventory covers all your vehicle’s needs.",
+  // },
   {
     href: "/aftersale/bodyshop",
     image: bodyshop,
