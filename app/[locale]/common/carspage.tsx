@@ -97,7 +97,7 @@ const carModels = [
 
 const CarsPage = () => {
   return (
-    <section className="py-3 py-xl-9 bg-light">
+    <section className="py-9 py-xl-9 bg-light ">
       <div className="container">
         <div className="row mb-3">
           <div className="col">

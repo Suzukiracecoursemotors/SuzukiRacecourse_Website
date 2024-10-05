@@ -147,7 +147,7 @@ export default function CUC() {
   };
 
   return (
-    <section className="py-15 py-xl-20">
+    <section className="py-8 py-xl-9">
       <div className="container mt-5">
         <div className="row g-3 g-md-5 align-items-end mb-5">
           <div className="col-md-6">
