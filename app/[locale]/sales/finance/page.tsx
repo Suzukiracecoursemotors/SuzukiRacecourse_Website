@@ -101,14 +101,6 @@ export default async function FinanceandLease() {
               </div>
 
               <div>
-                <div>
-                  <p className="fs-lg text-secondary py-2">
-                    {config.additionalInfo}
-                  </p>
-                </div>
-              </div>
-
-              <div>
                 <div className="dflexrow">
                   <h5>{config.eligibilityTitle}</h5>
                   <div className="col-md-auto py-3">
