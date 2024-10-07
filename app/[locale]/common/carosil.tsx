@@ -8,7 +8,7 @@ import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 function Carosil() {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const images = [image1, image2];
+  const images = [image1];
 
   useEffect(() => {
     const interval = setInterval(() => {

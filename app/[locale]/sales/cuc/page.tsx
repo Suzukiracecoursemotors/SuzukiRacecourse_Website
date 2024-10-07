@@ -1,5 +1,4 @@
 "use client";
-
 import Image from "next/image";
 import React, { useState } from "react";
 import alto1 from "../../public/cuccar/1.jpeg";
