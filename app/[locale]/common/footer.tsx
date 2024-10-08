@@ -34,8 +34,7 @@ async function Footer() {
           <div className="col-lg-6 text-lg-end text-primary-hover">
             <Link href={`tel:${Constants.PHONE} `} className="navbar-brand">
               <h6 className="h6 color hover">UAN : {Constants.PHONE}</h6>
-              <h6 className="h6 color hover">Phone : +92 51 5174333</h6>
-              <h6 className="h6 color hover">Phone : +92 51 5174392</h6>
+              <h6 className="h6 color hover">Phone : +92 51 5174333-34</h6>
             </Link>
           </div>
         </div>
