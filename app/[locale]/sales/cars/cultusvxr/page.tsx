@@ -88,7 +88,7 @@ export default function Cultus() {
           <h1 className="display-3 fw-bold lh-sm text-dark mb-4 py-2">
             {cultusConfig.title}
           </h1>
-          <CarBookingForm />
+          {/* <CarBookingForm /> */}
           <Link
             href={"tel:" + Constants.PHONE}
             className="btn btn-with-icon btn-yellow rounded-pill"
