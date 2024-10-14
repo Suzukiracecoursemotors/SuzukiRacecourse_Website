@@ -65,8 +65,8 @@ const carModels = [
       image: everycar,
       price: "Rs 2,749,000/-",
       link: "/sales/cars/every",
-      filer: "Rs 13,995",
-      nonFiler: "41,985",
+      filer: "Rs 13,745",
+      nonFiler: "41,235",
     },
   },
   {
