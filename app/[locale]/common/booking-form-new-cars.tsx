@@ -92,6 +92,7 @@ export function CarBookingForm() {
                 <option value="suzuki-wagonR">Suzuki WagonR</option>
                 {/* <option value="suzuki-bolan">Suzuki Bolan</option> */}
                 <option value="suzuki-ravi">Suzuki Ravi</option>
+                <option value="suzuki-Every">Suzuki Every</option>
               </Form.Select>
             </Form.Group>
             <Form.Group className="mb-3" controlId="carColor">
