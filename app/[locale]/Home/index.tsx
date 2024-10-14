@@ -2,11 +2,12 @@ import Cards from "../aftersale/cards";
 import Whychose from "../aftersale/whychose";
 import Carosil from "../common/carosil";
 import CarsPage from "../common/carspage";
+import CarosilEvery from "../sales/cars/every/CarosilEvery";
 
 export default async function HomePage() {
   return (
     <>
-      <Carosil />
+      <CarosilEvery />
       <CarsPage />
       {/* <Sale /> */}
       {/* <AimsandMissions /> */}

@@ -16,6 +16,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/sales/extend_warranty",
     "/sales/register_transfer",
     "/sales/cars/altovx",
+    "/sales/cars/every",
     "/sales/cars/cultusvxr",
     "/sales/cars/wagonrvxr",
     "/sales/cars/swiftglvvt",

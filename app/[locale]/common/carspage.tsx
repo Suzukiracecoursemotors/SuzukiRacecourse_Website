@@ -8,7 +8,7 @@ import bolan1 from "../public/cars/Bolan.png";
 import ravi from "../public/cars/Suzuki Ravi.png";
 import wagon1 from "../public/cars/wagonr vxl.png";
 import { CarBookingForm } from "../common/booking-form-new-cars";
-
+import everycar from "../public/cars/Untitled-image-(14) (1).png";
 const config = {
   sales: "Sales",
   priceLabel: "Price:",
@@ -55,6 +55,18 @@ const carModels = [
       link: "/sales/cars/altovx",
       filer: "Rs 11,655/-",
       nonFiler: "Rs 34,965/-",
+    },
+  },
+  {
+    id: "every",
+    name: "Every",
+    variant: {
+      title: "Every",
+      image: everycar,
+      price: "Rs 2,749,000/-",
+      link: "/sales/cars/every",
+      filer: "Rs 13,995",
+      nonFiler: "41,985",
     },
   },
   {
