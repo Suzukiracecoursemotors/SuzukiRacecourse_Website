@@ -7,6 +7,11 @@ import CarosilEvery from "../sales/cars/every/CarosilEvery";
 export default async function HomePage() {
   return (
     <>
+      <script
+        async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4601096006216408"
+        crossOrigin="anonymous"
+      ></script>
       <CarosilEvery />
       <CarsPage />
       {/* <Sale /> */}
