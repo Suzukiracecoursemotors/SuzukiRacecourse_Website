@@ -90,7 +90,6 @@ export function CarBookingForm() {
                 <option value="suzuki-cultus">Suzuki Cultus</option>
                 <option value="suzuki-swift">Suzuki Swift</option>
                 <option value="suzuki-wagonR">Suzuki WagonR</option>
-                <option value="suzuki-bolan">Suzuki Bolan</option>
                 <option value="suzuki-ravi">Suzuki Ravi</option>
               </Form.Select>
             </Form.Group>

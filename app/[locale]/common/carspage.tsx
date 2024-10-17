@@ -4,7 +4,6 @@ import { Link } from "@/navigation";
 import alto from "../public/Alto/Alto White.png";
 import cultus1 from "../public/Cultus/Cultus-White.jpg";
 import swift1 from "../public/Swift/03-(1).png";
-import bolan1 from "../public/cars/Bolan.png";
 import ravi from "../public/cars/Suzuki Ravi.png";
 import wagon1 from "../public/cars/wagonr vxl.png";
 import { CarBookingForm } from "../common/booking-form-new-cars";
@@ -81,18 +80,7 @@ const carModels = [
       nonFiler: "Rs 96,420/-",
     },
   },
-  {
-    id: "bolan",
-    name: "Bolan",
-    variant: {
-      title: "Bolan",
-      image: bolan1,
-      price: "Rs 1,940,000/-",
-      link: "/sales/cars/bolanvx",
-      filer: "Rs 9,700/-",
-      nonFiler: "Rs 29,100/-",
-    },
-  },
+
   {
     id: "ravi",
     name: "Ravi",

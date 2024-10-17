@@ -212,33 +212,27 @@ export default function CUC() {
             <div className="widget">
               <h5 className="text-muted mb-2">Car Brands</h5>
               <ul className="list-unstyled d-flex flex-wrap flex-xl-column">
-                {[
-                  "Alto",
-                  "Mehran",
-                  "Cultus",
-                  "Wagon-R",
-                  "Swift",
-                  "Bolan",
-                  "Ravi",
-                ].map((brand, index) => (
-                  <li key={index} className="mt-1 me-2">
-                    <div className="form-check form-check-minimal">
-                      <input
-                        className="form-check-input"
-                        type="checkbox"
-                        id={`brand-${index}`}
-                        checked={selectedBrands.includes(brand)}
-                        onChange={() => handleBrandChange(brand)}
-                      />
-                      <label
-                        className="form-check-label brand-label"
-                        htmlFor={`brand-${index}`}
-                      >
-                        {brand}
-                      </label>
-                    </div>
-                  </li>
-                ))}
+                {["Alto", "Mehran", "Cultus", "Wagon-R", "Swift", "Ravi"].map(
+                  (brand, index) => (
+                    <li key={index} className="mt-1 me-2">
+                      <div className="form-check form-check-minimal">
+                        <input
+                          className="form-check-input"
+                          type="checkbox"
+                          id={`brand-${index}`}
+                          checked={selectedBrands.includes(brand)}
+                          onChange={() => handleBrandChange(brand)}
+                        />
+                        <label
+                          className="form-check-label brand-label"
+                          htmlFor={`brand-${index}`}
+                        >
+                          {brand}
+                        </label>
+                      </div>
+                    </li>
+                  )
+                )}
               </ul>
               <div className="price-range d-inline-block">
                 <h5 className="">Price Range</h5>

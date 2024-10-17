@@ -20,7 +20,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/sales/cars/cultusvxr",
     "/sales/cars/wagonrvxr",
     "/sales/cars/swiftglvvt",
-    "/sales/cars/bolanvx",
     "/sales/cars/ravi",
     "/infrastructure/details_dep_sales",
     "infrastructure/details_dep_aftersales",
