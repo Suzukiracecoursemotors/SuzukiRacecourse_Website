@@ -68,7 +68,7 @@ export default async function FinanceandLease() {
   return (
     <article>
       <section className="py-9">
-        <Image src={ed1} layout="responsive" alt="Finance Banner" />
+        {/* <Image src={ed1} layout="responsive" alt="Finance Banner" /> */}
         <br />
         <div className="container">
           <div className="row justify-content-center">

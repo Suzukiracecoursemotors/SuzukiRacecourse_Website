@@ -1,16 +1,17 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import image3 from "./New folder/1.jpeg";
+import image3 from "./New folder/4.jpeg";
 import image2 from "./New folder/2.jpeg";
-import image4 from "./New folder/3.jpeg";
-import image1 from "./New folder/4.jpeg";
+import image1 from "./New folder/5.png";
+import image6 from "./New folder/6.webp";
+import image7 from "./New folder/7.webp";
 
 import Image from "next/image";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 function CarosilEvery() {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const images = [image4, image2, image3, image1];
+  const images = [image2, image6, image1, image7];
 
   useEffect(() => {
     const interval = setInterval(() => {
