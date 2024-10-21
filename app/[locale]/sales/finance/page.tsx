@@ -4,6 +4,7 @@ import React from "react";
 import ed from "./pics/ed.jpg";
 import ed1 from "./pics/SavebiguptoRs.800,000withFixedRateupto18Percent_1_080754.webp";
 import Constants from "@/data/Constants";
+import { CarBookingForm } from "../../common/form-spare";
 
 const config = {
   title: "What is Suzuki Finance Arrangement Program?",
@@ -101,17 +102,25 @@ export default async function FinanceandLease() {
               </div>
 
               <div>
-                <div className="dflexrow">
+                <div
+                  className="dflexrow"
+                  style={{
+                    display: "flex",
+                    justifyContent: "space-between",
+                    alignContent: "center",
+                  }}
+                >
                   <h5>{config.eligibilityTitle}</h5>
                   <div className="col-md-auto py-3">
-                    <a
+                    {/* <a
                       href={`tel:${Constants.finance}`}
                       className="btn btn-yellow btn-with-icon rounded-pill btn-lg"
                       data-aos="zoom-out"
                       data-aos-delay="100"
                     >
                       Book Appointments <i className="bi bi-telephone-fill"></i>
-                    </a>
+                    </a> */}
+                    <CarBookingForm />
                   </div>
                 </div>
 

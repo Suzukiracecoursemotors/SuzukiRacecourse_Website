@@ -58,15 +58,15 @@ export function CarBookingForm() {
 
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
-          <Modal.Title>Car Booking Form</Modal.Title>
+          <Modal.Title> Booking Form</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <Form onSubmit={handleSubmit}>
-            <Form.Group className="mb-3" controlId="yourName">
+            <Form.Group className="mb-1" controlId="yourName">
               <Form.Label>Full Name</Form.Label>
               <Form.Control type="text" placeholder="Your Full Name" required />
             </Form.Group>
-            <Form.Group className="mb-3" controlId="phone">
+            <Form.Group className="mb-1" controlId="phone">
               <Form.Label>Phone Number</Form.Label>
               <Form.Control
                 type="text"
@@ -74,7 +74,7 @@ export function CarBookingForm() {
                 required
               />
             </Form.Group>
-            <Form.Group className="mb-3" controlId="email">
+            <Form.Group className="mb-1" controlId="email">
               <Form.Label>Email Address</Form.Label>
               <Form.Control
                 type="email"
@@ -82,7 +82,7 @@ export function CarBookingForm() {
                 required
               />
             </Form.Group>
-            <Form.Group className="mb-3" controlId="carModel">
+            <Form.Group className="mb-1" controlId="carModel">
               <Form.Label>Preferred Car Model</Form.Label>
               <Form.Select required>
                 <option value="">Select a Car Model</option>
@@ -94,7 +94,7 @@ export function CarBookingForm() {
                 <option value="suzuki-Every">Suzuki Every</option>
               </Form.Select>
             </Form.Group>
-            <Form.Group className="mb-3" controlId="carColor">
+            <Form.Group className="mb-1" controlId="carColor">
               <Form.Label>Preferred Car Color</Form.Label>
               <Form.Select required>
                 <option value="">Select a Car Color</option>
@@ -103,15 +103,15 @@ export function CarBookingForm() {
                 <option value="silver">Silver</option>
               </Form.Select>
             </Form.Group>
-            <Form.Group className="mb-3" controlId="bookingDate">
+            <Form.Group className="mb-1" controlId="bookingDate">
               <Form.Label>Preferred Booking Date</Form.Label>
               <Form.Control type="date" required />
             </Form.Group>
-            <Form.Group className="mb-3" controlId="message">
+            <Form.Group className="mb-1" controlId="message">
               <Form.Label>Additional Comments</Form.Label>
               <Form.Control
                 as="textarea"
-                rows={3}
+                rows={2}
                 placeholder="Any additional requests or information"
               />
             </Form.Group>
