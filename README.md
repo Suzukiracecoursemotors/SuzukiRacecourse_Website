@@ -5,5 +5,3 @@ Setup instructions:
 3. npm run dev to build
 
 Explanation.
-
-Multilangauges.
