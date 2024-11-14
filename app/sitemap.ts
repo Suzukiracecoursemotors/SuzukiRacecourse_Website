@@ -3,6 +3,7 @@ import { locales } from "@/i18n";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   let base: MetadataRoute.Sitemap = [];
+
   let paths = [
     "/",
     "/blog/blog-post",
